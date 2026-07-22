@@ -1,0 +1,14 @@
+{
+  "backup": "backups/Praxis-Mine-v0.1.0.zip",
+  "backup_checksum": "backups/Praxis-Mine-v0.1.0.zip.sha256",
+  "backup_sha256": "c3b337794a711e4b0dde15d2b0a9fd21d6803d40e23df22246e8d8083269169d",
+  "canonical_checksum": "Praxis-Mine-v0.1.0.zip.sha256",
+  "canonical_zip": "Praxis-Mine-v0.1.0.zip",
+  "canonical_zip_member_count": 42,
+  "canonical_zip_sha256": "c3b337794a711e4b0dde15d2b0a9fd21d6803d40e23df22246e8d8083269169d",
+  "copy_not_move_verified": true,
+  "family": "praxis-mine",
+  "schema": "cd-settled-family-build-receipt/v1",
+  "status": "local-staged",
+  "version": "0.1.0"
+}

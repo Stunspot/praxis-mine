@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "claude_archives_checked": 1,
+    "files_checked": 42,
+    "source_files_checked": 22,
+    "unique_zip_containers_checked": 1,
+    "zip_members_checked": 22
+  },
+  "findings": [],
+  "ok": true,
+  "schema": "cd-family-release-portable-verification/v1"
+}

@@ -1,0 +1,7 @@
+{
+  "claim_boundary": "Static package evidence only; installation, discovery, invocation, health, publication, and customer value require separate evidence.",
+  "family": "praxis-mine",
+  "schema": "cd-settled-family-package-receipt/v1",
+  "status": "static-package-built",
+  "version": "0.1.0"
+}

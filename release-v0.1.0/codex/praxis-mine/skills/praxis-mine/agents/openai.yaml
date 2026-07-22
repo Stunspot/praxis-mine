@@ -1,0 +1,4 @@
+interface:
+  display_name: "Praxis Mine"
+  short_description: "🔬 Skill adoption assessor for outside praxis."
+  default_prompt: "Use $praxis-mine to inspect a source, find substantive capability gains, and record evidence-backed dispositions."

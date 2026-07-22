@@ -1,0 +1,27 @@
+{
+  "author": {
+    "name": "Collaborative Dynamics",
+    "url": "https://collaborative-dynamics.com"
+  },
+  "description": "Assess outside skills and practices for bounded adoption, retaining useful mechanisms without wholesale installation or authority drift.",
+  "interface": {
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "category": "Productivity",
+    "defaultPrompt": [
+      "Assess this outside skill and steal only the good bits."
+    ],
+    "developerName": "Collaborative Dynamics",
+    "displayName": "Praxis Mine",
+    "longDescription": "Assess outside skills and practices for bounded adoption, retaining useful mechanisms without wholesale installation or authority drift.",
+    "shortDescription": "🔬 Outside praxis → bounded adoption judgment."
+  },
+  "license": "Proprietary",
+  "name": "praxis-mine",
+  "repository": "https://github.com/Stunspot/praxis-mine",
+  "skills": "./skills/",
+  "version": "0.1.0"
+}

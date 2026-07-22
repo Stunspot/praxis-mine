@@ -1,0 +1,25 @@
+# Praxis Mine: package reference
+
+## Canonical contents
+
+```text
+codex/praxis-mine/
+claude/
+docs/
+tools/verify_release.py
+description-custody.json
+manifest.json
+package-receipt.json
+verification-report.json
+```
+
+The canonical archive is `Praxis-Mine-v0.1.0.zip`. Its detached `receipt.json` and `.sha256` file live beside it in the repository or staging tree because an archive cannot contain its own final digest.
+
+## Key records
+
+- [Plugin manifest](../codex/praxis-mine/.codex-plugin/plugin.json)
+- [Release manifest](../manifest.json)
+- [Description custody](../description-custody.json)
+- [Portable verification report](../verification-report.json)
+- [Package receipt](../package-receipt.json)
+- [Validation procedure](VALIDATION.md)

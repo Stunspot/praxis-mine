@@ -1,0 +1,152 @@
+{
+  "claude_archives": [
+    {
+      "file": "claude/praxis-mine-v0.1.0.zip",
+      "handle": "praxis-mine",
+      "sha256": "a11e270942869c03cf3271315766f3a233a21e577daac5b194dbc6b04f994a9b"
+    }
+  ],
+  "excluded_generated_caches": {
+    "praxis-mine": []
+  },
+  "excluded_local_configuration": {
+    "praxis-mine": []
+  },
+  "family": {
+    "backup_filename": "Praxis-Mine-v0.1.0.zip",
+    "default_prompts": [
+      "Assess this outside skill and steal only the good bits."
+    ],
+    "handles": [
+      "praxis-mine"
+    ],
+    "primary_handle_custody": true,
+    "repository": "Stunspot/praxis-mine",
+    "repository_state": "create",
+    "short_description": "🔬 Outside praxis → bounded adoption judgment.",
+    "slug": "praxis-mine",
+    "summary": "Assess outside skills and practices for bounded adoption, retaining useful mechanisms without wholesale installation or authority drift.",
+    "title": "Praxis Mine",
+    "version": "0.1.0",
+    "visibility": "PRIVATE"
+  },
+  "package_claim_boundary": "Static package and byte-parity evidence only; no host activation, live behavior, or publication claim.",
+  "schema": "cd-settled-family-release/v1",
+  "source_records": [
+    {
+      "files": [
+        {
+          "bytes": 3502,
+          "path": "SKILL.md",
+          "sha256": "844187f28c80c1748981f0e0a9757dae86298606cd2d25cc87525f659e87eb7a"
+        },
+        {
+          "bytes": 251,
+          "path": "agents/openai.yaml",
+          "sha256": "cce2255fadc08d83df37145ab8fb0ce6dcf815c46eddaceff99dde94d1eaf41c"
+        },
+        {
+          "bytes": 662,
+          "path": "assets/evaluation.template.json",
+          "sha256": "7f89728bda165190b71e2e8a58d0b78deb6ed8bbbefb74320e32c7a787f5e762"
+        },
+        {
+          "bytes": 3919,
+          "path": "assets/praxis_mine.contract.json",
+          "sha256": "b9a2201d0184a98b862a403be67e3fde13078e2d622f3d4ca8d2d3852871f9d8"
+        },
+        {
+          "bytes": 746,
+          "path": "assets/seed-evaluations/anthropic_skill_creator.json",
+          "sha256": "4a0d5b472b92b4a7d17bbfb330f9be500df4e3041d70925603b3501e2d662975"
+        },
+        {
+          "bytes": 755,
+          "path": "assets/seed-evaluations/firecrawl_cli.json",
+          "sha256": "86483dae6e5453e4f43aa525d201eacf4a7c45fcce69e9871c9c407bcdd30d17"
+        },
+        {
+          "bytes": 748,
+          "path": "assets/seed-evaluations/hyperframes.json",
+          "sha256": "d4c1d8b322c6e2f81d4ef3d571ecc35aa6c48f7f1e9ded4354fd22eb541c4e35"
+        },
+        {
+          "bytes": 800,
+          "path": "assets/seed-evaluations/impeccable.json",
+          "sha256": "3abe30b7ebdce0b3c568e3a0a2a06dc61e9f41d4886a3aaed82b2109bd16526b"
+        },
+        {
+          "bytes": 728,
+          "path": "assets/seed-evaluations/marketing_skills.json",
+          "sha256": "a0618b68419209d1cc0240ee33862b9100f59ec7ad65cb360c427675222705c5"
+        },
+        {
+          "bytes": 652,
+          "path": "assets/seed-evaluations/microsoft_playwright_cli.json",
+          "sha256": "e8293ddbb43bb23ad22d40e00e5f38dcc0fea52e6717180787fffef1d43a506f"
+        },
+        {
+          "bytes": 800,
+          "path": "assets/seed-evaluations/microsoft_waza.json",
+          "sha256": "01c8d8db03b3c97fac3cf5cd81acdd303278bb387d2063b97bd7f234ed5501ac"
+        },
+        {
+          "bytes": 752,
+          "path": "assets/seed-evaluations/microsoft_webwright.json",
+          "sha256": "a012d1cbcae61cee213e653af806fd65364751f6cbed57318a6250fec997e851"
+        },
+        {
+          "bytes": 801,
+          "path": "assets/seed-evaluations/vercel_agent_browser.json",
+          "sha256": "4f5a791f0acddcd43326fb18ae2ee2280711a609b09ea7c9c72b89bfe928b80e"
+        },
+        {
+          "bytes": 733,
+          "path": "assets/seed-evaluations/vercel_agent_skills.json",
+          "sha256": "8ccf356edd9bdfd2fb85d20ed6a1c94709d1fe900485dc20545e66c29f07af3d"
+        },
+        {
+          "bytes": 5315,
+          "path": "assets/seed-manifest.json",
+          "sha256": "c242ac7cfb3379786c83098f69649b6ee8f3c0e1a51002ce4e9f478ed344718a"
+        },
+        {
+          "bytes": 1661,
+          "path": "references/evaluation-gate.md",
+          "sha256": "94895323a99ff0c87475255753c46bd216925a0a676bfd77d24c3b93fe53ab3b"
+        },
+        {
+          "bytes": 1211,
+          "path": "references/source-adapters.md",
+          "sha256": "71d1b9abcc84ff408e3f4d0fea572d52df19bfd46daf8d12d6255b819b71b694"
+        },
+        {
+          "bytes": 20248,
+          "path": "scripts/praxis_mine.py",
+          "sha256": "b9f38653f38b9d0ff400c6d8a9195924bd7476a08c00dd8576d94b5c09d7bc6a"
+        },
+        {
+          "bytes": 77,
+          "path": "scripts/vendor/cd_data_substrate/__init__.py",
+          "sha256": "0fb97f38da936974caa202ff43680bfff84f72c76c588a53d1770b5ce2cb9e6f"
+        },
+        {
+          "bytes": 9244,
+          "path": "scripts/vendor/cd_data_substrate/cli.py",
+          "sha256": "2e72afe7df2e5276b1c27e5683e602e12b72b90ed3d036ab704ad9c3cc46f1ed"
+        },
+        {
+          "bytes": 34120,
+          "path": "scripts/vendor/cd_data_substrate/storage.py",
+          "sha256": "29c60e0f308bb1ac078c3dd8d51578aeb879d6c5af6c09c460674979c6513115"
+        },
+        {
+          "bytes": 3464,
+          "path": "tests/test_praxis_mine.py",
+          "sha256": "8b7b2066feea4f274e0cd8de54a5cb20983f232e82f22de433f549e52974800b"
+        }
+      ],
+      "handle": "praxis-mine"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Preserve canonical settled release snapshots byte-for-byte.
+/release-v0.1.0/** -text

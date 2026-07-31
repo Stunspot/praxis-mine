@@ -3,9 +3,10 @@
   "fresh_context": true,
   "disposition": "REVIEW_PASS",
   "unresolved_material_findings": 0,
-  "documentation_fingerprint": "4565841ac497dffb64721b596407b82e9a74d4b88f49f46561879a5896bad3e4",
+  "documentation_fingerprint": "d5a988dae4226b0cb8bef864bc1323824b9d7cf9ab33d28c5cfcaebb78a0ada5",
   "reviewed_files": [
     "README.md",
+    "docs/index.md",
     "docs/README.md",
     "docs/HOST-COMPATIBILITY.md",
     "docs/INSTALL-CODEX.md",
@@ -32,9 +33,9 @@
     "PLUGIN-DIRECTORY-SUBMISSION-v1.0.0.md"
   ],
   "reviewer": "Hesperos exact-content fresh-context review using local gpt-oss:20b through the Ollama generation API",
-  "review_run_id": "praxis-mine-hesperos-v1.0.0-final-7",
-  "review_input_evidence": "source/verification/documentation-review-final-7/review-input-evidence.json",
-  "evidence_directory": "source/verification/documentation-review-final-7",
+  "review_run_id": "praxis-mine-hesperos-pages-final-8",
+  "review_input_evidence": "source/verification/documentation-review-final-8/review-input-evidence.json",
+  "evidence_directory": "source/verification/documentation-review-final-8",
   "conditions": [
     "Fresh standalone Codex installation and activation, live Claude upload and activation, natural-language routing, and representative first-success behavior remain unexecuted.",
     "Browser, keyboard, screen-reader, localization, representative-user, and formal accessibility-conformance testing remain unexecuted.",

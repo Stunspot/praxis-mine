@@ -1,6 +1,8 @@
-# Praxis Mine
+<p align="center">
+  <img src="./docs/assets/brand/praxis-mine-readme-hero.png" alt="Praxis Mine capability assay: a cyan beam isolates one useful gold seam from dark ore.">
+</p>
 
-![Praxis Mine logo](assets/praxis-mine-logo-v1.0.0.png)
+# Praxis Mine
 
 Mine outside AI skills, repositories, tools, and workflows. Keep the mechanism that changes what you can do. Leave the dependency geology where you found it.
 
@@ -12,12 +14,13 @@ Praxis Mine is a standalone Augment from Collaborative Dynamics for prompt engin
 
 ## Start here
 
-1. Download the current `Praxis-Mine-v1.0.0.zip` from the [v1.0.0 release](https://github.com/Stunspot/praxis-mine/releases/tag/v1.0.0).
-2. Follow the [Codex/ChatGPT plugin](docs/INSTALL-CODEX.md) or [Claude skill](docs/INSTALL-CLAUDE.md) installation path.
-3. Complete the [ten-minute first mine](docs/QUICK-START.md).
-4. Use the [workflow guide](docs/WORKFLOWS.md) when you need a local scan, candidate comparison, selective adaptation, or a bounded pilot.
+1. Open the [Praxis Mine documentation site](https://stunspot.github.io/praxis-mine/) for the complete guided path.
+2. Download `Praxis-Mine-v1.0.0.zip` from the [v1.0.0 release](https://github.com/Stunspot/praxis-mine/releases/tag/v1.0.0).
+3. Follow the [Codex/ChatGPT plugin](docs/INSTALL-CODEX.md) or [Claude skill](docs/INSTALL-CLAUDE.md) installation path.
+4. Complete the [ten-minute first mine](docs/QUICK-START.md).
+5. Use the [workflow guide](docs/WORKFLOWS.md) when you need a local scan, candidate comparison, selective adaptation, or a bounded pilot.
 
-The complete customer journey begins in the [documentation hub](docs/README.md).
+Prefer plain Markdown? The [repository documentation map](docs/README.md) carries the same routes without the Pages presentation.
 
 ## What you receive
 

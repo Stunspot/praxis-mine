@@ -21,7 +21,15 @@ Prompt Design v3 governed the v1 model-visible skill and metadata. Hesperos Clea
 
 ## Image custody
 
-The Praxis Mine product mark was generated for this release from a Collaborative Dynamics art brief. It depicts a precise assay beam isolating one useful seam inside dark ore. The release uses the same square PNG for the composer icon and logo; no third-party brand mark was supplied as a reference.
+The square Praxis Mine product mark was generated from a Collaborative Dynamics art brief. It depicts a precise assay beam isolating one useful seam inside dark ore and remains the plugin icon.
+
+The public documentation uses three separately composed derivatives rather than stretching that square mark across unrelated surfaces:
+
+- `praxis-mine-readme-hero.png` is `2244 × 701` for the GitHub README;
+- `praxis-mine-social-preview.jpg` is `1280 × 640` for repository and Open Graph previews;
+- `praxis-mine-pages-hero.png` is `1896 × 829` for the Pages landing page.
+
+The source mark governed the visual language for each generated background. Exact product typography and surface dimensions were then applied deterministically with `source/tools/build_documentation_images.ps1`. No third-party brand mark was supplied as a reference.
 
 ## Evidence boundary
 

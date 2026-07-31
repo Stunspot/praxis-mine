@@ -10,7 +10,7 @@ they are not promised inside the extracted customer kit.
 
 - `source/plugin/`: canonical installable plugin source;
 - `source/design-record/`: positive product contract and approved Augment map;
-- `docs/` plus root responsibility files: current customer corpus;
+- `docs/` plus root responsibility files: current customer corpus and Pages source;
 - `source/tools/`: deterministic release assembly and verification;
 - `documentation-manifest.json`: exact customer-document inventory;
 - `source/verification/`: TestForge and Hesperos evidence.
@@ -28,6 +28,18 @@ Reopen the relevant evidence when a change affects:
 - installation, first value, recovery, support, provenance, or public claims.
 
 Pure typo corrections still change documentation fingerprints and require current authorship/review receipts for a done-done release.
+
+## Public documentation surfaces
+
+Keep the three brand images distinct:
+
+- `docs/assets/brand/praxis-mine-readme-hero.png`: `2244 × 701`;
+- `docs/assets/brand/praxis-mine-social-preview.jpg`: `1280 × 640` and under GitHub's `1 MB` upload limit;
+- `docs/assets/brand/praxis-mine-pages-hero.png`: `1896 × 829`.
+
+Use `source/tools/build_documentation_images.ps1` to apply exact dimensions and typography to approved source compositions. The square image under `assets/` remains the plugin icon; it is not a README banner.
+
+GitHub Pages is built from `docs/`. Check the live home page, responsive navigation, internal routes, image loading, keyboard focus, Open Graph metadata, and the repository social preview after publication. A successful local render does not establish a successful Pages deployment.
 
 ## Narrow verification
 

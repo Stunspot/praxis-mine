@@ -1,6 +1,8 @@
-# Use Praxis Mine
+# Praxis Mine documentation map
 
 Praxis Mine helps you decide what—if anything—to borrow from an outside AI skill, repository, tool, workflow, or knowledge source. Begin with the task in front of you, not with a catalog count.
+
+For the guided public journey, begin at the [Praxis Mine documentation site](https://stunspot.github.io/praxis-mine/).
 
 ## Choose your next page
 
@@ -38,4 +40,4 @@ The five ordinary dispositions are:
 
 ## Before consequential use
 
-Read [Data and privacy](../DATA-AND-PRIVACY.md), [Security](../SECURITY.md), and [Terms of use](../TERMS-OF-USE.md) before scanning confidential repositories, using third-party services, or executing any candidate code. Praxis Mine can help design a pilot; it does not authorize the pilot or make the candidate safe.
+Read [Data and privacy](https://github.com/Stunspot/praxis-mine/blob/main/DATA-AND-PRIVACY.md), [Security](https://github.com/Stunspot/praxis-mine/blob/main/SECURITY.md), and [Terms of use](https://github.com/Stunspot/praxis-mine/blob/main/TERMS-OF-USE.md) before scanning confidential repositories, using third-party services, or executing any candidate code. Praxis Mine can help design a pilot; it does not authorize the pilot or make the candidate safe.

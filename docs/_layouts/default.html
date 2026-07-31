@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Praxis Mine">
+  <meta property="og:title" content="{{ page.title | default: site.title }} | Praxis Mine">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/brand/praxis-mine-social-preview.jpg' | absolute_url }}">
+  <meta property="og:image:secure_url" content="{{ '/assets/brand/praxis-mine-social-preview.jpg' | absolute_url }}">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Praxis Mine capability assay: a cyan beam isolates one useful gold seam from dark ore.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: site.title }} | Praxis Mine">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  <meta name="twitter:image" content="{{ '/assets/brand/praxis-mine-social-preview.jpg' | absolute_url }}">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand-mark" href="{{ '/' | relative_url }}">
+        <span class="brand-kicker">Collaborative Dynamics</span>
+        <span class="brand-title">Praxis Mine</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="{{ '/' | relative_url }}">Start</a>
+        <a href="{{ '/INSTALL-CODEX.html' | relative_url }}">Install</a>
+        <a href="{{ '/QUICK-START.html' | relative_url }}">First mine</a>
+        <a href="{{ '/WORKFLOWS.html' | relative_url }}">Workflows</a>
+        <a href="{{ '/VALIDATION.html' | relative_url }}">Evidence</a>
+        <a href="https://github.com/Stunspot/praxis-mine">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="main-content" class="content-panel">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Praxis Mine</strong>
+        <span>Mine outside systems. Keep only the capability delta.</span>
+      </div>
+      <nav aria-label="Policy and support">
+        <a href="https://github.com/Stunspot/praxis-mine/blob/main/DATA-AND-PRIVACY.md">Privacy</a>
+        <a href="https://github.com/Stunspot/praxis-mine/blob/main/SECURITY.md">Security</a>
+        <a href="https://github.com/Stunspot/praxis-mine/blob/main/TERMS-OF-USE.md">Terms</a>
+        <a href="https://github.com/Stunspot/praxis-mine/blob/main/SUPPORT.md">Support</a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>

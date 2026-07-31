@@ -1,0 +1,12 @@
+title: "Praxis Mine"
+description: "Capability assay for outside AI skills, repositories, tools, and workflows."
+url: "https://stunspot.github.io"
+baseurl: "/praxis-mine"
+show_downloads: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+

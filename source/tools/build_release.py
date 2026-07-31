@@ -88,6 +88,12 @@ def copy_customer_docs(destination: Path, *, include_review: bool) -> list[str]:
         target = destination / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, target)
+    documentation_assets = REPO_ROOT / "docs" / "assets" / "brand"
+    if documentation_assets.is_dir():
+        shutil.copytree(
+            documentation_assets,
+            destination / "docs" / "assets" / "brand",
+        )
     shutil.copy2(manifest_path, destination / "documentation-manifest.json")
     shutil.copy2(REPO_ROOT / "documentation-authorship.json", destination / "documentation-authorship.json")
     if include_review:

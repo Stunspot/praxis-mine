@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 REQUEST = ROOT / "source" / "verification" / "documentation-review-request.md"
 MANIFEST = ROOT / "documentation-manifest.json"
-EVIDENCE = ROOT / "source" / "verification" / "documentation-review-final-7"
+EVIDENCE = ROOT / "source" / "verification" / "documentation-review-final-8"
 MODEL = "gpt-oss:20b"
 OLLAMA_GENERATE = "http://127.0.0.1:11434/api/generate"
 
@@ -29,9 +29,8 @@ def fingerprint(paths: list[str]) -> str:
 
 
 def main() -> int:
-    release_root = ROOT / ".staging-v1.0.0"
-    corpus_root = release_root if release_root.is_dir() else ROOT
-    manifest_path = corpus_root / "documentation-manifest.json"
+    corpus_root = ROOT
+    manifest_path = MANIFEST
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     paths = manifest["customer_docs"]
     current_fingerprint = fingerprint(paths)
@@ -41,19 +40,6 @@ def main() -> int:
         "\nDOCUMENTATION_MANIFEST:\n",
         manifest_path.read_text(encoding="utf-8"),
     ]
-    if release_root.is_dir():
-        inventory = [
-            path.relative_to(release_root).as_posix()
-            for path in sorted(release_root.rglob("*"))
-            if path.is_file()
-        ]
-        sections.extend([
-            "\n\nRELEASE_CANDIDATE_ROOT: extracted complete-kit staging root\n",
-            "RELEASE_CANDIDATE_INVENTORY:\n",
-            "\n".join(inventory),
-            "\n\nARCHIVE_CUSTODY:\n",
-            (release_root / "archive-custody.json").read_text(encoding="utf-8"),
-        ])
     for relative in paths:
         sections.extend([
             f"\n\n===== BEGIN DOCUMENT: {relative} =====\n",
@@ -96,10 +82,36 @@ def main() -> int:
         "http_status": 200,
         "documentation_fingerprint": current_fingerprint,
         "customer_docs": paths,
-        "release_candidate_root": ".staging-v1.0.0" if release_root.is_dir() else None,
+        "release_candidate_root": None,
+    }
+    input_evidence = {
+        "format": "cd-documentation-review-input/v1",
+        "review_run_id": "praxis-mine-hesperos-pages-final-8",
+        "contents_supplied": True,
+        "documentation_fingerprint": current_fingerprint,
+        "supplied_files": paths,
+        "transport": (
+            "Local Ollama fresh-context UTF-8 API with the exact current "
+            "customer-document corpus"
+        ),
+        "review_response_evidence": (
+            "source/verification/documentation-review-final-8/review-response.md"
+        ),
+        "execution_evidence": [
+            "source/verification/documentation-review-request.md",
+            "source/verification/documentation-review-final-8/assembled-review-input.md",
+            "source/verification/documentation-review-final-8/api-response.json",
+            "source/verification/documentation-review-final-8/run.json",
+            "source/verification/documentation-review-final-8/review-response.md",
+        ],
     }
     (EVIDENCE / "run.json").write_text(
         json.dumps(run, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+        newline="\n",
+    )
+    (EVIDENCE / "review-input-evidence.json").write_text(
+        json.dumps(input_evidence, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
         newline="\n",
     )

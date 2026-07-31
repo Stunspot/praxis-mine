@@ -3,6 +3,7 @@
   "landing_page": "README.md",
   "customer_docs": [
     "README.md",
+    "docs/index.md",
     "docs/README.md",
     "docs/HOST-COMPATIBILITY.md",
     "docs/INSTALL-CODEX.md",
@@ -31,6 +32,7 @@
   "moments": {
     "orientation": [
       "README.md",
+      "docs/index.md",
       "docs/README.md"
     ],
     "installation": [

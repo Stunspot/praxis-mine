@@ -3,7 +3,7 @@ AUTHORING_CAPABILITY: hesperos-documentation
 AUTHORSHIP_SCOPE: materially-revised
 AUTHORED_FILES_COUNT: 26
 AUTHORED_FILES: README.md | docs/index.md | docs/README.md | docs/HOST-COMPATIBILITY.md | docs/INSTALL-CODEX.md | docs/INSTALL-CLAUDE.md | docs/QUICK-START.md | docs/WORKFLOWS.md | docs/LEDGER-REFERENCE.md | docs/TROUBLESHOOTING.md | docs/UNINSTALL-AND-DATA.md | docs/VALIDATION.md | docs/LIMITATIONS.md | docs/MAINTAINER-GUIDE.md | docs/PROVENANCE.md | DATA-AND-PRIVACY.md | TERMS-OF-USE.md | SECURITY.md | SUPPORT.md | LICENSE.md | TRADEMARKS.md | NOTICE.md | CONTRIBUTING.md | RELEASE-NOTES-v1.0.0.md | ARCHIVE-CUSTODY.md | PLUGIN-DIRECTORY-SUBMISSION-v1.0.0.md
-DOCUMENTATION_FINGERPRINT: d5a988dae4226b0cb8bef864bc1323824b9d7cf9ab33d28c5cfcaebb78a0ada5
+DOCUMENTATION_FINGERPRINT: 93d135cd4b472787ed63398c18c6303fcd5f4f5d3b13f3646d444942790b8b52
 
 Praxis Mine now has one guided public path from recognition through installation, first value, recurring use, local-ledger care, recovery, removal, evidence interpretation, privacy and security, rights, support, maintenance, archive custody, and provenance. The README, Pages landing page, and Markdown documentation map each route readers to the same verified customer journey without making the square plugin icon impersonate a banner.
 

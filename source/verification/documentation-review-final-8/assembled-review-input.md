@@ -31,7 +31,7 @@ UNEXECUTED_CONDITIONS: [browser, keyboard, screen-reader, representative-user, h
 REVIEW_PASS
 ```
 
-DOCUMENTATION_FINGERPRINT_INPUT: d5a988dae4226b0cb8bef864bc1323824b9d7cf9ab33d28c5cfcaebb78a0ada5
+DOCUMENTATION_FINGERPRINT_INPUT: 93d135cd4b472787ed63398c18c6303fcd5f4f5d3b13f3646d444942790b8b52
 
 DOCUMENTATION_MANIFEST:
 {
@@ -279,7 +279,7 @@ Before scanning confidential repositories, using third-party services, or execut
 
 ## Need the complete map?
 
-The [repository documentation map](./README.md) lists every customer and maintainer document. For unresolved problems, use the public [support route](https://github.com/Stunspot/praxis-mine/blob/main/SUPPORT.md) or open a GitHub issue without attaching confidential candidate material.
+The [repository documentation map](https://github.com/Stunspot/praxis-mine/blob/main/docs/README.md) lists every customer and maintainer document. For unresolved problems, use the public [support route](https://github.com/Stunspot/praxis-mine/blob/main/SUPPORT.md) or open a GitHub issue without attaching confidential candidate material.
 
 ===== END DOCUMENT: docs/index.md =====
 

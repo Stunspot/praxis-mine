@@ -1,19 +1,19 @@
 {
   "authored_files": [
     {
-      "bytes": 3940,
+      "bytes": 4012,
       "path": "README.md",
-      "sha256": "360722d746920d057579156338f206c0a7574586e944503a8484407163c66d24"
+      "sha256": "8324b8714963cd80c4040bf17471a4806e1f551c0706f9e1d51dddfa82f82a56"
     },
     {
-      "bytes": 4664,
+      "bytes": 4717,
       "path": "docs/index.md",
-      "sha256": "1030175471047fe1b2956e5c370c4936c2aef54ed977bb05b4d317c9dafddaf8"
+      "sha256": "360ba1866ca271e74445bc379efaa351859e6d39c15a7b2571958bd6f94aab60"
     },
     {
-      "bytes": 2569,
+      "bytes": 2612,
       "path": "docs/README.md",
-      "sha256": "d20588bd0205c9a8ce5977c7f911fc2bd25ab2296024d4388db895a68c2004ad"
+      "sha256": "2095d4a7b0d8b92ec2051b2919108288de09d45561dea4e66f648e0284b5f0fe"
     },
     {
       "bytes": 2319,
@@ -66,14 +66,14 @@
       "sha256": "2905beb797ea20b3233454fd84a9227492dbbc9eaaa737b0e8be2d9c2c080b8a"
     },
     {
-      "bytes": 4527,
+      "bytes": 4620,
       "path": "docs/MAINTAINER-GUIDE.md",
-      "sha256": "993799d5652e254e425a1e74de28ff40d95523b71aa83996a2ceae9d3598d06d"
+      "sha256": "0cfaad96b5c4e2861dc45e1177b7ac7100657eae6268d9782c41668d79cda4b8"
     },
     {
-      "bytes": 3098,
+      "bytes": 3134,
       "path": "docs/PROVENANCE.md",
-      "sha256": "c8b89cf2b61595186ccbe602f8d37c8f28d59fcfef8609ae97d0e5a71a5c1594"
+      "sha256": "a7228dcd5fb766e9ace8d381cede375f0c1f7e2e7de9603fd68160677006530f"
     },
     {
       "bytes": 2524,
@@ -139,17 +139,17 @@
     "run_id": "praxis-mine-hesperos-pages-repair-20260730"
   },
   "authoring_response": {
-    "bytes": 1719,
+    "bytes": 1730,
     "path": "source/verification/assets/documentation-authorship-response.md",
-    "sha256": "f492978287908d6f389d93ace535aaadc7fda1e47fc35a6f9d41e5bff9241211"
+    "sha256": "f8b64ff41628755fc0ec9ca2971b0b63271dc676944c8ac4f09e4d5da30186ed"
   },
   "claim_boundary": "Binds retained evidence for one Hesperos authoring or material-revision run. It does not prove independent review, host activation, publication, accessibility conformance, or customer outcomes.",
-  "created_at": "2026-07-31T04:15:06+00:00",
-  "documentation_fingerprint": "d5a988dae4226b0cb8bef864bc1323824b9d7cf9ab33d28c5cfcaebb78a0ada5",
+  "created_at": "2026-07-31T04:29:51+00:00",
+  "documentation_fingerprint": "93d135cd4b472787ed63398c18c6303fcd5f4f5d3b13f3646d444942790b8b52",
   "documentation_manifest": {
-    "bytes": 1859,
+    "bytes": 1941,
     "path": "documentation-manifest.json",
-    "sha256": "86c7d467cd9912cb181eb9ad46c15c9de6e5fa6484751e1ebfdf07d97b9c58d0"
+    "sha256": "dcd6fec3834535c109349975ba5aee63020134cae04f1ffae434b075abf6efdd"
   },
   "evidence_packet": {
     "bytes": 5302,
@@ -158,9 +158,9 @@
   },
   "execution_evidence": [
     {
-      "bytes": 1719,
+      "bytes": 1730,
       "path": "source/verification/assets/documentation-authorship-response.md",
-      "sha256": "f492978287908d6f389d93ace535aaadc7fda1e47fc35a6f9d41e5bff9241211"
+      "sha256": "f8b64ff41628755fc0ec9ca2971b0b63271dc676944c8ac4f09e4d5da30186ed"
     }
   ],
   "format": "cd-hesperos-documentation-authorship/v1",

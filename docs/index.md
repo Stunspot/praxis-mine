@@ -81,4 +81,4 @@ Before scanning confidential repositories, using third-party services, or execut
 
 ## Need the complete map?
 
-The [repository documentation map](./README.md) lists every customer and maintainer document. For unresolved problems, use the public [support route](https://github.com/Stunspot/praxis-mine/blob/main/SUPPORT.md) or open a GitHub issue without attaching confidential candidate material.
+The [repository documentation map](https://github.com/Stunspot/praxis-mine/blob/main/docs/README.md) lists every customer and maintainer document. For unresolved problems, use the public [support route](https://github.com/Stunspot/praxis-mine/blob/main/SUPPORT.md) or open a GitHub issue without attaching confidential candidate material.

@@ -27,7 +27,7 @@
     "ARCHIVE-CUSTODY.md",
     "PLUGIN-DIRECTORY-SUBMISSION-v1.0.0.md"
   ],
-  "documentation_fingerprint": "d5a988dae4226b0cb8bef864bc1323824b9d7cf9ab33d28c5cfcaebb78a0ada5",
+  "documentation_fingerprint": "93d135cd4b472787ed63398c18c6303fcd5f4f5d3b13f3646d444942790b8b52",
   "endpoint": "http://127.0.0.1:11434/api/generate",
   "format": "praxis-mine-documentation-review-run/v1",
   "http_status": 200,
@@ -39,5 +39,5 @@
     "stream": false,
     "think": "medium"
   },
-  "started_and_completed_at": "2026-07-31T04:15:43.842808Z"
+  "started_and_completed_at": "2026-07-31T04:32:27.147714Z"
 }

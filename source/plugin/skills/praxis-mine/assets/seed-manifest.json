@@ -1,0 +1,26 @@
+{
+  "notes": "Initial ore recovered by the 2026-07-19 skills.sh value-mining campaign. These are prior-research leads, not current production approvals.",
+  "sources": [
+    {
+      "source_key": "skills_value_mining_2026_07_19",
+      "title": "Skills.sh value-mining research snapshot",
+      "kind": "research_report",
+      "locator": "source-record://skills-value-mining-2026-07-19",
+      "access_posture": "local_read_only_with_external_primary_links",
+      "cadence": "refresh_before_decision",
+      "notes": "Evidence cutoff 2026-07-19; refresh volatile claims before spending or adoption."
+    }
+  ],
+  "candidates": [
+    {"candidate_key": "microsoft_waza", "source_key": "skills_value_mining_2026_07_19", "title": "Microsoft Waza", "locator": "https://github.com/microsoft/waza", "candidate_kind": "hybrid_system", "summary": "Evaluation machinery with baselines, repeated and multi-model trials, deterministic and behavioral graders, trigger checks, token accounting, snapshots, and CI output.", "candidate_status": "triage", "evidence_state": "prior_research_snapshot", "tags": ["evaluation", "pilot-first"]},
+    {"candidate_key": "vercel_agent_browser", "source_key": "skills_value_mining_2026_07_19", "title": "agent-browser", "locator": "https://github.com/vercel-labs/agent-browser", "candidate_kind": "executable_tool", "summary": "Browser automation primitive with accessibility references, diffs, traces, network inspection, JSON output, encrypted auth, and containment controls.", "candidate_status": "triage", "evidence_state": "prior_research_snapshot", "tags": ["browser", "security", "pilot-first"]},
+    {"candidate_key": "microsoft_webwright", "source_key": "skills_value_mining_2026_07_19", "title": "Webwright", "locator": "https://github.com/microsoft/Webwright", "candidate_kind": "hybrid_system", "summary": "Turns completed browser tasks into rerunnable Python programs and parameterized operational procedures.", "candidate_status": "triage", "evidence_state": "prior_research_snapshot", "tags": ["browser", "replay", "pilot-first"]},
+    {"candidate_key": "impeccable", "source_key": "skills_value_mining_2026_07_19", "title": "Impeccable", "locator": "https://github.com/pbakaus/impeccable", "candidate_kind": "hybrid_system", "summary": "Design doctrine, persistent context, visual iteration, and deterministic no-model anti-pattern detectors.", "candidate_status": "triage", "evidence_state": "prior_research_snapshot", "tags": ["design", "detectors", "pilot-or-quarry"]},
+    {"candidate_key": "hyperframes", "source_key": "skills_value_mining_2026_07_19", "title": "HyperFrames", "locator": "https://github.com/heygen-com/hyperframes", "candidate_kind": "executable_tool", "summary": "Local deterministic HTML-to-MP4 production engine with scaffold, preview, lint, inspect, and render workflow.", "license": "Apache-2.0 reported", "candidate_status": "triage", "evidence_state": "prior_research_snapshot", "tags": ["video", "renderer", "adopt-when-needed"]},
+    {"candidate_key": "microsoft_playwright_cli", "source_key": "skills_value_mining_2026_07_19", "title": "Playwright CLI", "locator": "https://github.com/microsoft/playwright-cli", "candidate_kind": "executable_tool", "summary": "Concise browser commands intended to reduce agent context cost on Playwright-governed work.", "candidate_status": "triage", "evidence_state": "prior_research_snapshot", "tags": ["browser", "benchmark"]},
+    {"candidate_key": "firecrawl_cli", "source_key": "skills_value_mining_2026_07_19", "title": "Firecrawl CLI", "locator": "https://github.com/firecrawl/cli", "candidate_kind": "service_edge", "summary": "Search, scrape, crawl, extraction, hosted browser work, and monitoring with credit, custody, and provider-dependence tradeoffs.", "candidate_status": "triage", "evidence_state": "prior_research_snapshot", "tags": ["acquisition", "conditional-service"]},
+    {"candidate_key": "marketing_skills", "source_key": "skills_value_mining_2026_07_19", "title": "MarketingSkills", "locator": "https://github.com/coreyhaines31/marketingskills", "candidate_kind": "knowledge_source", "summary": "Broad marketing taxonomy and shared product-context material useful for capability gap analysis and selective quarrying.", "candidate_status": "triage", "evidence_state": "prior_research_snapshot", "tags": ["marketing", "quarry"]},
+    {"candidate_key": "anthropic_skill_creator", "source_key": "skills_value_mining_2026_07_19", "title": "Anthropic skill-creator", "locator": "https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md", "candidate_kind": "workflow_prompt", "summary": "Paired with-and-without-skill runs, human review viewer, assertions, and token and time aggregation.", "candidate_status": "triage", "evidence_state": "prior_research_snapshot", "tags": ["evaluation", "quarry"]},
+    {"candidate_key": "vercel_agent_skills", "source_key": "skills_value_mining_2026_07_19", "title": "Vercel agent-skills", "locator": "https://github.com/vercel-labs/agent-skills", "candidate_kind": "knowledge_source", "summary": "Maker-authored React, Next.js, composition, and design rules suitable as version-bound technical references.", "candidate_status": "triage", "evidence_state": "prior_research_snapshot", "tags": ["frontend", "selective-quarry"]}
+  ]
+}

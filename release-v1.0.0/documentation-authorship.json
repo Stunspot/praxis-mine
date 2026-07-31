@@ -1,0 +1,171 @@
+{
+  "authored_files": [
+    {
+      "bytes": 3664,
+      "path": "README.md",
+      "sha256": "09f952378f0472b0cd65cd1b0d66615b6f8f9bd9dd5705278991dfd8cf196a83"
+    },
+    {
+      "bytes": 2294,
+      "path": "docs/README.md",
+      "sha256": "b4e24b63c16768ad7034c1c5032acd7627355c3517fbb622f55c76d49ed0ce68"
+    },
+    {
+      "bytes": 2319,
+      "path": "docs/HOST-COMPATIBILITY.md",
+      "sha256": "f3809cfeee73a38a93f6f474f71507130621357b8fa23df6484530ea15cd1b34"
+    },
+    {
+      "bytes": 2310,
+      "path": "docs/INSTALL-CODEX.md",
+      "sha256": "5c60ef413a6a77ea5608fcc7cb5d0e3e76ef1710b6e89e328edf1e78768f9003"
+    },
+    {
+      "bytes": 1655,
+      "path": "docs/INSTALL-CLAUDE.md",
+      "sha256": "51011941f6de352437338b3aab1954e1f393326b024d3f75d94a7f228b0b625e"
+    },
+    {
+      "bytes": 2767,
+      "path": "docs/QUICK-START.md",
+      "sha256": "ffadb747910fd2f104d5ae92818234d5791f46100b191bcc17a246b0151a8d9f"
+    },
+    {
+      "bytes": 4129,
+      "path": "docs/WORKFLOWS.md",
+      "sha256": "ad4559ac0b358d916e0040b75c42ae3f9d50faaeeff33dc731d6a646c4c774f8"
+    },
+    {
+      "bytes": 2990,
+      "path": "docs/LEDGER-REFERENCE.md",
+      "sha256": "3a8e56e6b68ca05a122828fa9438b227f5310d1b50976e3f9798437e39211c1f"
+    },
+    {
+      "bytes": 3743,
+      "path": "docs/TROUBLESHOOTING.md",
+      "sha256": "5b3eb842f3461114bdded2bcbff9151ec555ace07cc0a67e4360b95cf050035a"
+    },
+    {
+      "bytes": 1969,
+      "path": "docs/UNINSTALL-AND-DATA.md",
+      "sha256": "474d169c6ef4aff08fc369e99607ea065609e6f019e786cacb5bf5f16dc1803e"
+    },
+    {
+      "bytes": 2728,
+      "path": "docs/VALIDATION.md",
+      "sha256": "93960bf363c374e5f8aabe30b6225178db960f1cd66ff0478cbe4ec96e18f3ae"
+    },
+    {
+      "bytes": 1933,
+      "path": "docs/LIMITATIONS.md",
+      "sha256": "2905beb797ea20b3233454fd84a9227492dbbc9eaaa737b0e8be2d9c2c080b8a"
+    },
+    {
+      "bytes": 3703,
+      "path": "docs/MAINTAINER-GUIDE.md",
+      "sha256": "3dce6c23377b8f843aea148b77f2fc34c7b0c1c465a5e8affce790c918b23482"
+    },
+    {
+      "bytes": 2559,
+      "path": "docs/PROVENANCE.md",
+      "sha256": "c6a80f8475f6526522746f0a1e900ec2399d7bc045dc1602ad248421d392f885"
+    },
+    {
+      "bytes": 2524,
+      "path": "DATA-AND-PRIVACY.md",
+      "sha256": "0cb0669da6eb0b4a8c383583468dfa7b37dbe9a619fec381e093cfb59570431d"
+    },
+    {
+      "bytes": 2898,
+      "path": "TERMS-OF-USE.md",
+      "sha256": "283e7b66d4df13b91cc286543ff1a74a330078c6e0189cea2c75d1597633b25d"
+    },
+    {
+      "bytes": 1823,
+      "path": "SECURITY.md",
+      "sha256": "6f8963ac315b1c47d0f6a8b04463f9f1ecb28d99368a6e592ef2af0fb9c566a1"
+    },
+    {
+      "bytes": 879,
+      "path": "SUPPORT.md",
+      "sha256": "d0d0393b154688151369c41664c0729509a47bd815fb2f26a4d4e1c7e67d76e5"
+    },
+    {
+      "bytes": 2690,
+      "path": "LICENSE.md",
+      "sha256": "445d93cae127b5c26f4fc8d2cc2b565de6d8fbea6bf86e43fb10f93c8903e507"
+    },
+    {
+      "bytes": 1730,
+      "path": "TRADEMARKS.md",
+      "sha256": "7bdb3d57d3aa9c879e415edc3d64a19207283981b8aa1de93b3fc7d73f0f2238"
+    },
+    {
+      "bytes": 1639,
+      "path": "NOTICE.md",
+      "sha256": "d543f778b1f2b40eb59459abb3ec21fef1a8202c4ccadab31b00bf48a48fbb7c"
+    },
+    {
+      "bytes": 1088,
+      "path": "CONTRIBUTING.md",
+      "sha256": "eda4584e4d05e3e338e5c0a7da06bc7403b356f72b58ceec0d7f4201df3d3d33"
+    },
+    {
+      "bytes": 1353,
+      "path": "RELEASE-NOTES-v1.0.0.md",
+      "sha256": "49b7e45bbb448006adb0c61c3f46ddf3f9bb4c914d7f5b7252218d88040bc9e0"
+    },
+    {
+      "bytes": 1362,
+      "path": "ARCHIVE-CUSTODY.md",
+      "sha256": "0239a046308ded43ebb5f945590466a62a9a2fa96a19efcf4ab8b046d90c5ffa"
+    },
+    {
+      "bytes": 8323,
+      "path": "PLUGIN-DIRECTORY-SUBMISSION-v1.0.0.md",
+      "sha256": "c45f5a9784bcab1320521752ce88a5200dc097e01849038311bc41d0373e5964"
+    }
+  ],
+  "authoring": {
+    "authorship_scope": "materially-revised",
+    "capability": "hesperos-documentation",
+    "capability_entrypoint_sha256": "f9284a8b14ca20a4661b15db542e3d8f52d3cf1ef42c1c56f4ed540a1036a3b3",
+    "mode": "in-process",
+    "run_id": "praxis-mine-hesperos-v1.0.0-in-process-20260730"
+  },
+  "authoring_response": {
+    "bytes": 1343,
+    "path": "source/verification/assets/documentation-authorship-response.md",
+    "sha256": "9b95f2b1adbfbea81db93b5e08ea3302c425d063e15801a9452b37cbf54ec043"
+  },
+  "claim_boundary": "Binds retained evidence for one Hesperos authoring or material-revision run. It does not prove independent review, host activation, publication, accessibility conformance, or customer outcomes.",
+  "created_at": "2026-07-31T02:16:55+00:00",
+  "documentation_fingerprint": "4565841ac497dffb64721b596407b82e9a74d4b88f49f46561879a5896bad3e4",
+  "documentation_manifest": {
+    "bytes": 1815,
+    "path": "documentation-manifest.json",
+    "sha256": "9f478697c4d1d2bdd01fd30aabe18f7736b34dd8fe1cc6272961f199bb3209a3"
+  },
+  "evidence_packet": {
+    "bytes": 5302,
+    "path": "source/verification/documentation-evidence-packet.md",
+    "sha256": "6b15ce8b2927ec6c77beb8f8397772675ddb2350a96d7f494d9fdd1eca9cbb9f"
+  },
+  "execution_evidence": [
+    {
+      "bytes": 1343,
+      "path": "source/verification/assets/documentation-authorship-response.md",
+      "sha256": "9b95f2b1adbfbea81db93b5e08ea3302c425d063e15801a9452b37cbf54ec043"
+    },
+    {
+      "bytes": 1343,
+      "path": "source/verification/assets/documentation-authorship-response.md",
+      "sha256": "9b95f2b1adbfbea81db93b5e08ea3302c425d063e15801a9452b37cbf54ec043"
+    }
+  ],
+  "format": "cd-hesperos-documentation-authorship/v1",
+  "product": {
+    "slug": "praxis-mine",
+    "version": "1.0.0"
+  }
+}

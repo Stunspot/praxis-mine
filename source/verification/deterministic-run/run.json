@@ -1,0 +1,172 @@
+{
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "<repository-root>\\source\\plugin\\skills\\praxis-mine",
+      "duration_seconds": 2.976,
+      "exit_code": 0,
+      "name": "unit_and_integration_tests",
+      "stderr": "test_local_scan_hashes_discovered_skill (test_praxis_mine.PraxisMineIntegrationTests.test_local_scan_hashes_discovered_skill) ... ok\ntest_runtime_is_self_contained (test_praxis_mine.PraxisMineIntegrationTests.test_runtime_is_self_contained) ... ok\ntest_seed_ingestion_evaluation_and_report_are_idempotent (test_praxis_mine.PraxisMineIntegrationTests.test_seed_ingestion_evaluation_and_report_are_idempotent) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 2.798s\n\nOK\n",
+      "stdout": ""
+    },
+    {
+      "command": [
+        "python",
+        "<plugin-validator-scripts>\\validate_plugin.py",
+        "<repository-root>\\source\\plugin"
+      ],
+      "cwd": "<repository-root>",
+      "duration_seconds": 0.161,
+      "exit_code": 0,
+      "name": "plugin_validator",
+      "stderr": "",
+      "stdout": "Plugin validation passed: <repository-root>\\source\\plugin\n"
+    },
+    {
+      "command": [
+        "python",
+        "<skill-validator-scripts>\\quick_validate.py",
+        "<repository-root>\\source\\plugin\\skills\\praxis-mine"
+      ],
+      "cwd": "<repository-root>",
+      "duration_seconds": 0.093,
+      "exit_code": 0,
+      "name": "skill_validator",
+      "stderr": "",
+      "stdout": "Skill is valid!\n"
+    },
+    {
+      "command": [
+        "python",
+        "<augment-builder-scripts>\\validate_augment_package.py",
+        "<repository-root>\\source\\plugin",
+        "--profile",
+        "bundle",
+        "--json"
+      ],
+      "cwd": "<repository-root>",
+      "duration_seconds": 0.156,
+      "exit_code": 0,
+      "name": "augment_bundle_profile",
+      "stderr": "",
+      "stdout": "{\n  \"ok\": true,\n  \"profile\": \"bundle\",\n  \"findings\": []\n}\n"
+    },
+    {
+      "command": [
+        "python",
+        "<augment-builder-scripts>\\validate_augment_package.py",
+        "<repository-root>\\source\\plugin\\skills\\praxis-mine",
+        "--profile",
+        "codex",
+        "--json"
+      ],
+      "cwd": "<repository-root>",
+      "duration_seconds": 0.153,
+      "exit_code": 0,
+      "name": "augment_codex_profile",
+      "stderr": "",
+      "stdout": "{\n  \"ok\": true,\n  \"profile\": \"codex\",\n  \"findings\": []\n}\n"
+    },
+    {
+      "command": [
+        "python",
+        "<augment-builder-scripts>\\validate_augment_package.py",
+        "<repository-root>\\source\\plugin\\skills\\praxis-mine",
+        "--profile",
+        "claude",
+        "--json"
+      ],
+      "cwd": "<repository-root>",
+      "duration_seconds": 0.151,
+      "exit_code": 0,
+      "name": "augment_claude_profile",
+      "stderr": "",
+      "stdout": "{\n  \"ok\": true,\n  \"profile\": \"claude\",\n  \"findings\": []\n}\n"
+    },
+    {
+      "command": [
+        "python",
+        "<augment-builder-scripts>\\hesperos_authorship.py",
+        "validate",
+        "--root",
+        "<repository-root>",
+        "--receipt",
+        "documentation-authorship.json",
+        "--capability-entrypoint",
+        "<hesperos-entrypoint>"
+      ],
+      "cwd": "<repository-root>",
+      "duration_seconds": 0.17,
+      "exit_code": 0,
+      "name": "hesperos_authorship_receipt",
+      "stderr": "",
+      "stdout": "{\n  \"ok\": true,\n  \"format\": \"cd-hesperos-documentation-authorship/v1\",\n  \"finding_count\": 0,\n  \"findings\": []\n}\n"
+    },
+    {
+      "command": [
+        "python",
+        "<augment-builder-scripts>\\validate_customer_documentation.py",
+        "<repository-root>",
+        "--manifest",
+        "documentation-manifest.json",
+        "--fingerprint",
+        "--json"
+      ],
+      "cwd": "<repository-root>",
+      "duration_seconds": 0.175,
+      "exit_code": 0,
+      "name": "documentation_structure_and_fingerprint",
+      "stderr": "",
+      "stdout": "{\n  \"ok\": true,\n  \"documentation_fingerprint\": \"4565841ac497dffb64721b596407b82e9a74d4b88f49f46561879a5896bad3e4\",\n  \"findings\": []\n}\n"
+    },
+    {
+      "command": [
+        "python",
+        "<repository-root>\\release-v1.0.0\\tools\\verify_release.py",
+        "<repository-root>\\release-v1.0.0"
+      ],
+      "cwd": "<repository-root>",
+      "duration_seconds": 0.253,
+      "exit_code": 0,
+      "name": "outer_release_verifier",
+      "stderr": "",
+      "stdout": "{\n  \"counts\": {\n    \"archives_checked\": 4,\n    \"documentation_links_checked\": 48,\n    \"manifest_files_checked\": 54,\n    \"zip_members_checked\": 147\n  },\n  \"findings\": [],\n  \"ok\": true,\n  \"schema\": \"praxis-mine-portable-verification/v1\"\n}\n"
+    },
+    {
+      "command": [
+        "python",
+        "<temporary-extracted-kit>\\tools\\verify_release.py",
+        "<temporary-extracted-kit>",
+        "--component-only"
+      ],
+      "cwd": "<temporary-extracted-kit>",
+      "duration_seconds": 0.384,
+      "exit_code": 0,
+      "name": "extracted_kit_component_verifier",
+      "stderr": "",
+      "stdout": "{\n  \"counts\": {\n    \"archives_checked\": 3,\n    \"documentation_links_checked\": 48,\n    \"manifest_files_checked\": 54,\n    \"zip_members_checked\": 76\n  },\n  \"findings\": [],\n  \"ok\": true,\n  \"schema\": \"praxis-mine-portable-verification/v1\"\n}\n"
+    }
+  ],
+  "completed_at": "2026-07-31T02:31:49.409770Z",
+  "evidence_normalization": "Absolute executable, workspace, skill-installation, and temporary paths are replaced with stable public placeholders after execution.",
+  "format": "praxis-mine-deterministic-verification-run/v1",
+  "ok": true,
+  "product": "praxis-mine",
+  "structural_assertions": {
+    "generated_cache_files_in_release": [],
+    "name": "structural_release_assertions",
+    "negative_submission_cases": 3,
+    "ok": true,
+    "positive_submission_cases": 5,
+    "private_runtime_tokens": []
+  },
+  "version": "1.0.0"
+}

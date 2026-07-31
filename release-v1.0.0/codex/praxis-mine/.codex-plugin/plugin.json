@@ -1,0 +1,43 @@
+{
+  "name": "praxis-mine",
+  "version": "1.0.0",
+  "description": "Mine outside AI skills and practices for useful mechanisms without importing the whole heap.",
+  "author": {
+    "name": "Collaborative Dynamics",
+    "url": "https://collaborative-dynamics.com"
+  },
+  "homepage": "https://github.com/Stunspot/praxis-mine",
+  "repository": "https://github.com/Stunspot/praxis-mine",
+  "license": "SEE LICENSE.md",
+  "keywords": [
+    "AI skills",
+    "capability discovery",
+    "skill evaluation",
+    "agent workflows",
+    "technology scouting"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Praxis Mine",
+    "shortDescription": "Mine skills. Keep useful bits.",
+    "longDescription": "Praxis Mine examines outside AI skills, agent packages, repositories, workflows, and knowledge sources as raw material—not as competence badges. It preserves provenance, checks rights and risk, identifies the real capability delta, compares overlap with what you already have, and recommends a bounded pilot, selective quarry, native adaptation, monitoring, or rejection. Discovery never silently becomes installation or adoption.",
+    "developerName": "Collaborative Dynamics",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/Stunspot/praxis-mine",
+    "privacyPolicyURL": "https://github.com/Stunspot/praxis-mine/blob/main/DATA-AND-PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/Stunspot/praxis-mine/blob/main/TERMS-OF-USE.md",
+    "defaultPrompt": [
+      "Assess this outside skill and steal only the good bits.",
+      "Mine this repository for one mechanism worth adapting.",
+      "Compare these skills and design the smallest decisive pilot."
+    ],
+    "brandColor": "#08C7D8",
+    "composerIcon": "./assets/praxis-mine-logo-v1.0.0.png",
+    "logo": "./assets/praxis-mine-logo-v1.0.0.png"
+  }
+}

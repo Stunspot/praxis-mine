@@ -1,0 +1,80 @@
+{
+  "format": "cd-customer-documentation/v1",
+  "landing_page": "README.md",
+  "customer_docs": [
+    "README.md",
+    "docs/README.md",
+    "docs/HOST-COMPATIBILITY.md",
+    "docs/INSTALL-CODEX.md",
+    "docs/INSTALL-CLAUDE.md",
+    "docs/QUICK-START.md",
+    "docs/WORKFLOWS.md",
+    "docs/LEDGER-REFERENCE.md",
+    "docs/TROUBLESHOOTING.md",
+    "docs/UNINSTALL-AND-DATA.md",
+    "docs/VALIDATION.md",
+    "docs/LIMITATIONS.md",
+    "docs/MAINTAINER-GUIDE.md",
+    "docs/PROVENANCE.md",
+    "DATA-AND-PRIVACY.md",
+    "TERMS-OF-USE.md",
+    "SECURITY.md",
+    "SUPPORT.md",
+    "LICENSE.md",
+    "TRADEMARKS.md",
+    "NOTICE.md",
+    "CONTRIBUTING.md",
+    "RELEASE-NOTES-v1.0.0.md",
+    "ARCHIVE-CUSTODY.md",
+    "PLUGIN-DIRECTORY-SUBMISSION-v1.0.0.md"
+  ],
+  "moments": {
+    "orientation": [
+      "README.md",
+      "docs/README.md"
+    ],
+    "installation": [
+      "docs/HOST-COMPATIBILITY.md",
+      "docs/INSTALL-CODEX.md",
+      "docs/INSTALL-CLAUDE.md"
+    ],
+    "first_value": [
+      "docs/QUICK-START.md"
+    ],
+    "normal_use": [
+      "docs/WORKFLOWS.md",
+      "docs/LEDGER-REFERENCE.md"
+    ],
+    "recovery": [
+      "docs/TROUBLESHOOTING.md",
+      "docs/UNINSTALL-AND-DATA.md",
+      "SUPPORT.md"
+    ],
+    "privacy_security": [
+      "DATA-AND-PRIVACY.md",
+      "TERMS-OF-USE.md",
+      "SECURITY.md"
+    ],
+    "evidence_limits": [
+      "docs/VALIDATION.md",
+      "docs/LIMITATIONS.md"
+    ],
+    "support_maintenance": [
+      "SUPPORT.md",
+      "docs/MAINTAINER-GUIDE.md",
+      "RELEASE-NOTES-v1.0.0.md",
+      "ARCHIVE-CUSTODY.md",
+      "CONTRIBUTING.md",
+      "PLUGIN-DIRECTORY-SUBMISSION-v1.0.0.md"
+    ],
+    "rights": [
+      "LICENSE.md",
+      "TRADEMARKS.md",
+      "NOTICE.md",
+      "TERMS-OF-USE.md"
+    ],
+    "provenance": [
+      "docs/PROVENANCE.md"
+    ]
+  }
+}

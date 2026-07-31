@@ -1,0 +1,1 @@
+{"error":"llama-server startup failed after projector CPU offload retry: llama-server process has terminated: exit status 1: cudaMalloc failed: out of memory\nalloc_tensor_range: failed to allocate CUDA0 buffer of size 21303926528\nerror loading model: unable to allocate CUDA0 buffer"}

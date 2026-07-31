@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.staging-v*/
+source/verification/documentation-review/
+source/verification/documentation-review-final/
+source/verification/documentation-review-final-2/
+source/verification/documentation-review-final-3/
+source/verification/documentation-review-final-4/
+source/verification/documentation-review-final-5/
+source/verification/documentation-review-final-6/

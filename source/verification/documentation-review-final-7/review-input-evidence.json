@@ -1,0 +1,42 @@
+{
+  "format": "cd-documentation-review-input/v1",
+  "review_run_id": "praxis-mine-hesperos-v1.0.0-final-7",
+  "contents_supplied": true,
+  "documentation_fingerprint": "4565841ac497dffb64721b596407b82e9a74d4b88f49f46561879a5896bad3e4",
+  "supplied_files": [
+    "README.md",
+    "docs/README.md",
+    "docs/HOST-COMPATIBILITY.md",
+    "docs/INSTALL-CODEX.md",
+    "docs/INSTALL-CLAUDE.md",
+    "docs/QUICK-START.md",
+    "docs/WORKFLOWS.md",
+    "docs/LEDGER-REFERENCE.md",
+    "docs/TROUBLESHOOTING.md",
+    "docs/UNINSTALL-AND-DATA.md",
+    "docs/VALIDATION.md",
+    "docs/LIMITATIONS.md",
+    "docs/MAINTAINER-GUIDE.md",
+    "docs/PROVENANCE.md",
+    "DATA-AND-PRIVACY.md",
+    "TERMS-OF-USE.md",
+    "SECURITY.md",
+    "SUPPORT.md",
+    "LICENSE.md",
+    "TRADEMARKS.md",
+    "NOTICE.md",
+    "CONTRIBUTING.md",
+    "RELEASE-NOTES-v1.0.0.md",
+    "ARCHIVE-CUSTODY.md",
+    "PLUGIN-DIRECTORY-SUBMISSION-v1.0.0.md"
+  ],
+  "transport": "Local Ollama fresh-context UTF-8 API with the exact customer-document corpus and staged release inventory",
+  "review_response_evidence": "source/verification/documentation-review-final-7/review-response.md",
+  "execution_evidence": [
+    "source/verification/documentation-review-request.md",
+    "source/verification/documentation-review-final-7/assembled-review-input.md",
+    "source/verification/documentation-review-final-7/api-response.json",
+    "source/verification/documentation-review-final-7/run.json",
+    "source/verification/documentation-review-final-7/review-response.md"
+  ]
+}

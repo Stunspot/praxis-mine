@@ -1,0 +1,24 @@
+{
+  "format": "praxis-mine-verification-review/v1",
+  "product": "praxis-mine",
+  "version": "1.0.0",
+  "fresh_context": true,
+  "reviewed_target": "praxis-mine v1.0.0 staging release candidate",
+  "disposition": "REVIEW_PASS_WITH_CONDITIONS",
+  "material_findings": 0,
+  "supported_status": "READY_WITH_CONDITIONS",
+  "reviewer": "TestForge verification-reviewer using local qwen35:latest through the Ollama generation API",
+  "review_run_id": "praxis-mine-testforge-review-v1.0.0-final",
+  "evidence_directory": "source/verification/verification-review",
+  "review_response_evidence": "source/verification/verification-review/review-response.md",
+  "conditions": [
+    "Browser, keyboard, screen-reader, localization, representative-user, and formal accessibility-conformance testing remain unexecuted.",
+    "Fresh standalone Codex installation and activation, live Claude upload and activation, natural-language routing, and representative first-success behavior remain unexecuted.",
+    "Legal, security, compliance, Plugins Directory approval, production reliability, and customer outcomes remain unexecuted."
+  ],
+  "route_notes": [
+    "qwen3.6:35b was not credited because its llama-server failed a 21.3 GB CUDA allocation.",
+    "The first qwen35:latest run was not credited because its output budget was exhausted by hidden reasoning and no verdict was emitted.",
+    "The credited qwen35:latest run used the same evidence packet, a 32768-token context bound, and thinking disabled so the auditable verdict was returned."
+  ]
+}

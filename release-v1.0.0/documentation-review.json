@@ -1,0 +1,43 @@
+{
+  "format": "cd-documentation-review/v1",
+  "fresh_context": true,
+  "disposition": "REVIEW_PASS",
+  "unresolved_material_findings": 0,
+  "documentation_fingerprint": "4565841ac497dffb64721b596407b82e9a74d4b88f49f46561879a5896bad3e4",
+  "reviewed_files": [
+    "README.md",
+    "docs/README.md",
+    "docs/HOST-COMPATIBILITY.md",
+    "docs/INSTALL-CODEX.md",
+    "docs/INSTALL-CLAUDE.md",
+    "docs/QUICK-START.md",
+    "docs/WORKFLOWS.md",
+    "docs/LEDGER-REFERENCE.md",
+    "docs/TROUBLESHOOTING.md",
+    "docs/UNINSTALL-AND-DATA.md",
+    "docs/VALIDATION.md",
+    "docs/LIMITATIONS.md",
+    "docs/MAINTAINER-GUIDE.md",
+    "docs/PROVENANCE.md",
+    "DATA-AND-PRIVACY.md",
+    "TERMS-OF-USE.md",
+    "SECURITY.md",
+    "SUPPORT.md",
+    "LICENSE.md",
+    "TRADEMARKS.md",
+    "NOTICE.md",
+    "CONTRIBUTING.md",
+    "RELEASE-NOTES-v1.0.0.md",
+    "ARCHIVE-CUSTODY.md",
+    "PLUGIN-DIRECTORY-SUBMISSION-v1.0.0.md"
+  ],
+  "reviewer": "Hesperos exact-content fresh-context review using local gpt-oss:20b through the Ollama generation API",
+  "review_run_id": "praxis-mine-hesperos-v1.0.0-final-7",
+  "review_input_evidence": "source/verification/documentation-review-final-7/review-input-evidence.json",
+  "evidence_directory": "source/verification/documentation-review-final-7",
+  "conditions": [
+    "Fresh standalone Codex installation and activation, live Claude upload and activation, natural-language routing, and representative first-success behavior remain unexecuted.",
+    "Browser, keyboard, screen-reader, localization, representative-user, and formal accessibility-conformance testing remain unexecuted.",
+    "Legal, security, compliance, Plugins Directory approval, production reliability, and customer outcomes remain unexecuted."
+  ]
+}

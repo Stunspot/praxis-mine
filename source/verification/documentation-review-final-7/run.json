@@ -1,0 +1,42 @@
+{
+  "customer_docs": [
+    "README.md",
+    "docs/README.md",
+    "docs/HOST-COMPATIBILITY.md",
+    "docs/INSTALL-CODEX.md",
+    "docs/INSTALL-CLAUDE.md",
+    "docs/QUICK-START.md",
+    "docs/WORKFLOWS.md",
+    "docs/LEDGER-REFERENCE.md",
+    "docs/TROUBLESHOOTING.md",
+    "docs/UNINSTALL-AND-DATA.md",
+    "docs/VALIDATION.md",
+    "docs/LIMITATIONS.md",
+    "docs/MAINTAINER-GUIDE.md",
+    "docs/PROVENANCE.md",
+    "DATA-AND-PRIVACY.md",
+    "TERMS-OF-USE.md",
+    "SECURITY.md",
+    "SUPPORT.md",
+    "LICENSE.md",
+    "TRADEMARKS.md",
+    "NOTICE.md",
+    "CONTRIBUTING.md",
+    "RELEASE-NOTES-v1.0.0.md",
+    "ARCHIVE-CUSTODY.md",
+    "PLUGIN-DIRECTORY-SUBMISSION-v1.0.0.md"
+  ],
+  "documentation_fingerprint": "4565841ac497dffb64721b596407b82e9a74d4b88f49f46561879a5896bad3e4",
+  "endpoint": "http://127.0.0.1:11434/api/generate",
+  "format": "praxis-mine-documentation-review-run/v1",
+  "http_status": 200,
+  "model": "gpt-oss:20b",
+  "release_candidate_root": ".staging-v1.0.0",
+  "request": {
+    "keep_alive": "10m",
+    "model": "gpt-oss:20b",
+    "stream": false,
+    "think": "medium"
+  },
+  "started_and_completed_at": "2026-07-31T02:21:27.242923Z"
+}

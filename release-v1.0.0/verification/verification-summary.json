@@ -1,0 +1,52 @@
+{
+  "format": "praxis-mine-verification-summary/v1",
+  "product": "praxis-mine",
+  "version": "1.0.0",
+  "target": "public GitHub repository and v1.0.0 release package",
+  "disposition": "READY_WITH_CONDITIONS",
+  "passed_checks": {
+    "runtime_tests": 3,
+    "plugin_validator": true,
+    "skill_validator": true,
+    "builder_bundle_profile": true,
+    "builder_codex_profile": true,
+    "builder_claude_profile": true,
+    "hesperos_authorship_receipt": true,
+    "customer_documentation_claim_gate": true,
+    "documentation_fingerprint": "4565841ac497dffb64721b596407b82e9a74d4b88f49f46561879a5896bad3e4",
+    "fresh_documentation_review_material_findings": 0,
+    "declared_customer_documents": 25,
+    "hesperos_lint_passes": 24,
+    "accepted_standard_license_heuristic": 1,
+    "outer_release_verifier": true,
+    "extracted_kit_component_verifier": true,
+    "positive_directory_cases": 5,
+    "negative_directory_cases": 3,
+    "private_runtime_tokens": 0,
+    "generated_cache_files_in_release": 0,
+    "public_history_pattern_scan_findings": 0
+  },
+  "component_artifacts": {
+    "plugin_zip_sha256": "e2be081f969045920955872a882be498fcd95142e20a74ef5242a394e168bd78",
+    "claude_zip_sha256": "0f5f5b0b2329952de866e937892d55d373a8e32fb10d83d97e067bd6e4ba5549",
+    "standalone_skill_zip_sha256": "0f5f5b0b2329952de866e937892d55d373a8e32fb10d83d97e067bd6e4ba5549"
+  },
+  "evidence": [
+    "source/verification/deterministic-run/run.json",
+    "source/verification/hesperos-lint.json",
+    "source/verification/public-surface-scan.json",
+    "documentation-authorship.json",
+    "documentation-review.json",
+    "source/verification/documentation-review-final-7"
+  ],
+  "unexecuted": [
+    "fresh standalone Codex installation and activation",
+    "live Claude upload and activation",
+    "natural-language routing across representative models",
+    "browser, keyboard, screen-reader, localization, and representative-user testing",
+    "legal, security, compliance, and accessibility certification",
+    "OpenAI Plugins Directory identity, organization, availability, policy attestation, review, approval, publisher release, and discoverability",
+    "production reliability and customer outcomes"
+  ],
+  "claim_boundary": "Supports a static package and public GitHub release decision. It does not upgrade unexecuted host, directory, legal, security, accessibility, production, or outcome evidence."
+}

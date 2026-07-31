@@ -1,0 +1,37 @@
+{
+  "completed_at": "2026-07-31T02:30:28.342153Z",
+  "endpoint": "http://127.0.0.1:11434/api/generate",
+  "format": "praxis-mine-verification-review-run/v1",
+  "http_status": 200,
+  "inputs": [
+    "source/design-record/positive-product-contract.md",
+    "source/design-record/praxis-mine-augment-map.md",
+    "source/plugin/.codex-plugin/plugin.json",
+    "source/plugin/skills/praxis-mine/SKILL.md",
+    "source/plugin/skills/praxis-mine/tests/test_praxis_mine.py",
+    "source/tools/build_release.py",
+    "source/tools/verify_release.py",
+    "source/verification/deterministic-run/run.json",
+    "source/verification/documentation-review-final-7/review-response.md",
+    "documentation-authorship.json",
+    "documentation-review.json",
+    "PLUGIN-DIRECTORY-SUBMISSION-v1.0.0.md"
+  ],
+  "model": "qwen35:latest",
+  "request": {
+    "keep_alive": "10m",
+    "model": "qwen35:latest",
+    "options": {
+      "num_ctx": 32768,
+      "num_predict": 2048
+    },
+    "stream": false,
+    "think": false
+  },
+  "staging_inputs": [
+    "manifest.json",
+    "component-custody.json",
+    "archive-custody.json",
+    "postbuild-verification-report.json"
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "accepted_heuristic_false_positives": 1,
+  "blocking_findings": 0,
+  "completed_at": "2026-07-31T02:31:51.232844Z",
+  "declared_documents": 25,
+  "format": "praxis-mine-hesperos-markdown-lint/v1",
+  "ok": true,
+  "passed": 24,
+  "results": [
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "README.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "docs/README.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "docs/HOST-COMPATIBILITY.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "docs/INSTALL-CODEX.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "docs/INSTALL-CLAUDE.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "docs/QUICK-START.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "docs/WORKFLOWS.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "docs/LEDGER-REFERENCE.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "docs/TROUBLESHOOTING.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "docs/UNINSTALL-AND-DATA.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "docs/VALIDATION.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "docs/LIMITATIONS.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "docs/MAINTAINER-GUIDE.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "docs/PROVENANCE.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "DATA-AND-PRIVACY.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "TERMS-OF-USE.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "SECURITY.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "SUPPORT.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": true,
+      "exit_code": 1,
+      "output": "13: directional reference may not survive reflow",
+      "path": "LICENSE.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "TRADEMARKS.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "NOTICE.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "CONTRIBUTING.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "RELEASE-NOTES-v1.0.0.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "ARCHIVE-CUSTODY.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "PLUGIN-DIRECTORY-SUBMISSION-v1.0.0.md",
+      "stderr": ""
+    }
+  ]
+}

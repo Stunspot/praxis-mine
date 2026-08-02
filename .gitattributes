@@ -1,2 +1,21 @@
+# CD line-ending policy: LF for authored text; explicit exceptions below.
+* text=auto eol=lf
+
 # Preserve canonical settled release snapshots byte-for-byte.
 /release-v0.1.0/** -text
+
+# Windows-native text exceptions.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary containers and media.
+*.zip binary
+*.docx binary
+*.xlsx binary
+*.pptx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary

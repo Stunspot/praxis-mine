@@ -6,27 +6,22 @@
                 },
     "authoring":  {
                       "capability":  "hesperos-documentation",
-                      "mode":  "substantive-remediation",
-                      "run_id":  "praxis-mine-public-remediation-2026-08-12",
-                      "authorship_scope":  "complete-declared-corpus-review-and-targeted-repair"
+                      "mode":  "complete-corpus-remediation-and-review",
+                      "reviewed_from":  "UNKNOWN"
                   },
-    "candidate_commit":  "652cf4cddf72ef9f616fe02720dade53f9dac270",
-    "documentation_fingerprint":  "3156678139da35ba703ed716ebf81c3ba7f1bc30e6850baaef28236b6f6b235b",
-    "documentation_manifest":  {
-                                   "path":  "documentation-manifest.json",
-                                   "bytes":  1899,
-                                   "sha256":  "5a3dc79f0381c4be49cf9183c098f6c57af35ff7a8ab9d6c4cbde0b3263abd5d"
-                               },
-    "authored_files":  [
+    "candidate_commit":  "0c2d4a136fc2eb8d4d63421e15981fc54716838b",
+    "documentation_fingerprint":  "8ce2ded8957a1abe94dc87bc1bc07140e5112364e1efd4fd57fe934d61e09547",
+    "presentation_fingerprint":  "c86a3ff419c79cf0a74b08619b1c61d54a33b8af65d4a49b9a210ca8039fddf1",
+    "reviewed_files":  [
                            {
                                "path":  "README.md",
-                               "bytes":  3973,
-                               "sha256":  "ee934acd4338fc061aafd098f729c6fd581a36018361db430ceabd04800e1f5a"
+                               "bytes":  3949,
+                               "sha256":  "b176f75e7eb43ec4f98d4f8f9b91aace05357e63791876e87aa40fb88a3fafa5"
                            },
                            {
                                "path":  "docs/index.md",
-                               "bytes":  4744,
-                               "sha256":  "a3b1051286ac5ea9ec0e46d18ec01b371a4ffa83aa4a74a903b0fe11ff2509e1"
+                               "bytes":  4742,
+                               "sha256":  "d74d5af810ee3fa0727654c4346708cbf3153a73b2ec779a0f212761a7c78987"
                            },
                            {
                                "path":  "docs/README.md",
@@ -65,8 +60,8 @@
                            },
                            {
                                "path":  "docs/TROUBLESHOOTING.md",
-                               "bytes":  3743,
-                               "sha256":  "5b3eb842f3461114bdded2bcbff9151ec555ace07cc0a67e4360b95cf050035a"
+                               "bytes":  3790,
+                               "sha256":  "42bfa5361f2e22b846348542ecc735692af13dfcd667174379153b41db236843"
                            },
                            {
                                "path":  "docs/404.md",
@@ -90,13 +85,13 @@
                            },
                            {
                                "path":  "docs/MAINTAINER-GUIDE.md",
-                               "bytes":  4744,
-                               "sha256":  "92fab5d0bb9a2e3dd94f012c95c4481f09921dc0a7763ea9b0b29c0345ef91cd"
+                               "bytes":  4907,
+                               "sha256":  "6f251036185bf05980f85f587f404693a510bef713766bda20e72fa9da24888e"
                            },
                            {
                                "path":  "docs/PROVENANCE.md",
-                               "bytes":  3209,
-                               "sha256":  "f0b21b7256ba062554618ccc2bf44e1c464454422e382d1aaa81584f902117c8"
+                               "bytes":  3351,
+                               "sha256":  "8e1b3900dfbccb8a59940a4d8d991293d8fe19249d75c653777ba8e04550596b"
                            },
                            {
                                "path":  "DATA-AND-PRIVACY.md",
@@ -154,13 +149,13 @@
                                "sha256":  "c45f5a9784bcab1320521752ce88a5200dc097e01849038311bc41d0373e5964"
                            }
                        ],
-    "execution_evidence":  [
-                               "verification/remediation-2026-08-12/hesperos-review-request.md",
-                               "verification/remediation-2026-08-12/hesperos-assembled-input.md",
-                               "verification/remediation-2026-08-12/hesperos-review-response.md",
-                               "verification/remediation-2026-08-12/hesperos-run.json",
-                               "source/verification/hesperos-lint.json"
-                           ],
-    "created_at":  "2026-08-12T09:03:19.2113093Z",
-    "claim_boundary":  "Binds the declared customer-document bytes to the Hesperos authoring and content-review cycle. It does not prove host activation, publication, rendered-live behavior, accessibility conformance, legal correctness, or customer outcomes."
+    "disposition":  "REVIEW_PASS",
+    "material_repairs":  [
+                             "Restored the stronger original README hero",
+                             "Replaced the programmed Pages hero and social card with distinct generated compositions",
+                             "Replaced the interchangeable cyan tech-grid Pages theme with a warm quarry-and-assay presentation",
+                             "Removed the programmed artwork renderer and corrected image custody, dimensions, and alt text"
+                         ],
+    "claim_boundary":  "Full declared customer corpus and operative product source were read. Static review does not establish fresh-host behavior, live browser rendering, or legal certification.",
+    "completed_at":  "2026-08-12T21:39:47.6642784Z"
 }

@@ -1,21 +1,10 @@
-# Direct visual inspection receipt
+# Praxis Mine final visual inspection
 
-Candidate: 348ca5b2aced5d0c145236956459fb22254a2389
+Candidate content commit: $commit
+Presentation fingerprint: $presentationFp
 
-Reinspection: actual pixels reopened after the final support-link repair; all three SHA-256 hashes and compositions remain unchanged.
+- README hero — 2244 × 701; SHA-256 6cbaa8b5fa93380f35b775964b5056a0193b2030133c68390d357bc158bf74c3. Opened after restoration. Panoramic title-and-mine composition; readable hierarchy; inspection lens and gold seam remain legible at README width; no accidental transparency or empty field.
+- Pages hero — 1200 × 800; SHA-256 2d3d3d829ab9bd5f5562e4f79c85f0c51d348e972b7daf6cfe3039fd27bbb5a. Opened after final sizing. Text-free human assay workshop; the extracted mechanism, dependency-filled core, and quarry context read clearly; no generated text or visible artifact.
+- Social card — 1200 × 630; SHA-256 bf1c5647ad2b211972c1544a5c6b23aeaad3ab3ae581efac1c18b45544c53b6. Opened after final sizing. Exact visible title Praxis Mine; exact visible line Mine outside AI systems. Keep only the capability delta.; both remain inside safe margins and legible at thumbnail scale.
 
-## README hero
-
-PASS. Opened and inspected actual pixels. The 1600 by 720 panoramic composition shows a source-system seam passing through a cyan assay gate and emerging as one isolated capability delta. Supporting text is complete and restrained. Hierarchy, contrast, crop safety, and product identity are strong. No clipping, blank area, accidental transparency, broken rendering, or incoherent artifact was observed.
-
-## Pages hero
-
-PASS. Opened and inspected actual pixels. The 1200 by 800 composition is a vertical five-outcome disposition board. It explains pilot, quarry, adapt, monitor, and reject without repeating the product title that appears in surrounding HTML. Labels remain legible at reduced display scale. No clipping, blank region, accidental transparency, or rendering artifact was observed.
-
-## Social card
-
-PASS. Opened and inspected actual pixels. The 1200 by 630 text-led card visibly contains the exact product title PRAXIS MINE and the identifying lines Mine outside AI systems and Keep only the capability delta. Text remains legible at half scale and important content sits inside crop-safe margins. No blank region, accidental transparency, broken text, or artifact was observed.
-
-## Set distinction
-
-PASS. The files have three different aspect ratios and three different compositions: panoramic assay scene, vertical disposition board, and text-led social card. They share a product palette and assay motif but are not crops, resizes, or duplicates.
+The three files have different aspect ratios, scenes, visual structures, and roles. The README hero was restored from the stronger pre-remediation presentation. The Pages and social images are separate generated compositions, not programmed graphic art or crops of one master.

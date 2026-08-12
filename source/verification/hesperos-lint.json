@@ -1,7 +1,7 @@
 {
   "accepted_heuristic_false_positives": 1,
   "blocking_findings": 0,
-  "completed_at": "2026-08-12T13:57:03.953562Z",
+  "completed_at": "2026-08-12T21:34:55.192938Z",
   "declared_documents": 27,
   "format": "praxis-mine-hesperos-markdown-lint/v1",
   "ok": true,

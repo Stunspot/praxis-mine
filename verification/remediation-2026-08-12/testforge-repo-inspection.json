@@ -1,0 +1,28 @@
+{
+  "format_version": "1.0",
+  "root": "E:\\Github\\.portfolio-remediation-019ff22b\\praxis-mine",
+  "file_count": 260,
+  "languages": [
+    {
+      "name": "Python",
+      "files": 15
+    }
+  ],
+  "manifests": [],
+  "test_directories": [
+    "release-v0.1.0/codex/praxis-mine/skills/praxis-mine/tests",
+    "release-v1.0.0/codex/praxis-mine/skills/praxis-mine/tests",
+    "source/plugin/skills/praxis-mine/tests"
+  ],
+  "test_files": [
+    "release-v0.1.0/codex/praxis-mine/skills/praxis-mine/tests/test_praxis_mine.py",
+    "release-v1.0.0/codex/praxis-mine/skills/praxis-mine/tests/test_praxis_mine.py",
+    "source/plugin/skills/praxis-mine/tests/test_praxis_mine.py"
+  ],
+  "test_file_count": 3,
+  "config_files": [],
+  "ci_files": [
+    ".github/workflows/line-ending-policy.yml"
+  ],
+  "warnings": []
+}

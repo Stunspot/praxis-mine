@@ -1,18 +1,25 @@
 {
     "format":  "cd-adversarial-verification/v1",
+    "mode":  "separate-final-candidate-pass",
     "disposition":  "READY_WITH_RESIDUAL_RISK",
     "unresolved_local_candidate_findings":  0,
-    "candidate_commit":  "652cf4cddf72ef9f616fe02720dade53f9dac270",
-    "documentation_fingerprint":  "3156678139da35ba703ed716ebf81c3ba7f1bc30e6850baaef28236b6f6b235b",
-    "reviewer":  "Accountable agent applying software-verification doctrine after automated reviewer execution proved unavailable",
-    "response_evidence":  "verification/remediation-2026-08-12/testforge-review-response.md",
-    "automated_reviewer_failure_evidence":  "verification/remediation-2026-08-12/testforge-reviewer-execution-failures.json",
-    "publication_blocker":  {
-                                "ruleset_id":  20249478,
-                                "required_check":  "line-ending-policy",
-                                "hosted_actions_capacity":  "unavailable by user report",
-                                "remote_main":  "a744734e3481382e01415b19c29551d1527e259c",
-                                "authority_to_disable_ruleset":  false
-                            },
-    "live_pass":  false
+    "candidate_commit":  "0c2d4a136fc2eb8d4d63421e15981fc54716838b",
+    "documentation_fingerprint":  "8ce2ded8957a1abe94dc87bc1bc07140e5112364e1efd4fd57fe934d61e09547",
+    "presentation_fingerprint":  "c86a3ff419c79cf0a74b08619b1c61d54a33b8af65d4a49b9a210ca8039fddf1",
+    "manifest":  "verification/remediation-2026-08-12/testforge-final-manifest.json",
+    "executed_checks":  [
+                            "3 runtime integration tests PASS",
+                            "27-document Hesperos lint PASS",
+                            "50 relative links PASS",
+                            "pinned TestForge line-ending verifier PASS",
+                            "three final raster pixel inspections PASS",
+                            "four key contrast pairs PASS"
+                        ],
+    "residual_risks":  [
+                           "Live GitHub Pages deployment and exact-byte readback remain post-publication oracles",
+                           "Rendered browser, keyboard, assistive-technology, and GitHub social-preview cache checks remain unavailable under the no-new-browser constraint",
+                           "Fresh-context verification-reviewer delegation was not available in this task context"
+                       ],
+    "live_pass":  false,
+    "completed_at":  "2026-08-12T21:39:47.6642784Z"
 }

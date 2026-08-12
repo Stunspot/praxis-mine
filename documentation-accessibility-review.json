@@ -1,21 +1,36 @@
 {
     "format":  "cd-documentation-accessibility-review/v1",
-    "disposition":  "REVIEW_PASS",
+    "mode":  "separate-static-accessibility-pass",
+    "disposition":  "REVIEW_PASS_WITH_RESIDUAL_RISK",
     "unresolved_material_findings":  0,
-    "candidate_commit":  "652cf4cddf72ef9f616fe02720dade53f9dac270",
-    "documentation_fingerprint":  "3156678139da35ba703ed716ebf81c3ba7f1bc30e6850baaef28236b6f6b235b",
-    "reviewer":  "Fresh-context gpt-oss:20b accessibility review with accountable-agent static and pixel evidence",
-    "response_evidence":  "verification/remediation-2026-08-12/accessibility-review-response.md",
-    "static_evidence":  "verification/remediation-2026-08-12/static-accessibility-evidence.json",
-    "visual_evidence":  "verification/remediation-2026-08-12/visual-inspection.md",
-    "repaired_finding":  "Wide data table could be clipped by the overflow-hidden content panel on narrow screens; table-local horizontal scrolling and global visible link focus were added before the final review.",
+    "candidate_commit":  "0c2d4a136fc2eb8d4d63421e15981fc54716838b",
+    "documentation_fingerprint":  "8ce2ded8957a1abe94dc87bc1bc07140e5112364e1efd4fd57fe934d61e09547",
+    "presentation_fingerprint":  "c86a3ff419c79cf0a74b08619b1c61d54a33b8af65d4a49b9a210ca8039fddf1",
+    "checks":  {
+                   "hesperos_documents":  27,
+                   "hesperos_blocking_findings":  0,
+                   "relative_links_checked":  50,
+                   "meaningful_image_alt_text":  true,
+                   "skip_link":  true,
+                   "landmarked_navigation":  true,
+                   "main_target":  true,
+                   "visible_focus":  true,
+                   "responsive_table_overflow":  true,
+                   "responsive_single_column_journey":  true,
+                   "reduced_motion":  true,
+                   "contrast_ratios":  {
+                                           "body":  16.76,
+                                           "links_and_headings":  10.03,
+                                           "primary_button":  7,
+                                           "muted_text":  7.61
+                                       }
+               },
     "unexecuted":  [
-                       "browser interaction",
+                       "browser interaction under the explicit no-new-browser constraint",
                        "keyboard traversal",
                        "screen reader",
-                       "zoom",
-                       "localization",
-                       "representative user",
-                       "assistive technology execution"
-                   ]
+                       "zoom and reflow in a live browser",
+                       "representative assistive-technology user"
+                   ],
+    "completed_at":  "2026-08-12T21:39:47.6642784Z"
 }

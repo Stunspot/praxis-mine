@@ -1,0 +1,11 @@
+{
+  "valid": true,
+  "errors": [],
+  "warnings": [],
+  "counts": {
+    "risks": 6,
+    "scenarios": 6,
+    "tests": 7,
+    "executions": 7
+  }
+}

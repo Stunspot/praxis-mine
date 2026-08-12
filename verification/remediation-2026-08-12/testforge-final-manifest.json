@@ -1,0 +1,335 @@
+{
+    "manifest_version":  "1.0",
+    "target":  {
+                   "name":  "Praxis Mine public documentation and presentation",
+                   "revision":  "0c2d4a136fc2eb8d4d63421e15981fc54716838b",
+                   "target_class":  "change",
+                   "documentation_fingerprint":  "8ce2ded8957a1abe94dc87bc1bc07140e5112364e1efd4fd57fe934d61e09547",
+                   "presentation_fingerprint":  "c86a3ff419c79cf0a74b08619b1c61d54a33b8af65d4a49b9a210ca8039fddf1"
+               },
+    "scope":  {
+                  "included":  [
+                                   "current root customer documentation",
+                                   "docs/ GitHub Pages source",
+                                   "three live-presentation image assets",
+                                   "public visual-generation tooling removal"
+                               ],
+                  "excluded":  [
+                                   "frozen release-v0.1.0 and release-v1.0.0 trees",
+                                   "fresh-host installation and invocation",
+                                   "GitHub social-preview cache UI"
+                               ],
+                  "constraints":  [
+                                      "No GitHub-hosted test workflow execution",
+                                      "No new browser instance"
+                                  ],
+                  "safety_boundary":  [
+                                          "local non-production verification and authorized public-repository publication only"
+                                      ]
+              },
+    "claim_custody":  {
+                          "observed":  [
+                                           "All 27 declared customer documents read completely",
+                                           "Operative skill, runtime, store, tests, host metadata, and contract read",
+                                           "All three final rasters opened after final sizing",
+                                           "Runtime tests, Hesperos lint, links, contrast, and line-ending policy passed"
+                                       ],
+                          "inferred":  [
+                                           "Warm quarry-and-assay styling is materially more product-specific than the removed cyan tech-grid presentation"
+                                       ],
+                          "assumed":  [
+
+                                      ],
+                          "unresolved":  [
+                                             "Rendered browser and GitHub social-preview cache behavior cannot be exercised without launching a prohibited new browser"
+                                         ]
+                      },
+    "impact_map":  [
+                       {
+                           "surface":  "README",
+                           "change":  "restored original hero and corrected alt text"
+                       },
+                       {
+                           "surface":  "Pages",
+                           "change":  "new hero, distinct warm styling, corrected navigation presentation and metadata"
+                       },
+                       {
+                           "surface":  "social",
+                           "change":  "new exact-text Open Graph card"
+                       },
+                       {
+                           "surface":  "maintenance",
+                           "change":  "removed programmed artwork renderer and corrected custody instructions"
+                       }
+                   ],
+    "invariants":  [
+                       "README, Pages, and social use different files, compositions, and aspect ratios",
+                       "Social card visibly contains the exact product title and identifying line",
+                       "Current docs do not instruct maintainers to program artwork",
+                       "Claims remain bounded to observed package and runtime behavior",
+                       "Frozen release archives remain unchanged"
+                   ],
+    "risks":  [
+                  {
+                      "id":  "R-VISUAL",
+                      "severity":  "high",
+                      "statement":  "Generic or duplicated artwork could erase product identity and misrepresent the three surface roles",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "T-VISUAL"
+                                       ]
+                  },
+                  {
+                      "id":  "R-CLAIMS",
+                      "severity":  "high",
+                      "statement":  "Documentation could promise behavior not implemented by the packaged skill and ledger",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "T-RUNTIME",
+                                           "T-DOCS"
+                                       ]
+                  },
+                  {
+                      "id":  "R-LINKS",
+                      "severity":  "medium",
+                      "statement":  "Customer navigation could lead to missing local documentation targets",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "T-LINKS"
+                                       ]
+                  },
+                  {
+                      "id":  "R-ACCESS",
+                      "severity":  "medium",
+                      "statement":  "The new presentation could reduce readability, focus visibility, reflow, or image comprehension",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "T-ACCESS"
+                                       ]
+                  },
+                  {
+                      "id":  "R-LINE",
+                      "severity":  "medium",
+                      "statement":  "Repository line-ending policy could reject publication or corrupt text custody",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "T-LINE"
+                                       ]
+                  },
+                  {
+                      "id":  "R-ART",
+                      "severity":  "medium",
+                      "statement":  "A retained deterministic artwork tool could recreate the rejected presentation",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "T-DIFF"
+                                       ]
+                  }
+              ],
+    "scenarios":  [
+                      {
+                          "id":  "S-VISUAL",
+                          "risk_ids":  [
+                                           "R-VISUAL"
+                                       ],
+                          "preconditions":  "final sized rasters",
+                          "action":  "open each actual image and inspect composition, crop, hierarchy, text, and role",
+                          "expected":  "three distinct polished assets; exact social title and line; no artifact or transparency"
+                      },
+                      {
+                          "id":  "S-CLAIMS",
+                          "risk_ids":  [
+                                           "R-CLAIMS"
+                                       ],
+                          "preconditions":  "final docs and operative source",
+                          "action":  "read corpus and source; execute representative ledger tests",
+                          "expected":  "claims match implemented paths, state, limitations, and tests"
+                      },
+                      {
+                          "id":  "S-LINKS",
+                          "risk_ids":  [
+                                           "R-LINKS"
+                                       ],
+                          "preconditions":  "27-document manifest",
+                          "action":  "resolve every relative Markdown target",
+                          "expected":  "all 50 targets exist"
+                      },
+                      {
+                          "id":  "S-ACCESS",
+                          "risk_ids":  [
+                                           "R-ACCESS"
+                                       ],
+                          "preconditions":  "final HTML layout, CSS, Markdown, and images",
+                          "action":  "inspect semantics, alt text, focus, responsive rules, reduced motion, and key color contrast",
+                          "expected":  "all static checks pass and key pairs meet WCAG AA contrast"
+                      },
+                      {
+                          "id":  "S-LINE",
+                          "risk_ids":  [
+                                           "R-LINE"
+                                       ],
+                          "preconditions":  "exact committed candidate",
+                          "action":  "run pinned TestForge line-ending verifier",
+                          "expected":  "PASS with no findings"
+                      },
+                      {
+                          "id":  "S-ART",
+                          "risk_ids":  [
+                                           "R-ART"
+                                       ],
+                          "preconditions":  "diff from public main",
+                          "action":  "inspect changed paths and search current surfaces",
+                          "expected":  "programmed renderer deleted and no current instruction points to it"
+                      }
+                  ],
+    "tests":  [
+                  {
+                      "id":  "T-VISUAL",
+                      "scenario_ids":  [
+                                           "S-VISUAL"
+                                       ],
+                      "status":  "passed",
+                      "execution_id":  "E-VISUAL",
+                      "path":  "verification/remediation-2026-08-12/visual-inspection.md"
+                  },
+                  {
+                      "id":  "T-RUNTIME",
+                      "scenario_ids":  [
+                                           "S-CLAIMS"
+                                       ],
+                      "status":  "passed",
+                      "execution_id":  "E-RUNTIME",
+                      "path":  "source/plugin/skills/praxis-mine/tests/test_praxis_mine.py"
+                  },
+                  {
+                      "id":  "T-DOCS",
+                      "scenario_ids":  [
+                                           "S-CLAIMS"
+                                       ],
+                      "status":  "passed",
+                      "execution_id":  "E-HESPEROS",
+                      "path":  "source/verification/hesperos-lint.json"
+                  },
+                  {
+                      "id":  "T-LINKS",
+                      "scenario_ids":  [
+                                           "S-LINKS"
+                                       ],
+                      "status":  "passed",
+                      "execution_id":  "E-LINKS",
+                      "path":  "documentation-manifest.json"
+                  },
+                  {
+                      "id":  "T-ACCESS",
+                      "scenario_ids":  [
+                                           "S-ACCESS"
+                                       ],
+                      "status":  "passed",
+                      "execution_id":  "E-ACCESS",
+                      "path":  "documentation-accessibility-review.json"
+                  },
+                  {
+                      "id":  "T-LINE",
+                      "scenario_ids":  [
+                                           "S-LINE"
+                                       ],
+                      "status":  "passed",
+                      "execution_id":  "E-LINE",
+                      "path":  "verification/remediation-2026-08-12/testforge-line-ending.json"
+                  },
+                  {
+                      "id":  "T-DIFF",
+                      "scenario_ids":  [
+                                           "S-ART"
+                                       ],
+                      "status":  "passed",
+                      "execution_id":  "E-DIFF",
+                      "path":  "verification/remediation-2026-08-12/testforge-final-diff.json"
+                  }
+              ],
+    "executions":  [
+                       {
+                           "id":  "E-VISUAL",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "method":  "direct actual-pixel inspection after final sizing"
+                       },
+                       {
+                           "id":  "E-RUNTIME",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "command":  "python -m unittest discover -s tests -v",
+                           "result":  "3 tests passed"
+                       },
+                       {
+                           "id":  "E-HESPEROS",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "command":  "python source/tools/run_hesperos_lint.py",
+                           "result":  "27 documents; 0 blockers"
+                       },
+                       {
+                           "id":  "E-LINKS",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "command":  "verify_markdown_links over documentation-manifest.json",
+                           "result":  "50 links; 0 findings"
+                       },
+                       {
+                           "id":  "E-ACCESS",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "command":  "static semantic inspection and WCAG contrast calculation",
+                           "result":  "key ratios 7.0 to 16.76; structural controls present"
+                       },
+                       {
+                           "id":  "E-LINE",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "command":  "pinned TestForge verify_line_endings.py",
+                           "result":  "PASS; no findings"
+                       },
+                       {
+                           "id":  "E-DIFF",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "command":  "TestForge inspect_repo.py, detect_test_stack.py, summarize_diff.py plus current-surface search",
+                           "result":  "bounded documentation/presentation change; frozen releases untouched"
+                       }
+                   ],
+    "findings":  [
+
+                 ],
+    "residual_risks":  [
+                           {
+                               "id":  "RR-BROWSER",
+                               "statement":  "Rendered browser, keyboard, assistive-technology, and GitHub social-preview cache checks remain unexecuted under the explicit no-new-browser constraint"
+                           },
+                           {
+                               "id":  "RR-REVIEWER",
+                               "statement":  "No separate fresh-context verification-reviewer was available under the current no-delegation constraint"
+                           },
+                           {
+                               "id":  "RR-LIVE",
+                               "statement":  "Live deployment and exact-byte readback are post-publication oracles"
+                           }
+                       ],
+    "review":  {
+                   "status":  "REVIEW_PASS_WITH_CONDITIONS",
+                   "findings":  [
+                                    "Static and local candidate evidence supports publication",
+                                    "Complete PASS remains conditional on live deployment and the explicitly blocked browser/social-preview checks"
+                                ]
+               },
+    "decision":  {
+                     "status":  "READY_WITH_RESIDUAL_RISK",
+                     "basis":  [
+                                   "No failed candidate check",
+                                   "All high risks covered by executed evidence",
+                                   "Residual risks are explicit and do not justify hosted test execution"
+                               ],
+                     "authority_required":  [
+                                                "Authorized push to public main already granted by the remediation request"
+                                            ]
+                 }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.0",
+  "source": "git:origin/main..HEAD",
+  "changed_file_count": 10,
+  "groups": {
+    "production_code": [
+      "README.md",
+      "docs/MAINTAINER-GUIDE.md",
+      "docs/PROVENANCE.md",
+      "docs/_layouts/default.html",
+      "docs/assets/brand/praxis-mine-pages-hero.png",
+      "docs/assets/brand/praxis-mine-readme-hero.png",
+      "docs/assets/brand/praxis-mine-social-card.png",
+      "docs/assets/css/style.css",
+      "docs/index.md",
+      "source/tools/build_documentation_images.ps1"
+    ]
+  },
+  "warnings": []
+}

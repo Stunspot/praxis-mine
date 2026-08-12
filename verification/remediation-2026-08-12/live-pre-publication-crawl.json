@@ -1,0 +1,304 @@
+{
+  "format": "praxis-mine-live-pre-publication-crawl/v1",
+  "base": "https://stunspot.github.io/praxis-mine/",
+  "routes_checked": 13,
+  "items": [
+    {
+      "route": "/",
+      "url": "https://stunspot.github.io/praxis-mine/",
+      "status": 200,
+      "final_url": "https://stunspot.github.io/praxis-mine/",
+      "content_type": "text/html",
+      "bytes": 8447,
+      "title": "Start | Praxis Mine",
+      "text_sample": "Start | Praxis Mine Skip to content Collaborative Dynamics Praxis Mine Start Install First mine Workflows Evidence GitHub Mine the mechanism, not the dependency pile Praxis Mine helps prompt engineers, AI systems designers, agent builders, ",
+      "internal_links": [
+        "/praxis-mine/",
+        "/praxis-mine/",
+        "/praxis-mine/INSTALL-CODEX.html",
+        "/praxis-mine/QUICK-START.html",
+        "/praxis-mine/WORKFLOWS.html",
+        "/praxis-mine/VALIDATION.html",
+        "./INSTALL-CODEX.html",
+        "./INSTALL-CLAUDE.html",
+        "/praxis-mine/HOST-COMPATIBILITY.html",
+        "/praxis-mine/INSTALL-CODEX.html",
+        "/praxis-mine/INSTALL-CLAUDE.html",
+        "/praxis-mine/QUICK-START.html",
+        "./WORKFLOWS.html",
+        "./LEDGER-REFERENCE.html",
+        "./TROUBLESHOOTING.html",
+        "./UNINSTALL-AND-DATA.html",
+        "./VALIDATION.html",
+        "./LIMITATIONS.html",
+        "./PROVENANCE.html",
+        "/praxis-mine/VALIDATION.html",
+        "/praxis-mine/LIMITATIONS.html"
+      ],
+      "images": [
+        {
+          "src": "./assets/brand/praxis-mine-pages-hero.png",
+          "alt": "Praxis Mine capability assay: a cyan beam isolates one useful gold seam from dark ore."
+        }
+      ],
+      "og_image": "https://stunspot.github.io/praxis-mine/assets/brand/praxis-mine-social-preview.jpg"
+    },
+    {
+      "route": "INSTALL-CODEX.html",
+      "url": "https://stunspot.github.io/praxis-mine/INSTALL-CODEX.html",
+      "status": 200,
+      "final_url": "https://stunspot.github.io/praxis-mine/INSTALL-CODEX.html",
+      "content_type": "text/html",
+      "bytes": 6763,
+      "title": "Install Praxis Mine in Codex or ChatGPT | Praxis Mine",
+      "text_sample": "Install Praxis Mine in Codex or ChatGPT | Praxis Mine Skip to content Collaborative Dynamics Praxis Mine Start Install First mine Workflows Evidence GitHub Install Praxis Mine in Codex or ChatGPT Use this path for the skills-only plugin. In",
+      "internal_links": [
+        "/praxis-mine/",
+        "/praxis-mine/",
+        "/praxis-mine/INSTALL-CODEX.html",
+        "/praxis-mine/QUICK-START.html",
+        "/praxis-mine/WORKFLOWS.html",
+        "/praxis-mine/VALIDATION.html",
+        "/praxis-mine/TROUBLESHOOTING.html#the-plugin-installs-but-praxis-mine-is-not-discoverable"
+      ],
+      "images": [],
+      "og_image": "https://stunspot.github.io/praxis-mine/assets/brand/praxis-mine-social-preview.jpg"
+    },
+    {
+      "route": "INSTALL-CLAUDE.html",
+      "url": "https://stunspot.github.io/praxis-mine/INSTALL-CLAUDE.html",
+      "status": 200,
+      "final_url": "https://stunspot.github.io/praxis-mine/INSTALL-CLAUDE.html",
+      "content_type": "text/html",
+      "bytes": 5413,
+      "title": "Install Praxis Mine in Claude | Praxis Mine",
+      "text_sample": "Install Praxis Mine in Claude | Praxis Mine Skip to content Collaborative Dynamics Praxis Mine Start Install First mine Workflows Evidence GitHub Install Praxis Mine in Claude Use this path for a Claude environment that supports custom Skil",
+      "internal_links": [
+        "/praxis-mine/",
+        "/praxis-mine/",
+        "/praxis-mine/INSTALL-CODEX.html",
+        "/praxis-mine/QUICK-START.html",
+        "/praxis-mine/WORKFLOWS.html",
+        "/praxis-mine/VALIDATION.html",
+        "/praxis-mine/TROUBLESHOOTING.html#claude-rejects-the-skill-zip"
+      ],
+      "images": [],
+      "og_image": "https://stunspot.github.io/praxis-mine/assets/brand/praxis-mine-social-preview.jpg"
+    },
+    {
+      "route": "QUICK-START.html",
+      "url": "https://stunspot.github.io/praxis-mine/QUICK-START.html",
+      "status": 200,
+      "final_url": "https://stunspot.github.io/praxis-mine/QUICK-START.html",
+      "content_type": "text/html",
+      "bytes": 8126,
+      "title": "Your first Praxis Mine result | Praxis Mine",
+      "text_sample": "Your first Praxis Mine result | Praxis Mine Skip to content Collaborative Dynamics Praxis Mine Start Install First mine Workflows Evidence GitHub Your first Praxis Mine result This walkthrough takes one candidate from vague interest to a bo",
+      "internal_links": [
+        "/praxis-mine/",
+        "/praxis-mine/",
+        "/praxis-mine/INSTALL-CODEX.html",
+        "/praxis-mine/QUICK-START.html",
+        "/praxis-mine/WORKFLOWS.html",
+        "/praxis-mine/VALIDATION.html",
+        "/praxis-mine/LEDGER-REFERENCE.html"
+      ],
+      "images": [],
+      "og_image": "https://stunspot.github.io/praxis-mine/assets/brand/praxis-mine-social-preview.jpg"
+    },
+    {
+      "route": "WORKFLOWS.html",
+      "url": "https://stunspot.github.io/praxis-mine/WORKFLOWS.html",
+      "status": 200,
+      "final_url": "https://stunspot.github.io/praxis-mine/WORKFLOWS.html",
+      "content_type": "text/html",
+      "bytes": 10014,
+      "title": "Praxis Mine workflows | Praxis Mine",
+      "text_sample": "Praxis Mine workflows | Praxis Mine Skip to content Collaborative Dynamics Praxis Mine Start Install First mine Workflows Evidence GitHub Praxis Mine workflows Use the smallest workflow that answers the adoption question. A mine is not impr",
+      "internal_links": [
+        "/praxis-mine/",
+        "/praxis-mine/",
+        "/praxis-mine/INSTALL-CODEX.html",
+        "/praxis-mine/QUICK-START.html",
+        "/praxis-mine/WORKFLOWS.html",
+        "/praxis-mine/VALIDATION.html"
+      ],
+      "images": [],
+      "og_image": "https://stunspot.github.io/praxis-mine/assets/brand/praxis-mine-social-preview.jpg"
+    },
+    {
+      "route": "VALIDATION.html",
+      "url": "https://stunspot.github.io/praxis-mine/VALIDATION.html",
+      "status": 200,
+      "final_url": "https://stunspot.github.io/praxis-mine/VALIDATION.html",
+      "content_type": "text/html",
+      "bytes": 7663,
+      "title": "Praxis Mine validation | Praxis Mine",
+      "text_sample": "Praxis Mine validation | Praxis Mine Skip to content Collaborative Dynamics Praxis Mine Start Install First mine Workflows Evidence GitHub Praxis Mine validation Validation is evidence about declared boundaries. It is not a magic certificat",
+      "internal_links": [
+        "/praxis-mine/",
+        "/praxis-mine/",
+        "/praxis-mine/INSTALL-CODEX.html",
+        "/praxis-mine/QUICK-START.html",
+        "/praxis-mine/WORKFLOWS.html",
+        "/praxis-mine/VALIDATION.html",
+        "/praxis-mine/HOST-COMPATIBILITY.html",
+        "/praxis-mine/LIMITATIONS.html"
+      ],
+      "images": [],
+      "og_image": "https://stunspot.github.io/praxis-mine/assets/brand/praxis-mine-social-preview.jpg"
+    },
+    {
+      "route": "TROUBLESHOOTING.html",
+      "url": "https://stunspot.github.io/praxis-mine/TROUBLESHOOTING.html",
+      "status": 200,
+      "final_url": "https://stunspot.github.io/praxis-mine/TROUBLESHOOTING.html",
+      "content_type": "text/html",
+      "bytes": 8991,
+      "title": "Troubleshoot Praxis Mine | Praxis Mine",
+      "text_sample": "Troubleshoot Praxis Mine | Praxis Mine Skip to content Collaborative Dynamics Praxis Mine Start Install First mine Workflows Evidence GitHub Troubleshoot Praxis Mine Begin with the observed symptom. Preserve the error, version, selected pat",
+      "internal_links": [
+        "/praxis-mine/",
+        "/praxis-mine/",
+        "/praxis-mine/INSTALL-CODEX.html",
+        "/praxis-mine/QUICK-START.html",
+        "/praxis-mine/WORKFLOWS.html",
+        "/praxis-mine/VALIDATION.html",
+        "../SUPPORT.md"
+      ],
+      "images": [],
+      "og_image": "https://stunspot.github.io/praxis-mine/assets/brand/praxis-mine-social-preview.jpg"
+    },
+    {
+      "route": "HOST-COMPATIBILITY.html",
+      "url": "https://stunspot.github.io/praxis-mine/HOST-COMPATIBILITY.html",
+      "status": 200,
+      "final_url": "https://stunspot.github.io/praxis-mine/HOST-COMPATIBILITY.html",
+      "content_type": "text/html",
+      "bytes": 6683,
+      "title": "Host compatibility and evidence | Praxis Mine",
+      "text_sample": "Host compatibility and evidence | Praxis Mine Skip to content Collaborative Dynamics Praxis Mine Start Install First mine Workflows Evidence GitHub Host compatibility and evidence Praxis Mine v1.0.0 ships as one Augment with two host compon",
+      "internal_links": [
+        "/praxis-mine/",
+        "/praxis-mine/",
+        "/praxis-mine/INSTALL-CODEX.html",
+        "/praxis-mine/QUICK-START.html",
+        "/praxis-mine/WORKFLOWS.html",
+        "/praxis-mine/VALIDATION.html",
+        "/praxis-mine/VALIDATION.html"
+      ],
+      "images": [],
+      "og_image": "https://stunspot.github.io/praxis-mine/assets/brand/praxis-mine-social-preview.jpg"
+    },
+    {
+      "route": "LEDGER-REFERENCE.html",
+      "url": "https://stunspot.github.io/praxis-mine/LEDGER-REFERENCE.html",
+      "status": 200,
+      "final_url": "https://stunspot.github.io/praxis-mine/LEDGER-REFERENCE.html",
+      "content_type": "text/html",
+      "bytes": 8610,
+      "title": "Praxis Mine ledger reference | Praxis Mine",
+      "text_sample": "Praxis Mine ledger reference | Praxis Mine Skip to content Collaborative Dynamics Praxis Mine Start Install First mine Workflows Evidence GitHub Praxis Mine ledger reference The ledger is optional. Use it when candidate evidence, repeated s",
+      "internal_links": [
+        "/praxis-mine/",
+        "/praxis-mine/",
+        "/praxis-mine/INSTALL-CODEX.html",
+        "/praxis-mine/QUICK-START.html",
+        "/praxis-mine/WORKFLOWS.html",
+        "/praxis-mine/VALIDATION.html",
+        "/praxis-mine/TROUBLESHOOTING.html"
+      ],
+      "images": [],
+      "og_image": "https://stunspot.github.io/praxis-mine/assets/brand/praxis-mine-social-preview.jpg"
+    },
+    {
+      "route": "UNINSTALL-AND-DATA.html",
+      "url": "https://stunspot.github.io/praxis-mine/UNINSTALL-AND-DATA.html",
+      "status": 200,
+      "final_url": "https://stunspot.github.io/praxis-mine/UNINSTALL-AND-DATA.html",
+      "content_type": "text/html",
+      "bytes": 5954,
+      "title": "Uninstall Praxis Mine and manage its data | Praxis Mine",
+      "text_sample": "Uninstall Praxis Mine and manage its data | Praxis Mine Skip to content Collaborative Dynamics Praxis Mine Start Install First mine Workflows Evidence GitHub Uninstall Praxis Mine and manage its data Plugin removal and ledger deletion are s",
+      "internal_links": [
+        "/praxis-mine/",
+        "/praxis-mine/",
+        "/praxis-mine/INSTALL-CODEX.html",
+        "/praxis-mine/QUICK-START.html",
+        "/praxis-mine/WORKFLOWS.html",
+        "/praxis-mine/VALIDATION.html"
+      ],
+      "images": [],
+      "og_image": "https://stunspot.github.io/praxis-mine/assets/brand/praxis-mine-social-preview.jpg"
+    },
+    {
+      "route": "LIMITATIONS.html",
+      "url": "https://stunspot.github.io/praxis-mine/LIMITATIONS.html",
+      "status": 200,
+      "final_url": "https://stunspot.github.io/praxis-mine/LIMITATIONS.html",
+      "content_type": "text/html",
+      "bytes": 5667,
+      "title": "Praxis Mine limitations | Praxis Mine",
+      "text_sample": "Praxis Mine limitations | Praxis Mine Skip to content Collaborative Dynamics Praxis Mine Start Install First mine Workflows Evidence GitHub Praxis Mine limitations Praxis Mine improves adoption judgment. It does not make outside software tr",
+      "internal_links": [
+        "/praxis-mine/",
+        "/praxis-mine/",
+        "/praxis-mine/INSTALL-CODEX.html",
+        "/praxis-mine/QUICK-START.html",
+        "/praxis-mine/WORKFLOWS.html",
+        "/praxis-mine/VALIDATION.html"
+      ],
+      "images": [],
+      "og_image": "https://stunspot.github.io/praxis-mine/assets/brand/praxis-mine-social-preview.jpg"
+    },
+    {
+      "route": "PROVENANCE.html",
+      "url": "https://stunspot.github.io/praxis-mine/PROVENANCE.html",
+      "status": 200,
+      "final_url": "https://stunspot.github.io/praxis-mine/PROVENANCE.html",
+      "content_type": "text/html",
+      "bytes": 7315,
+      "title": "Praxis Mine provenance | Praxis Mine",
+      "text_sample": "Praxis Mine provenance | Praxis Mine Skip to content Collaborative Dynamics Praxis Mine Start Install First mine Workflows Evidence GitHub Praxis Mine provenance Praxis Mine began as a reusable skill inside the user’s Omnicompetence capabil",
+      "internal_links": [
+        "/praxis-mine/",
+        "/praxis-mine/",
+        "/praxis-mine/INSTALL-CODEX.html",
+        "/praxis-mine/QUICK-START.html",
+        "/praxis-mine/WORKFLOWS.html",
+        "/praxis-mine/VALIDATION.html"
+      ],
+      "images": [],
+      "og_image": "https://stunspot.github.io/praxis-mine/assets/brand/praxis-mine-social-preview.jpg"
+    },
+    {
+      "route": "definitely-missing-remediation-probe",
+      "url": "https://stunspot.github.io/praxis-mine/definitely-missing-remediation-probe",
+      "status": 404,
+      "final_url": "https://stunspot.github.io/praxis-mine/definitely-missing-remediation-probe",
+      "content_type": "text/html",
+      "bytes": 9379,
+      "title": "Page not found · GitHub Pages",
+      "text_sample": "Page not found · GitHub Pages body { background-color: #f1f1f1; margin: 0; font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif; } .container { margin: 50px auto 40px auto; width: 600px; text-align: center; } a { color: #4183c4; text",
+      "internal_links": [],
+      "images": [
+        {
+          "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFMTZCRDY3REIzRjAxMUUyQUQzREIxQzRENUFFNUM5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFMTZCRDY3RUIzRjAxMUUyQUQzREIxQzRENUFFNUM5NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkUxNkJENjdCQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkUxNkJENjdDQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+SM9MCAAAA+5JREFUeNrEV11Ik1EY3s4+ddOp29Q5b0opCgKFsoKoi5Kg6CIhuwi6zLJLoYLopq4qsKKgi4i6CYIoU/q5iDAKs6syoS76IRWtyJ+p7cdt7sf1PGOD+e0c3dygAx/67ZzzPM95/877GYdHRg3ZjMXFxepQKNS6sLCwJxqNNuFpiMfjVs4ZjUa/pmmjeD6VlJS8NpvNT4QQ7mxwjSsJiEQim/1+/9lgMHgIr5ohuxG1WCw9Vqv1clFR0dCqBODElV6v90ogEDjGdYbVjXhpaendioqK07CIR7ZAqE49PT09BPL2PMgTByQGsYiZlQD4uMXtdr+JxWINhgINYhGT2MsKgMrm2dnZXgRXhaHAg5jEJodUAHxux4LudHJE9RdEdA+i3Juz7bGHe4mhE9FNrgwBCLirMFV9Okh5eflFh8PR5nK5nDabrR2BNJlKO0T35+Li4n4+/J+/JQCxhmu5h3uJoXNHPbmWZAHMshWB8l5/ipqammaAf0zPDDx1ONV3vurdidqwAQL+pEc8sLcAe1CCvQ3YHxIW8Pl85xSWNC1hADDIv0rIE/o4J0k3kww4xSlwIhcq3EFFOm7KN/hUGOQkt0CFa5WpNJlMvxBEz/IVQAxg/ZRZl9wiHA63yDYieM7DnLP5CiAGsC7I5sgtYKJGWe2A8seFqgFJrJjEPY1Cn3pJ8/9W1e5VWsFDTEmFrBcoDhZJEQkXuhICMyKpjhahqN21hRYATKfUOlDmkygrR4o4C0VOLGJKrOITKB4jijzdXygBKixyC5TDQdnk/Pz8qRw6oOWGlsTKGOQW6OH6FBWsyePxdOXLTgxiyebILZCjz+GLgMIKnXNzc49YMlcRdHXcSwxFVgTInQhC9G33UhNoJLuqq6t345p9y3eUy8OTk5PjAHuI9uo4b07FBaOhsu0A4Unc+T1TU1Nj3KsSSE5yJ65jqF2DDd8QqWYmAZrIM2VlZTdnZmb6AbpdV9V6ec9znf5Q7HjYumdRE0JOp3MjitO4SFa+cZz8Umqe3TCbSLvdfkR/kWDdNQl5InuTcysOcpFT35ZrbBxx4p3JAHlZVVW1D/634VRt+FvLBgK/v5LV9WS+10xMTEwtRw7XvqOL+e2Q8V3AYIOIAXQ26/heWVnZCVfcyKHg2CBgTpmPmjYM8l24GyaUHyaIh7XwfR9ErE8qHoDfn2LTNAVC0HX6MFcBIP8Bi+6F6cdW/DICkANRfx99fEYFQ7Nph5i/uQiA214gno7K+guhaiKg9gC62+M8eR7XsBsYJ4ilam60Fb7r7uAj8wFyuwM1oIOWgfmDy6RXEEQzJMPe23DXrVS7rtyD3Df8z/FPgAEAzWU5Ku59ZAUAAAAASUVORK5CYII=",
+          "alt": ""
+        },
+        {
+          "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEQUM1QkUxRUI0MUMxMUUyQUQzREIxQzRENUFFNUM5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEQUM1QkUxRkI0MUMxMUUyQUQzREIxQzRENUFFNUM5NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkUxNkJENjdGQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkUxNkJENjgwQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+hfPRaQAAB6lJREFUeNrsW2mM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",
+          "alt": ""
+        }
+      ],
+      "og_image": null
+    }
+  ],
+  "observed_failures": [
+    "old repeated-composition visual set remains live",
+    "Open Graph still references praxis-mine-social-preview.jpg",
+    "primary navigation lacks Troubleshoot",
+    "missing route serves generic GitHub Pages 404"
+  ],
+  "claim_boundary": "Rendered HTML and HTTP resources inspected without GUI; candidate not yet published."
+}

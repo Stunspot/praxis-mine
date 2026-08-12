@@ -1,0 +1,100 @@
+{
+    "format":  "praxis-mine-local-verification/v1",
+    "candidate_commit":  "652cf4cddf72ef9f616fe02720dade53f9dac270",
+    "documentation_fingerprint":  "3156678139da35ba703ed716ebf81c3ba7f1bc30e6850baaef28236b6f6b235b",
+    "completed_at":  "2026-08-12T08:35:19.9287186Z",
+    "checks":  [
+                   {
+                       "name":  "plugin_validator",
+                       "command":  "PYTHONUTF8=1 python -B current validate_plugin.py source/plugin",
+                       "exit_code":  0,
+                       "result":  "Plugin validation passed"
+                   },
+                   {
+                       "name":  "skill_validator",
+                       "command":  "PYTHONUTF8=1 python -B current quick_validate.py source/plugin/skills/praxis-mine",
+                       "exit_code":  0,
+                       "result":  "Skill is valid"
+                   },
+                   {
+                       "name":  "integration_tests",
+                       "command":  "PYTHONUTF8=1 python -B -m unittest discover -s source/plugin/skills/praxis-mine/tests -v",
+                       "exit_code":  0,
+                       "tests_run":  3,
+                       "result":  "OK"
+                   },
+                   {
+                       "name":  "frozen_release_verifier",
+                       "command":  "PYTHONUTF8=1 python -B release-v1.0.0/tools/verify_release.py release-v1.0.0",
+                       "exit_code":  0,
+                       "ok":  true,
+                       "counts":  {
+                                      "archives_checked":  4,
+                                      "documentation_links_checked":  48,
+                                      "manifest_files_checked":  54,
+                                      "zip_members_checked":  147
+                                  },
+                       "findings":  [
+
+                                    ]
+                   },
+                   {
+                       "name":  "hesperos_markdown_lint",
+                       "command":  "python -B source/tools/run_hesperos_lint.py",
+                       "exit_code":  0,
+                       "declared_documents":  27,
+                       "passed":  26,
+                       "accepted_license_heuristic":  1,
+                       "blocking_findings":  0
+                   },
+                   {
+                       "name":  "public_surface_scan",
+                       "command":  "PYTHONUTF8=1 python -B source/tools/scan_public_surface.py",
+                       "exit_code":  0,
+                       "commits_scanned":  11,
+                       "git_objects_scanned":  2111,
+                       "worktree_files_scanned":  245,
+                       "finding_count":  0
+                   },
+                   {
+                       "name":  "asset_regeneration",
+                       "command":  "source/tools/build_documentation_images.ps1",
+                       "exit_code":  0,
+                       "deterministic":  true
+                   }
+               ],
+    "assets":  [
+                   {
+                       "role":  "README hero",
+                       "path":  "docs/assets/brand/praxis-mine-readme-hero.png",
+                       "width":  1600,
+                       "height":  720,
+                       "sha256":  "d821e5f4a7c93a0a3140d2c5bfe669d216d9b894316b9a515c38063704a433fd"
+                   },
+                   {
+                       "role":  "Pages hero",
+                       "path":  "docs/assets/brand/praxis-mine-pages-hero.png",
+                       "width":  1200,
+                       "height":  800,
+                       "sha256":  "48a896ff757730a394ad636aa8a5111be24fd8b29075fc5486a867498c9083ee"
+                   },
+                   {
+                       "role":  "Social card",
+                       "path":  "docs/assets/brand/praxis-mine-social-card.png",
+                       "width":  1200,
+                       "height":  630,
+                       "sha256":  "8eba20ecd9e5b50cd4c94e79029b41b7bea674e3a4846963e04effa08a3d8138"
+                   }
+               ],
+    "unexecuted":  [
+                       "fresh host installation",
+                       "host discovery",
+                       "natural language invocation",
+                       "browser interaction",
+                       "keyboard traversal",
+                       "screen reader",
+                       "zoom",
+                       "representative user",
+                       "live post-deployment verification"
+                   ]
+}

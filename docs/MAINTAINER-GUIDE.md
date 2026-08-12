@@ -31,13 +31,13 @@ Pure typo corrections still change documentation fingerprints and require curren
 
 ## Public documentation surfaces
 
-Keep the three brand images distinct:
+Keep the three brand images compositionally and dimensionally distinct:
 
-- `docs/assets/brand/praxis-mine-readme-hero.png`: `2244 × 701`;
-- `docs/assets/brand/praxis-mine-social-preview.jpg`: `1280 × 640` and under GitHub's `1 MB` upload limit;
-- `docs/assets/brand/praxis-mine-pages-hero.png`: `1896 × 829`.
+- `docs/assets/brand/praxis-mine-readme-hero.png`: `1600 × 720`, panoramic assay scene;
+- `docs/assets/brand/praxis-mine-pages-hero.png`: `1200 × 800`, vertical disposition board;
+- `docs/assets/brand/praxis-mine-social-card.png`: `1200 × 630`, text-led Open Graph card with the exact product title and identifying line.
 
-Use `source/tools/build_documentation_images.ps1` to apply exact dimensions and typography to approved source compositions. The square image under `assets/` remains the plugin icon; it is not a README banner.
+Run `source/tools/build_documentation_images.ps1` without arguments to regenerate all three deterministic compositions. Open and inspect every raster after generation; dimensions and filenames alone are not acceptance evidence. The square image under `assets/` remains the plugin icon, not a README banner.
 
 GitHub Pages is built from `docs/`. Check the live home page, responsive navigation, internal routes, image loading, keyboard focus, Open Graph metadata, and the repository social preview after publication. A successful local render does not establish a successful Pages deployment.
 

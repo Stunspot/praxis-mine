@@ -23,13 +23,13 @@ Prompt Design v3 governed the v1 model-visible skill and metadata. Hesperos Clea
 
 The square Praxis Mine product mark was generated from a Collaborative Dynamics art brief. It depicts a precise assay beam isolating one useful seam inside dark ore and remains the plugin icon.
 
-The public documentation uses three separately composed derivatives rather than stretching that square mark across unrelated surfaces:
+The public documentation uses three role-specific original compositions, not crops or resizes of the square mark or one another:
 
-- `praxis-mine-readme-hero.png` is `2244 × 701` for the GitHub README;
-- `praxis-mine-social-preview.jpg` is `1280 × 640` for repository and Open Graph previews;
-- `praxis-mine-pages-hero.png` is `1896 × 829` for the Pages landing page.
+- `praxis-mine-readme-hero.png` is a `1600 × 720` panoramic source-system, assay-gate, and extracted-delta scene for the GitHub README;
+- `praxis-mine-pages-hero.png` is a `1200 × 800` disposition board for the Pages landing page;
+- `praxis-mine-social-card.png` is a `1200 × 630` text-led Open Graph card containing the exact product title and identifying line.
 
-The source mark governed the visual language for each generated background. Exact product typography and surface dimensions were then applied deterministically with `source/tools/build_documentation_images.ps1`. No third-party brand mark was supplied as a reference.
+The square mark establishes the dark, cyan, and assay-gold visual language. `source/tools/build_documentation_images.ps1` draws each public composition deterministically from graphic primitives and typography. No third-party image or brand mark is an input.
 
 ## Evidence boundary
 

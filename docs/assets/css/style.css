@@ -210,6 +210,12 @@ a:hover {
   color: #fff;
 }
 
+a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
 .action-row {
   display: flex;
   flex-wrap: wrap;
@@ -323,8 +329,11 @@ pre code {
 }
 
 table {
+  display: block;
   width: 100%;
+  max-width: 100%;
   margin: 1.4rem 0;
+  overflow-x: auto;
   border-collapse: collapse;
   background: rgba(0, 0, 0, 0.22);
 }

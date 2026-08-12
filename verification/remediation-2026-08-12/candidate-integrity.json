@@ -1,0 +1,36 @@
+{
+  "format": "praxis-mine-candidate-integrity/v1",
+  "candidate_commit": "652cf4cddf72ef9f616fe02720dade53f9dac270",
+  "remote_baseline": "a744734e3481382e01415b19c29551d1527e259c",
+  "changed_files": [
+    ".github/workflows/line-ending-policy.yml",
+    "README.md",
+    "docs/404.md",
+    "docs/MAINTAINER-GUIDE.md",
+    "docs/PROVENANCE.md",
+    "docs/_layouts/default.html",
+    "docs/assets/brand/praxis-mine-pages-hero.png",
+    "docs/assets/brand/praxis-mine-readme-hero.png",
+    "docs/assets/brand/praxis-mine-social-card.png",
+    "docs/assets/brand/praxis-mine-social-preview.jpg",
+    "docs/assets/css/style.css",
+    "docs/index.md",
+    "documentation-manifest.json",
+    "source/tools/build_documentation_images.ps1",
+    "source/verification/hesperos-lint.json"
+  ],
+  "unexpected_or_missing_scope": [],
+  "release_diff": [],
+  "cr_findings": [],
+  "checks": {
+    "head_is_frozen_candidate": true,
+    "changed_scope_exact": true,
+    "frozen_release_archives_unchanged": true,
+    "no_cr_in_governed_text": true,
+    "workflow_manual_only": true,
+    "old_social_asset_absent": true,
+    "new_social_asset_present": true,
+    "custom_404_present": true
+  },
+  "ok": true
+}

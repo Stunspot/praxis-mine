@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./docs/assets/brand/praxis-mine-readme-hero.png" alt="Praxis Mine capability assay: a cyan beam isolates one useful gold seam from dark ore.">
+  <img src="./docs/assets/brand/praxis-mine-readme-hero.png" alt="Praxis Mine assay diagram: a gold capability seam passes through a cyan gate and emerges as one clean capability delta.">
 </p>
 
 # Praxis Mine

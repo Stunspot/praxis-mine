@@ -4,7 +4,7 @@ description: "Install Praxis Mine, run a first capability assay, and understand 
 ---
 
 <p align="center">
-  <img src="./assets/brand/praxis-mine-pages-hero.png" alt="Praxis Mine capability assay: a cyan beam isolates one useful gold seam from dark ore.">
+  <img src="./assets/brand/praxis-mine-pages-hero.png" alt="Praxis Mine disposition board showing pilot, quarry, adapt, monitor, and reject as five evidence-backed outcomes.">
 </p>
 
 # Mine the mechanism, not the dependency pile

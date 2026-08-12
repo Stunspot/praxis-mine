@@ -1,0 +1,15 @@
+{
+    "format":  "praxis-mine-publication-blocker/v1",
+    "observed_at":  "2026-08-12T09:05:24.3697670Z",
+    "attempted_commit":  "9f57b3cabfffc48b0fc9ffa5ba7b68119955f298",
+    "target":  "refs/heads/main",
+    "outcome":  "GH013_REJECTED",
+    "required_status_check":  "line-ending-policy",
+    "ruleset_id":  20249478,
+    "ruleset_name":  "Line ending policy",
+    "remote_main_after_rejection":  "a744734e3481382e01415b19c29551d1527e259c",
+    "automatic_workflow_triggers":  false,
+    "hosted_actions_capacity":  "unavailable by user report",
+    "ruleset_disable_authority":  false,
+    "next_action":  "Obtain explicit authority to temporarily disable exact ruleset 20249478, push the final reviewed change, restore the identical ruleset, verify restoration, then verify rendered live Pages and assets."
+}

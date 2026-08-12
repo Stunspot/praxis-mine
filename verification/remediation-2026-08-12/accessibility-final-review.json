@@ -1,0 +1,39 @@
+{
+  "format": "cd-documentation-accessibility-review/v1",
+  "receipt_id": "PRAXIS-MINE-A11Y-7653209-31566781-20260812",
+  "product": "Praxis Mine",
+  "review_date": "2026-08-12",
+  "governed_commit": "7653209a4f0aebaad1bbcd965236228664ad8f0b",
+  "documentation_fingerprint": "3156678139da35ba703ed716ebf81c3ba7f1bc30e6850baaef28236b6f6b235b",
+  "reviewed_documents": 27,
+  "static_results": {
+    "customer_journey": "PASS",
+    "semantic_structure_and_landmarks": "PASS",
+    "navigation_and_findability": "PASS",
+    "link_purpose": "PASS",
+    "image_alternatives": "PASS",
+    "source_focus_visibility": "PASS",
+    "responsive_table_and_code_reflow": "PASS",
+    "reduced_motion_source_rule": "PASS",
+    "static_contrast": "PASS",
+    "cognitive_clarity_and_recovery": "PASS"
+  },
+  "visual_reinspection": {
+    "readme_hero": "PASS: actual 1600x720 pixels reopened; hierarchy, crop, contrast, identity, and restrained text remain sound",
+    "pages_hero": "PASS: actual 1200x800 pixels reopened; five dispositions remain legible without duplicating the page title",
+    "social_card": "PASS: actual 1200x630 pixels reopened; exact PRAXIS MINE title and identifying lines remain crop-safe and legible"
+  },
+  "post_review_delta": "Workflow and verification-output changes do not alter documentation, HTML layout, CSS, alternatives, or image bytes",
+  "unexecuted": [
+    "browser matrix",
+    "keyboard traversal",
+    "screen reader",
+    "voice control",
+    "magnification and zoom",
+    "forced colors",
+    "localization",
+    "representative user",
+    "formal WCAG conformance assessment"
+  ],
+  "disposition": "REVIEW_PASS_WITH_CONDITIONS"
+}

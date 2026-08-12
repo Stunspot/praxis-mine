@@ -1,0 +1,31 @@
+{
+    "format":  "praxis-mine-static-accessibility-evidence/v1",
+    "candidate_commit":  "652cf4cddf72ef9f616fe02720dade53f9dac270",
+    "documentation_fingerprint":  "3156678139da35ba703ed716ebf81c3ba7f1bc30e6850baaef28236b6f6b235b",
+    "contrast":  {
+                     "body_text":  18.97,
+                     "muted":  11.85,
+                     "dim":  6.7,
+                     "cyan":  11.85,
+                     "cyan_soft":  15.26,
+                     "gold":  11.96,
+                     "button_on_cyan":  11.32,
+                     "button_on_white":  19.31,
+                     "blockquote":  17.67
+                 },
+    "structural_checks":  {
+                              "html_lang":  true,
+                              "viewport":  true,
+                              "skip_link_to_main":  true,
+                              "labelled_nav_landmarks":  true,
+                              "focus_visible":  true,
+                              "reduced_motion":  true,
+                              "responsive_breakpoint":  true,
+                              "table_horizontal_reflow":  true,
+                              "code_horizontal_reflow":  true,
+                              "responsive_images":  true,
+                              "og_alt":  true
+                          },
+    "ok":  true,
+    "claim_boundary":  "Static source inspection and calculated contrast only; browser, keyboard, screen reader, zoom, localization, representative-user, and assistive-technology execution unexecuted."
+}

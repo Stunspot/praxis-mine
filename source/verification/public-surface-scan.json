@@ -1,11 +1,11 @@
 {
   "claim_boundary": "Pattern scan for common credential forms and sensitive filenames; not a proof that no secret or private data exists.",
-  "commits_scanned": 2,
-  "completed_at": "2026-07-31T02:33:02.245803Z",
+  "commits_scanned": 14,
+  "completed_at": "2026-08-12T13:50:49.601519Z",
   "finding_count": 0,
   "findings": [],
   "format": "praxis-mine-public-surface-scan/v1",
-  "git_objects_scanned": 93,
+  "git_objects_scanned": 2893,
   "nested_zip_depth": 3,
-  "worktree_files_scanned": 213
+  "worktree_files_scanned": 261
 }

@@ -1,0 +1,25 @@
+{
+    "format":  "praxis-mine-testforge-reviewer-execution-failures/v1",
+    "candidate_commit":  "652cf4cddf72ef9f616fe02720dade53f9dac270",
+    "attempts":  [
+                     {
+                         "reviewer":  "qwen36coder:latest",
+                         "inference_started":  false,
+                         "outcome":  "MODEL_LOAD_FAIL",
+                         "cause":  "CUDA allocation failed for 20781735680-byte model buffer with 65K context request"
+                     },
+                     {
+                         "reviewer":  "qwen36coder:latest",
+                         "inference_started":  false,
+                         "outcome":  "MODEL_LOAD_FAIL",
+                         "cause":  "Partial offload failed to allocate 11982060288-byte CUDA host buffer with 32K context"
+                     },
+                     {
+                         "reviewer":  "gpt-oss:20b",
+                         "inference_started":  true,
+                         "outcome":  "TIMEOUT_NO_RECEIPT",
+                         "cause":  "High-reasoning adversarial request exceeded the bounded 1200-second client timeout"
+                     }
+                 ],
+    "consequence":  "No automated TestForge reviewer disposition exists. The accountable agent performed the separate evidence-based adversarial pass directly. These execution failures are not product-test failures."
+}

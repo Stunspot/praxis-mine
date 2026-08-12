@@ -1,10 +1,10 @@
 {
   "format": "cd-documentation-accessibility-review/v1",
-  "receipt_id": "PRAXIS-MINE-A11Y-7653209-31566781-20260812",
+  "receipt_id": "PRAXIS-MINE-A11Y-348ca5b-24581cf8-20260812",
   "product": "Praxis Mine",
   "review_date": "2026-08-12",
-  "governed_commit": "7653209a4f0aebaad1bbcd965236228664ad8f0b",
-  "documentation_fingerprint": "3156678139da35ba703ed716ebf81c3ba7f1bc30e6850baaef28236b6f6b235b",
+  "governed_commit": "348ca5b2aced5d0c145236956459fb22254a2389",
+  "documentation_fingerprint": "24581cf8cf01205f3a2590a19361ea4262136e19d3b6cb6d0d58caaaea6b175e",
   "reviewed_documents": 27,
   "static_results": {
     "customer_journey": "PASS",
@@ -23,7 +23,7 @@
     "pages_hero": "PASS: actual 1200x800 pixels reopened; five dispositions remain legible without duplicating the page title",
     "social_card": "PASS: actual 1200x630 pixels reopened; exact PRAXIS MINE title and identifying lines remain crop-safe and legible"
   },
-  "post_review_delta": "Workflow and verification-output changes do not alter documentation, HTML layout, CSS, alternatives, or image bytes",
+  "post_review_delta": "The Troubleshooting support link now uses an explicit, purposeful, reachable repository URL; link purpose and journey recovery were rechecked, while layout, CSS, alternatives, and image bytes remain unchanged",
   "unexecuted": [
     "browser matrix",
     "keyboard traversal",

@@ -1,15 +1,16 @@
 {
   "format": "cd-testforge-independent-review/v1",
-  "receipt_id": "PRAXIS-MINE-ADVERSARIAL-7653209-31566781-20260812",
+  "receipt_id": "PRAXIS-MINE-ADVERSARIAL-348ca5b-24581cf8-20260812",
   "product": "Praxis Mine",
   "review_date": "2026-08-12",
   "reviewer_mode": "independent adversarial verification after coherent candidate completion",
   "starting_state": "UNKNOWN",
-  "governed_commit": "7653209a4f0aebaad1bbcd965236228664ad8f0b",
-  "documentation_fingerprint": "3156678139da35ba703ed716ebf81c3ba7f1bc30e6850baaef28236b6f6b235b",
+  "governed_commit": "348ca5b2aced5d0c145236956459fb22254a2389",
+  "documentation_fingerprint": "24581cf8cf01205f3a2590a19361ea4262136e19d3b6cb6d0d58caaaea6b175e",
   "decision_changing_findings_repaired": [
     "The earlier capacity blocker incorrectly generalized exhausted private-repository allowance to a public repository; official GitHub billing documentation and a successful public runner observation disprove that premise",
-    "A workflow_dispatch-only check cannot attach to a pull request and cannot satisfy protected main; pull_request plus workflow_dispatch supplies the required status without a duplicate push job"
+    "A workflow_dispatch-only check cannot attach to a pull request and cannot satisfy protected main; pull_request plus workflow_dispatch supplies the required status without a duplicate push job",
+    "The deployed Troubleshooting page exposed a dead ../SUPPORT.md destination outside the project site; the final candidate uses the exact repository support URL"
   ],
   "observed_evidence": [
     "Exact 27-document fingerprint independently recomputed",

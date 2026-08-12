@@ -1,13 +1,13 @@
 {
   "format": "cd-hesperos-documentation-review/v1",
-  "receipt_id": "PRAXIS-MINE-HESPEROS-7653209-31566781-20260812",
+  "receipt_id": "PRAXIS-MINE-HESPEROS-348ca5b-24581cf8-20260812",
   "product": "Praxis Mine",
   "review_date": "2026-08-12",
   "starting_state": "UNKNOWN",
-  "governed_commit": "7653209a4f0aebaad1bbcd965236228664ad8f0b",
-  "documentation_fingerprint": "3156678139da35ba703ed716ebf81c3ba7f1bc30e6850baaef28236b6f6b235b",
+  "governed_commit": "348ca5b2aced5d0c145236956459fb22254a2389",
+  "documentation_fingerprint": "24581cf8cf01205f3a2590a19361ea4262136e19d3b6cb6d0d58caaaea6b175e",
   "reviewed_documents": 27,
-  "review_method": "Complete customer-corpus reread and source reconciliation, followed by exact delta review after the workflow-only publication repair",
+  "review_method": "Complete customer-corpus reread and source reconciliation, followed by exact delta review after the PR-gate and support-route repairs",
   "journey_verdicts": {
     "product_audience_problem": "PASS",
     "capabilities_and_noncapabilities": "PASS",
@@ -22,13 +22,14 @@
     "pages_information_architecture": "PASS"
   },
   "source_reconciliation": "PASS: skills-only product and optional local Python ledger claims match inspected source, tests, release verifier, privacy boundaries, and retained release evidence",
-  "post_review_delta": "The prior candidate changed only the line-ending workflow trigger and refreshed bounded verification outputs; all 27 customer-document bytes and all three reviewed asset bytes remained unchanged",
+  "post_review_delta": "The final delta repairs the Troubleshooting support destination and refreshes bounded verification outputs; the complete 27-document journey and source claims were re-evaluated, while all three reviewed asset bytes remained unchanged",
   "material_defects_repaired": [
     "Replaced the thin repository journey with a complete product-led customer path",
     "Separated README, Pages, and social roles into three visually distinct assets",
     "Added recovery, lifecycle, privacy, evidence, support, contribution, licensing, and custom 404 guidance",
     "Repaired narrow-screen table behavior without hiding information",
-    "Changed the required line-ending status from manual-only to PR-associated while retaining deliberate dispatch"
+    "Changed the required line-ending status from manual-only to PR-associated while retaining deliberate dispatch",
+    "Replaced the dead Pages-relative Support link with the exact live repository support route"
   ],
   "residual_boundaries": [
     "Browser rendering, keyboard traversal, screen-reader behavior, zoom, forced colors, localization, and representative-user success are not tested",

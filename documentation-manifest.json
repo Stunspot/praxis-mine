@@ -12,6 +12,7 @@
     "docs/WORKFLOWS.md",
     "docs/LEDGER-REFERENCE.md",
     "docs/TROUBLESHOOTING.md",
+    "docs/404.md",
     "docs/UNINSTALL-AND-DATA.md",
     "docs/VALIDATION.md",
     "docs/LIMITATIONS.md",
@@ -49,6 +50,7 @@
     ],
     "recovery": [
       "docs/TROUBLESHOOTING.md",
+      "docs/404.md",
       "docs/UNINSTALL-AND-DATA.md",
       "SUPPORT.md"
     ],

@@ -1,8 +1,8 @@
 # Direct visual inspection receipt
 
-Candidate: 7653209a4f0aebaad1bbcd965236228664ad8f0b
+Candidate: 348ca5b2aced5d0c145236956459fb22254a2389
 
-Reinspection: actual pixels reopened after the workflow-only publication repair; all three SHA-256 hashes and compositions remain unchanged.
+Reinspection: actual pixels reopened after the final support-link repair; all three SHA-256 hashes and compositions remain unchanged.
 
 ## README hero
 

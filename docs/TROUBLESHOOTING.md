@@ -78,4 +78,4 @@ Do not tune scores to obtain a preferred label. Improve the evidence, narrow the
 
 ## Escalate with useful evidence
 
-Follow [Support](../SUPPORT.md). Include the exact boundary, version, host, command or prompt, expected result, observed result, and validator output. Remove secrets and unrelated private data.
+Follow [Support](https://github.com/Stunspot/praxis-mine/blob/main/SUPPORT.md). Include the exact boundary, version, host, command or prompt, expected result, observed result, and validator output. Remove secrets and unrelated private data.

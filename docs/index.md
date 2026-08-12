@@ -4,7 +4,7 @@ description: "Install Praxis Mine, run a first capability assay, and understand 
 ---
 
 <p align="center">
-  <img src="./assets/brand/praxis-mine-pages-hero.png" alt="Praxis Mine disposition board showing pilot, quarry, adapt, monitor, and reject as five evidence-backed outcomes.">
+  <img src="./assets/brand/praxis-mine-pages-hero.png" alt="An analyst in a quarry assay workshop isolates one useful mechanism from a rock core full of tangled machinery.">
 </p>
 
 # Mine the mechanism, not the dependency pile

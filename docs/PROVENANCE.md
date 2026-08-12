@@ -25,11 +25,11 @@ The square Praxis Mine product mark was generated from a Collaborative Dynamics 
 
 The public documentation uses three role-specific original compositions, not crops or resizes of the square mark or one another:
 
-- `praxis-mine-readme-hero.png` is a `1600 × 720` panoramic source-system, assay-gate, and extracted-delta scene for the GitHub README;
-- `praxis-mine-pages-hero.png` is a `1200 × 800` disposition board for the Pages landing page;
-- `praxis-mine-social-card.png` is a `1200 × 630` text-led Open Graph card containing the exact product title and identifying line.
+- `praxis-mine-readme-hero.png` retains the original `2244 × 701` panoramic product identity, with the mine, inspection lens, and isolated seam;
+- `praxis-mine-pages-hero.png` is a `1200 × 800` text-free assay-workshop scene showing a human analyst separating one useful mechanism from a dependency-filled core;
+- `praxis-mine-social-card.png` is a `1200 × 630` natural-history specimen composition containing the exact product title and identifying line.
 
-The square mark establishes the dark, cyan, and assay-gold visual language. `source/tools/build_documentation_images.ps1` draws each public composition deterministically from graphic primitives and typography. No third-party image or brand mark is an input.
+The README hero was restored from the pre-remediation public presentation. The Pages and social images were generated as separate original compositions under Collaborative Dynamics direction, then sized for their final roles and inspected at the pixel level. No third-party image or brand mark is an input.
 
 ## Evidence boundary
 

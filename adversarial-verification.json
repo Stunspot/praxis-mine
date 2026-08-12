@@ -1,0 +1,18 @@
+{
+    "format":  "cd-adversarial-verification/v1",
+    "disposition":  "READY_WITH_RESIDUAL_RISK",
+    "unresolved_local_candidate_findings":  0,
+    "candidate_commit":  "652cf4cddf72ef9f616fe02720dade53f9dac270",
+    "documentation_fingerprint":  "3156678139da35ba703ed716ebf81c3ba7f1bc30e6850baaef28236b6f6b235b",
+    "reviewer":  "Accountable agent applying software-verification doctrine after automated reviewer execution proved unavailable",
+    "response_evidence":  "verification/remediation-2026-08-12/testforge-review-response.md",
+    "automated_reviewer_failure_evidence":  "verification/remediation-2026-08-12/testforge-reviewer-execution-failures.json",
+    "publication_blocker":  {
+                                "ruleset_id":  20249478,
+                                "required_check":  "line-ending-policy",
+                                "hosted_actions_capacity":  "unavailable by user report",
+                                "remote_main":  "a744734e3481382e01415b19c29551d1527e259c",
+                                "authority_to_disable_ruleset":  false
+                            },
+    "live_pass":  false
+}

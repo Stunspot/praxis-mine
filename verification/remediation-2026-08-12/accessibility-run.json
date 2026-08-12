@@ -1,8 +1,7 @@
 {
-    "format":  "cd-documentation-review/v1",
-    "fresh_context":  true,
-    "disposition":  "REVIEW_PASS",
-    "unresolved_material_findings":  0,
+    "format":  "praxis-mine-remediation-review-run/v1",
+    "review_kind":  "ACCESSIBILITY",
+    "model":  "gpt-oss:20b",
     "candidate_commit":  "652cf4cddf72ef9f616fe02720dade53f9dac270",
     "documentation_fingerprint":  "3156678139da35ba703ed716ebf81c3ba7f1bc30e6850baaef28236b6f6b235b",
     "reviewed_files":  [
@@ -34,12 +33,22 @@
                            "ARCHIVE-CUSTODY.md",
                            "PLUGIN-DIRECTORY-SUBMISSION-v1.0.0.md"
                        ],
-    "reviewer":  "Fresh-context gpt-oss:20b Hesperos content review, independently checked by the accountable agent",
-    "evidence_directory":  "verification/remediation-2026-08-12",
-    "review_response_evidence":  "verification/remediation-2026-08-12/hesperos-review-response.md",
-    "conditions":  [
-                       "Rendered-live post-deployment review remains unexecuted.",
-                       "Fresh-host installation, host discovery, invocation, and customer outcomes remain unexecuted.",
-                       "Legal and security professional validation remains unexecuted."
-                   ]
+    "additional_sources":  [
+                               "docs/_layouts/default.html",
+                               "docs/assets/css/style.css",
+                               "static contrast and manual pixel evidence"
+                           ],
+    "started_at":  "2026-08-12T08:28:04.6749786Z",
+    "completed_at":  "2026-08-12T08:30:38.4115130Z",
+    "endpoint":  "local Ollama generation API",
+    "response_path":  "verification/remediation-2026-08-12/accessibility-review-response.md",
+    "required_unexecuted":  [
+                                "browser interaction",
+                                "keyboard traversal",
+                                "screen reader",
+                                "zoom",
+                                "localization",
+                                "representative user",
+                                "assistive technology"
+                            ]
 }

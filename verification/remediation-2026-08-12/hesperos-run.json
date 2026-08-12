@@ -1,8 +1,7 @@
 {
-    "format":  "cd-documentation-review/v1",
-    "fresh_context":  true,
-    "disposition":  "REVIEW_PASS",
-    "unresolved_material_findings":  0,
+    "format":  "praxis-mine-remediation-review-run/v1",
+    "review_kind":  "HESPEROS_CONTENT",
+    "model":  "gpt-oss:20b",
     "candidate_commit":  "652cf4cddf72ef9f616fe02720dade53f9dac270",
     "documentation_fingerprint":  "3156678139da35ba703ed716ebf81c3ba7f1bc30e6850baaef28236b6f6b235b",
     "reviewed_files":  [
@@ -34,12 +33,8 @@
                            "ARCHIVE-CUSTODY.md",
                            "PLUGIN-DIRECTORY-SUBMISSION-v1.0.0.md"
                        ],
-    "reviewer":  "Fresh-context gpt-oss:20b Hesperos content review, independently checked by the accountable agent",
-    "evidence_directory":  "verification/remediation-2026-08-12",
-    "review_response_evidence":  "verification/remediation-2026-08-12/hesperos-review-response.md",
-    "conditions":  [
-                       "Rendered-live post-deployment review remains unexecuted.",
-                       "Fresh-host installation, host discovery, invocation, and customer outcomes remain unexecuted.",
-                       "Legal and security professional validation remains unexecuted."
-                   ]
+    "started_at":  "2026-08-12T08:23:47.5031958Z",
+    "completed_at":  "2026-08-12T08:24:17.5241793Z",
+    "endpoint":  "local Ollama generation API",
+    "response_path":  "verification/remediation-2026-08-12/hesperos-review-response.md"
 }

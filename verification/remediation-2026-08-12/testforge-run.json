@@ -1,0 +1,12 @@
+{
+    "format":  "praxis-mine-remediation-review-run/v1",
+    "review_kind":  "TESTFORGE_ADVERSARIAL",
+    "reviewer":  "accountable agent applying software-verification doctrine",
+    "candidate_commit":  "652cf4cddf72ef9f616fe02720dade53f9dac270",
+    "documentation_fingerprint":  "3156678139da35ba703ed716ebf81c3ba7f1bc30e6850baaef28236b6f6b235b",
+    "completed_at":  "2026-08-12T09:02:29.9474897Z",
+    "automated_reviewer_status":  "UNAVAILABLE",
+    "automated_reviewer_failure_evidence":  "verification/remediation-2026-08-12/testforge-reviewer-execution-failures.json",
+    "response_path":  "verification/remediation-2026-08-12/testforge-review-response.md",
+    "disposition":  "READY_WITH_RESIDUAL_RISK"
+}

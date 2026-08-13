@@ -27,7 +27,7 @@ The public documentation uses three role-specific original compositions, not cro
 
 - `praxis-mine-readme-hero.png` retains the original `2244 × 701` panoramic product identity, with the mine, inspection lens, and isolated seam;
 - `praxis-mine-pages-hero.png` is a `1200 × 800` text-free assay-workshop scene showing a human analyst separating one useful mechanism from a dependency-filled core;
-- `praxis-mine-social-card.png` is a `1200 × 630` natural-history specimen composition containing the exact product title and identifying line.
+- `praxis-mine-social-card.jpg` is a `1200 × 630` natural-history specimen composition containing the exact product title and identifying line.
 
 The README hero was restored from the pre-remediation public presentation. The Pages and social images were generated as separate original compositions under Collaborative Dynamics direction, then sized for their final roles and inspected at the pixel level. No third-party image or brand mark is an input.
 

@@ -35,7 +35,7 @@ Keep the three brand images compositionally and dimensionally distinct:
 
 - `docs/assets/brand/praxis-mine-readme-hero.png`: `2244 × 701`, panoramic product identity and mining metaphor;
 - `docs/assets/brand/praxis-mine-pages-hero.png`: `1200 × 800`, text-free human assay-workshop scene;
-- `docs/assets/brand/praxis-mine-social-card.png`: `1200 × 630`, specimen-table Open Graph card with the exact product title and identifying line.
+- `docs/assets/brand/praxis-mine-social-card.jpg`: `1200 × 630`, specimen-table Open Graph card with the exact product title and identifying line.
 
 The three source-controlled compositions have different jobs, aspect ratios, and visual structures. Replace them only through a new approved visual-authorship pass; do not synthesize presentation artwork from programmed graphic primitives. Open and inspect every final raster after sizing. Dimensions and filenames alone are not acceptance evidence. The square image under `assets/` remains the plugin icon, not a README banner.
 

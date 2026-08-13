@@ -3,8 +3,8 @@
     "mode":  "separate-final-content-pass",
     "disposition":  "REVIEW_PASS",
     "unresolved_material_findings":  0,
-    "candidate_commit":  "0c2d4a136fc2eb8d4d63421e15981fc54716838b",
-    "documentation_fingerprint":  "8ce2ded8957a1abe94dc87bc1bc07140e5112364e1efd4fd57fe934d61e09547",
+    "candidate_commit":  "PENDING_PUBLICATION",
+    "documentation_fingerprint":  "a9d7fe9b8adceb97e246207bd0a20de39137da114c64ec3128ef2941f02a77d8",
     "reviewed_files":  [
                            "README.md",
                            "docs/index.md",
@@ -45,5 +45,6 @@
                        "Fresh-host installation, discovery, invocation, and customer outcomes remain outside this documentation remediation",
                        "Legal and security professional certification was not performed"
                    ],
-    "completed_at":  "2026-08-12T21:39:47.6642784Z"
+    "completed_at":  "2026-08-13T01:13:56.5855431Z",
+    "fingerprint_algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering"
 }

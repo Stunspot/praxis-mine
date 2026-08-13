@@ -1,17 +1,17 @@
 ---
 title: Start
-description: "Install Praxis Mine, run a first capability assay, and understand the evidence boundary."
+description: "Send your AI harness hunting for useful outside capabilities, inspect the finds, and keep only what earns a next step."
 ---
 
 <p align="center">
   <img src="./assets/brand/praxis-mine-pages-hero.png" alt="An analyst in a quarry assay workshop isolates one useful mechanism from a rock core full of tangled machinery.">
 </p>
 
-# Mine the mechanism, not the dependency pile
+# Find useful capabilities. Steal the good bits.
 
-Praxis Mine helps prompt engineers, AI systems designers, agent builders, and product leads decide what—if anything—to borrow from an outside AI skill, repository, tool, workflow, or knowledge source.
+Praxis Mine is an Augment for sending your AI harness out to inspect new skills, repositories, tools, workflows, and knowledge sources. Point it at one candidate and ask, “Is any of this useful?”, tell it to grab a particular capability, or schedule a recurring scavenger hunt for promising new machinery.
 
-It preserves provenance, checks rights and risk, identifies the capability delta, measures overlap with your current baseline, and recommends a bounded next move.
+It returns what the candidate would add, the evidence, risks, costs, and overlap, and the next bounded move: <code>pilot</code>, <code>quarry</code>, <code>adapt</code>, <code>monitor</code>, or <code>reject</code>.
 
 <div class="action-row">
   <a href="https://github.com/Stunspot/praxis-mine/releases/download/v1.0.0/Praxis-Mine-v1.0.0.zip">Download v1.0.0</a>

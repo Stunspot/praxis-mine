@@ -4,9 +4,9 @@
 
 # Praxis Mine
 
-Mine outside AI skills, repositories, tools, and workflows. Keep the mechanism that changes what you can do. Leave the dependency geology where you found it.
+Send your AI harness hunting for useful capabilities. Point Praxis Mine at one skill, repository, tool, workflow, or knowledge source and ask, “Is any of this useful?” Tell it to grab a specific capability, or run a recurring scavenger hunt for promising new machinery.
 
-Praxis Mine is a standalone Augment from Collaborative Dynamics for prompt engineers, AI systems designers, agent builders, and product leads who need a better answer than “this package has a lot of stars.” It preserves provenance, checks rights and risk, identifies the real capability delta, measures overlap with your current baseline, and recommends one bounded disposition:
+Praxis Mine inspects what it finds, keeps the mechanism that would change what your harness can do, and leaves the dependency geology where it found it. It preserves provenance, checks rights and risk, measures overlap with the current baseline, and recommends one bounded disposition:
 
 `pilot` · `quarry` · `adapt` · `monitor` · `reject`
 

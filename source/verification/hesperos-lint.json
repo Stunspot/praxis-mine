@@ -1,7 +1,7 @@
 {
   "accepted_heuristic_false_positives": 1,
   "blocking_findings": 0,
-  "completed_at": "2026-08-12T21:34:55.192938Z",
+  "completed_at": "2026-08-15T03:45:57.718926Z",
   "declared_documents": 27,
   "format": "praxis-mine-hesperos-markdown-lint/v1",
   "ok": true,
@@ -179,7 +179,7 @@
       "accepted_heuristic_false_positive": false,
       "exit_code": 0,
       "output": "PASS",
-      "path": "RELEASE-NOTES-v1.0.0.md",
+      "path": "RELEASE-NOTES-v1.0.1.md",
       "stderr": ""
     },
     {
@@ -193,7 +193,7 @@
       "accepted_heuristic_false_positive": false,
       "exit_code": 0,
       "output": "PASS",
-      "path": "PLUGIN-DIRECTORY-SUBMISSION-v1.0.0.md",
+      "path": "PLUGIN-DIRECTORY-SUBMISSION-v1.0.1.md",
       "stderr": ""
     }
   ]

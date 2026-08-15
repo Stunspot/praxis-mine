@@ -1,37 +1,37 @@
 {
-    "format":  "cd-documentation-accessibility-review/v1",
-    "mode":  "separate-static-accessibility-pass",
-    "disposition":  "REVIEW_PASS_WITH_RESIDUAL_RISK",
-    "unresolved_material_findings":  0,
-    "candidate_commit":  "PENDING_PUBLICATION",
-    "documentation_fingerprint":  "a9d7fe9b8adceb97e246207bd0a20de39137da114c64ec3128ef2941f02a77d8",
-    "presentation_fingerprint":  "b65804ae7f35e90828e3e7964ca490c5cad8a3f405d896da310e54f02f3f57f6",
-    "checks":  {
-                   "hesperos_documents":  27,
-                   "hesperos_blocking_findings":  0,
-                   "relative_links_checked":  50,
-                   "meaningful_image_alt_text":  true,
-                   "skip_link":  true,
-                   "landmarked_navigation":  true,
-                   "main_target":  true,
-                   "visible_focus":  true,
-                   "responsive_table_overflow":  true,
-                   "responsive_single_column_journey":  true,
-                   "reduced_motion":  true,
-                   "contrast_ratios":  {
-                                           "body":  16.76,
-                                           "links_and_headings":  10.03,
-                                           "primary_button":  7,
-                                           "muted_text":  7.61
-                                       }
-               },
-    "unexecuted":  [
-                       "browser interaction under the explicit no-new-browser constraint",
-                       "keyboard traversal",
-                       "screen reader",
-                       "zoom and reflow in a live browser",
-                       "representative assistive-technology user"
-                   ],
-    "completed_at":  "2026-08-13T01:13:56.5855431Z",
-    "fingerprint_algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering"
+  "format": "cd-documentation-accessibility-review/v1",
+  "mode": "separate-static-accessibility-pass",
+  "disposition": "REVIEW_PASS_WITH_RESIDUAL_RISK",
+  "unresolved_material_findings": 0,
+  "candidate_commit": "PENDING_PUBLICATION",
+  "documentation_fingerprint": "76522879eadf9afe34b2244ef96824c423d9f7e12bffe3a5664c49378f681587",
+  "presentation_fingerprint": "b65804ae7f35e90828e3e7964ca490c5cad8a3f405d896da310e54f02f3f57f6",
+  "checks": {
+    "hesperos_documents": 27,
+    "hesperos_blocking_findings": 0,
+    "relative_links_checked": 50,
+    "meaningful_image_alt_text": true,
+    "skip_link": true,
+    "landmarked_navigation": true,
+    "main_target": true,
+    "visible_focus": true,
+    "responsive_table_overflow": true,
+    "responsive_single_column_journey": true,
+    "reduced_motion": true,
+    "contrast_ratios": {
+      "body": 16.76,
+      "links_and_headings": 10.03,
+      "primary_button": 7,
+      "muted_text": 7.61
+    }
+  },
+  "unexecuted": [
+    "browser interaction under the explicit no-new-browser constraint",
+    "keyboard traversal",
+    "screen reader",
+    "zoom and reflow in a live browser",
+    "representative assistive-technology user"
+  ],
+  "completed_at": "2026-08-15T03:45:36.021782Z",
+  "fingerprint_algorithm": "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering"
 }

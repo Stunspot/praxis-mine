@@ -1,0 +1,28 @@
+{
+  "archives": [
+    {
+      "bytes": 89002,
+      "file": "praxis-mine-v1.0.1.zip",
+      "kind": "claude-skill",
+      "members": 22,
+      "sha256": "fbd0eb8ec439cdd972a977f75c596fe092e0e4da53ad21815f611d896bac3a93"
+    },
+    {
+      "bytes": 89002,
+      "file": "praxis-mine-skill-v1.0.1.zip",
+      "kind": "standalone-skill",
+      "members": 22,
+      "sha256": "fbd0eb8ec439cdd972a977f75c596fe092e0e4da53ad21815f611d896bac3a93"
+    },
+    {
+      "bytes": 1678731,
+      "file": "praxis-mine-plugin-v1.0.1.zip",
+      "kind": "plugin",
+      "members": 32,
+      "sha256": "ea15fcd93bf8938fb88ce04a4ba61721b36a1889026683521c229202570e8ffc"
+    }
+  ],
+  "name": "Praxis Mine",
+  "schema": "praxis-mine-component-custody/v1",
+  "version": "1.0.1"
+}

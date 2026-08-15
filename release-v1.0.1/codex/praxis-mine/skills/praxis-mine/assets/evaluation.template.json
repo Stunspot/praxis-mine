@@ -1,0 +1,23 @@
+{
+  "positive_scores": {
+    "new_outcome": 0,
+    "executable_leverage": 0,
+    "domain_judgment": 0,
+    "evidence_quality": 0,
+    "maintainability": 0,
+    "portability": 0,
+    "context_efficiency": 0
+  },
+  "risk_scores": {
+    "security": 0,
+    "privacy": 0,
+    "license": 0,
+    "cost_dependency": 0,
+    "overlap": 0
+  },
+  "capability_delta": "State the accepted outcome that becomes possible, better, cheaper, faster, or safer.",
+  "evidence": ["Record primary evidence, behavioral comparisons, and unknowns."],
+  "preferred_disposition": "monitor",
+  "next_test": "Name a bounded comparison with a baseline and acceptance oracle.",
+  "notes": ""
+}

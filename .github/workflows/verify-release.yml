@@ -1,0 +1,25 @@
+name: Verify release
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    name: Verify (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -B -m unittest discover -s source/plugin/skills/praxis-mine/tests -p "test_*.py" -v
+      - run: python -B release-v1.0.1/tools/verify_release.py release-v1.0.1
+      - run: python -c "import shutil; shutil.rmtree('release-v1.0.1')"
+      - run: python -B source/tools/build_release.py
+      - run: git diff --exit-code -- release-v1.0.1
+      - run: python -B release-v1.0.1/tools/verify_release.py release-v1.0.1

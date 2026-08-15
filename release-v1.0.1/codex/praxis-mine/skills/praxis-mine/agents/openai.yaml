@@ -1,0 +1,4 @@
+interface:
+  display_name: "Praxis Mine"
+  short_description: "🔬 Mine outside praxis for useful mechanisms."
+  default_prompt: "Use $praxis-mine to assess an outside skill, preserve evidence, and recommend a bounded disposition."

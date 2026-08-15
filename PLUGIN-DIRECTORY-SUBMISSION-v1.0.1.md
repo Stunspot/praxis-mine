@@ -7,7 +7,7 @@ This packet maps the exact v1.0.1 skills-only plugin to the current OpenAI submi
 - Plugin version: `1.0.1`
 - Core Augment and standalone skill version: `1.0.1`
 - Upload: `release-v1.0.1/archives/praxis-mine-plugin-v1.0.1.zip`
-- SHA-256: `e6147afd7c7ab372d12ed86e66991d3c2719d01260eb022178343f91586fd0a6`
+- SHA-256: `26aeb319e0ded6559c28124a6da9256d77bcb968e401982de778715444036875`
 - Public release: `https://github.com/Stunspot/praxis-mine/releases/tag/v1.0.1`
 - Submission type: **Skills only**
 

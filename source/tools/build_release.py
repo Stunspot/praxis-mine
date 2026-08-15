@@ -68,6 +68,7 @@ def deterministic_zip(source: Path, destination: Path, top_level: str | None = N
             relative = path.relative_to(source).as_posix()
             member = f"{top_level}/{relative}" if top_level else relative
             info = zipfile.ZipInfo(member, date_time=ZIP_TIME)
+            info.create_system = 3
             info.compress_type = zipfile.ZIP_STORED
             info.external_attr = 0o100644 << 16
             archive.writestr(info, path.read_bytes())

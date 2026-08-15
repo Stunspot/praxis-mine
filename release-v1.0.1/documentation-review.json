@@ -4,7 +4,7 @@
   "disposition": "REVIEW_PASS",
   "unresolved_material_findings": 0,
   "candidate_commit": "PENDING_PUBLICATION",
-  "documentation_fingerprint": "6705c6898bada49d4107534346a4ddc5d3621dd012c157c14eaef6e33b5ae555",
+  "documentation_fingerprint": "3472faf38ccc376c3719b8442a82ab1f6e6ef61f563e854963e350148b10e153",
   "reviewed_files": [
     {
       "path": "ARCHIVE-CUSTODY.md",
@@ -34,7 +34,7 @@
     {
       "path": "PLUGIN-DIRECTORY-SUBMISSION-v1.0.1.md",
       "bytes": 8345,
-      "sha256": "74089ba8c4e18fdfc53f63b3984cf594d0a275c0b7ee5e9aa0002d8b3e6ed52a"
+      "sha256": "8fbf9b1500f56582eb1154e5681e25ad83efd0b35daf3561af804e330e72a831"
     },
     {
       "path": "README.md",
@@ -147,6 +147,6 @@
     "Fresh-host installation, discovery, invocation, and customer outcomes remain outside this documentation remediation",
     "Legal and security professional certification was not performed"
   ],
-  "completed_at": "2026-08-15T03:50:31.9511225Z",
+  "completed_at": "2026-08-15T03:54:37.6557467Z",
   "fingerprint_algorithm": "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering"
 }

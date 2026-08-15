@@ -2,7 +2,7 @@
   "built_at": "2026-08-14T00:00:00Z",
   "canonical_zip": "Praxis-Mine-v1.0.1.zip",
   "canonical_zip_member_count": 76,
-  "canonical_zip_sha256": "633786300cd38d70ab53f0472adfa170604515a8ec7292506cbf452c35c365d1",
+  "canonical_zip_sha256": "179871a979e56d33dfbb9997db78769c86362a19a883ca49f7bffe3d8d22dffc",
   "name": "Praxis Mine",
   "schema": "praxis-mine-build-receipt/v1",
   "status": "release-candidate-built",

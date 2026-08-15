@@ -10,7 +10,7 @@
     "reviewed_from": "UNKNOWN"
   },
   "candidate_commit": "PENDING_PUBLICATION",
-  "documentation_fingerprint": "76522879eadf9afe34b2244ef96824c423d9f7e12bffe3a5664c49378f681587",
+  "documentation_fingerprint": "6705c6898bada49d4107534346a4ddc5d3621dd012c157c14eaef6e33b5ae555",
   "presentation_fingerprint": "b65804ae7f35e90828e3e7964ca490c5cad8a3f405d896da310e54f02f3f57f6",
   "reviewed_files": [
     {
@@ -41,7 +41,7 @@
     {
       "path": "PLUGIN-DIRECTORY-SUBMISSION-v1.0.1.md",
       "bytes": 8345,
-      "sha256": "7f9f8c56eee3eb92b488236e01e9c3570dc59d2a3577f169db36546fc20c91cd"
+      "sha256": "74089ba8c4e18fdfc53f63b3984cf594d0a275c0b7ee5e9aa0002d8b3e6ed52a"
     },
     {
       "path": "README.md",
@@ -120,8 +120,8 @@
     },
     {
       "path": "docs/README.md",
-      "bytes": 2612,
-      "sha256": "2095d4a7b0d8b92ec2051b2919108288de09d45561dea4e66f648e0284b5f0fe"
+      "bytes": 2569,
+      "sha256": "d20588bd0205c9a8ce5977c7f911fc2bd25ab2296024d4388db895a68c2004ad"
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
@@ -156,7 +156,7 @@
     "Retained the directly inspected post-release visual set unchanged"
   ],
   "claim_boundary": "Full declared customer corpus and operative product source were read. Static review does not establish fresh-host behavior, live browser rendering, or legal certification.",
-  "completed_at": "2026-08-15T03:45:36.021782Z",
+  "completed_at": "2026-08-15T03:50:31.9511225Z",
   "fingerprint_algorithm": "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
   "presentation_sources": [
     {

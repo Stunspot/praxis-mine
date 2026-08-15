@@ -4,7 +4,7 @@
   "disposition": "REVIEW_PASS",
   "unresolved_material_findings": 0,
   "candidate_commit": "PENDING_PUBLICATION",
-  "documentation_fingerprint": "76522879eadf9afe34b2244ef96824c423d9f7e12bffe3a5664c49378f681587",
+  "documentation_fingerprint": "6705c6898bada49d4107534346a4ddc5d3621dd012c157c14eaef6e33b5ae555",
   "reviewed_files": [
     {
       "path": "ARCHIVE-CUSTODY.md",
@@ -34,7 +34,7 @@
     {
       "path": "PLUGIN-DIRECTORY-SUBMISSION-v1.0.1.md",
       "bytes": 8345,
-      "sha256": "7f9f8c56eee3eb92b488236e01e9c3570dc59d2a3577f169db36546fc20c91cd"
+      "sha256": "74089ba8c4e18fdfc53f63b3984cf594d0a275c0b7ee5e9aa0002d8b3e6ed52a"
     },
     {
       "path": "README.md",
@@ -113,8 +113,8 @@
     },
     {
       "path": "docs/README.md",
-      "bytes": 2612,
-      "sha256": "2095d4a7b0d8b92ec2051b2919108288de09d45561dea4e66f648e0284b5f0fe"
+      "bytes": 2569,
+      "sha256": "d20588bd0205c9a8ce5977c7f911fc2bd25ab2296024d4388db895a68c2004ad"
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
@@ -147,6 +147,6 @@
     "Fresh-host installation, discovery, invocation, and customer outcomes remain outside this documentation remediation",
     "Legal and security professional certification was not performed"
   ],
-  "completed_at": "2026-08-15T03:45:36.021782Z",
+  "completed_at": "2026-08-15T03:50:31.9511225Z",
   "fingerprint_algorithm": "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering"
 }

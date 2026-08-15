@@ -6,7 +6,7 @@
       "kind": "claude-skill",
       "members": 22,
       "path": "claude/praxis-mine-v1.0.1.zip",
-      "sha256": "fbd0eb8ec439cdd972a977f75c596fe092e0e4da53ad21815f611d896bac3a93"
+      "sha256": "3c5ffee4b8b0e8cde5962be93945571f3cc8c116a4af9af60837289f35a8f646"
     },
     {
       "bytes": 89002,
@@ -14,7 +14,7 @@
       "kind": "standalone-skill",
       "members": 22,
       "path": "archives/praxis-mine-skill-v1.0.1.zip",
-      "sha256": "fbd0eb8ec439cdd972a977f75c596fe092e0e4da53ad21815f611d896bac3a93"
+      "sha256": "3c5ffee4b8b0e8cde5962be93945571f3cc8c116a4af9af60837289f35a8f646"
     },
     {
       "bytes": 1678731,
@@ -22,7 +22,7 @@
       "kind": "plugin",
       "members": 32,
       "path": "archives/praxis-mine-plugin-v1.0.1.zip",
-      "sha256": "ea15fcd93bf8938fb88ce04a4ba61721b36a1889026683521c229202570e8ffc"
+      "sha256": "e6147afd7c7ab372d12ed86e66991d3c2719d01260eb022178343f91586fd0a6"
     }
   ],
   "claim_boundary": "Static package, runtime integration, documentation, and archive evidence only; host activation, directory approval, and customer outcomes are separate.",
@@ -64,11 +64,6 @@
       "sha256": "333893baaad8c000f21a653fead4e9d091b15060e07dc3eeb6b128786315da49"
     },
     {
-      "bytes": 1570802,
-      "path": "assets/praxis-mine-logo-v1.0.1.png",
-      "sha256": "6008ae8cd3ecaa749a035810ad0378aed8a60c693f5c1c66e3aac58cd3838cc1"
-    },
-    {
       "bytes": 2524,
       "path": "DATA-AND-PRIVACY.md",
       "sha256": "0cb0669da6eb0b4a8c383583468dfa7b37dbe9a619fec381e093cfb59570431d"
@@ -92,6 +87,36 @@
       "bytes": 1823,
       "path": "SECURITY.md",
       "sha256": "6f8963ac315b1c47d0f6a8b04463f9f1ecb28d99368a6e592ef2af0fb9c566a1"
+    },
+    {
+      "bytes": 879,
+      "path": "SUPPORT.md",
+      "sha256": "7942814fcb5251414556968cf068202f87ebfdbdb6360256af1742a0bc6b90e1"
+    },
+    {
+      "bytes": 2898,
+      "path": "TERMS-OF-USE.md",
+      "sha256": "283e7b66d4df13b91cc286543ff1a74a330078c6e0189cea2c75d1597633b25d"
+    },
+    {
+      "bytes": 1730,
+      "path": "TRADEMARKS.md",
+      "sha256": "7bdb3d57d3aa9c879e415edc3d64a19207283981b8aa1de93b3fc7d73f0f2238"
+    },
+    {
+      "bytes": 1570802,
+      "path": "assets/praxis-mine-logo-v1.0.1.png",
+      "sha256": "6008ae8cd3ecaa749a035810ad0378aed8a60c693f5c1c66e3aac58cd3838cc1"
+    },
+    {
+      "bytes": 2690,
+      "path": "skills/praxis-mine/LICENSE.md",
+      "sha256": "445d93cae127b5c26f4fc8d2cc2b565de6d8fbea6bf86e43fb10f93c8903e507"
+    },
+    {
+      "bytes": 4502,
+      "path": "skills/praxis-mine/SKILL.md",
+      "sha256": "580cdb7f72a5a5bafc15f8c9fa3bfe84312de29f3becdfd2e4bad737d1599e1e"
     },
     {
       "bytes": 233,
@@ -164,11 +189,6 @@
       "sha256": "c242ac7cfb3379786c83098f69649b6ee8f3c0e1a51002ce4e9f478ed344718a"
     },
     {
-      "bytes": 2690,
-      "path": "skills/praxis-mine/LICENSE.md",
-      "sha256": "445d93cae127b5c26f4fc8d2cc2b565de6d8fbea6bf86e43fb10f93c8903e507"
-    },
-    {
       "bytes": 1658,
       "path": "skills/praxis-mine/references/evaluation-gate.md",
       "sha256": "99483ef6cd07a1008917bf5c4ad9e402fa9e864349d4c8b17ffaae066530383d"
@@ -194,34 +214,24 @@
       "sha256": "32750cf26015d9a3420f9c92c261d81919f34395d0ec10329f43d4dcfa6f8e85"
     },
     {
-      "bytes": 4502,
-      "path": "skills/praxis-mine/SKILL.md",
-      "sha256": "580cdb7f72a5a5bafc15f8c9fa3bfe84312de29f3becdfd2e4bad737d1599e1e"
-    },
-    {
       "bytes": 3583,
       "path": "skills/praxis-mine/tests/test_praxis_mine.py",
       "sha256": "d802c00d17f850f66c08236ab3ca465843554b7d7567464befffcb870da5e645"
-    },
-    {
-      "bytes": 879,
-      "path": "SUPPORT.md",
-      "sha256": "7942814fcb5251414556968cf068202f87ebfdbdb6360256af1742a0bc6b90e1"
-    },
-    {
-      "bytes": 2898,
-      "path": "TERMS-OF-USE.md",
-      "sha256": "283e7b66d4df13b91cc286543ff1a74a330078c6e0189cea2c75d1597633b25d"
-    },
-    {
-      "bytes": 1730,
-      "path": "TRADEMARKS.md",
-      "sha256": "7bdb3d57d3aa9c879e415edc3d64a19207283981b8aa1de93b3fc7d73f0f2238"
     }
   ],
   "repository": "https://github.com/Stunspot/praxis-mine",
   "schema": "praxis-mine-release/v1",
   "skill_files": [
+    {
+      "bytes": 2690,
+      "path": "LICENSE.md",
+      "sha256": "445d93cae127b5c26f4fc8d2cc2b565de6d8fbea6bf86e43fb10f93c8903e507"
+    },
+    {
+      "bytes": 4502,
+      "path": "SKILL.md",
+      "sha256": "580cdb7f72a5a5bafc15f8c9fa3bfe84312de29f3becdfd2e4bad737d1599e1e"
+    },
     {
       "bytes": 233,
       "path": "agents/openai.yaml",
@@ -293,11 +303,6 @@
       "sha256": "c242ac7cfb3379786c83098f69649b6ee8f3c0e1a51002ce4e9f478ed344718a"
     },
     {
-      "bytes": 2690,
-      "path": "LICENSE.md",
-      "sha256": "445d93cae127b5c26f4fc8d2cc2b565de6d8fbea6bf86e43fb10f93c8903e507"
-    },
-    {
       "bytes": 1658,
       "path": "references/evaluation-gate.md",
       "sha256": "99483ef6cd07a1008917bf5c4ad9e402fa9e864349d4c8b17ffaae066530383d"
@@ -321,11 +326,6 @@
       "bytes": 34031,
       "path": "scripts/vendor/praxis_store/storage.py",
       "sha256": "32750cf26015d9a3420f9c92c261d81919f34395d0ec10329f43d4dcfa6f8e85"
-    },
-    {
-      "bytes": 4502,
-      "path": "SKILL.md",
-      "sha256": "580cdb7f72a5a5bafc15f8c9fa3bfe84312de29f3becdfd2e4bad737d1599e1e"
     },
     {
       "bytes": 3583,

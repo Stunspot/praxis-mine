@@ -9,7 +9,7 @@
     "portable_release_verifier": true,
     "plugin_skill_archive_parity": true,
     "deterministic_stored_archives": true,
-    "documentation_fingerprint": "e1e8f7cb9e475885c37b2fd089c925f13475ec2cb019918b04b797f2b1367f57",
+    "documentation_fingerprint": "6705c6898bada49d4107534346a4ddc5d3621dd012c157c14eaef6e33b5ae555",
     "declared_customer_documents": 27,
     "hesperos_lint_passes": 26,
     "accepted_standard_license_heuristic": 1,
@@ -17,9 +17,9 @@
     "generated_cache_files_in_release": 0
   },
   "component_artifacts": {
-    "plugin_zip_sha256": "ea15fcd93bf8938fb88ce04a4ba61721b36a1889026683521c229202570e8ffc",
-    "claude_zip_sha256": "fbd0eb8ec439cdd972a977f75c596fe092e0e4da53ad21815f611d896bac3a93",
-    "standalone_skill_zip_sha256": "fbd0eb8ec439cdd972a977f75c596fe092e0e4da53ad21815f611d896bac3a93"
+    "plugin_zip_sha256": "e6147afd7c7ab372d12ed86e66991d3c2719d01260eb022178343f91586fd0a6",
+    "claude_zip_sha256": "3c5ffee4b8b0e8cde5962be93945571f3cc8c116a4af9af60837289f35a8f646",
+    "standalone_skill_zip_sha256": "3c5ffee4b8b0e8cde5962be93945571f3cc8c116a4af9af60837289f35a8f646"
   },
   "unexecuted": [
     "fresh standalone Codex installation and invocation",

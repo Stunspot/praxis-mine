@@ -27,7 +27,7 @@ ZIP_TIME = (2026, 8, 14, 0, 0, 0)
 def release_files(root: Path) -> list[Path]:
     return [
         path
-        for path in sorted(root.rglob("*"))
+        for path in sorted(root.rglob("*"), key=lambda item: item.relative_to(root).as_posix())
         if path.is_file()
         and "__pycache__" not in path.parts
         and path.suffix.lower() not in {".pyc", ".pyo"}

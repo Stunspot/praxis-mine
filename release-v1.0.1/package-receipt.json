@@ -1,0 +1,13 @@
+{
+  "customer_object": "Praxis-Mine-v1.0.1.zip",
+  "documentation_manifest": "documentation-manifest.json",
+  "host_components": [
+    "claude/praxis-mine-v1.0.1.zip",
+    "archives/praxis-mine-skill-v1.0.1.zip",
+    "archives/praxis-mine-plugin-v1.0.1.zip"
+  ],
+  "name": "Praxis Mine",
+  "schema": "praxis-mine-package-receipt/v1",
+  "status": "release-candidate-built",
+  "version": "1.0.1"
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run and retain the deterministic Praxis Mine v1.0.0 verification layer."""
+"""Run and retain the deterministic Praxis Mine v1.0.1 verification layer."""
 
 from __future__ import annotations
 
@@ -17,8 +17,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SKILL = ROOT / "source" / "plugin" / "skills" / "praxis-mine"
 PLUGIN = ROOT / "source" / "plugin"
-STAGING = ROOT / ".staging-v1.0.0"
-RELEASE = ROOT / "release-v1.0.0"
+STAGING = ROOT / ".staging-v1.0.1"
+RELEASE = ROOT / "release-v1.0.1"
 TARGET = RELEASE if RELEASE.is_dir() else STAGING
 EVIDENCE = ROOT / "source" / "verification" / "deterministic-run"
 CODEX_ROOT = Path.home() / ".codex"
@@ -177,7 +177,7 @@ def main() -> int:
         ),
     ]
 
-    kit = TARGET / "Praxis-Mine-v1.0.0.zip"
+    kit = TARGET / "Praxis-Mine-v1.0.1.zip"
     with tempfile.TemporaryDirectory(prefix="praxis-mine-verify-") as temporary:
         extracted = Path(temporary)
         with zipfile.ZipFile(kit) as archive:
@@ -195,7 +195,7 @@ def main() -> int:
             )
         )
 
-    submission = (ROOT / "PLUGIN-DIRECTORY-SUBMISSION-v1.0.0.md").read_text(
+    submission = (ROOT / "PLUGIN-DIRECTORY-SUBMISSION-v1.0.1.md").read_text(
         encoding="utf-8"
     )
     structural = {
@@ -224,7 +224,7 @@ def main() -> int:
     report = {
         "format": "praxis-mine-deterministic-verification-run/v1",
         "product": "praxis-mine",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "completed_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "checks": checks,
         "structural_assertions": structural,

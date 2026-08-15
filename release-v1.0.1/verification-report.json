@@ -1,0 +1,11 @@
+{
+  "counts": {
+    "archives_checked": 3,
+    "documentation_links_checked": 50,
+    "manifest_files_checked": 54,
+    "zip_members_checked": 76
+  },
+  "findings": [],
+  "ok": true,
+  "schema": "praxis-mine-portable-verification/v1"
+}

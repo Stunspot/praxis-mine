@@ -14,20 +14,20 @@ from pathlib import Path
 from typing import Any
 
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 SLUG = "praxis-mine"
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SOURCE_ROOT = REPO_ROOT / "source"
 PLUGIN_SOURCE = SOURCE_ROOT / "plugin"
 SKILL_SOURCE = PLUGIN_SOURCE / "skills" / SLUG
 RELEASE_ROOT = REPO_ROOT / f"release-v{VERSION}"
-ZIP_TIME = (2026, 7, 30, 12, 0, 0)
+ZIP_TIME = (2026, 8, 14, 0, 0, 0)
 
 
 def release_files(root: Path) -> list[Path]:
     return [
         path
-        for path in sorted(root.rglob("*"))
+        for path in sorted(root.rglob("*"), key=lambda item: item.relative_to(root).as_posix())
         if path.is_file()
         and "__pycache__" not in path.parts
         and path.suffix.lower() not in {".pyc", ".pyo"}
@@ -63,12 +63,13 @@ def write_json(path: Path, value: Any) -> None:
 
 def deterministic_zip(source: Path, destination: Path, top_level: str | None = None) -> dict[str, Any]:
     files = release_files(source)
-    with zipfile.ZipFile(destination, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
+    with zipfile.ZipFile(destination, "w", compression=zipfile.ZIP_STORED) as archive:
         for path in files:
             relative = path.relative_to(source).as_posix()
             member = f"{top_level}/{relative}" if top_level else relative
             info = zipfile.ZipInfo(member, date_time=ZIP_TIME)
-            info.compress_type = zipfile.ZIP_DEFLATED
+            info.create_system = 3
+            info.compress_type = zipfile.ZIP_STORED
             info.external_attr = 0o100644 << 16
             archive.writestr(info, path.read_bytes())
     return {
@@ -239,7 +240,7 @@ def main(*, staging: bool = False) -> int:
             "canonical_zip_sha256": kit_record["sha256"],
             "canonical_zip_member_count": kit_record["members"],
             "status": "staging-candidate-built" if staging else "release-candidate-built",
-            "built_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+            "built_at": "2026-08-14T00:00:00Z",
         },
     )
 

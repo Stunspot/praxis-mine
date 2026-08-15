@@ -1,0 +1,339 @@
+{
+  "archives": [
+    {
+      "bytes": 89002,
+      "file": "praxis-mine-v1.0.1.zip",
+      "kind": "claude-skill",
+      "members": 22,
+      "path": "claude/praxis-mine-v1.0.1.zip",
+      "sha256": "0e523cabd0275b578d67b0a526387af82d0debf5734457a9238ccf8c0f6026d5"
+    },
+    {
+      "bytes": 89002,
+      "file": "praxis-mine-skill-v1.0.1.zip",
+      "kind": "standalone-skill",
+      "members": 22,
+      "path": "archives/praxis-mine-skill-v1.0.1.zip",
+      "sha256": "0e523cabd0275b578d67b0a526387af82d0debf5734457a9238ccf8c0f6026d5"
+    },
+    {
+      "bytes": 1678731,
+      "file": "praxis-mine-plugin-v1.0.1.zip",
+      "kind": "plugin",
+      "members": 32,
+      "path": "archives/praxis-mine-plugin-v1.0.1.zip",
+      "sha256": "26aeb319e0ded6559c28124a6da9256d77bcb968e401982de778715444036875"
+    }
+  ],
+  "claim_boundary": "Static package, runtime integration, documentation, and archive evidence only; host activation, directory approval, and customer outcomes are separate.",
+  "customer_docs": [
+    "README.md",
+    "docs/index.md",
+    "docs/README.md",
+    "docs/HOST-COMPATIBILITY.md",
+    "docs/INSTALL-CODEX.md",
+    "docs/INSTALL-CLAUDE.md",
+    "docs/QUICK-START.md",
+    "docs/WORKFLOWS.md",
+    "docs/LEDGER-REFERENCE.md",
+    "docs/TROUBLESHOOTING.md",
+    "docs/404.md",
+    "docs/UNINSTALL-AND-DATA.md",
+    "docs/VALIDATION.md",
+    "docs/LIMITATIONS.md",
+    "docs/MAINTAINER-GUIDE.md",
+    "docs/PROVENANCE.md",
+    "DATA-AND-PRIVACY.md",
+    "TERMS-OF-USE.md",
+    "SECURITY.md",
+    "SUPPORT.md",
+    "LICENSE.md",
+    "TRADEMARKS.md",
+    "NOTICE.md",
+    "CONTRIBUTING.md",
+    "RELEASE-NOTES-v1.0.1.md",
+    "ARCHIVE-CUSTODY.md",
+    "PLUGIN-DIRECTORY-SUBMISSION-v1.0.1.md"
+  ],
+  "customer_object": "Praxis-Mine-v1.0.1.zip",
+  "name": "Praxis Mine",
+  "plugin_files": [
+    {
+      "bytes": 1929,
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "333893baaad8c000f21a653fead4e9d091b15060e07dc3eeb6b128786315da49"
+    },
+    {
+      "bytes": 2524,
+      "path": "DATA-AND-PRIVACY.md",
+      "sha256": "0cb0669da6eb0b4a8c383583468dfa7b37dbe9a619fec381e093cfb59570431d"
+    },
+    {
+      "bytes": 2690,
+      "path": "LICENSE.md",
+      "sha256": "445d93cae127b5c26f4fc8d2cc2b565de6d8fbea6bf86e43fb10f93c8903e507"
+    },
+    {
+      "bytes": 1639,
+      "path": "NOTICE.md",
+      "sha256": "d543f778b1f2b40eb59459abb3ec21fef1a8202c4ccadab31b00bf48a48fbb7c"
+    },
+    {
+      "bytes": 669,
+      "path": "README.md",
+      "sha256": "6c2805cb3ec935607be6fa041365a9e185c1d622fe4a531c12d82877960cd66a"
+    },
+    {
+      "bytes": 1823,
+      "path": "SECURITY.md",
+      "sha256": "6f8963ac315b1c47d0f6a8b04463f9f1ecb28d99368a6e592ef2af0fb9c566a1"
+    },
+    {
+      "bytes": 879,
+      "path": "SUPPORT.md",
+      "sha256": "7942814fcb5251414556968cf068202f87ebfdbdb6360256af1742a0bc6b90e1"
+    },
+    {
+      "bytes": 2898,
+      "path": "TERMS-OF-USE.md",
+      "sha256": "283e7b66d4df13b91cc286543ff1a74a330078c6e0189cea2c75d1597633b25d"
+    },
+    {
+      "bytes": 1730,
+      "path": "TRADEMARKS.md",
+      "sha256": "7bdb3d57d3aa9c879e415edc3d64a19207283981b8aa1de93b3fc7d73f0f2238"
+    },
+    {
+      "bytes": 1570802,
+      "path": "assets/praxis-mine-logo-v1.0.1.png",
+      "sha256": "6008ae8cd3ecaa749a035810ad0378aed8a60c693f5c1c66e3aac58cd3838cc1"
+    },
+    {
+      "bytes": 2690,
+      "path": "skills/praxis-mine/LICENSE.md",
+      "sha256": "445d93cae127b5c26f4fc8d2cc2b565de6d8fbea6bf86e43fb10f93c8903e507"
+    },
+    {
+      "bytes": 4502,
+      "path": "skills/praxis-mine/SKILL.md",
+      "sha256": "580cdb7f72a5a5bafc15f8c9fa3bfe84312de29f3becdfd2e4bad737d1599e1e"
+    },
+    {
+      "bytes": 233,
+      "path": "skills/praxis-mine/agents/openai.yaml",
+      "sha256": "33d1d8e362e7d424a9ea0e57e5bee3389f8ab69eea78849aa50cc8ac1a4c2c05"
+    },
+    {
+      "bytes": 662,
+      "path": "skills/praxis-mine/assets/evaluation.template.json",
+      "sha256": "7f89728bda165190b71e2e8a58d0b78deb6ed8bbbefb74320e32c7a787f5e762"
+    },
+    {
+      "bytes": 3919,
+      "path": "skills/praxis-mine/assets/praxis_mine.contract.json",
+      "sha256": "b9a2201d0184a98b862a403be67e3fde13078e2d622f3d4ca8d2d3852871f9d8"
+    },
+    {
+      "bytes": 746,
+      "path": "skills/praxis-mine/assets/seed-evaluations/anthropic_skill_creator.json",
+      "sha256": "4a0d5b472b92b4a7d17bbfb330f9be500df4e3041d70925603b3501e2d662975"
+    },
+    {
+      "bytes": 755,
+      "path": "skills/praxis-mine/assets/seed-evaluations/firecrawl_cli.json",
+      "sha256": "86483dae6e5453e4f43aa525d201eacf4a7c45fcce69e9871c9c407bcdd30d17"
+    },
+    {
+      "bytes": 748,
+      "path": "skills/praxis-mine/assets/seed-evaluations/hyperframes.json",
+      "sha256": "d4c1d8b322c6e2f81d4ef3d571ecc35aa6c48f7f1e9ded4354fd22eb541c4e35"
+    },
+    {
+      "bytes": 800,
+      "path": "skills/praxis-mine/assets/seed-evaluations/impeccable.json",
+      "sha256": "3abe30b7ebdce0b3c568e3a0a2a06dc61e9f41d4886a3aaed82b2109bd16526b"
+    },
+    {
+      "bytes": 728,
+      "path": "skills/praxis-mine/assets/seed-evaluations/marketing_skills.json",
+      "sha256": "a0618b68419209d1cc0240ee33862b9100f59ec7ad65cb360c427675222705c5"
+    },
+    {
+      "bytes": 652,
+      "path": "skills/praxis-mine/assets/seed-evaluations/microsoft_playwright_cli.json",
+      "sha256": "e8293ddbb43bb23ad22d40e00e5f38dcc0fea52e6717180787fffef1d43a506f"
+    },
+    {
+      "bytes": 800,
+      "path": "skills/praxis-mine/assets/seed-evaluations/microsoft_waza.json",
+      "sha256": "01c8d8db03b3c97fac3cf5cd81acdd303278bb387d2063b97bd7f234ed5501ac"
+    },
+    {
+      "bytes": 752,
+      "path": "skills/praxis-mine/assets/seed-evaluations/microsoft_webwright.json",
+      "sha256": "a012d1cbcae61cee213e653af806fd65364751f6cbed57318a6250fec997e851"
+    },
+    {
+      "bytes": 801,
+      "path": "skills/praxis-mine/assets/seed-evaluations/vercel_agent_browser.json",
+      "sha256": "4f5a791f0acddcd43326fb18ae2ee2280711a609b09ea7c9c72b89bfe928b80e"
+    },
+    {
+      "bytes": 733,
+      "path": "skills/praxis-mine/assets/seed-evaluations/vercel_agent_skills.json",
+      "sha256": "8ccf356edd9bdfd2fb85d20ed6a1c94709d1fe900485dc20545e66c29f07af3d"
+    },
+    {
+      "bytes": 5315,
+      "path": "skills/praxis-mine/assets/seed-manifest.json",
+      "sha256": "c242ac7cfb3379786c83098f69649b6ee8f3c0e1a51002ce4e9f478ed344718a"
+    },
+    {
+      "bytes": 1658,
+      "path": "skills/praxis-mine/references/evaluation-gate.md",
+      "sha256": "99483ef6cd07a1008917bf5c4ad9e402fa9e864349d4c8b17ffaae066530383d"
+    },
+    {
+      "bytes": 1211,
+      "path": "skills/praxis-mine/references/source-adapters.md",
+      "sha256": "71d1b9abcc84ff408e3f4d0fea572d52df19bfd46daf8d12d6255b819b71b694"
+    },
+    {
+      "bytes": 19863,
+      "path": "skills/praxis-mine/scripts/praxis_mine.py",
+      "sha256": "dd9f91ecd52d48311f7084b7cfa156c036bee6b384c971ca59bd54a4f04a9fd8"
+    },
+    {
+      "bytes": 68,
+      "path": "skills/praxis-mine/scripts/vendor/praxis_store/__init__.py",
+      "sha256": "708a4130224a133694372dd5c685602e8b0e8b634ed5abb75da7931d7fcd8380"
+    },
+    {
+      "bytes": 34031,
+      "path": "skills/praxis-mine/scripts/vendor/praxis_store/storage.py",
+      "sha256": "32750cf26015d9a3420f9c92c261d81919f34395d0ec10329f43d4dcfa6f8e85"
+    },
+    {
+      "bytes": 3583,
+      "path": "skills/praxis-mine/tests/test_praxis_mine.py",
+      "sha256": "d802c00d17f850f66c08236ab3ca465843554b7d7567464befffcb870da5e645"
+    }
+  ],
+  "repository": "https://github.com/Stunspot/praxis-mine",
+  "schema": "praxis-mine-release/v1",
+  "skill_files": [
+    {
+      "bytes": 2690,
+      "path": "LICENSE.md",
+      "sha256": "445d93cae127b5c26f4fc8d2cc2b565de6d8fbea6bf86e43fb10f93c8903e507"
+    },
+    {
+      "bytes": 4502,
+      "path": "SKILL.md",
+      "sha256": "580cdb7f72a5a5bafc15f8c9fa3bfe84312de29f3becdfd2e4bad737d1599e1e"
+    },
+    {
+      "bytes": 233,
+      "path": "agents/openai.yaml",
+      "sha256": "33d1d8e362e7d424a9ea0e57e5bee3389f8ab69eea78849aa50cc8ac1a4c2c05"
+    },
+    {
+      "bytes": 662,
+      "path": "assets/evaluation.template.json",
+      "sha256": "7f89728bda165190b71e2e8a58d0b78deb6ed8bbbefb74320e32c7a787f5e762"
+    },
+    {
+      "bytes": 3919,
+      "path": "assets/praxis_mine.contract.json",
+      "sha256": "b9a2201d0184a98b862a403be67e3fde13078e2d622f3d4ca8d2d3852871f9d8"
+    },
+    {
+      "bytes": 746,
+      "path": "assets/seed-evaluations/anthropic_skill_creator.json",
+      "sha256": "4a0d5b472b92b4a7d17bbfb330f9be500df4e3041d70925603b3501e2d662975"
+    },
+    {
+      "bytes": 755,
+      "path": "assets/seed-evaluations/firecrawl_cli.json",
+      "sha256": "86483dae6e5453e4f43aa525d201eacf4a7c45fcce69e9871c9c407bcdd30d17"
+    },
+    {
+      "bytes": 748,
+      "path": "assets/seed-evaluations/hyperframes.json",
+      "sha256": "d4c1d8b322c6e2f81d4ef3d571ecc35aa6c48f7f1e9ded4354fd22eb541c4e35"
+    },
+    {
+      "bytes": 800,
+      "path": "assets/seed-evaluations/impeccable.json",
+      "sha256": "3abe30b7ebdce0b3c568e3a0a2a06dc61e9f41d4886a3aaed82b2109bd16526b"
+    },
+    {
+      "bytes": 728,
+      "path": "assets/seed-evaluations/marketing_skills.json",
+      "sha256": "a0618b68419209d1cc0240ee33862b9100f59ec7ad65cb360c427675222705c5"
+    },
+    {
+      "bytes": 652,
+      "path": "assets/seed-evaluations/microsoft_playwright_cli.json",
+      "sha256": "e8293ddbb43bb23ad22d40e00e5f38dcc0fea52e6717180787fffef1d43a506f"
+    },
+    {
+      "bytes": 800,
+      "path": "assets/seed-evaluations/microsoft_waza.json",
+      "sha256": "01c8d8db03b3c97fac3cf5cd81acdd303278bb387d2063b97bd7f234ed5501ac"
+    },
+    {
+      "bytes": 752,
+      "path": "assets/seed-evaluations/microsoft_webwright.json",
+      "sha256": "a012d1cbcae61cee213e653af806fd65364751f6cbed57318a6250fec997e851"
+    },
+    {
+      "bytes": 801,
+      "path": "assets/seed-evaluations/vercel_agent_browser.json",
+      "sha256": "4f5a791f0acddcd43326fb18ae2ee2280711a609b09ea7c9c72b89bfe928b80e"
+    },
+    {
+      "bytes": 733,
+      "path": "assets/seed-evaluations/vercel_agent_skills.json",
+      "sha256": "8ccf356edd9bdfd2fb85d20ed6a1c94709d1fe900485dc20545e66c29f07af3d"
+    },
+    {
+      "bytes": 5315,
+      "path": "assets/seed-manifest.json",
+      "sha256": "c242ac7cfb3379786c83098f69649b6ee8f3c0e1a51002ce4e9f478ed344718a"
+    },
+    {
+      "bytes": 1658,
+      "path": "references/evaluation-gate.md",
+      "sha256": "99483ef6cd07a1008917bf5c4ad9e402fa9e864349d4c8b17ffaae066530383d"
+    },
+    {
+      "bytes": 1211,
+      "path": "references/source-adapters.md",
+      "sha256": "71d1b9abcc84ff408e3f4d0fea572d52df19bfd46daf8d12d6255b819b71b694"
+    },
+    {
+      "bytes": 19863,
+      "path": "scripts/praxis_mine.py",
+      "sha256": "dd9f91ecd52d48311f7084b7cfa156c036bee6b384c971ca59bd54a4f04a9fd8"
+    },
+    {
+      "bytes": 68,
+      "path": "scripts/vendor/praxis_store/__init__.py",
+      "sha256": "708a4130224a133694372dd5c685602e8b0e8b634ed5abb75da7931d7fcd8380"
+    },
+    {
+      "bytes": 34031,
+      "path": "scripts/vendor/praxis_store/storage.py",
+      "sha256": "32750cf26015d9a3420f9c92c261d81919f34395d0ec10329f43d4dcfa6f8e85"
+    },
+    {
+      "bytes": 3583,
+      "path": "tests/test_praxis_mine.py",
+      "sha256": "d802c00d17f850f66c08236ab3ca465843554b7d7567464befffcb870da5e645"
+    }
+  ],
+  "slug": "praxis-mine",
+  "version": "1.0.1",
+  "visibility": "PUBLIC_AUTHORIZED"
+}

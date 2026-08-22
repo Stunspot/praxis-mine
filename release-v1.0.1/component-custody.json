@@ -1,25 +1,25 @@
 {
   "archives": [
     {
-      "bytes": 89002,
+      "bytes": 89045,
       "file": "praxis-mine-v1.0.1.zip",
       "kind": "claude-skill",
       "members": 22,
-      "sha256": "0e523cabd0275b578d67b0a526387af82d0debf5734457a9238ccf8c0f6026d5"
+      "sha256": "8b32f93284212d3ff2ea91c0319bfd3a6a1c8745d4573a0eca6e956d01078500"
     },
     {
-      "bytes": 89002,
+      "bytes": 89045,
       "file": "praxis-mine-skill-v1.0.1.zip",
       "kind": "standalone-skill",
       "members": 22,
-      "sha256": "0e523cabd0275b578d67b0a526387af82d0debf5734457a9238ccf8c0f6026d5"
+      "sha256": "8b32f93284212d3ff2ea91c0319bfd3a6a1c8745d4573a0eca6e956d01078500"
     },
     {
-      "bytes": 1678731,
+      "bytes": 1678774,
       "file": "praxis-mine-plugin-v1.0.1.zip",
       "kind": "plugin",
       "members": 32,
-      "sha256": "26aeb319e0ded6559c28124a6da9256d77bcb968e401982de778715444036875"
+      "sha256": "9589aa585b9cdb90356637e161189f09f785ee3e07c728778288cbe1c1c50ffa"
     }
   ],
   "name": "Praxis Mine",

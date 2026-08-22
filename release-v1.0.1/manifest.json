@@ -1,28 +1,28 @@
 {
   "archives": [
     {
-      "bytes": 89002,
+      "bytes": 89045,
       "file": "praxis-mine-v1.0.1.zip",
       "kind": "claude-skill",
       "members": 22,
       "path": "claude/praxis-mine-v1.0.1.zip",
-      "sha256": "0e523cabd0275b578d67b0a526387af82d0debf5734457a9238ccf8c0f6026d5"
+      "sha256": "8b32f93284212d3ff2ea91c0319bfd3a6a1c8745d4573a0eca6e956d01078500"
     },
     {
-      "bytes": 89002,
+      "bytes": 89045,
       "file": "praxis-mine-skill-v1.0.1.zip",
       "kind": "standalone-skill",
       "members": 22,
       "path": "archives/praxis-mine-skill-v1.0.1.zip",
-      "sha256": "0e523cabd0275b578d67b0a526387af82d0debf5734457a9238ccf8c0f6026d5"
+      "sha256": "8b32f93284212d3ff2ea91c0319bfd3a6a1c8745d4573a0eca6e956d01078500"
     },
     {
-      "bytes": 1678731,
+      "bytes": 1678774,
       "file": "praxis-mine-plugin-v1.0.1.zip",
       "kind": "plugin",
       "members": 32,
       "path": "archives/praxis-mine-plugin-v1.0.1.zip",
-      "sha256": "26aeb319e0ded6559c28124a6da9256d77bcb968e401982de778715444036875"
+      "sha256": "9589aa585b9cdb90356637e161189f09f785ee3e07c728778288cbe1c1c50ffa"
     }
   ],
   "claim_boundary": "Static package, runtime integration, documentation, and archive evidence only; host activation, directory approval, and customer outcomes are separate.",
@@ -114,14 +114,14 @@
       "sha256": "445d93cae127b5c26f4fc8d2cc2b565de6d8fbea6bf86e43fb10f93c8903e507"
     },
     {
-      "bytes": 4502,
+      "bytes": 4528,
       "path": "skills/praxis-mine/SKILL.md",
-      "sha256": "580cdb7f72a5a5bafc15f8c9fa3bfe84312de29f3becdfd2e4bad737d1599e1e"
+      "sha256": "4aec3281405add272cf3f8ac45b985295ff4d348e581c998ddca5c2c5531da74"
     },
     {
-      "bytes": 233,
+      "bytes": 250,
       "path": "skills/praxis-mine/agents/openai.yaml",
-      "sha256": "33d1d8e362e7d424a9ea0e57e5bee3389f8ab69eea78849aa50cc8ac1a4c2c05"
+      "sha256": "73d3b64a6ba67378c45784e70bf0014ad5a3ff02524c895f2f8cb74a9aee0bb7"
     },
     {
       "bytes": 662,
@@ -228,14 +228,14 @@
       "sha256": "445d93cae127b5c26f4fc8d2cc2b565de6d8fbea6bf86e43fb10f93c8903e507"
     },
     {
-      "bytes": 4502,
+      "bytes": 4528,
       "path": "SKILL.md",
-      "sha256": "580cdb7f72a5a5bafc15f8c9fa3bfe84312de29f3becdfd2e4bad737d1599e1e"
+      "sha256": "4aec3281405add272cf3f8ac45b985295ff4d348e581c998ddca5c2c5531da74"
     },
     {
-      "bytes": 233,
+      "bytes": 250,
       "path": "agents/openai.yaml",
-      "sha256": "33d1d8e362e7d424a9ea0e57e5bee3389f8ab69eea78849aa50cc8ac1a4c2c05"
+      "sha256": "73d3b64a6ba67378c45784e70bf0014ad5a3ff02524c895f2f8cb74a9aee0bb7"
     },
     {
       "bytes": 662,

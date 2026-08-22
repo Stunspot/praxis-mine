@@ -1,6 +1,6 @@
 ---
 name: praxis-mine
-description: "🔬 Praxis mining for skill adoption."
+description: "🔬 Assess URLs, software, and ideas for selective integration."
 ---
 
 # Praxis Mine

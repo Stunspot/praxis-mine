@@ -2,7 +2,6 @@
 * text=auto eol=lf
 
 # Preserve canonical settled release snapshots byte-for-byte.
-/release-v0.1.0/** -text
 
 # Windows-native text exceptions.
 *.bat text eol=crlf

@@ -2,6 +2,8 @@
 
 Plugin removal and ledger deletion are separate actions. Removing one does not prove the other changed.
 
+Before using the terminal examples in this guide, change to `codex/praxis-mine/skills/praxis-mine/` inside the extracted complete kit. This is the skill root containing `SKILL.md` and `scripts/`. If you are working from an installed copy, use its corresponding skill root.
+
 ## Remove the plugin or Skill
 
 Use the current host's supported plugin or Skill removal control. Confirm Praxis Mine is no longer listed in a fresh task or chat. If the host installed a marketplace-managed copy, remove it through that marketplace flow rather than deleting an arbitrary cache directory.
@@ -26,7 +28,7 @@ This confirms which store is healthy; it does not back it up.
 
 Copy the selected data directory to a user-controlled backup location while Praxis Mine is not writing to it. Verify the copied SQLite files exist and record their hashes when exact custody matters.
 
-The embedded storage library also contains backup and export primitives for maintainers, but Praxis Mine v1.0.1 exposes no end-user backup or restore command. Do not invent one from the file names.
+The visual workspace offers **Export ledger** for a newline-delimited JSON (`.jsonl`) export and **Export report** for a reading report. Neither is a full SQLite backup or an automatic restore procedure. The embedded storage library also contains maintenance primitives, but the skill exposes no end-user full-store backup or restore command. Do not infer a supported restore workflow from library filenames.
 
 ## Delete data
 

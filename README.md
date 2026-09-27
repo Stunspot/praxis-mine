@@ -15,10 +15,11 @@ Praxis Mine inspects what it finds, keeps the mechanism that would change what y
 ## Start here
 
 1. Open the [Praxis Mine documentation site](https://stunspot.github.io/praxis-mine/) for the complete guided path.
-2. Download `Praxis-Mine-v1.0.1.zip` from the [v1.0.1 release](https://github.com/Stunspot/praxis-mine/releases/tag/v1.0.1).
+2. Extract the supplied `Praxis-Mine-v1.2.0.zip`. Published downloads are listed on [GitHub Releases](https://github.com/Stunspot/praxis-mine/releases).
 3. Follow the [Codex/ChatGPT plugin](docs/INSTALL-CODEX.md) or [Claude skill](docs/INSTALL-CLAUDE.md) installation path.
 4. Complete the [ten-minute first mine](docs/QUICK-START.md).
-5. Use the [workflow guide](docs/WORKFLOWS.md) when you need a local scan, candidate comparison, selective adaptation, or a bounded pilot.
+5. Open **Open.cmd** on Windows, or follow the [visual workspace guide](docs/MINE-ROOM.md), to survey and compare your findings.
+6. Use the [workflow guide](docs/WORKFLOWS.md) when you need a local scan, candidate comparison, selective adaptation, or a bounded pilot.
 
 Prefer plain Markdown? The [repository documentation map](docs/README.md) carries the same routes without the Pages presentation.
 
@@ -29,7 +30,8 @@ The release is one customer kit containing:
 - an installable skills-only Codex/ChatGPT plugin;
 - an upload-ready Claude skill ZIP;
 - a separately named standalone Praxis Mine skill archive;
-- a self-contained Python and SQLite evidence ledger;
+- a self-contained Python and SQLite evidence ledger with the Blackglass — Crimson extraction gallery and SNAPFRAME evidence circuit;
+- source-grouped exploration, a focused evidence reader, dated activity trail, and persistent comparison bench for two or three findings;
 - seed examples, evaluation contracts, tests, validation tools, and checksums;
 - Hesperos-authored installation, use, recovery, privacy, support, and provenance guidance.
 
@@ -66,7 +68,7 @@ Static release validation, host installation, skill discovery, invocation, usefu
 - [Security](SECURITY.md)
 - [Support](SUPPORT.md)
 - [License](LICENSE.md)
-- [Release notes](RELEASE-NOTES-v1.0.1.md)
+- [Release notes](RELEASE-NOTES-v1.2.0.md)
 - [Plugin Directory submission packet](PLUGIN-DIRECTORY-SUBMISSION-v1.0.1.md)
 
 Praxis Mine is published by [Collaborative Dynamics](https://collaborative-dynamics.com). Mining is encouraged. Swallowing the quarry whole remains an unforced error. 🌐‍💠

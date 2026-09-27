@@ -2,6 +2,9 @@
   "format": "cd-customer-documentation/v1",
   "landing_page": "README.md",
   "customer_docs": [
+    "RELEASE-NOTES-v1.2.0.md",
+    "docs/MINE-ROOM.md",
+    "RELEASE-NOTES-v1.1.0.md",
     "README.md",
     "docs/index.md",
     "docs/README.md",

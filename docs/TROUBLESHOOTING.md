@@ -2,6 +2,8 @@
 
 Begin with the observed symptom. Preserve the error, version, selected path, and command before reinstalling or deleting anything.
 
+Before using the terminal examples in this guide, change to `codex/praxis-mine/skills/praxis-mine/` inside the extracted complete kit. This is the skill root containing `SKILL.md` and `scripts/`. If you are working from an installed copy, use its corresponding skill root.
+
 ## The release verifier fails
 
 1. Confirm you are running `python tools/verify_release.py . --component-only` from the extracted complete-kit root.
@@ -14,7 +16,7 @@ Do not continue to installation when archive paths, manifests, hashes, or runtim
 ## The plugin installs but Praxis Mine is not discoverable
 
 1. Confirm the installed plugin root contains `.codex-plugin/plugin.json`.
-2. Confirm the manifest version is `1.0.1` and `skills` points to `./skills/`.
+2. Confirm the manifest version is `1.2.0` and `skills` points to `./skills/`.
 3. Start a fresh task or chat after the host reloads plugins.
 4. Invoke **Praxis Mine** by name once:
 
@@ -26,12 +28,18 @@ A copied folder is not evidence that the host discovered it. Preserve the host's
 
 ## Claude rejects the Skill ZIP
 
-1. Use `claude/praxis-mine-v1.0.1.zip` unchanged.
+1. Use `claude/praxis-mine-v1.2.0.zip` unchanged.
 2. Confirm its digest matches the detached `archive-custody.json` release asset.
 3. Confirm the current Claude product and workspace expose custom Skills.
 4. Upload the fresh official ZIP.
 
 If the digest matches and the host still rejects it, preserve the exact host message. Recompression changes the reviewed bytes and is not an evidence-preserving fix.
+
+## The visual explorer is empty or unavailable
+
+A fresh data home starts empty. Use **Ledger tools** to record a source and finding, or import a native mining manifest. The release contains no personal research ledger. If a different collection was expected, check the selected data-home path before importing or editing.
+
+If the local session expires, reopen the workspace through `Open.cmd` or `Open.command`, then use **Refresh**. If it still cannot open the ledger, preserve the launch error and follow the [mine-room recovery guidance](MINE-ROOM.md).
 
 ## Python is not found
 

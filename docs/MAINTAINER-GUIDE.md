@@ -15,7 +15,7 @@ they are not promised inside the extracted customer kit.
 - `documentation-manifest.json`: exact customer-document inventory;
 - `source/verification/`: TestForge and Hesperos evidence.
 
-The generated `release-v1.0.1/` directory is a release artifact, not the preferred authoring surface.
+The generated `release-v1.2.0/` directory is a release artifact, not the preferred authoring surface.
 
 ## Change classification
 
@@ -81,10 +81,10 @@ python source/tools/build_release.py
 Then run:
 
 ```text
-python release-v1.0.1/tools/verify_release.py release-v1.0.1
+python release-v1.2.0/tools/verify_release.py release-v1.2.0
 ```
 
-The builder must fail rather than overwrite an existing versioned release. Inspect the actual customer kit, plugin ZIP, Claude ZIP, and standalone skill ZIP after extraction.
+The builder must fail rather than overwrite an existing versioned release. For a same-version correction, use `python source/tools/build_release.py --repair-candidate` to create a new timestamped candidate while preserving the prior release bytes. Classify the correction and approve its exact final bundle before replacing any shelf or public asset. Inspect the actual customer kit, plugin ZIP, Claude ZIP, and standalone skill ZIP after extraction.
 
 ## Public launch
 

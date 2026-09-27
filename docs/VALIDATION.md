@@ -4,7 +4,7 @@ Validation is evidence about declared boundaries. It is not a magic certificate 
 
 ## Verify the complete kit
 
-From the extracted `Praxis-Mine-v1.0.1.zip` root:
+From the extracted `Praxis-Mine-v1.2.0.zip` root:
 
 ```text
 python tools/verify_release.py . --component-only
@@ -36,13 +36,13 @@ The tests use a temporary data home. They exercise initialization, seed ingestio
 
 ## Verify release assets
 
-Download `Praxis-Mine-v1.0.1.zip.sha256` or `archive-custody.json` beside the
+Download `Praxis-Mine-v1.2.0.zip.sha256` or `archive-custody.json` beside the
 complete kit, then compare the detached value with a local SHA-256 calculation.
 On PowerShell:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\Praxis-Mine-v1.0.1.zip
-Get-Content .\Praxis-Mine-v1.0.1.zip.sha256
+Get-FileHash -Algorithm SHA256 .\Praxis-Mine-v1.2.0.zip
+Get-Content .\Praxis-Mine-v1.2.0.zip.sha256
 ```
 
 The external `archive-custody.json` records the complete kit, plugin archive,
@@ -53,6 +53,10 @@ after the exposed assets are read back and match those values.
 ## Documentation evidence
 
 `documentation-manifest.json` identifies the exact customer corpus and reader moments. `documentation-authorship.json` binds the current bytes to the Hesperos pass. `documentation-review.json` records the separate fresh-context reviewer disposition. Structural Markdown lint and link checks remain narrower than assistive-technology or representative-user testing.
+
+## Visual workspace evidence
+
+The current Windows workspace was checked in both themes at desktop, ultrawide, and narrow phone widths. Reader navigation, comparison, original activity dates, registered sources without findings, and findings without native evaluations were exercised. These observations cover the local implementation; they do not establish native macOS execution, fresh-customer host activation, screen-reader efficacy, or formal accessibility conformance. The packaged verification records retain the scope of each check.
 
 ## What the recorded evidence does not prove
 

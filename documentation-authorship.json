@@ -1,188 +1,86 @@
 {
+  "authored_files": [
+    {
+      "bytes": 4933,
+      "path": "docs/index.md",
+      "sha256": "5c5449b14412f276213687319ef704469522efef185cc31ac004623c6b83c5a0"
+    },
+    {
+      "bytes": 2718,
+      "path": "docs/INSTALL-CODEX.md",
+      "sha256": "36694bedba835715e0ddc9d6d82d4da6b5f375afa759b4c3bf24e71ddd111095"
+    },
+    {
+      "bytes": 2032,
+      "path": "docs/INSTALL-CLAUDE.md",
+      "sha256": "de8f1be94b89378853b8440c3b125a060116fe35162c092a93ab10de644260c9"
+    },
+    {
+      "bytes": 2994,
+      "path": "docs/HOST-COMPATIBILITY.md",
+      "sha256": "21885bba29110fd70e42b44943eda56d43695f28b5c32e9b9e6d508d67e1647f"
+    },
+    {
+      "bytes": 4621,
+      "path": "docs/TROUBLESHOOTING.md",
+      "sha256": "204e1735734a9c6b85b575a4937564c60db3585dd102d95aeda63cadf8f0118e"
+    },
+    {
+      "bytes": 2454,
+      "path": "docs/UNINSTALL-AND-DATA.md",
+      "sha256": "463f9260b0a9e1f90f61f530c4d80324dc2ea327a1b08b017be829f55382a0dc"
+    },
+    {
+      "bytes": 3269,
+      "path": "docs/VALIDATION.md",
+      "sha256": "d51cb32cbd3de6fd13acc5ff7677d10fa301fab58d8b121b837f792e71eec655"
+    },
+    {
+      "bytes": 5183,
+      "path": "docs/MAINTAINER-GUIDE.md",
+      "sha256": "a6c054115a02395b9cb58c376e0db9869f6578101e55c6624604bf581736142b"
+    },
+    {
+      "bytes": 2079,
+      "path": "RELEASE-NOTES-v1.2.0.md",
+      "sha256": "0bcbc456fec48cdfa096e75630fdfc6373d02600940379ff62785c0ff743b321"
+    }
+  ],
+  "authoring": {
+    "authorship_scope": "materially-revised",
+    "capability": "hesperos-documentation",
+    "capability_entrypoint_sha256": "c6622d90a907edc95e93b868e2481f835bf3ddb3f21b801a3699042a0e524cde",
+    "mode": "in-process",
+    "run_id": "praxis-public-release-20260927-v1.2.0"
+  },
+  "authoring_response": {
+    "bytes": 747,
+    "path": "verification/redesign-authoring-response.md",
+    "sha256": "ac8aa9e0a04df2ea503fb209f8a1d23694f3f686ec48b062e3c9b5adf28d62cf"
+  },
+  "claim_boundary": "Binds retained evidence for one Hesperos authoring or material-revision run. It does not prove independent review, host activation, publication, accessibility conformance, or customer outcomes.",
+  "created_at": "2026-09-27T20:38:21+00:00",
+  "documentation_fingerprint": "de097c4127083d952f9fcc31a87d08f9833874923d475f62d5f1e0347323547a",
+  "documentation_manifest": {
+    "bytes": 340,
+    "path": "verification/redesign-documentation-manifest.json",
+    "sha256": "ab0d2d02b742de1d3c2616cb952a95a4ce4e8456edddbca20c7ebad90f208d2f"
+  },
+  "evidence_packet": {
+    "bytes": 2568,
+    "path": "verification/redesign-doc-evidence.md",
+    "sha256": "14d53313b4ede46a1527b42d81df1eb71a06546b87583957559815be043b65dc"
+  },
+  "execution_evidence": [
+    {
+      "bytes": 747,
+      "path": "verification/redesign-authoring-response.md",
+      "sha256": "ac8aa9e0a04df2ea503fb209f8a1d23694f3f686ec48b062e3c9b5adf28d62cf"
+    }
+  ],
   "format": "cd-hesperos-documentation-authorship/v1",
   "product": {
     "slug": "praxis-mine",
-    "version": "1.0.1"
-  },
-  "authoring": {
-    "capability": "hesperos-documentation",
-    "mode": "complete-corpus-remediation-and-review",
-    "reviewed_from": "UNKNOWN"
-  },
-  "candidate_commit": "PENDING_PUBLICATION",
-  "documentation_fingerprint": "3472faf38ccc376c3719b8442a82ab1f6e6ef61f563e854963e350148b10e153",
-  "presentation_fingerprint": "b65804ae7f35e90828e3e7964ca490c5cad8a3f405d896da310e54f02f3f57f6",
-  "reviewed_files": [
-    {
-      "path": "ARCHIVE-CUSTODY.md",
-      "bytes": 1362,
-      "sha256": "0239a046308ded43ebb5f945590466a62a9a2fa96a19efcf4ab8b046d90c5ffa"
-    },
-    {
-      "path": "CONTRIBUTING.md",
-      "bytes": 1088,
-      "sha256": "eda4584e4d05e3e338e5c0a7da06bc7403b356f72b58ceec0d7f4201df3d3d33"
-    },
-    {
-      "path": "DATA-AND-PRIVACY.md",
-      "bytes": 2524,
-      "sha256": "0cb0669da6eb0b4a8c383583468dfa7b37dbe9a619fec381e093cfb59570431d"
-    },
-    {
-      "path": "LICENSE.md",
-      "bytes": 2690,
-      "sha256": "445d93cae127b5c26f4fc8d2cc2b565de6d8fbea6bf86e43fb10f93c8903e507"
-    },
-    {
-      "path": "NOTICE.md",
-      "bytes": 1639,
-      "sha256": "d543f778b1f2b40eb59459abb3ec21fef1a8202c4ccadab31b00bf48a48fbb7c"
-    },
-    {
-      "path": "PLUGIN-DIRECTORY-SUBMISSION-v1.0.1.md",
-      "bytes": 8345,
-      "sha256": "8fbf9b1500f56582eb1154e5681e25ad83efd0b35daf3561af804e330e72a831"
-    },
-    {
-      "path": "README.md",
-      "bytes": 3968,
-      "sha256": "3514113d048484b37ed1dc8c2e5341cdc76590592ed537a03b6f49ec1b0f456c"
-    },
-    {
-      "path": "RELEASE-NOTES-v1.0.1.md",
-      "bytes": 1795,
-      "sha256": "5f599e8365d4ff5f6d8715b82b712b106a5925760417737555b40681b225cc72"
-    },
-    {
-      "path": "SECURITY.md",
-      "bytes": 1823,
-      "sha256": "6f8963ac315b1c47d0f6a8b04463f9f1ecb28d99368a6e592ef2af0fb9c566a1"
-    },
-    {
-      "path": "SUPPORT.md",
-      "bytes": 879,
-      "sha256": "d0d0393b154688151369c41664c0729509a47bd815fb2f26a4d4e1c7e67d76e5"
-    },
-    {
-      "path": "TERMS-OF-USE.md",
-      "bytes": 2898,
-      "sha256": "283e7b66d4df13b91cc286543ff1a74a330078c6e0189cea2c75d1597633b25d"
-    },
-    {
-      "path": "TRADEMARKS.md",
-      "bytes": 1730,
-      "sha256": "7bdb3d57d3aa9c879e415edc3d64a19207283981b8aa1de93b3fc7d73f0f2238"
-    },
-    {
-      "path": "docs/404.md",
-      "bytes": 766,
-      "sha256": "248c44101c7fcfe4d427e3af21ef62e721aa91c4fc419fc39033bad4557f410d"
-    },
-    {
-      "path": "docs/HOST-COMPATIBILITY.md",
-      "bytes": 2319,
-      "sha256": "3cef7568cd17f535833f449c693f6bf2d001f3233b28de31d73a6f35a191f37e"
-    },
-    {
-      "path": "docs/INSTALL-CLAUDE.md",
-      "bytes": 1655,
-      "sha256": "06882db90351d5f73619989040071deb9da0574db5812b3194a0d2c63ba105cc"
-    },
-    {
-      "path": "docs/INSTALL-CODEX.md",
-      "bytes": 2310,
-      "sha256": "7f4ec37a13ef64d54ba409b61b906eb50abcb8d148a3f969f6f759995f5a9219"
-    },
-    {
-      "path": "docs/LEDGER-REFERENCE.md",
-      "bytes": 2990,
-      "sha256": "3a8e56e6b68ca05a122828fa9438b227f5310d1b50976e3f9798437e39211c1f"
-    },
-    {
-      "path": "docs/LIMITATIONS.md",
-      "bytes": 1933,
-      "sha256": "2905beb797ea20b3233454fd84a9227492dbbc9eaaa737b0e8be2d9c2c080b8a"
-    },
-    {
-      "path": "docs/MAINTAINER-GUIDE.md",
-      "bytes": 4907,
-      "sha256": "2b0eb9d4992a071097db96bd8f7d8cd4ad205be135e90413621a0cfbcebcb3f6"
-    },
-    {
-      "path": "docs/PROVENANCE.md",
-      "bytes": 3351,
-      "sha256": "c79aa8b4d9593bcf584abfc3bc363c630b8e9c7a6b9bde976559f620a77e526f"
-    },
-    {
-      "path": "docs/QUICK-START.md",
-      "bytes": 2767,
-      "sha256": "ffadb747910fd2f104d5ae92818234d5791f46100b191bcc17a246b0151a8d9f"
-    },
-    {
-      "path": "docs/README.md",
-      "bytes": 2569,
-      "sha256": "d20588bd0205c9a8ce5977c7f911fc2bd25ab2296024d4388db895a68c2004ad"
-    },
-    {
-      "path": "docs/TROUBLESHOOTING.md",
-      "bytes": 3790,
-      "sha256": "6dc330ce5da19e327f8a9012a865d9728eeba66001f6166f5919cb2709e7ab7f"
-    },
-    {
-      "path": "docs/UNINSTALL-AND-DATA.md",
-      "bytes": 1969,
-      "sha256": "c5523358de035af106dab5f8119964f691d57926be12602cb3f5d91fe8968b70"
-    },
-    {
-      "path": "docs/VALIDATION.md",
-      "bytes": 2728,
-      "sha256": "047ff6abf15289949559b034908c74bd4038a1c1411ee5be94f79704c32d4d3d"
-    },
-    {
-      "path": "docs/WORKFLOWS.md",
-      "bytes": 4129,
-      "sha256": "ad4559ac0b358d916e0040b75c42ae3f9d50faaeeff33dc731d6a646c4c774f8"
-    },
-    {
-      "path": "docs/index.md",
-      "bytes": 4933,
-      "sha256": "22c61c637292b526ca2e8051bad45e8f7e3c09aa2d14507cdc0907b6d932e2ee"
-    }
-  ],
-  "disposition": "REVIEW_PASS",
-  "material_repairs": [
-    "Rebound the complete customer journey to v1.0.1 current installation and release routes",
-    "Preserved v1.0.0 provenance and the 1.0.0 data contract as historical/schema facts",
-    "Retained the directly inspected post-release visual set unchanged"
-  ],
-  "claim_boundary": "Full declared customer corpus and operative product source were read. Static review does not establish fresh-host behavior, live browser rendering, or legal certification.",
-  "completed_at": "2026-08-15T03:54:37.6557467Z",
-  "fingerprint_algorithm": "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
-  "presentation_sources": [
-    {
-      "path": "docs/_layouts/default.html",
-      "bytes": 3339,
-      "sha256": "4e76c3da20051968bb95aa7cf481f6d9d5db2571cf8124b84e4afeab2f4e4ad0"
-    },
-    {
-      "path": "docs/assets/brand/praxis-mine-pages-hero.png",
-      "bytes": 2730983,
-      "sha256": "a2d3d3d829ab9bd5f5562e4f79c85f0c51d348e972b7daf6cfe3039fd27bbb5a"
-    },
-    {
-      "path": "docs/assets/brand/praxis-mine-readme-hero.png",
-      "bytes": 2000975,
-      "sha256": "6cbaa8b5fa93380f35b775964b5056a0193b2030133c68390d357bc158bf74c3"
-    },
-    {
-      "path": "docs/assets/brand/praxis-mine-social-card.jpg",
-      "bytes": 185935,
-      "sha256": "c100fe0a9e7d975e8aaf78e20bcdc8bc9742004a95a3b6256eae4c9163b94ebd"
-    },
-    {
-      "path": "docs/assets/css/style.css",
-      "bytes": 7135,
-      "sha256": "849213177bd008daba0692e75e9dc8b93662539a456ff219f9dd65404e67f643"
-    }
-  ]
+    "version": "1.2.0"
+  }
 }

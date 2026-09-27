@@ -4,7 +4,7 @@ Use this path for the skills-only plugin. Installation controls vary by Codex or
 
 ## What you need
 
-- `praxis-mine-plugin-v1.0.1.zip` or the `codex/praxis-mine/` directory from the complete customer kit;
+- `praxis-mine-plugin-v1.2.0.zip` or the `codex/praxis-mine/` directory from the complete customer kit;
 - a Codex or ChatGPT environment that supports local, repository, or uploaded plugins;
 - permission to install a plugin in that environment.
 
@@ -42,6 +42,10 @@ Installation, discovery, and invocation are three observations:
 
 If the first succeeds and the second fails, use [Troubleshooting](TROUBLESHOOTING.md#the-plugin-installs-but-praxis-mine-is-not-discoverable). If the skill activates but the ledger command fails, treat that as a Python or filesystem boundary rather than an installation failure.
 
+## Open the visual explorer
+
+From the extracted complete kit, open `Open.cmd` on Windows or run `Open.command` on macOS with Python 3.11 or newer available. This launches a local browser workspace over the same native ledger; plugin installation and opening the workspace are separate actions. See the [mine-room guide](MINE-ROOM.md) for the gallery, evidence circuit, comparison bench, and recovery steps.
+
 ## Updating
 
-Install the new version through the host's supported update or reinstall flow. Start a fresh task, confirm version `1.0.1`, and rerun one representative request. Do not delete an older copy until you know which installation owns it and have preserved any data you need.
+Install the new version through the host's supported update or reinstall flow. Start a fresh task, confirm version `1.2.0`, and rerun one representative request. Do not delete an older copy until you know which installation owns it and have preserved any data you need.

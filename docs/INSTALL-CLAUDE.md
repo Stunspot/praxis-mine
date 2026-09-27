@@ -4,7 +4,7 @@ Use this path for a Claude environment that supports custom Skills.
 
 ## What you need
 
-- `claude/praxis-mine-v1.0.1.zip` from the complete customer kit or GitHub release;
+- `claude/praxis-mine-v1.2.0.zip` from the complete customer kit or GitHub release;
 - permission to upload a custom Skill;
 - a Claude product and workspace where custom Skills are available.
 
@@ -12,7 +12,7 @@ Use this path for a Claude environment that supports custom Skills.
 
 1. Keep the Claude ZIP unchanged. Do not unpack, merge, or recompress it.
 2. Open Claude's current Skills manager or custom-Skill import control.
-3. Upload `praxis-mine-v1.0.1.zip`.
+3. Upload `praxis-mine-v1.2.0.zip`.
 4. Confirm the host reports the Skill imported or enabled.
 5. Start a fresh chat.
 6. Ask:
@@ -24,6 +24,10 @@ Use this path for a Claude environment that supports custom Skills.
 ## Expected result
 
 Claude should identify the capability gap, preserve evidence and unknowns, choose a bounded disposition, and name a falsifiable next test. An accepted upload proves only import. A listed Skill proves discovery. The first useful assessment proves one representative behavior under that exact host and conversation.
+
+## Use the local visual explorer
+
+The complete kit also contains a local desktop explorer. On a computer with Python 3.11 or newer, use its `Open.cmd` or `Open.command` launcher and follow the [mine-room guide](MINE-ROOM.md). Importing the Claude Skill does not establish that a hosted Claude environment can launch this local browser workspace or access your desktop ledger.
 
 ## If upload is unavailable
 

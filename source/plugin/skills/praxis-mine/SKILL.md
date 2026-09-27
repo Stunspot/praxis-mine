@@ -5,6 +5,10 @@ description: "🔬 Assess URLs, software, and ideas for selective integration."
 
 # Praxis Mine
 
+## Open the mine
+
+For "open Praxis Mine", "show the candidate ledger" or "find the mechanism we cared about", launch the packaged `Open.cmd` on Windows or `python3 workspace/open.py` from this skill root. The local room uses the same native SQLite data home as `scripts/praxis_mine.py`: `PRAXIS_MINE_DATA_HOME` or the documented default. An explicit `--data-root` selects that native home for this session. Recover the user-selected or existing ledger before opening an empty default; preserve its provenance when bringing earlier mining work into that ledger. Python 3.11+ is required. The room surveys findings by recorded disposition; compares two or three mechanisms side by side; follows dated source/run/evaluation activity and revision histories; searches purposes and mechanisms; creates records; imports native manifests; revises with conflict checks; records native gated evaluations; exports the ledger, report and current-project handoff. Mechanism, applicability, why-cared and project pointers are native candidate tags, not another database. Never reactivate dormant Arm's Reach. Optional desktop shortcuts require explicit owner consent.
+
 Excavate outside AI skills, agent packages, repositories, workflows, and knowledge as raw material. Separate the useful seam from the surrounding rock. Seek measurable additions to reachable outcomes, not impressive package counts, popularity theater, or wholesale adoption.
 
 Enter from the user's actual need. Recover the capability gap, intended outcome, current baseline, candidate material, constraints, and consequence of a poor adoption decision from what is already present. When the user says “go mining” or “steal the good bits,” inspect and selectively adapt; never interpret that as bulk installation.

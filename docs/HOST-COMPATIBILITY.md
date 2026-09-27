@@ -1,6 +1,6 @@
 # Host compatibility and evidence
 
-Praxis Mine v1.0.1 ships as one Augment with two host components.
+Praxis Mine v1.2.0 ships as one Augment with two host components.
 
 ## Codex and ChatGPT
 
@@ -10,7 +10,7 @@ The source package and official validator support the plugin's static structure.
 
 ## Claude
 
-Upload `claude/praxis-mine-v1.0.1.zip` unchanged through a Claude environment that supports custom Skills. The archive contains exactly one top-level `praxis-mine/` directory with `SKILL.md` directly inside it and the complete runtime dependency closure beneath it.
+Upload `claude/praxis-mine-v1.2.0.zip` unchanged through a Claude environment that supports custom Skills. The archive contains exactly one top-level `praxis-mine/` directory with `SKILL.md` directly inside it and the complete runtime dependency closure beneath it.
 
 Claude upload controls, plan availability, UI labels, and activation behavior may vary by product and workspace. Follow the current host interface rather than inventing a button that this package cannot observe.
 
@@ -19,6 +19,12 @@ Claude upload controls, plan availability, UI labels, and activation behavior ma
 The optional deterministic ledger requires Python 3.11 or newer with the standard library. It includes its own SQLite record store. No package installation, network connection, account, or external database is required.
 
 The default data home is `~/.praxis-mine/data`. `PRAXIS_MINE_DATA_HOME` and `--data-home` can select another path. File-write permission still depends on the actual host, operating system, selected path, and executing process.
+
+## Local visual workspace
+
+The complete kit includes a Python launcher and browser explorer. Blackglass — Crimson provides a source-grouped extraction gallery; SNAPFRAME provides a source-to-mechanism-to-judgment evidence circuit. Both use the same SQLite ledger and native evaluation gates. A local browser and Python 3.11 or newer are required. Windows launch and rendering were exercised locally; the macOS launcher was inspected but not executed on macOS. A hosted AI session cannot be assumed to see or launch your desktop workspace.
+
+See the [mine-room guide](MINE-ROOM.md) for opening, importing records, comparing findings, and restoring an expired local session.
 
 ## Claim ladder
 

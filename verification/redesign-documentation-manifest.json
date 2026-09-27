@@ -1,0 +1,14 @@
+{
+  "format": "cd-customer-documentation/v1",
+  "customer_docs": [
+    "docs/index.md",
+    "docs/INSTALL-CODEX.md",
+    "docs/INSTALL-CLAUDE.md",
+    "docs/HOST-COMPATIBILITY.md",
+    "docs/TROUBLESHOOTING.md",
+    "docs/UNINSTALL-AND-DATA.md",
+    "docs/VALIDATION.md",
+    "docs/MAINTAINER-GUIDE.md",
+    "RELEASE-NOTES-v1.2.0.md"
+  ]
+}

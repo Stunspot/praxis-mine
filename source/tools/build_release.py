@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the immutable Praxis Mine v1.0.0 customer release."""
+"""Build the immutable Praxis Mine v1.2.0 customer release."""
 
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ from pathlib import Path
 from typing import Any
 
 
-VERSION = "1.0.1"
+VERSION = "1.2.0"
 SLUG = "praxis-mine"
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SOURCE_ROOT = REPO_ROOT / "source"
@@ -70,7 +70,7 @@ def deterministic_zip(source: Path, destination: Path, top_level: str | None = N
             info = zipfile.ZipInfo(member, date_time=ZIP_TIME)
             info.create_system = 3
             info.compress_type = zipfile.ZIP_STORED
-            info.external_attr = 0o100644 << 16
+            info.external_attr = (0o100755 if path.suffix in {'.command','.sh'} else 0o100644) << 16
             archive.writestr(info, path.read_bytes())
     return {
         "file": destination.name,
@@ -112,10 +112,13 @@ def load_verifier():
     return module
 
 
-def main(*, staging: bool = False) -> int:
+def main(*, staging: bool = False, repair: bool = False) -> int:
     global RELEASE_ROOT
     if staging:
         RELEASE_ROOT = REPO_ROOT / f".staging-v{VERSION}"
+    if repair:
+        RELEASE_ROOT = REPO_ROOT / "repair-candidates" / f"v{VERSION}-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}"
+        RELEASE_ROOT.parent.mkdir(exist_ok=True)
     if RELEASE_ROOT.exists():
         raise RuntimeError(f"release destination already exists: {RELEASE_ROOT}")
     RELEASE_ROOT.mkdir()
@@ -127,7 +130,13 @@ def main(*, staging: bool = False) -> int:
         ignore=shutil.ignore_patterns("__pycache__", "*.pyc", "*.pyo"),
     )
     docs = copy_customer_docs(RELEASE_ROOT, include_review=not staging)
+    for name in ('Open.cmd','Open.command'):
+        shutil.copy2(REPO_ROOT/name, RELEASE_ROOT/name)
     shutil.copytree(REPO_ROOT / "assets", RELEASE_ROOT / "assets")
+    sidecars_target = RELEASE_ROOT / "delivery-sidecars"
+    sidecars_target.mkdir()
+    for name in (f"Praxis Mine T-Free v{VERSION}.md", f"Praxis Mine T-Free v{VERSION} Extra.md", "Praxis Mine.jpg"):
+        shutil.copy2(REPO_ROOT / "delivery-sidecars" / name, sidecars_target / name)
     tools_target = RELEASE_ROOT / "tools"
     tools_target.mkdir()
     shutil.copy2(SOURCE_ROOT / "tools" / "verify_release.py", tools_target / "verify_release.py")
@@ -135,6 +144,10 @@ def main(*, staging: bool = False) -> int:
     verification_target.mkdir()
     for name in ("verification-summary.json", "reviewer-attestation.json"):
         shutil.copy2(SOURCE_ROOT / "verification" / name, verification_target / name)
+    for name in ("redesign-documentation-manifest.json", "redesign-doc-evidence.md", "redesign-authoring-response.md"):
+        shutil.copy2(REPO_ROOT / "verification" / name, verification_target / name)
+    shutil.copytree(REPO_ROOT / "verification" / "historical-v1.0.1", verification_target / "historical-v1.0.1")
+    shutil.copy2(REPO_ROOT / "verification" / "historical-v1.2.0-theme-documentation.zip", verification_target / "historical-v1.2.0-theme-documentation.zip")
 
     claude_dir = RELEASE_ROOT / "claude"
     archives_dir = RELEASE_ROOT / "archives"
@@ -178,7 +191,7 @@ def main(*, staging: bool = False) -> int:
         "slug": SLUG,
         "version": VERSION,
         "repository": "https://github.com/Stunspot/praxis-mine",
-        "visibility": "PUBLIC_AUTHORIZED",
+        "visibility": "LOCAL_CANDIDATE_NOT_PUBLISHED",
         "customer_object": f"Praxis-Mine-v{VERSION}.zip",
         "plugin_files": inventory(plugin_target),
         "skill_files": inventory(plugin_target / "skills" / SLUG),
@@ -240,7 +253,7 @@ def main(*, staging: bool = False) -> int:
             "canonical_zip_sha256": kit_record["sha256"],
             "canonical_zip_member_count": kit_record["members"],
             "status": "staging-candidate-built" if staging else "release-candidate-built",
-            "built_at": "2026-08-14T00:00:00Z",
+            "built_at": datetime.now(timezone.utc).isoformat(),
         },
     )
 
@@ -259,6 +272,6 @@ def main(*, staging: bool = False) -> int:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 2 or (len(sys.argv) == 2 and sys.argv[1] != "--staging"):
-        raise SystemExit("usage: build_release.py [--staging]")
-    raise SystemExit(main(staging=len(sys.argv) == 2))
+    if len(sys.argv) > 2 or (len(sys.argv) == 2 and sys.argv[1] not in {"--staging","--repair-candidate"}):
+        raise SystemExit("usage: build_release.py [--staging | --repair-candidate]")
+    raise SystemExit(main(staging="--staging" in sys.argv,repair="--repair-candidate" in sys.argv))

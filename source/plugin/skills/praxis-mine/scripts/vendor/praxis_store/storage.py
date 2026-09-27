@@ -486,6 +486,7 @@ def revise_record(
     *,
     effective_at: str | None = None,
     status: str = "active",
+    expected_version: int | None = None,
 ) -> dict[str, Any]:
     if source_kind not in SOURCE_KINDS:
         raise SubstrateError(f"invalid source_kind: {source_kind}")
@@ -493,12 +494,14 @@ def revise_record(
         raise SubstrateError(f"invalid status: {status}")
     _, connection = require_store(home, store_name)
     try:
+        connection.execute("BEGIN IMMEDIATE")
         current = get_record_connection(connection, record_id)
+        if expected_version is not None and current["current_version"] != expected_version:
+            raise SubstrateError("revision conflict: record changed; reload before saving")
         definition = record_definition(connection, current["record_type"])
         validate_payload(definition, payload)
         next_version = current["current_version"] + 1
         timestamp = now()
-        connection.execute("BEGIN IMMEDIATE")
         connection.execute(
             "INSERT INTO ds_record_versions(record_id,version,payload_json,source_kind,provenance_json,actor,effective_at,recorded_at,supersedes_version,reason,content_hash) "
             "VALUES (?,?,?,?,?,?,?,?,?,?,?)",

@@ -14,7 +14,7 @@ Praxis Mine is an Augment for sending your AI harness out to inspect new skills,
 It returns what the candidate would add, the evidence, risks, costs, and overlap, and the next bounded move: <code>pilot</code>, <code>quarry</code>, <code>adapt</code>, <code>monitor</code>, or <code>reject</code>.
 
 <div class="action-row">
-  <a href="https://github.com/Stunspot/praxis-mine/releases/download/v1.0.1/Praxis-Mine-v1.0.1.zip">Download v1.0.1</a>
+  <a href="https://github.com/Stunspot/praxis-mine/releases/download/v1.2.0/Praxis-Mine-v1.2.0.zip">Download v1.2.0</a>
   <a class="secondary" href="./INSTALL-CODEX.html">Install for Codex / ChatGPT</a>
   <a class="secondary" href="./INSTALL-CLAUDE.html">Install for Claude</a>
 </div>

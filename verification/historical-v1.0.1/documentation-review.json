@@ -1,0 +1,152 @@
+{
+  "format": "cd-documentation-review/v1",
+  "mode": "separate-final-content-pass",
+  "disposition": "REVIEW_PASS",
+  "unresolved_material_findings": 0,
+  "candidate_commit": "PENDING_PUBLICATION",
+  "documentation_fingerprint": "3472faf38ccc376c3719b8442a82ab1f6e6ef61f563e854963e350148b10e153",
+  "reviewed_files": [
+    {
+      "path": "ARCHIVE-CUSTODY.md",
+      "bytes": 1362,
+      "sha256": "0239a046308ded43ebb5f945590466a62a9a2fa96a19efcf4ab8b046d90c5ffa"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1088,
+      "sha256": "eda4584e4d05e3e338e5c0a7da06bc7403b356f72b58ceec0d7f4201df3d3d33"
+    },
+    {
+      "path": "DATA-AND-PRIVACY.md",
+      "bytes": 2524,
+      "sha256": "0cb0669da6eb0b4a8c383583468dfa7b37dbe9a619fec381e093cfb59570431d"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 2690,
+      "sha256": "445d93cae127b5c26f4fc8d2cc2b565de6d8fbea6bf86e43fb10f93c8903e507"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 1639,
+      "sha256": "d543f778b1f2b40eb59459abb3ec21fef1a8202c4ccadab31b00bf48a48fbb7c"
+    },
+    {
+      "path": "PLUGIN-DIRECTORY-SUBMISSION-v1.0.1.md",
+      "bytes": 8345,
+      "sha256": "8fbf9b1500f56582eb1154e5681e25ad83efd0b35daf3561af804e330e72a831"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3968,
+      "sha256": "3514113d048484b37ed1dc8c2e5341cdc76590592ed537a03b6f49ec1b0f456c"
+    },
+    {
+      "path": "RELEASE-NOTES-v1.0.1.md",
+      "bytes": 1795,
+      "sha256": "5f599e8365d4ff5f6d8715b82b712b106a5925760417737555b40681b225cc72"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1823,
+      "sha256": "6f8963ac315b1c47d0f6a8b04463f9f1ecb28d99368a6e592ef2af0fb9c566a1"
+    },
+    {
+      "path": "SUPPORT.md",
+      "bytes": 879,
+      "sha256": "d0d0393b154688151369c41664c0729509a47bd815fb2f26a4d4e1c7e67d76e5"
+    },
+    {
+      "path": "TERMS-OF-USE.md",
+      "bytes": 2898,
+      "sha256": "283e7b66d4df13b91cc286543ff1a74a330078c6e0189cea2c75d1597633b25d"
+    },
+    {
+      "path": "TRADEMARKS.md",
+      "bytes": 1730,
+      "sha256": "7bdb3d57d3aa9c879e415edc3d64a19207283981b8aa1de93b3fc7d73f0f2238"
+    },
+    {
+      "path": "docs/404.md",
+      "bytes": 766,
+      "sha256": "248c44101c7fcfe4d427e3af21ef62e721aa91c4fc419fc39033bad4557f410d"
+    },
+    {
+      "path": "docs/HOST-COMPATIBILITY.md",
+      "bytes": 2319,
+      "sha256": "3cef7568cd17f535833f449c693f6bf2d001f3233b28de31d73a6f35a191f37e"
+    },
+    {
+      "path": "docs/INSTALL-CLAUDE.md",
+      "bytes": 1655,
+      "sha256": "06882db90351d5f73619989040071deb9da0574db5812b3194a0d2c63ba105cc"
+    },
+    {
+      "path": "docs/INSTALL-CODEX.md",
+      "bytes": 2310,
+      "sha256": "7f4ec37a13ef64d54ba409b61b906eb50abcb8d148a3f969f6f759995f5a9219"
+    },
+    {
+      "path": "docs/LEDGER-REFERENCE.md",
+      "bytes": 2990,
+      "sha256": "3a8e56e6b68ca05a122828fa9438b227f5310d1b50976e3f9798437e39211c1f"
+    },
+    {
+      "path": "docs/LIMITATIONS.md",
+      "bytes": 1933,
+      "sha256": "2905beb797ea20b3233454fd84a9227492dbbc9eaaa737b0e8be2d9c2c080b8a"
+    },
+    {
+      "path": "docs/MAINTAINER-GUIDE.md",
+      "bytes": 4907,
+      "sha256": "2b0eb9d4992a071097db96bd8f7d8cd4ad205be135e90413621a0cfbcebcb3f6"
+    },
+    {
+      "path": "docs/PROVENANCE.md",
+      "bytes": 3351,
+      "sha256": "c79aa8b4d9593bcf584abfc3bc363c630b8e9c7a6b9bde976559f620a77e526f"
+    },
+    {
+      "path": "docs/QUICK-START.md",
+      "bytes": 2767,
+      "sha256": "ffadb747910fd2f104d5ae92818234d5791f46100b191bcc17a246b0151a8d9f"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 2569,
+      "sha256": "d20588bd0205c9a8ce5977c7f911fc2bd25ab2296024d4388db895a68c2004ad"
+    },
+    {
+      "path": "docs/TROUBLESHOOTING.md",
+      "bytes": 3790,
+      "sha256": "6dc330ce5da19e327f8a9012a865d9728eeba66001f6166f5919cb2709e7ab7f"
+    },
+    {
+      "path": "docs/UNINSTALL-AND-DATA.md",
+      "bytes": 1969,
+      "sha256": "c5523358de035af106dab5f8119964f691d57926be12602cb3f5d91fe8968b70"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 2728,
+      "sha256": "047ff6abf15289949559b034908c74bd4038a1c1411ee5be94f79704c32d4d3d"
+    },
+    {
+      "path": "docs/WORKFLOWS.md",
+      "bytes": 4129,
+      "sha256": "ad4559ac0b358d916e0040b75c42ae3f9d50faaeeff33dc731d6a646c4c774f8"
+    },
+    {
+      "path": "docs/index.md",
+      "bytes": 4933,
+      "sha256": "22c61c637292b526ca2e8051bad45e8f7e3c09aa2d14507cdc0907b6d932e2ee"
+    }
+  ],
+  "basis": "Fresh v1.0.1 corpus review: current release/install routes, unchanged runtime limits, retained provenance, and complete customer journey.",
+  "conditions": [
+    "Fresh-host installation, discovery, invocation, and customer outcomes remain outside this documentation remediation",
+    "Legal and security professional certification was not performed"
+  ],
+  "completed_at": "2026-08-15T03:54:37.6557467Z",
+  "fingerprint_algorithm": "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering"
+}

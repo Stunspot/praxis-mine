@@ -14,7 +14,7 @@ from pathlib import Path, PurePosixPath
 from typing import Any
 
 
-VERSION = "1.0.1"
+VERSION = "1.2.0"
 SLUG = "praxis-mine"
 SCHEMA = "praxis-mine-portable-verification/v1"
 PRIVATE_TOPOLOGY_PATTERN = re.compile(

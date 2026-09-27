@@ -1,19 +1,21 @@
 {
   "format": "praxis-mine-reconciliation-review/v1",
   "product": "praxis-mine",
-  "version": "1.0.1",
-  "reviewed_target": "v1.0.1 exact source and release candidate",
-  "disposition": "READY_WITH_CONDITIONS",
+  "version": "1.2.0",
+  "reviewed_target": "Current owner-assigned Blackglass-Crimson gallery and SNAPFRAME circuit with shared native actions",
+  "disposition": "ROOT_IMPLEMENTATION_CHECK_COMPLETE",
+  "reviewer": "Root integration and rendered inspection; independent bounded documentation review",
   "material_findings": 0,
   "evidence": [
-    "3 runtime integration tests passed",
-    "portable verifier checked 55 manifest files, 4 archives, 154 ZIP members, and 50 documentation links",
-    "deterministic rebuild produced identical complete-kit bytes",
-    "current 27-document Hesperos corpus fingerprint recorded"
+    "Three representative widths checked for both separate renderers",
+    "Reader, comparison, chronology, source-only and no-evaluation states observed",
+    "Cross-source reader continuity and return focus corrected and verified",
+    "No observed console errors/warnings; JavaScript syntax passed"
   ],
   "conditions": [
-    "Fresh-host behavior and representative accessibility remain unexecuted",
-    "Plugin Directory submission, approval, publication, and discoverability remain separate",
-    "Live repository, tag, release asset, Pages, and Discord parity require post-publication readback"
-  ]
+    "Archive verification and exact shelf/install parity handled separately",
+    "Previous native backend checks retain their historical scope",
+    "Owner design approval recorded separately; no general reading-comfort or accessibility-conformance claim"
+  ],
+  "observed_at": "2026-09-27T19:39:17.7761127+00:00"
 }

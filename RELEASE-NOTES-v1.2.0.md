@@ -10,4 +10,4 @@ Both environments open records in a focused reader with previous/next navigation
 
 Version 1.2.0 adds the visual rediscovery workspace, persistent overview, and direct comparison to the conversational mining skill. The native ledger and adoption gates remain shared across the interface and agent workflows. Installation, download, and recovery guides name the current v1.2.0 artifacts.
 
-The package contains no owner research ledger or private screenshots. Local rendering, behavior, archive checks, and installation evidence are recorded separately; they do not establish native macOS execution, fresh-customer activation, accessibility conformance, customer outcomes. The owner approved the final visual design; public asset integrity is verified separately after upload.
+The package contains no owner research ledger or private screenshots. Local rendering, behavior, archive checks, and installation evidence are recorded separately; they do not establish native macOS execution, fresh-customer activation, accessibility conformance, customer outcomes. The owner approved the final visual design; the complete product bundle and shelf catalog are verified separately.

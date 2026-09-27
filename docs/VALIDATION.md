@@ -4,7 +4,7 @@ Validation is evidence about declared boundaries. It is not a magic certificate 
 
 ## Verify the complete kit
 
-From the extracted `Praxis-Mine-v1.2.0.zip` root:
+From the extracted **Praxis Mine v1.2.0.zip** root:
 
 ```text
 python tools/verify_release.py . --component-only
@@ -34,21 +34,11 @@ python -m unittest discover -s tests -v
 
 The tests use a temporary data home. They exercise initialization, seed ingestion, idempotence, evaluation, report creation, status, local scanning, and self-contained store loading.
 
-## Verify release assets
+## Product delivery and integrity
 
-Download `Praxis-Mine-v1.2.0.zip.sha256` or `archive-custody.json` beside the
-complete kit, then compare the detached value with a local SHA-256 calculation.
-On PowerShell:
+The supplied product is one complete ZIP with its artwork, installation prompt, and Extra companion. Host archives are components inside that ZIP, not separate product downloads. The included verifier checks their filenames, contents, and hashes after extraction.
 
-```powershell
-Get-FileHash -Algorithm SHA256 .\Praxis-Mine-v1.2.0.zip
-Get-Content .\Praxis-Mine-v1.2.0.zip.sha256
-```
-
-The external `archive-custody.json` records the complete kit, plugin archive,
-standalone skill archive, and Claude archive digests. It is deliberately not
-inside the kit whose hash it records. A public GitHub release is verified only
-after the exposed assets are read back and match those values.
+The governed release shelf retains the complete bundle’s SHA-256 and fingerprint. A detached checksum may be supplied for an independent whole-ZIP check, but it is not required as an extra shelf artifact and the installation path does not depend on a GitHub release. A checksum for the complete ZIP is kept outside that ZIP to avoid self-reference.
 
 ## Documentation evidence
 

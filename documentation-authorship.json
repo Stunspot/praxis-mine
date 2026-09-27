@@ -1,49 +1,44 @@
 {
   "authored_files": [
     {
-      "bytes": 4933,
+      "bytes": 4492,
+      "path": "README.md",
+      "sha256": "bab99bc4f8d64c4a0485ccf970dd197e3948d3715bdd16dea53f71dc792f8a2b"
+    },
+    {
+      "bytes": 5117,
       "path": "docs/index.md",
-      "sha256": "5c5449b14412f276213687319ef704469522efef185cc31ac004623c6b83c5a0"
+      "sha256": "059ca87b4ecfd40109956ea0032092adbffd4eed428b7e757f49f4180731ffc7"
     },
     {
-      "bytes": 2718,
+      "bytes": 2724,
       "path": "docs/INSTALL-CODEX.md",
-      "sha256": "36694bedba835715e0ddc9d6d82d4da6b5f375afa759b4c3bf24e71ddd111095"
+      "sha256": "71fb39751080a3849276099a4d67b0016fa829cbca4c11c6af3762d64b8bb391"
     },
     {
-      "bytes": 2032,
+      "bytes": 2203,
       "path": "docs/INSTALL-CLAUDE.md",
-      "sha256": "de8f1be94b89378853b8440c3b125a060116fe35162c092a93ab10de644260c9"
+      "sha256": "e6e7cfc218b728533e66d8b3edd6154715d670a38b4f747d1c7259b450853bd8"
     },
     {
-      "bytes": 2994,
-      "path": "docs/HOST-COMPATIBILITY.md",
-      "sha256": "21885bba29110fd70e42b44943eda56d43695f28b5c32e9b9e6d508d67e1647f"
-    },
-    {
-      "bytes": 4621,
+      "bytes": 4665,
       "path": "docs/TROUBLESHOOTING.md",
-      "sha256": "204e1735734a9c6b85b575a4937564c60db3585dd102d95aeda63cadf8f0118e"
+      "sha256": "b83ef0b54d6ed10c33a1647a64afe4b19fee0644865c370f8731426dc768a988"
     },
     {
-      "bytes": 2454,
-      "path": "docs/UNINSTALL-AND-DATA.md",
-      "sha256": "463f9260b0a9e1f90f61f530c4d80324dc2ea327a1b08b017be829f55382a0dc"
-    },
-    {
-      "bytes": 3269,
+      "bytes": 3306,
       "path": "docs/VALIDATION.md",
-      "sha256": "d51cb32cbd3de6fd13acc5ff7677d10fa301fab58d8b121b837f792e71eec655"
+      "sha256": "56903fa9795e82625b977062fffd9f0b438401992d90eb20257bd66674156d75"
     },
     {
-      "bytes": 5183,
+      "bytes": 5599,
       "path": "docs/MAINTAINER-GUIDE.md",
-      "sha256": "a6c054115a02395b9cb58c376e0db9869f6578101e55c6624604bf581736142b"
+      "sha256": "e0b695efdaaf4526e3f3f9ed9da233fa990db300c4fddd5bbcb10054f4fd4f04"
     },
     {
-      "bytes": 2079,
+      "bytes": 2090,
       "path": "RELEASE-NOTES-v1.2.0.md",
-      "sha256": "0bcbc456fec48cdfa096e75630fdfc6373d02600940379ff62785c0ff743b321"
+      "sha256": "c6583e88ed0ff443bf7873d0b7ff5793707f934821c9755b622793d151d38315"
     }
   ],
   "authoring": {
@@ -51,31 +46,31 @@
     "capability": "hesperos-documentation",
     "capability_entrypoint_sha256": "c6622d90a907edc95e93b868e2481f835bf3ddb3f21b801a3699042a0e524cde",
     "mode": "in-process",
-    "run_id": "praxis-public-release-20260927-v1.2.0"
+    "run_id": "praxis-inventory-repair-20260927-v1.2.0"
   },
   "authoring_response": {
-    "bytes": 747,
+    "bytes": 626,
     "path": "verification/redesign-authoring-response.md",
-    "sha256": "ac8aa9e0a04df2ea503fb209f8a1d23694f3f686ec48b062e3c9b5adf28d62cf"
+    "sha256": "2299cb847940980de109acd9e9511712dfe9ce887216edd6ee0ef0a2d6cb51d4"
   },
   "claim_boundary": "Binds retained evidence for one Hesperos authoring or material-revision run. It does not prove independent review, host activation, publication, accessibility conformance, or customer outcomes.",
-  "created_at": "2026-09-27T20:38:21+00:00",
-  "documentation_fingerprint": "de097c4127083d952f9fcc31a87d08f9833874923d475f62d5f1e0347323547a",
+  "created_at": "2026-09-27T20:54:43+00:00",
+  "documentation_fingerprint": "8915f89f59b1ab5df6eda2eea8cbf33c55708d7c872fb596dd5c7e1e3cbc36a1",
   "documentation_manifest": {
-    "bytes": 340,
+    "bytes": 289,
     "path": "verification/redesign-documentation-manifest.json",
-    "sha256": "ab0d2d02b742de1d3c2616cb952a95a4ce4e8456edddbca20c7ebad90f208d2f"
+    "sha256": "443e8cce369f1e1abd2c1c4638b0a73d1523f69acd0bfa4ae7aeb468215d44c8"
   },
   "evidence_packet": {
-    "bytes": 2568,
+    "bytes": 2425,
     "path": "verification/redesign-doc-evidence.md",
-    "sha256": "14d53313b4ede46a1527b42d81df1eb71a06546b87583957559815be043b65dc"
+    "sha256": "45b07556bf9e2b5ec91b17f8ceaf9cf8253dc09b4376852fc01dc99d5b61439d"
   },
   "execution_evidence": [
     {
-      "bytes": 747,
+      "bytes": 626,
       "path": "verification/redesign-authoring-response.md",
-      "sha256": "ac8aa9e0a04df2ea503fb209f8a1d23694f3f686ec48b062e3c9b5adf28d62cf"
+      "sha256": "2299cb847940980de109acd9e9511712dfe9ce887216edd6ee0ef0a2d6cb51d4"
     }
   ],
   "format": "cd-hesperos-documentation-authorship/v1",

@@ -4,7 +4,7 @@ Use this path for a Claude environment that supports custom Skills.
 
 ## What you need
 
-- `claude/praxis-mine-v1.2.0.zip` from the complete customer kit or GitHub release;
+- `claude/praxis-mine-v1.2.0.zip` inside the supplied complete customer kit;
 - permission to upload a custom Skill;
 - a Claude product and workspace where custom Skills are available.
 
@@ -35,6 +35,4 @@ The current account, product, or workspace may not expose custom Skills. The pac
 
 ## If upload is rejected
 
-Compare the file hash with the detached `archive-custody.json` release asset.
-Download a fresh copy when it differs. If the hash matches, preserve the host
-error and follow [Troubleshooting](TROUBLESHOOTING.md#claude-rejects-the-skill-zip).
+From the extracted complete-kit root, run `python tools/verify_release.py . --component-only` to check the embedded archives against the included manifests and hashes. If verification fails, get a fresh complete ZIP from the product’s Additional Files. If verification passes and the host still rejects the Skill, preserve the host error and follow [Troubleshooting](TROUBLESHOOTING.md#claude-rejects-the-skill-zip).

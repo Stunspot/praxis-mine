@@ -7,9 +7,8 @@ Before using the terminal examples in this guide, change to `codex/praxis-mine/s
 ## The release verifier fails
 
 1. Confirm you are running `python tools/verify_release.py . --component-only` from the extracted complete-kit root.
-2. Compare the kit's SHA-256 with the detached checksum.
-3. If the digest differs, download the release again. Do not repair the archive by recompressing it.
-4. If the digest matches but verification fails, preserve the findings and file an issue with the release version and operating system.
+2. Get a fresh complete ZIP from the product’s Additional Files and run the included verifier again. Do not repair the archive by recompressing it.
+3. If verification still fails, preserve the findings and file an issue with the release version and operating system.
 
 Do not continue to installation when archive paths, manifests, hashes, or runtime files fail verification.
 
@@ -29,11 +28,11 @@ A copied folder is not evidence that the host discovered it. Preserve the host's
 ## Claude rejects the Skill ZIP
 
 1. Use `claude/praxis-mine-v1.2.0.zip` unchanged.
-2. Confirm its digest matches the detached `archive-custody.json` release asset.
+2. Run the included complete-kit verifier to check this embedded archive against its manifest and hash.
 3. Confirm the current Claude product and workspace expose custom Skills.
-4. Upload the fresh official ZIP.
+4. Upload the unchanged Claude archive from the verified complete kit.
 
-If the digest matches and the host still rejects it, preserve the exact host message. Recompression changes the reviewed bytes and is not an evidence-preserving fix.
+If archive verification passes and the host still rejects it, preserve the exact host message. Recompression changes the reviewed bytes and is not an evidence-preserving fix.
 
 ## The visual explorer is empty or unavailable
 

@@ -2,17 +2,18 @@
   "format": "praxis-mine-documentation-review/v1",
   "product": "praxis-mine",
   "version": "1.2.0",
-  "scope": "Nine declared installation, host, recovery, validation, maintainer, download, and release documents",
+  "scope": "Eight shelf-delivery, installation, integrity, recovery, and maintenance documents",
   "status": "REVIEW_PASS",
-  "documentation_fingerprint": "de097c4127083d952f9fcc31a87d08f9833874923d475f62d5f1e0347323547a",
-  "reviewer": "Fresh-context documentation-accessibility-reviewer, release_doc_review",
+  "documentation_fingerprint": "8915f89f59b1ab5df6eda2eea8cbf33c55708d7c872fb596dd5c7e1e3cbc36a1",
+  "reviewer": "Fresh-context documentation-accessibility-reviewer, inventory_doc_review",
   "findings": [
-    "Stale release versions and artifact targets corrected",
-    "Local explorer installation and host boundary documented",
-    "Recovery terminal examples establish the skill-root working directory",
-    "Native .jsonl export is distinguished from full-store backup or restore",
-    "All nine current hashes and authoring evidence bindings checked"
+    "Complete supplied product ZIP is the primary delivery route",
+    "No GitHub-release download dependency remains in reviewed paths",
+    "Embedded archive paths and component-only verification guidance agree with source",
+    "Twenty-nine relative links checked without findings",
+    "All eight current hashes and authoring evidence bindings match",
+    "Shelf reconciliation, source updates, actual uploads, and publication authority remain separate"
   ],
   "unresolved_material_findings": 0,
-  "claim_boundary": "Bounded static source-to-document review and authorship validation; not full-corpus review, live host activation, publication, screen-reader testing, or accessibility conformance."
+  "claim_boundary": "Bounded static documentation review and authorship validation; not final bundle integrity, deployed inventory, live host activation, or publication."
 }

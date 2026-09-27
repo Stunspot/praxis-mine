@@ -14,8 +14,8 @@ Praxis Mine inspects what it finds, keeps the mechanism that would change what y
 
 ## Start here
 
-1. Open the [Praxis Mine documentation site](https://stunspot.github.io/praxis-mine/) for the complete guided path.
-2. Extract the supplied `Praxis-Mine-v1.2.0.zip`. Published downloads are listed on [GitHub Releases](https://github.com/Stunspot/praxis-mine/releases).
+1. Copy **Praxis Mine v1.2.0.zip** from the product’s **Additional Files** to your chosen harness or Chat project, attach or reference it, and say **“Install this Augment.”** The companion installation prompt is optional.
+2. For manual installation or the local visual explorer, extract that supplied complete ZIP and use the included guides. The [documentation map](docs/README.md) helps you choose the path.
 3. Follow the [Codex/ChatGPT plugin](docs/INSTALL-CODEX.md) or [Claude skill](docs/INSTALL-CLAUDE.md) installation path.
 4. Complete the [ten-minute first mine](docs/QUICK-START.md).
 5. Open **Open.cmd** on Windows, or follow the [visual workspace guide](docs/MINE-ROOM.md), to survey and compare your findings.

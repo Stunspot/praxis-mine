@@ -84,10 +84,12 @@ Then run:
 python release-v1.2.0/tools/verify_release.py release-v1.2.0
 ```
 
-The builder must fail rather than overwrite an existing versioned release. For a same-version correction, use `python source/tools/build_release.py --repair-candidate` to create a new timestamped candidate while preserving the prior release bytes. Classify the correction and approve its exact final bundle before replacing any shelf or public asset. Inspect the actual customer kit, plugin ZIP, Claude ZIP, and standalone skill ZIP after extraction.
+The builder must fail rather than overwrite an existing versioned release. For a same-version correction, use `python source/tools/build_release.py --repair-candidate` to create a new timestamped candidate while preserving the prior release bytes. Classify the correction and approve its exact final bundle before replacing the shelf bundle. Inspect the actual customer kit, plugin ZIP, Claude ZIP, and standalone skill ZIP after extraction.
 
-## Public launch
+## Governed product release
 
-Before push, require a clean Git status except for the intended release change, passing TestForge and Hesperos dispositions, current hashes, and an explicit public-visibility authority record. Commit and tag the exact release tree. Push main and tag. Create the GitHub release from the canonical local assets, then read back repository visibility, main and tag commits, release notes, asset names, sizes, and digests.
+Read the owner’s current shelf contract before execution. A release updates the complete product bundle: the installable ZIP, product artwork, installation prompt, and Extra companion. Preserve its assigned shelf and distribution channel. Record the baseline, customer-visible delta, edit/update decision, and reason before packaging; bind the final bundle fingerprint through the shelf’s release-decision gate.
 
-OpenAI Plugins Directory submission is a later external state machine: draft, submitted, approved, publisher-released, and discoverable are distinct. The accountable publisher owns verified identity, organization selection, availability, and policy attestations.
+Reconcile the complete bundle, shelf/catalog manifest, sidecar source record, and applicable installed copy. Keep superseded bytes and engineering recovery material in private historical custody. Generate current upload status from actual deployed fingerprints; a prepared shelf bundle does not establish that anyone uploaded it to Discord or a storefront.
+
+Updating an existing source repository is separate from publishing a GitHub release or opening another distribution route. A request for a release ZIP does not authorize those publication actions. Perform them only when explicitly requested. Marketplace submission and announcements likewise require their own authority.

@@ -147,7 +147,6 @@ def main(*, staging: bool = False, repair: bool = False) -> int:
     for name in ("redesign-documentation-manifest.json", "redesign-doc-evidence.md", "redesign-authoring-response.md"):
         shutil.copy2(REPO_ROOT / "verification" / name, verification_target / name)
     shutil.copytree(REPO_ROOT / "verification" / "historical-v1.0.1", verification_target / "historical-v1.0.1")
-    shutil.copy2(REPO_ROOT / "verification" / "historical-v1.2.0-theme-documentation.zip", verification_target / "historical-v1.2.0-theme-documentation.zip")
 
     claude_dir = RELEASE_ROOT / "claude"
     archives_dir = RELEASE_ROOT / "archives"

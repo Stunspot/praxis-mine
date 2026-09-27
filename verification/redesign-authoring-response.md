@@ -1,9 +1,9 @@
-Hesperos materially revised the current installation, host, recovery, validation, maintainer, download, and release journey against the v1.2.0 package and executed source evidence. The prior theme-documentation custody is retained separately.
+Hesperos revised the shelf-delivery journey against the current product contract and exact packaged paths, preserving the approved visual and native-data behavior.
 
-AUTHORING_RUN_ID: praxis-public-release-20260927-v1.2.0
+AUTHORING_RUN_ID: praxis-inventory-repair-20260927-v1.2.0
 AUTHORING_CAPABILITY: hesperos-documentation
 AUTHORSHIP_SCOPE: materially-revised
-AUTHORED_FILES_COUNT: 9
-AUTHORED_FILES: docs/index.md|docs/INSTALL-CODEX.md|docs/INSTALL-CLAUDE.md|docs/HOST-COMPATIBILITY.md|docs/TROUBLESHOOTING.md|docs/UNINSTALL-AND-DATA.md|docs/VALIDATION.md|docs/MAINTAINER-GUIDE.md|RELEASE-NOTES-v1.2.0.md
-DOCUMENTATION_FINGERPRINT: de097c4127083d952f9fcc31a87d08f9833874923d475f62d5f1e0347323547a
+AUTHORED_FILES_COUNT: 8
+AUTHORED_FILES: README.md|docs/index.md|docs/INSTALL-CODEX.md|docs/INSTALL-CLAUDE.md|docs/TROUBLESHOOTING.md|docs/VALIDATION.md|docs/MAINTAINER-GUIDE.md|RELEASE-NOTES-v1.2.0.md
+DOCUMENTATION_FINGERPRINT: 8915f89f59b1ab5df6eda2eea8cbf33c55708d7c872fb596dd5c7e1e3cbc36a1
 HESPEROS_AUTHORING_COMPLETE

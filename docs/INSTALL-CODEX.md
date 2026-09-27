@@ -18,8 +18,8 @@ python tools/verify_release.py . --component-only
 
 Continue only when the command exits `0` and reports `"ok": true` with no
 findings. The extracted kit includes `component-custody.json` for its three
-embedded host archives. Verify the complete kit itself before extraction with
-the detached `.sha256` or `archive-custody.json` asset published beside it.
+embedded host archives. Use the complete ZIP supplied with the product; the
+installation does not require a separate archive download or external release site.
 
 ## Install
 

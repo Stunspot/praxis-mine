@@ -5,6 +5,9 @@ import json
 import os
 import re
 import sqlite3
+import math
+from contextvars import ContextVar
+from contextlib import contextmanager
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
@@ -129,7 +132,7 @@ def now() -> str:
 
 
 def canonical_json(value: Any) -> str:
-    return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"), allow_nan=False)
 
 
 def content_hash(value: Any) -> str:
@@ -144,14 +147,14 @@ def default_home() -> Path:
 
 
 def validate_name(value: str, label: str) -> None:
-    if not NAME.match(value):
+    if not isinstance(value, str) or not NAME.fullmatch(value):
         raise SubstrateError(f"{label} must use lowercase snake_case: {value!r}")
 
 
 def connect(path: Path, *, read_only: bool = False) -> sqlite3.Connection:
     if read_only:
         resolved = path.resolve(strict=True)
-        connection = sqlite3.connect(f"file:{resolved.as_posix()}?mode=ro", uri=True)
+        connection = sqlite3.connect(resolved.as_uri() + "?mode=ro", uri=True)
     else:
         connection = sqlite3.connect(path)
     connection.row_factory = sqlite3.Row
@@ -166,6 +169,17 @@ def initialize_home(home: Path) -> dict[str, str]:
     for name in ("stores", "backups", "exports"):
         (home / name).mkdir(exist_ok=True)
     registry = home / "registry.sqlite"
+    if registry.exists():
+        connection = connect(registry, read_only=True)
+        try:
+            row = connection.execute("SELECT value_json FROM ds_registry_meta WHERE key='schema_version'").fetchone()
+            if row is None or type(json.loads(row[0])) is not int or json.loads(row[0]) != SCHEMA_VERSION:
+                raise SubstrateError("unsupported registry schema; preserve this home and use its compatible runtime")
+        finally:
+            connection.close()
+        return {"home": str(home), "registry": str(registry)}
+    # Reserve only our new file; never replace a concurrent creator.
+    registry.touch(exist_ok=False)
     connection = connect(registry)
     try:
         connection.executescript(REGISTRY_SCHEMA)
@@ -198,6 +212,7 @@ def create_store(home: Path, store_name: str, purpose: str, owner: str, sensitiv
     if path.exists():
         raise SubstrateError(f"store already exists: {store_name}")
 
+    path.touch(exist_ok=False)
     connection = connect(path)
     try:
         connection.execute("PRAGMA journal_mode=WAL")
@@ -266,7 +281,63 @@ def require_store(home: Path, store_name: str, *, read_only: bool = False) -> tu
     path = store_path(home, store_name)
     if not path.is_file():
         raise SubstrateError(f"unknown store: {store_name}")
-    return path, connect(path, read_only=read_only)
+    active = _transactions.get().get(str(path))
+    if active is not None:
+        if not read_only and active.read_only:
+            raise SubstrateError("write attempted inside a read-only snapshot")
+        return path, active
+    connection = connect(path, read_only=read_only)
+    try:
+        metadata = {r["key"]: json.loads(r["value_json"]) for r in connection.execute("SELECT key,value_json FROM ds_meta")}
+        if type(metadata.get("substrate_schema_version")) is not int or metadata.get("substrate_schema_version") != SCHEMA_VERSION or metadata.get("store_name") != store_name:
+            raise SubstrateError("unsupported store schema or mismatched store identity")
+    except Exception:
+        connection.close()
+        raise
+    return path, connection
+
+
+_transactions = ContextVar("praxis_transactions", default={})
+
+class _BorrowedConnection:
+    def __init__(self, connection, read_only):
+        self.connection = connection
+        self.read_only = read_only
+        self.failed = False
+    def execute(self, sql, *args):
+        if sql.strip().upper() in {"BEGIN", "BEGIN IMMEDIATE"}:
+            return self.connection.execute("SELECT 1")
+        return self.connection.execute(sql, *args)
+    def commit(self): pass
+    def close(self): pass
+    def rollback(self): self.failed = True
+    def __getattr__(self, name): return getattr(self.connection, name)
+
+@contextmanager
+def transaction(home, store_name, *, read_only=False):
+    path = store_path(home, store_name)
+    existing = _transactions.get().get(str(path))
+    if existing is not None:
+        if existing.read_only and not read_only:
+            raise SubstrateError("cannot upgrade a read snapshot to a writer")
+        yield existing
+        return
+    _, connection = require_store(home, store_name, read_only=read_only)
+    borrowed = _BorrowedConnection(connection, read_only)
+    token = None
+    try:
+        connection.execute("BEGIN" if read_only else "BEGIN IMMEDIATE")
+        token = _transactions.set({**_transactions.get(), str(path): borrowed})
+        yield borrowed
+        if borrowed.failed:
+            raise SubstrateError("transaction aborted by an inner operation")
+        connection.commit()
+    except BaseException:
+        connection.rollback()
+        raise
+    finally:
+        if token is not None: _transactions.reset(token)
+        connection.close()
 
 
 def validate_contract(contract: Any, expected_store: str | None = None) -> None:
@@ -305,13 +376,13 @@ def validate_contract(contract: Any, expected_store: str | None = None) -> None:
             field_name = field.get("name")
             if not isinstance(field_name, str) or not NAME.match(field_name) or field_name in field_map:
                 raise SubstrateError(f"record type {record_type} has invalid or duplicate field {field_name!r}")
-            if field.get("type") not in FIELD_TYPES or not isinstance(field.get("required"), bool):
+            if not isinstance(field.get("type"), str) or field.get("type") not in FIELD_TYPES or not isinstance(field.get("required"), bool):
                 raise SubstrateError(f"field {record_type}.{field_name} has invalid type or required flag")
-            if field.get("source_kind") not in SOURCE_KINDS:
+            if not isinstance(field.get("source_kind"), str) or field.get("source_kind") not in SOURCE_KINDS:
                 raise SubstrateError(f"field {record_type}.{field_name} has invalid source_kind")
             field_map[field_name] = field
         for identity_field in identity:
-            if identity_field not in field_map or field_map[identity_field].get("required") is not True:
+            if not isinstance(identity_field, str) or identity_field not in field_map or field_map[identity_field].get("required") is not True:
                 raise SubstrateError(f"identity field {record_type}.{identity_field} must exist and be required")
     entry = contract.get("entry_protocol")
     if not isinstance(entry, dict) or entry.get("actor_required") is not True or entry.get("provenance_required") is not True:
@@ -367,12 +438,19 @@ def record_definition(connection: sqlite3.Connection, record_type: str) -> dict[
 def valid_field_value(field_type: str, value: Any) -> bool:
     if value is None:
         return True
-    if field_type in {"text", "timestamp", "date", "reference"}:
+    if field_type in {"timestamp", "date"}:
+        if not isinstance(value, str): return False
+        try:
+            if field_type == "date":
+                return bool(re.fullmatch(r"\d{4}-\d{2}-\d{2}", value)) and datetime.strptime(value, "%Y-%m-%d") is not None
+            return bool(re.fullmatch(r"\d{4}-\d{2}-\d{2}T.+(?:Z|[+-]\d{2}:\d{2})", value)) and datetime.fromisoformat(value.replace("Z", "+00:00")) is not None
+        except ValueError: return False
+    if field_type in {"text", "reference"}:
         return isinstance(value, str)
     if field_type == "integer":
         return isinstance(value, int) and not isinstance(value, bool)
     if field_type == "number":
-        return isinstance(value, (int, float)) and not isinstance(value, bool)
+        return isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value)
     if field_type == "boolean":
         return isinstance(value, bool)
     if field_type == "json":
@@ -387,9 +465,10 @@ def validate_payload(definition: dict[str, Any], payload: Any) -> None:
     unknown = sorted(set(payload) - set(field_map))
     if unknown:
         raise SubstrateError(f"unknown fields for {definition['name']}: {', '.join(unknown)}")
-    missing = [name for name, field in field_map.items() if field.get("required") and payload.get(name) is None]
+    missing = [name for name, field in field_map.items() if field.get("required") and (payload.get(name) is None or isinstance(payload.get(name), str) and not payload[name].strip())]
     if missing:
         raise SubstrateError(f"missing required fields for {definition['name']}: {', '.join(missing)}")
+    canonical_json(payload)  # Reject nested nonfinite values as well.
     for name, value in payload.items():
         if not valid_field_value(field_map[name]["type"], value):
             raise SubstrateError(f"field {definition['name']}.{name} does not match type {field_map[name]['type']}")
@@ -415,7 +494,7 @@ def add_record(
     effective_at: str | None = None,
     sensitivity: str | None = None,
 ) -> dict[str, Any]:
-    if source_kind not in SOURCE_KINDS:
+    if not isinstance(source_kind, str) or source_kind not in SOURCE_KINDS:
         raise SubstrateError(f"invalid source_kind: {source_kind}")
     _, connection = require_store(home, store_name)
     try:
@@ -488,7 +567,7 @@ def revise_record(
     status: str = "active",
     expected_version: int | None = None,
 ) -> dict[str, Any]:
-    if source_kind not in SOURCE_KINDS:
+    if not isinstance(source_kind, str) or source_kind not in SOURCE_KINDS:
         raise SubstrateError(f"invalid source_kind: {source_kind}")
     if status not in {"active", "superseded", "deleted"}:
         raise SubstrateError(f"invalid status: {status}")
@@ -603,8 +682,14 @@ def add_relation(
     validate_name(relation_type, "relation type")
     _, connection = require_store(home, store_name)
     try:
-        get_record_connection(connection, from_record_id)
-        get_record_connection(connection, to_record_id)
+        left = get_record_connection(connection, from_record_id)
+        right = get_record_connection(connection, to_record_id)
+        expected = {"source_contains_candidate": ("source", "candidate", "source_key"), "candidate_has_evaluation": ("candidate", "evaluation", "candidate_key")}
+        if relation_type not in expected:
+            raise SubstrateError("unknown Praxis relation type")
+        a, b, key = expected[relation_type]
+        if (left["record_type"], right["record_type"]) != (a, b) or left["payload"][key] != right["payload"][key]:
+            raise SubstrateError("relation endpoints do not share the declared identity")
         relation_id = str(uuid.uuid4())
         timestamp = now()
         connection.execute("BEGIN IMMEDIATE")
@@ -633,7 +718,7 @@ def add_event(
     effective_at: str | None = None,
 ) -> dict[str, Any]:
     validate_name(event_type, "event type")
-    if source_kind not in SOURCE_KINDS:
+    if not isinstance(source_kind, str) or source_kind not in SOURCE_KINDS:
         raise SubstrateError(f"invalid source_kind: {source_kind}")
     _, connection = require_store(home, store_name)
     try:
@@ -663,6 +748,8 @@ def check_store(home: Path, store_name: str) -> dict[str, Any]:
             "SELECT COUNT(*) FROM ds_records r LEFT JOIN ds_record_versions v "
             "ON v.record_id=r.record_id AND v.version=r.current_version WHERE v.record_id IS NULL"
         ).fetchone()[0]
+        hash_errors = sum(content_hash(json.loads(row["payload_json"])) != row["content_hash"] for row in connection.execute("SELECT payload_json,content_hash FROM ds_record_versions"))
+        contract_hash_errors = sum(content_hash(json.loads(row["contract_json"])) != row["contract_hash"] for row in connection.execute("SELECT contract_json,contract_hash FROM ds_contracts"))
         contract_count = connection.execute("SELECT COUNT(*) FROM ds_contracts").fetchone()[0]
         return {
             "store_name": store_name,
@@ -671,7 +758,9 @@ def check_store(home: Path, store_name: str) -> dict[str, Any]:
             "foreign_key_violations": foreign_keys,
             "current_pointer_errors": pointer_errors,
             "contract_versions": contract_count,
-            "healthy": integrity == ["ok"] and not foreign_keys and pointer_errors == 0,
+            "content_hash_errors": hash_errors,
+            "contract_hash_errors": contract_hash_errors,
+            "healthy": integrity == ["ok"] and not foreign_keys and pointer_errors == 0 and not hash_errors and not contract_hash_errors,
         }
     finally:
         connection.close()
@@ -680,33 +769,31 @@ def check_store(home: Path, store_name: str) -> dict[str, Any]:
 def backup_store(home: Path, store_name: str, destination: Path | None = None) -> dict[str, Any]:
     source = store_path(home, store_name).resolve(strict=True)
     if destination is None:
-        stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+        stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
         destination = home.expanduser().resolve() / "backups" / f"{store_name}-{stamp}.sqlite"
-    destination = destination.expanduser().resolve(strict=False)
-    if destination.exists():
-        raise SubstrateError(f"backup destination already exists: {destination}")
-    if not destination.parent.is_dir():
-        raise SubstrateError(f"backup destination parent does not exist: {destination.parent}")
-    source_connection = connect(source, read_only=True)
-    destination_connection = connect(destination)
+    destination = destination.expanduser().absolute()
+    if destination.exists(): raise SubstrateError(f"backup destination already exists: {destination}")
+    if not destination.parent.is_dir(): raise SubstrateError("backup destination parent does not exist")
+    source_connection = destination_connection = None
+    owned = False
     try:
+        source_connection = connect(source, read_only=True)
+        destination.touch(exist_ok=False); owned = True
+        destination_connection = connect(destination)
         source_connection.backup(destination_connection)
         destination_connection.commit()
         integrity = [row[0] for row in destination_connection.execute("PRAGMA integrity_check")]
         foreign_keys = list(destination_connection.execute("PRAGMA foreign_key_check"))
         if integrity != ["ok"] or foreign_keys:
             raise SubstrateError("backup artifact failed integrity or foreign-key verification")
+    except BaseException:
+        if destination_connection is not None: destination_connection.close(); destination_connection = None
+        if owned: destination.unlink(missing_ok=True)
+        raise
     finally:
-        source_connection.close()
-        destination_connection.close()
-    return {
-        "store_name": store_name,
-        "source": str(source),
-        "destination": str(destination),
-        "sha256": file_hash(destination),
-        "integrity": ["ok"],
-        "claim": "backup artifact created and structurally verified; restoration is a separate claim",
-    }
+        if source_connection is not None: source_connection.close()
+        if destination_connection is not None: destination_connection.close()
+    return {"store_name": store_name, "source": str(source), "destination": str(destination), "sha256": file_hash(destination), "integrity": ["ok"], "claim": "backup artifact created and structurally verified; restoration is a separate claim"}
 
 
 def file_hash(path: Path) -> str:
@@ -719,52 +806,41 @@ def file_hash(path: Path) -> str:
 
 def restore_as_store(home: Path, backup: Path, new_store_name: str, owner: str) -> dict[str, Any]:
     validate_name(new_store_name, "new store name")
-    initialize_home(home)
     backup = backup.expanduser().resolve(strict=True)
-    destination = store_path(home, new_store_name)
-    if destination.exists():
-        raise SubstrateError(f"restore destination already exists: {destination}")
     source_connection = connect(backup, read_only=True)
-    destination_connection = connect(destination)
+    destination_connection = registry = None
+    destination = store_path(home, new_store_name)
+    owned = False
     try:
+        version = source_connection.execute("SELECT value_json FROM ds_meta WHERE key='substrate_schema_version'").fetchone()
+        value = json.loads(version[0]) if version else None
+        if type(value) is not int or value != SCHEMA_VERSION: raise SubstrateError("unsupported backup schema")
+        if [r[0] for r in source_connection.execute("PRAGMA integrity_check")] != ["ok"] or list(source_connection.execute("PRAGMA foreign_key_check")):
+            raise SubstrateError("backup structural verification failed")
+        initialize_home(home)
+        if destination.exists(): raise SubstrateError(f"restore destination already exists: {destination}")
+        # Hold registry writer authority until the new store is either registered or removed.
+        registry = connect(registry_path(home)); registry.execute("BEGIN IMMEDIATE")
+        destination.touch(exist_ok=False); owned = True
+        destination_connection = connect(destination)
         source_connection.backup(destination_connection)
-        destination_connection.commit()
-        integrity = [row[0] for row in destination_connection.execute("PRAGMA integrity_check")]
-        foreign_keys = list(destination_connection.execute("PRAGMA foreign_key_check"))
-        if integrity != ["ok"] or foreign_keys:
-            raise SubstrateError("restored store failed structural verification")
-        metadata = {row["key"]: json.loads(row["value_json"]) for row in destination_connection.execute("SELECT key,value_json FROM ds_meta")}
+        metadata = {r["key"]: json.loads(r["value_json"]) for r in destination_connection.execute("SELECT key,value_json FROM ds_meta")}
         timestamp = now()
-        destination_connection.execute(
-            "INSERT INTO ds_meta(key,value_json,updated_at) VALUES ('store_name',?,?) "
-            "ON CONFLICT(key) DO UPDATE SET value_json=excluded.value_json,updated_at=excluded.updated_at",
-            (canonical_json(new_store_name), timestamp),
-        )
+        destination_connection.execute("UPDATE ds_meta SET value_json=?,updated_at=? WHERE key='store_name'", (canonical_json(new_store_name), timestamp))
         audit(destination_connection, "store_restored", new_store_name, owner, {"backup": str(backup), "backup_sha256": file_hash(backup)})
-        destination_connection.commit()
-    except Exception:
-        source_connection.close()
-        destination_connection.close()
-        if destination.exists():
-            destination.unlink()
+        destination_connection.commit(); destination_connection.close(); destination_connection = None
+        if not check_store(home, new_store_name)["healthy"]: raise SubstrateError("restored ledger failed content/pointer verification")
+        registry.execute("INSERT INTO ds_stores(store_name,purpose,owner,default_sensitivity,store_path,created_at,updated_at,status) VALUES (?,?,?,?,?,?,?,'active')", (new_store_name, metadata.get("purpose", "restored store"), owner, metadata.get("default_sensitivity", "internal"), str(destination), timestamp, timestamp))
+        registry.commit()
+    except BaseException:
+        if registry is not None: registry.rollback()
+        if destination_connection is not None: destination_connection.close(); destination_connection = None
+        if owned: destination.unlink(missing_ok=True)
         raise
     finally:
-        try:
-            source_connection.close()
-            destination_connection.close()
-        except Exception:
-            pass
-
-    registry = connect(registry_path(home))
-    try:
-        timestamp = now()
-        registry.execute(
-            "INSERT INTO ds_stores(store_name,purpose,owner,default_sensitivity,store_path,created_at,updated_at,status) VALUES (?,?,?,?,?,?,?,'active')",
-            (new_store_name, metadata.get("purpose", "restored store"), owner, metadata.get("default_sensitivity", "internal"), str(destination), timestamp, timestamp),
-        )
-        registry.commit()
-    finally:
-        registry.close()
+        source_connection.close()
+        if destination_connection is not None: destination_connection.close()
+        if registry is not None: registry.close()
     return {"store_name": new_store_name, "store_path": str(destination), "backup_sha256": file_hash(backup), "healthy": True}
 
 
@@ -782,15 +858,25 @@ def export_store(home: Path, store_name: str, destination: Path | None = None) -
         raise SubstrateError(f"export destination parent does not exist: {destination.parent}")
     tables = ["ds_meta", "ds_contracts", "ds_record_types", "ds_records", "ds_record_versions", "ds_relations", "ds_events", "ds_audit"]
     counts: dict[str, int] = {}
+    owned = False
     try:
+        connection.execute("BEGIN")
+        rows_out = []
+        for table in tables:
+            rows = connection.execute(f"SELECT * FROM {table} ORDER BY rowid").fetchall()
+            counts[table] = len(rows)
+            rows_out.extend({"kind": "row", "table": table, "data": dict(row)} for row in rows)
+        snapshot = "".join(canonical_json(row) + "\n" for row in rows_out)
+        header = {"kind": "cd-data-export", "format": "cd-data-export/v1", "store_name": store_name,
+                  "snapshot_sha256": hashlib.sha256(snapshot.encode("utf-8")).hexdigest(),
+                  "hash_scope": "UTF-8 row lines including LF after each row; logical SQLite snapshot, not main database file", "exported_at": now()}
         with destination.open("x", encoding="utf-8", newline="\n") as stream:
-            header = {"kind": "cd-data-export", "format": "cd-data-export/v1", "store_name": store_name, "source_hash": file_hash(path), "exported_at": now()}
-            stream.write(canonical_json(header) + "\n")
-            for table in tables:
-                rows = connection.execute(f"SELECT * FROM {table}").fetchall()
-                counts[table] = len(rows)
-                for row in rows:
-                    stream.write(canonical_json({"kind": "row", "table": table, "data": dict(row)}) + "\n")
+            owned = True
+            stream.write(canonical_json(header) + "\n" + snapshot)
+    except BaseException:
+        if owned: destination.unlink(missing_ok=True)
+        raise
     finally:
         connection.close()
+
     return {"store_name": store_name, "destination": str(destination), "sha256": file_hash(destination), "counts": counts}

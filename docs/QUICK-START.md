@@ -30,7 +30,7 @@ Require six elements:
 3. **Evidence:** what was observed, supplied, inferred, or remains unknown.
 4. **Costs and risks:** dependencies, permissions, privacy, rights, maintenance, money, context, and overlap.
 5. **Baseline comparison:** why this beats—or fails to beat—what you already have.
-6. **Next test:** a small falsifiable check with a clear result.
+6. **Next action:** a small falsifiable check with a clear result when more evidence is needed, or the reason to stop for a justified skip.
 
 If the answer says `adopt` without a separate acceptance gate, or recommends installation because a package is popular, the result failed Praxis Mine's governing boundary.
 
@@ -55,4 +55,6 @@ The `.\praxis-data` directory is disposable first-run data. See [Ledger referenc
 
 ## You are done when
 
-You can explain what is worth keeping, why the current evidence warrants that disposition, and which observation would change the recommendation. Nothing has been installed or executed merely because it looked shiny.
+For an assessment request, you can explain what is worth keeping and why the evidence warrants the decision. For an authorized adaptation request, continue through the actual capability owner to the verified change. The local room records assessments and never installs or executes a candidate by itself.
+
+The bundled seed scores are historical example inputs, not current verified product recommendations. They remain usable for learning the ledger, but lack the new declared comparison/rights basis and therefore cannot earn an actionable disposition without actual reassessment.

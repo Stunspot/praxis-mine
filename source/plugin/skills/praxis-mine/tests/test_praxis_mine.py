@@ -42,7 +42,8 @@ class PraxisMineIntegrationTests(unittest.TestCase):
 
         evaluation = SKILL_ROOT / "assets" / "seed-evaluations" / "microsoft_waza.json"
         assessed = self.run_mine("evaluate", "microsoft_waza", str(evaluation))
-        self.assertEqual("pilot", assessed["disposition"])
+        self.assertEqual("monitor", assessed["disposition"])
+        self.assertIn("baseline", assessed["decision_gaps"])
         repeated = self.run_mine("evaluate", "microsoft_waza", str(evaluation))
         self.assertEqual("unchanged", repeated["action"])
 
@@ -51,7 +52,7 @@ class PraxisMineIntegrationTests(unittest.TestCase):
         self.assertEqual(64, len(output["sha256"]))
         report = report_path.read_text(encoding="utf-8")
         self.assertIn("Microsoft Waza", report)
-        self.assertIn("**pilot**", report)
+        self.assertIn("**monitor**", report)
         status = self.run_mine("status")
         self.assertEqual(10, status["candidates"])
         self.assertEqual(1, status["evaluations"])

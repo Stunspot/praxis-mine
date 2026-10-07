@@ -1,0 +1,229 @@
+{
+  "format": "cd-documentation-custody-continuation/v1",
+  "current_materially_revised": [
+    "docs/MAINTAINER-GUIDE.md"
+  ],
+  "prior_receipt_sha256": "223036d8a328cd23ca58117efab0779a3926665aabc2c88a0198d5ac95ff00a5",
+  "prior_authoring": {
+    "authorship_scope": "materially-revised",
+    "capability": "hesperos-documentation",
+    "capability_entrypoint_sha256": "c6622d90a907edc95e93b868e2481f835bf3ddb3f21b801a3699042a0e524cde",
+    "mode": "in-process",
+    "run_id": "praxis-decision-field-20260928-v1.2.0"
+  },
+  "unchanged_prior_authored_files": [
+    {
+      "bytes": 746,
+      "path": "RELEASE-NOTES-v1.1.0.md",
+      "sha256": "e91c988cf968e576545e541ef47da45ef250409f4083100a531d18dc4f36dbb9"
+    },
+    {
+      "bytes": 5117,
+      "path": "docs/index.md",
+      "sha256": "059ca87b4ecfd40109956ea0032092adbffd4eed428b7e757f49f4180731ffc7"
+    },
+    {
+      "bytes": 2569,
+      "path": "docs/README.md",
+      "sha256": "d20588bd0205c9a8ce5977c7f911fc2bd25ab2296024d4388db895a68c2004ad"
+    },
+    {
+      "bytes": 2724,
+      "path": "docs/INSTALL-CODEX.md",
+      "sha256": "71fb39751080a3849276099a4d67b0016fa829cbca4c11c6af3762d64b8bb391"
+    },
+    {
+      "bytes": 2203,
+      "path": "docs/INSTALL-CLAUDE.md",
+      "sha256": "e6e7cfc218b728533e66d8b3edd6154715d670a38b4f747d1c7259b450853bd8"
+    },
+    {
+      "bytes": 766,
+      "path": "docs/404.md",
+      "sha256": "248c44101c7fcfe4d427e3af21ef62e721aa91c4fc419fc39033bad4557f410d"
+    },
+    {
+      "bytes": 2454,
+      "path": "docs/UNINSTALL-AND-DATA.md",
+      "sha256": "463f9260b0a9e1f90f61f530c4d80324dc2ea327a1b08b017be829f55382a0dc"
+    },
+    {
+      "bytes": 3351,
+      "path": "docs/PROVENANCE.md",
+      "sha256": "c79aa8b4d9593bcf584abfc3bc363c630b8e9c7a6b9bde976559f620a77e526f"
+    },
+    {
+      "bytes": 2524,
+      "path": "DATA-AND-PRIVACY.md",
+      "sha256": "0cb0669da6eb0b4a8c383583468dfa7b37dbe9a619fec381e093cfb59570431d"
+    },
+    {
+      "bytes": 2898,
+      "path": "TERMS-OF-USE.md",
+      "sha256": "283e7b66d4df13b91cc286543ff1a74a330078c6e0189cea2c75d1597633b25d"
+    },
+    {
+      "bytes": 1823,
+      "path": "SECURITY.md",
+      "sha256": "6f8963ac315b1c47d0f6a8b04463f9f1ecb28d99368a6e592ef2af0fb9c566a1"
+    },
+    {
+      "bytes": 2690,
+      "path": "LICENSE.md",
+      "sha256": "445d93cae127b5c26f4fc8d2cc2b565de6d8fbea6bf86e43fb10f93c8903e507"
+    },
+    {
+      "bytes": 1730,
+      "path": "TRADEMARKS.md",
+      "sha256": "7bdb3d57d3aa9c879e415edc3d64a19207283981b8aa1de93b3fc7d73f0f2238"
+    },
+    {
+      "bytes": 1639,
+      "path": "NOTICE.md",
+      "sha256": "d543f778b1f2b40eb59459abb3ec21fef1a8202c4ccadab31b00bf48a48fbb7c"
+    },
+    {
+      "bytes": 1088,
+      "path": "CONTRIBUTING.md",
+      "sha256": "eda4584e4d05e3e338e5c0a7da06bc7403b356f72b58ceec0d7f4201df3d3d33"
+    },
+    {
+      "bytes": 1795,
+      "path": "RELEASE-NOTES-v1.0.1.md",
+      "sha256": "5f599e8365d4ff5f6d8715b82b712b106a5925760417737555b40681b225cc72"
+    },
+    {
+      "bytes": 8345,
+      "path": "PLUGIN-DIRECTORY-SUBMISSION-v1.0.1.md",
+      "sha256": "8fbf9b1500f56582eb1154e5681e25ad83efd0b35daf3561af804e330e72a831"
+    }
+  ],
+  "prior_receipt_already_stale_paths": [],
+  "boundary": "No unchanged document is newly authored. Original full receipt is historical after edits. Earlier scoped workspace revisions retain their own source records; this receipt binds only current declared revised files.",
+  "continued_authorship_corrections": [
+    {
+      "path": "SUPPORT.md",
+      "prior": {
+        "bytes": 879,
+        "path": "SUPPORT.md",
+        "sha256": "d0d0393b154688151369c41664c0729509a47bd815fb2f26a4d4e1c7e67d76e5"
+      },
+      "current": {
+        "sha256": "f59d44e52efa57c8318b1edb5e29d2bf61c323ac224a3e380dfa59f77fbd952f",
+        "bytes": 879
+      },
+      "change": "Corrects literal reported product version 1.0.0 to 1.2.0 only. Original authorship continues; not a new authoring run.",
+      "exact_copies": [
+        "source/plugin/SUPPORT.md",
+        "source/plugin/skills/praxis-mine/SUPPORT.md"
+      ]
+    }
+  ],
+  "unchanged_relocated_copies": [
+    {
+      "source": "TRADEMARKS.md",
+      "destination": "source/plugin/skills/praxis-mine/TRADEMARKS.md",
+      "sha256": "7bdb3d57d3aa9c879e415edc3d64a19207283981b8aa1de93b3fc7d73f0f2238",
+      "reason": "Close LICENSE -> TRADEMARKS -> SUPPORT -> SECURITY inside standalone install; no new authorship."
+    },
+    {
+      "source": "SECURITY.md",
+      "destination": "source/plugin/skills/praxis-mine/SECURITY.md",
+      "sha256": "6f8963ac315b1c47d0f6a8b04463f9f1ecb28d99368a6e592ef2af0fb9c566a1",
+      "reason": "Close LICENSE -> TRADEMARKS -> SUPPORT -> SECURITY inside standalone install; no new authorship."
+    }
+  ],
+  "line_ending_continuations": [
+    {
+      "path": "delivery-sidecars/Praxis Mine T-Free v1.2.0.md",
+      "old_sha256": "e89fd0860522db853c4f03ccb27f6a23c25977e12751ff95a6235472f4a820bf",
+      "old_bytes": 3079,
+      "sha256": "22f75066d3b938f9a3d9cbc8e40dbec62570179025e8c6f7e7797a6b8980eead",
+      "bytes": 3060,
+      "normalized_equivalent": true,
+      "authorship": "Original authorship continues. LF normalization only; no new authoring claim."
+    },
+    {
+      "path": "docs/HOST-COMPATIBILITY.md",
+      "old_sha256": "dd55e511a0e567ed03dd389804b6da29d620857aca044d6500e0890ed0113952",
+      "old_bytes": 3073,
+      "sha256": "fff83e12eabad5b47d8ca0694206cdb532cc07697bcf6339c609f8bc69c8a849",
+      "bytes": 3031,
+      "normalized_equivalent": true,
+      "authorship": "Original authorship continues. LF normalization only; no new authoring claim."
+    }
+  ],
+  "continued_previous_current_run": {
+    "receipt_sha256": "0dedb61744fc4a30f8eacd822116a6d0301e8ee09ded85b19a88f9e63e600eb7",
+    "authoring": {
+      "authorship_scope": "materially-revised",
+      "capability": "hesperos-documentation",
+      "capability_entrypoint_sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+      "capability_revision": "sha256:21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+      "capability_snapshot": {
+        "bytes": 7306,
+        "path": "verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md",
+        "sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f"
+      },
+      "mode": "in-process",
+      "run_id": "praxis-estate-quality-20261007"
+    },
+    "unchanged_authored_files": [
+      {
+        "bytes": 10044,
+        "path": "docs/MINE-ROOM.md",
+        "sha256": "932464a9660cb3257fc659a852e5452f699140585ad940d830fe95d467872b92"
+      },
+      {
+        "bytes": 5110,
+        "path": "docs/WORKFLOWS.md",
+        "sha256": "b19ce7f4ac62f16573c29d1b6c607bafac05cdfc341ed224039de739d412c21d"
+      },
+      {
+        "bytes": 4652,
+        "path": "docs/LEDGER-REFERENCE.md",
+        "sha256": "4ee55a0bd5af2ed2e2fb3cbd6a4be1c6aa9a1a37b9cf73542c3ec1d2ad350dc0"
+      },
+      {
+        "bytes": 5722,
+        "path": "docs/TROUBLESHOOTING.md",
+        "sha256": "8b5d220f67818b96af99cf424e1bc9c16658ca357f7adc0b2b80ce7f921c7fa5"
+      },
+      {
+        "bytes": 3207,
+        "path": "docs/QUICK-START.md",
+        "sha256": "89a31a231800d3d674d07b3892cf282539b7c2db205690931875d1ec49a107ed"
+      },
+      {
+        "bytes": 4634,
+        "path": "README.md",
+        "sha256": "acf1552ff98b9fb03f97fffe78fd85e743fa964bd1c16b4dfbc989b025fe8402"
+      },
+      {
+        "bytes": 2549,
+        "path": "docs/LIMITATIONS.md",
+        "sha256": "685c7df648828fb942b978aaa015adea2a5cb269e84212dc1db021d5fee5ae13"
+      },
+      {
+        "bytes": 1932,
+        "path": "docs/VALIDATION.md",
+        "sha256": "36d81b5b2fbc3a58af6b77ef534c4592c54be20502e315720d3dd5419f3c36ab"
+      },
+      {
+        "bytes": 3070,
+        "path": "RELEASE-NOTES-v1.2.0.md",
+        "sha256": "2f895de79bd4d4709c8a59ea00b3dfc55788aa134f6a84b594adacfcb01f8ae2"
+      },
+      {
+        "bytes": 1871,
+        "path": "ARCHIVE-CUSTODY.md",
+        "sha256": "5128b7f57946d9b6eaf907213fa5b75240d94f902f16324628bdc0dc654e272a"
+      },
+      {
+        "bytes": 4420,
+        "path": "delivery-sidecars/Praxis Mine T-Free v1.2.0 Extra.md",
+        "sha256": "c282835a65229c91f3c93d8dd16e26fa46f7605b259a6536ceaf56a043ed6c35"
+      }
+    ]
+  }
+}

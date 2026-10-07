@@ -25,3 +25,7 @@ The package provides no hosted service or telemetry. The selected AI host and ex
 ## Release evidence
 
 Static validation supports package structure and exact exercised checks. It does not establish defect freedom, legal correctness, security certification, formal accessibility conformance, directory approval, customer success, or fitness for a particular adoption decision.
+
+## Currentness and recovery bounds
+
+A bound assessment is current only for its recorded material/source snapshot. It can still be wrong: evidence references, license conclusions and comparisons are supplied judgments that require actual inspection. Source mutation returns the display to triage; older unbound evaluations retain history without current authority. Ordinary multi-record failures roll back, but power loss or external modification can require recovery. Scans reject linked/reparse material and fail on unreadable files; they do not promise a race-proof snapshot of a concurrently hostile filesystem.

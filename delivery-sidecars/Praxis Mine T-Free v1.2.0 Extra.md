@@ -2,7 +2,7 @@
 
 Praxis Mine evaluates outside AI skills, repositories, prompts, tools, and workflows before they enter a working stack. It compares a candidate with existing capabilities, identifies the mechanism that could improve an outcome, checks rights and operational risks, and recommends whether to test, adapt, monitor, extract selectively, or reject it. Mining produces a bounded decision; adoption needs its own evidence.
 
-Its visual workspace gives earlier research a place you can return to. Blackglass — Crimson gathers extracted mechanisms beneath their sources in a full-width glass gallery. SNAPFRAME traces actual source-to-finding-to-judgment circuits, with the next falsifiable test visible along each assessed path. Select any source, finding, or evaluation for a focused reading view, then return to your place in the collection. A persistent bench keeps two or three findings ready for direct comparison. Both environments use the same native SQLite records and retain the full history behind their overview.
+Its visual workspace gives earlier research a place you can return to. The Decision field opens first: recorded dispositions, mechanisms, sources, next falsifiable tests, and missing evaluations can be scanned together. Blackglass — Crimson then offers a full-width source gallery; SNAPFRAME traces actual source-to-finding-to-judgment circuits. Select any source, finding, or evaluation for a focused reading view, then return to your place in the collection. A persistent bench keeps two or three findings ready for direct comparison. Both environments use the same native SQLite records and retain the full history behind their overview.
 
 # Usage Notes
 
@@ -10,11 +10,11 @@ Copy the .zip from "Additional Files" to your Codex, Claude Code, or other harne
 
 - Extract the kit and use Open.cmd or Open.command with Python 3.11+.
 - Open your existing data home before starting a new collection. Search for a mechanism or source, filter by recorded disposition, and use Activity trail to recover earlier work.
-- Choose Blackglass — Crimson to browse source-grouped mechanism cards, or SNAPFRAME to trace a source through findings, latest judgments, and next tests. Missing evaluations and sources without findings are stated explicitly.
+- Open Decision field to survey the recorded judgments and next tests. Choose Blackglass — Crimson for a glass source gallery, or SNAPFRAME for a source-to-judgment circuit. Missing evaluations and sources without findings are stated explicitly.
 - Open a card or circuit node to read its native evidence. Previous, Next, and Back to collection preserve your reading path. Revision history and the complete native record remain available.
 - Add two or three findings with + To bench or + Compare. The fixed bench retains your choices while you browse; Compare aligns mechanisms, evidence, costs, risks, and next tests.
 - Use Ledger tools to record sources and candidates, import a native manifest, or export the ledger and report. A manifest brings source/candidate content and creates new runs; open the original native data home to retain its full prior history.
-- Edit record preserves native revisions. Reconcile stale drafts before saving again. Project handoff exports the finding and ledger pointer without installing or executing it.
+- Edit record preserves native revisions. Reconcile stale drafts before saving again. Project handoff exports current assessment, baseline, evidence and bounded next action without the private ledger path. Confirm recipient scope before sharing.
 - Give your agent a link, folder, or files, the outcome you want to improve, and your current baseline. Privacy, security, license, cost, runtime, and dependency constraints remain consequential.
 - Application updates preserve the separate data home. Retired skin preferences reset to Blackglass — Crimson. Desktop shortcuts require your request; Arm's Reach remains parked. Native macOS execution remains unverified.
 
@@ -22,7 +22,7 @@ Public GitHub Repo: [praxis-mine](https://github.com/Stunspot/praxis-mine)
 
 # Changelog
 
-v1.2.0 - Added collection overview, activity browsing, and direct comparison of two or three findings. The same-version presentation repair implements Blackglass — Crimson as a source-grouped extraction gallery and SNAPFRAME as an evidence circuit, with focused record readers and a persistent comparison bench. Native records, full histories, evaluation gates, editing, imports, exports, and project handoffs retain their established roles.
+v1.2.0 - Restored judgment-led decisions, current material-bound evidence, atomic ledger operations, recovery and portable delivery. Added collection overview, activity browsing, and direct comparison of two or three findings. The same-version presentation repair opens on a decision field in both environments, preserves Blackglass — Crimson as a source-grouped gallery and SNAPFRAME as an evidence circuit, and retains focused readers and a persistent comparison bench. Native records, full histories, evaluation gates, editing, imports, exports, and project handoffs retain their established roles.
 
 v1.1.0 - Added the native rediscovery workspace with purpose and mechanism search, provenance, evaluation history, revision-safe editing, imports, exports, and restart-safe launchers.
 

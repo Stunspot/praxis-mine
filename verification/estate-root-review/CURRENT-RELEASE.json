@@ -1,0 +1,7 @@
+{
+  "version": "1.2.0",
+  "zip": "repair-candidates/estate-r5/Praxis-Mine-v1.2.0.zip",
+  "sha256": "06b40dae28e7f562bf8df0d6873fff97ac335cf0e753dda6e631d65665c213fd",
+  "acceptance": "verification/estate-root-review/R5-ACCEPTANCE.json",
+  "historical_release_directory": "release-v1.2.0 preserved; current archive identified above"
+}

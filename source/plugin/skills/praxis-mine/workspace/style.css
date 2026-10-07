@@ -574,3 +574,106 @@ body[data-skin="snapframe"] .circuit-board:has(.path-list > .empty-state) .sourc
 .mobile-filters-toggle{display:none}
 @media(max-width:700px){body[data-skin] .control-deck{display:flex;flex-direction:column;gap:14px}body[data-skin] .control-deck .view-switch{width:100%;flex-direction:row}body[data-skin] .control-deck .view-switch button{flex:1;min-width:0;white-space:normal}body[data-skin] .control-deck .search-field{width:100%}body[data-skin] .mobile-filters-toggle{display:flex;align-items:center;justify-content:space-between;gap:20px;width:100%;font-size:14px;text-align:left;background:transparent}body[data-skin] .control-deck:not(.filters-expanded) :is(.seams,.order-control,.collection-summary){display:none}body[data-skin] .control-deck .seams{width:100%}body[data-skin] .control-deck .order-control{width:100%}}
 @media(max-width:700px){body[data-skin] .control-deck:not(.filters-expanded) #seams{display:none}body[data-skin=blackglass] .expedition-head{display:grid;grid-template-columns:32px minmax(0,1fr);gap:12px}body[data-skin=blackglass] .source-tally{display:none}body[data-skin=blackglass] .source-heading h2{font-size:22px}body[data-skin=blackglass] .stage-heading{margin-bottom:18px}body[data-skin=blackglass] .expedition{margin-top:20px}}
+
+/* Decision field: native judgments and next tests stay in view together. */
+.horizon-measures{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;min-width:0;margin:0 0 35px}
+.horizon-measures>div{min-width:0;padding:14px 19px;border-left:1px solid var(--line)}
+.horizon-measures>div:first-child{border-left:0;padding-left:0}
+.horizon-measures strong{display:block;font-variant-numeric:tabular-nums;line-height:1}
+.horizon-measures span{display:block;margin-top:9px;color:var(--muted);font-size:13px;line-height:1.4}
+.horizon-field{min-width:0}
+.horizon-group{min-width:0}
+.horizon-group-head{min-width:0}
+.horizon-index,.horizon-category,.horizon-group-count,.horizon-test-label,.horizon-origin,.horizon-open-cue{font-family:var(--mono);letter-spacing:.035em}
+.horizon-group-head h2{margin:0;overflow-wrap:anywhere}
+.horizon-group-head p{margin:0;color:var(--muted);overflow-wrap:anywhere}
+.horizon-group-count{font-variant-numeric:tabular-nums}
+.horizon-results{min-width:0}
+.horizon-finding{position:relative;min-width:0}
+.horizon-open{display:flex;flex-direction:column;align-items:flex-start;width:100%;min-width:0;text-align:left}
+.horizon-open strong,.horizon-open span{display:block;min-width:0;overflow-wrap:anywhere}
+.horizon-open strong{line-height:1.28}
+.horizon-origin{font-size:11px;color:var(--muted);text-transform:uppercase}
+.horizon-mechanism{line-height:1.5}
+.horizon-test-label{font-size:11px;color:var(--muted)}
+.horizon-test{line-height:1.5}
+.horizon-open-cue{font-size:11px;color:var(--muted)}
+.horizon-expand{width:100%;text-align:left}
+body[data-skin="blackglass"] .horizon-measures{padding:15px 20px;margin-bottom:31px;border:1px solid #817a7a55;border-radius:17px;background:linear-gradient(115deg,#292525be,#111010b9);box-shadow:inset 1px 1px #ffffff20,0 16px 40px #0004}
+body[data-skin="blackglass"] .horizon-measures strong{font:300 clamp(25px,2.5vw,38px)/1 var(--display);color:#f2eeee}
+body[data-skin="blackglass"] .horizon-field{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:21px}
+body[data-skin="blackglass"] .horizon-group{padding:24px 22px 18px;border:1px solid #817a7a55;border-radius:20px;background:radial-gradient(130% 75% at 4% -14%,#b8aeae20,transparent 62%),linear-gradient(145deg,#242121d9,#0d0b0bd9);box-shadow:inset 1px 1px #ffffff21,0 18px 42px #0005;backdrop-filter:blur(14px)}
+body[data-skin="blackglass"] .horizon-group-head{display:grid;grid-template-columns:1fr auto;gap:14px;min-height:157px;border-bottom:1px solid #817a7a66;padding-bottom:16px}
+body[data-skin="blackglass"] .horizon-index{grid-column:1/-1;color:#b75555;font-size:11px}
+body[data-skin="blackglass"] .horizon-category{color:#b9b1b1;font-size:11px;text-transform:uppercase;letter-spacing:.1em}
+body[data-skin="blackglass"] .horizon-group-head h2{font:300 clamp(24px,2.1vw,32px)/1.12 var(--display);letter-spacing:-.035em;margin:4px 0 9px}
+body[data-skin="blackglass"] .horizon-group-head p:last-child{font-size:12px;line-height:1.5}
+body[data-skin="blackglass"] .horizon-group-count{font:300 31px/1 var(--display);color:#d8d0d0}
+body[data-skin="blackglass"] .horizon-finding{padding:0 0 18px;margin:0;border-bottom:1px solid #817a7a4b}
+body[data-skin="blackglass"] .horizon-open{gap:9px;padding:20px 0 48px;border:0;border-radius:0;background:transparent;box-shadow:none}
+body[data-skin="blackglass"] .horizon-open:hover{background:transparent}
+body[data-skin="blackglass"] .horizon-open:hover strong{color:#fff;text-decoration:underline;text-decoration-color:#ab3838;text-underline-offset:5px}
+body[data-skin="blackglass"] .horizon-open[aria-current=true]{border-left:3px solid #b50000;padding-left:12px}
+body[data-skin="blackglass"] .horizon-open strong{font:400 21px/1.27 var(--display);letter-spacing:-.02em}
+body[data-skin="blackglass"] .horizon-mechanism{color:#d6d0d0;font-size:14px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+body[data-skin="blackglass"] .horizon-test-label{color:#b75b5b;margin-top:5px}
+body[data-skin="blackglass"] .horizon-test{font-size:14px;color:#e2dddd;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+body[data-skin="blackglass"] .horizon-open-cue{margin-top:auto;padding-top:7px;color:#bcb5b5}
+body[data-skin="blackglass"] .horizon-pin{position:absolute;bottom:19px;right:0;padding:6px 11px;font-size:11px;border-radius:20px}
+body[data-skin="blackglass"] .horizon-expand{margin-top:14px;padding:8px 0;border:0;background:transparent;box-shadow:none;color:#e1c5c5;font-size:13px}
+body[data-skin="blackglass"] .horizon-expand:hover{background:transparent;text-decoration:underline}
+body[data-skin="snapframe"] .horizon-measures{border-top:1px solid var(--accent);border-bottom:1px solid var(--line);padding:10px 0 18px}
+body[data-skin="snapframe"] .horizon-measures>div{padding:8px 15px}
+body[data-skin="snapframe"] .horizon-measures strong{font:600 28px/1 var(--display);color:var(--signal)}
+body[data-skin="snapframe"] .horizon-field{display:block}
+body[data-skin="snapframe"] .horizon-group{display:grid;grid-template-columns:minmax(190px,240px) minmax(0,1fr);gap:15px 24px;border-top:1px solid var(--line);padding:27px 0}
+body[data-skin="snapframe"] .horizon-group-head{display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-content:start;padding-right:18px}
+body[data-skin="snapframe"] .horizon-index{grid-column:1/-1;color:var(--signal);font-size:12px;margin-bottom:8px}
+body[data-skin="snapframe"] .horizon-category{text-transform:uppercase;font-size:11px;color:var(--signal)}
+body[data-skin="snapframe"] .horizon-group-head h2{font:600 24px/1.22 var(--display);margin:4px 0 9px}
+body[data-skin="snapframe"] .horizon-group-head p:last-child{font-size:12px;line-height:1.5}
+body[data-skin="snapframe"] .horizon-group-count{font-size:23px;line-height:1;color:var(--ink)}
+body[data-skin="snapframe"] .horizon-results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+body[data-skin="snapframe"] .horizon-finding{min-height:305px;border:1px solid #3e4956;background:linear-gradient(155deg,#1b2027,#111317)}
+body[data-skin="snapframe"] .horizon-finding:hover{border-color:var(--accent)}
+body[data-skin="snapframe"] .horizon-open{gap:10px;min-height:100%;padding:17px 16px 56px;border:0;background:transparent}
+body[data-skin="snapframe"] .horizon-open[aria-current=true]{box-shadow:inset 3px 0 var(--accent)}
+body[data-skin="snapframe"] .horizon-open strong{font:600 19px/1.28 var(--display)}
+body[data-skin="snapframe"] .horizon-mechanism{font-size:13px;color:#D0D7E0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+body[data-skin="snapframe"] .horizon-test-label{margin-top:6px;color:var(--signal)}
+body[data-skin="snapframe"] .horizon-test{font-size:13px;color:var(--ink);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+body[data-skin="snapframe"] .horizon-open-cue{margin-top:auto;color:var(--signal)}
+body[data-skin="snapframe"] .horizon-pin{position:absolute;bottom:14px;right:14px;padding:5px 9px;font-size:11px}
+body[data-skin="snapframe"] .horizon-expand{grid-column:2;margin-top:0;border:1px dashed var(--line);background:transparent;color:var(--signal);font-size:13px}
+@media(max-width:1300px){body[data-skin="blackglass"] .horizon-field{grid-template-columns:repeat(2,minmax(0,1fr))}body[data-skin="snapframe"] .horizon-results{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){body[data-skin="snapframe"] .horizon-group{grid-template-columns:1fr}body[data-skin="snapframe"] .horizon-group-head{max-width:70ch}body[data-skin="snapframe"] .horizon-expand{grid-column:1}}
+@media(max-width:700px){body[data-view="horizon"] .stage-intro{display:none}body[data-view="horizon"] .stage-heading{margin-bottom:13px}body[data-skin="blackglass"] .horizon-field{grid-template-columns:1fr;gap:15px}body[data-skin="blackglass"] .horizon-group{padding:18px 17px 10px}body[data-skin="blackglass"] .horizon-group-head{min-height:0}body[data-skin="blackglass"] .horizon-open{padding-top:15px}body[data-skin="snapframe"] .horizon-results{grid-template-columns:1fr}body[data-skin="snapframe"] .horizon-group{padding:18px 0}body[data-skin="snapframe"] .horizon-finding{min-height:0}body[data-skin="snapframe"] .horizon-measures,body[data-skin="blackglass"] .horizon-measures{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:18px;padding:8px 4px}body[data-skin="blackglass"] .horizon-measures>div,body[data-skin="snapframe"] .horizon-measures>div{padding:5px 7px}body[data-skin="blackglass"] .horizon-measures strong,body[data-skin="snapframe"] .horizon-measures strong{font-size:22px}body[data-skin="blackglass"] .horizon-measures span,body[data-skin="snapframe"] .horizon-measures span{font-size:10px;line-height:1.25;margin-top:5px}body[data-skin="blackglass"] .view-switch button,body[data-skin="snapframe"] .view-switch button{font-size:11px;padding:8px 6px;white-space:normal;line-height:1.2}body[data-skin="blackglass"] .view-switch,body[data-skin="snapframe"] .view-switch{width:100%}}
+@media(max-width:700px){
+  .bench-bar:has(.bench-empty){display:none}
+  body[data-skin="blackglass"] .horizon-measures,body[data-skin="snapframe"] .horizon-measures{grid-template-columns:repeat(2,minmax(0,1fr))}
+  body[data-skin="blackglass"] .horizon-measures>div:nth-child(-n+2),body[data-skin="snapframe"] .horizon-measures>div:nth-child(-n+2){display:none}
+  body[data-skin="blackglass"] .horizon-group-head p:last-child,body[data-skin="snapframe"] .horizon-group-head p:last-child{display:none}
+  body[data-skin="blackglass"] .horizon-group-head{padding-bottom:8px}
+}
+
+/* SNAPFRAME's decision field is a signal rail, not a second gallery. */
+body[data-skin="snapframe"] .horizon-results{gap:0;border-top:2px solid var(--accent)}
+body[data-skin="snapframe"] .horizon-finding{min-height:285px;border:0;border-right:1px solid #343B46;background:transparent}
+body[data-skin="snapframe"] .horizon-finding:last-child{border-right:0}
+body[data-skin="snapframe"] .horizon-finding::before{content:"";position:absolute;top:-5px;left:16px;width:7px;height:7px;background:var(--accent);box-shadow:0 0 0 3px var(--bg);pointer-events:none}
+body[data-skin="snapframe"] .horizon-finding:hover{border-color:#343B46;background:linear-gradient(180deg,#3F8EFC0d,transparent 70%)}
+body[data-skin="snapframe"] .horizon-open{padding:18px 20px 58px 16px}
+body[data-skin="snapframe"] .horizon-open[aria-current=true]{box-shadow:inset 2px 0 var(--accent);background:linear-gradient(90deg,#3F8EFC11,transparent 70%)}
+body[data-skin="snapframe"] .horizon-pin{right:12px}
+@media(max-width:700px){body[data-skin="snapframe"] .horizon-finding{min-height:0;border-right:0;border-bottom:1px solid #343B46}body[data-skin="snapframe"] .horizon-finding:last-child{border-bottom:0}}
+@media(max-width:700px){
+  #list>.empty-state{min-height:0;padding:24px 20px 27px}
+  #list>.empty-state h2,#list>.empty-state h3{font-size:26px;margin:4px 0 12px}
+  #list>.empty-state p{font-size:15px;line-height:1.55;margin-bottom:13px}
+  #list>.empty-state button{margin:6px 8px 0 0;padding:9px 11px;font-size:13px}
+}
+
+/* A lone decision category uses the field instead of reserving empty columns. */
+.horizon-field:has(> .horizon-group:only-child){grid-template-columns:minmax(0,1fr)}
+.horizon-field > .horizon-group:only-child .horizon-results{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px}
+html{scroll-padding-bottom:140px}

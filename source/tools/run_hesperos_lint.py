@@ -12,19 +12,21 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
-LINTER = (
-    Path.home()
-    / ".codex"
-    / "plugins"
-    / "cache"
-    / "personal"
-    / "scribe-hesperos-clearpath"
-    / "0.1.0"
-    / "skills"
-    / "hesperos-documentation"
-    / "scripts"
-    / "lint_accessible_markdown.py"
-)
+LINTER_ROOT = Path.home() / ".codex" / "plugins" / "cache" / "personal" / "scribe-hesperos-clearpath"
+
+
+def resolve_linter() -> Path:
+    explicit = os.environ.get("HESPEROS_LINTER")
+    if explicit:
+        path = Path(explicit).expanduser().resolve()
+        if not path.is_file():
+            raise FileNotFoundError(f"HESPEROS_LINTER does not exist: {path}")
+        return path
+    matches = list(LINTER_ROOT.glob("*/skills/hesperos-documentation/scripts/lint_accessible_markdown.py"))
+    if not matches:
+        raise FileNotFoundError(f"Hesperos Markdown linter is not installed under {LINTER_ROOT}")
+    return max(matches, key=lambda path: tuple(int(part) if part.isdigit() else part for part in path.parents[3].name.split(".")))
+
 OUTPUT = ROOT / "source" / "verification" / "hesperos-lint.json"
 ACCEPTED_LICENSE_FINDING = "13: directional reference may not survive reflow"
 STANDARD_LICENSE_LINE = (
@@ -39,11 +41,12 @@ def main() -> int:
     )
     environment = os.environ.copy()
     environment["PYTHONUTF8"] = "1"
+    linter = resolve_linter()
     results = []
     blocking = []
     for relative in manifest["customer_docs"]:
         completed = subprocess.run(
-            [sys.executable, str(LINTER), relative],
+            [sys.executable, str(linter), relative],
             cwd=ROOT,
             text=True,
             encoding="utf-8",

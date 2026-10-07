@@ -1,60 +1,11 @@
-# Praxis Mine validation
+# Validate the supplied Praxis Mine kit
 
-Validation is evidence about declared boundaries. It is not a magic certificate for every host, candidate, or future use.
+From the extracted complete-kit root, run `python tools/verify_release.py . --component-only`. Require exit 0, ok:true and no findings. This checks declared file identities, local customer links, portable archive names and parity among the native plugin, standalone skill and Claude upload. It does not authenticate the publisher; compare any trusted external digest separately.
 
-## Verify the complete kit
+From codex/praxis-mine/skills/praxis-mine, run `python -B -m unittest discover -s tests -v`. The included local fixtures exercise explicit decisions, missing rights/comparison evidence, material changes, transactional failures, read-only missing-home handling, integrity errors, recovery and exports. Fictional fixtures are not model trials or evidence that a particular outside product is useful.
 
-From the extracted **Praxis Mine v1.2.0.zip** root:
+The maintenance review also exercises the actual isolated Windows room: first source/finding, evaluation, both environments, comparisons, stale assessment display, history, import/export, conflict recovery and narrow layout. The retained maintainer report identifies exact candidate bytes and what ran; historical receipts do not qualify changed bytes. Native macOS execution, fresh account activation, assistive-technology use and representative-user studies remain untested.
 
-```text
-python tools/verify_release.py . --component-only
-```
+Documentation-manifest.json lists the full customer corpus. The scoped documentation-authorship.json binds only the files materially revised in this pass; documentation-custody.json identifies their current scope and unchanged files retaining prior authorship. Neither is independent verification. The source inspection, local runtime controls and native extraction support bounded claims, not defect freedom, source truth, legal correctness, accessibility conformance, directory approval or customer outcomes.
 
-Require exit code `0`, `"ok": true`, and an empty findings list.
-
-The release verifier checks:
-
-- plugin manifest identity, version, paths, metadata limits, legal URLs, and declared assets;
-- skill metadata and required runtime files;
-- absence of private harness and workstation-path dependencies;
-- JSON parsing and seed/evaluation structure;
-- Claude and standalone skill archive roots, path safety, and byte parity;
-- plugin archive root, path safety, and byte parity;
-- documentation inventory and relative links;
-- archive digests recorded in the release manifest and internal
-  `component-custody.json`.
-
-## Run the integration tests
-
-From `codex/praxis-mine/skills/praxis-mine/`:
-
-```text
-python -m unittest discover -s tests -v
-```
-
-The tests use a temporary data home. They exercise initialization, seed ingestion, idempotence, evaluation, report creation, status, local scanning, and self-contained store loading.
-
-## Product delivery and integrity
-
-The supplied product is one complete ZIP with its artwork, installation prompt, and Extra companion. Host archives are components inside that ZIP, not separate product downloads. The included verifier checks their filenames, contents, and hashes after extraction.
-
-The governed release shelf retains the complete bundle’s SHA-256 and fingerprint. A detached checksum may be supplied for an independent whole-ZIP check, but it is not required as an extra shelf artifact and the installation path does not depend on a GitHub release. A checksum for the complete ZIP is kept outside that ZIP to avoid self-reference.
-
-## Documentation evidence
-
-`documentation-manifest.json` identifies the exact customer corpus and reader moments. `documentation-authorship.json` binds the current bytes to the Hesperos pass. `documentation-review.json` records the separate fresh-context reviewer disposition. Structural Markdown lint and link checks remain narrower than assistive-technology or representative-user testing.
-
-## Visual workspace evidence
-
-The current Windows workspace was checked in both themes at desktop, ultrawide, and narrow phone widths. Reader navigation, comparison, original activity dates, registered sources without findings, and findings without native evaluations were exercised. These observations cover the local implementation; they do not establish native macOS execution, fresh-customer host activation, screen-reader efficacy, or formal accessibility conformance. The packaged verification records retain the scope of each check.
-
-## What the recorded evidence does not prove
-
-- every Codex, ChatGPT, or Claude account can install custom plugins or Skills;
-- natural-language routing is reliable across models and hosts;
-- any candidate is safe, licensed, maintained, or fit for adoption;
-- legal, privacy, security, accessibility, or policy compliance;
-- OpenAI Plugins Directory approval or public directory discoverability;
-- customer outcomes.
-
-See [Host compatibility](HOST-COMPATIBILITY.md) and [Limitations](LIMITATIONS.md).
+See [Host compatibility](HOST-COMPATIBILITY.md), [Limitations](LIMITATIONS.md) and [Troubleshooting](TROUBLESHOOTING.md).

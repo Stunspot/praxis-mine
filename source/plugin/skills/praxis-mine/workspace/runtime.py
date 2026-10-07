@@ -1,6 +1,7 @@
 """Private loopback workspace transport and portable Open launcher (stdlib only)."""
 from __future__ import annotations
 import argparse, hashlib, json, os, secrets, subprocess, sys, time, urllib.request, webbrowser
+from praxis_mine import strict_json
 from contextlib import contextmanager
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -43,7 +44,8 @@ def launch(product, default_name, adapter, static):
     root = (args.data_root or Path(os.environ.get(product.upper().replace('-','_')+'_HOME', str(Path.home()/'Documents'/default_name)))).resolve()
     root.mkdir(parents=True, exist_ok=True)
     source = Path(__file__).resolve().parent
-    identity = hashlib.sha256((product+'\n'+str(source)+'\n'+str(root)).encode()).hexdigest()
+    code_hash = hashlib.sha256(b''.join(path.relative_to(source.parent).as_posix().encode() + hashlib.sha256(path.read_bytes()).digest() for folder in ('workspace', 'scripts', 'assets') for path in sorted((source.parent/folder).rglob('*')) if path.is_file() and '__pycache__' not in path.parts)).hexdigest()
+    identity = hashlib.sha256((product+'\n'+str(source)+'\n'+str(root)+'\n'+code_hash).encode()).hexdigest()
     registry = root/'.workspace'/('instance-'+identity[:16]+'.json')
     def alive(record):
         try:
@@ -51,24 +53,22 @@ def launch(product, default_name, adapter, static):
             with urllib.request.urlopen(req, timeout=1) as r: return json.load(r).get('identity') == identity
         except Exception: return False
     if not args.serve:
-        lock_context=launch_lock(registry.with_suffix('.lock'))
-        lock_context.__enter__()
-        try: record = json.loads(registry.read_text()) if registry.exists() else {}
-        except (ValueError,OSError): record={}
-        if not alive(record):
-            command = [sys.executable, '-B', str(source/'open.py'), '--serve','--data-root',str(root),'--port',str(args.port)]
-            options = dict(stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-            if os.name == 'nt': options['creationflags'] = subprocess.CREATE_NO_WINDOW | subprocess.DETACHED_PROCESS
-            else: options['start_new_session'] = True
-            subprocess.Popen(command, **options)
-            for _ in range(100):
-                time.sleep(.1)
-                try: record = json.loads(registry.read_text())
-                except Exception: continue
-                if alive(record): break
-            else: raise SystemExit('Workspace could not start. Run Open with --serve to see the cause.')
-        url = record['url']+'/#token='+record['token']
-        lock_context.__exit__(None,None,None)
+        with launch_lock(registry.with_suffix('.lock')):
+            try: record = json.loads(registry.read_text()) if registry.exists() else {}
+            except (ValueError,OSError): record={}
+            if not alive(record):
+                command = [sys.executable, '-B', str(source/'open.py'), '--serve','--data-root',str(root),'--port',str(args.port)]
+                options = dict(stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                if os.name == 'nt': options['creationflags'] = subprocess.CREATE_NO_WINDOW | subprocess.DETACHED_PROCESS
+                else: options['start_new_session'] = True
+                subprocess.Popen(command, **options)
+                for _ in range(100):
+                    time.sleep(.1)
+                    try: record = json.loads(registry.read_text())
+                    except Exception: continue
+                    if alive(record): break
+                else: raise SystemExit('Workspace could not start. Run Open with --serve to see the cause.')
+            url = record['url']+'/#token='+record['token']
         if not args.no_browser: webbrowser.open(url)
         print(url); return
     token = secrets.token_urlsafe(32)
@@ -93,8 +93,8 @@ def launch(product, default_name, adapter, static):
                 if not secrets.compare_digest(self.headers.get('X-Workspace-Token',''),token): return self.respond(403,{'error':'Open the workspace through its launcher'})
                 try:
                     length=int(self.headers.get('Content-Length','0'))
-                    if length>16*1024*1024: raise ValueError('Request exceeds 16 MB')
-                    data=json.loads(self.rfile.read(length)) if length else {}
+                    if length<0 or length>16*1024*1024: raise ValueError('Request exceeds 16 MB')
+                    data=strict_json(self.rfile.read(length).decode('utf-8')) if length else {}
                     result=app.request(self.command,path,data)
                     if isinstance(result, tuple): return self.respond(200,*result)
                     self.respond(200,result)

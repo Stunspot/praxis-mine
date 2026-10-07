@@ -12,6 +12,7 @@ import sys
 import zipfile
 from pathlib import Path, PurePosixPath
 from typing import Any
+from archive_paths import assert_unlinked, check_members
 
 
 VERSION = "1.2.0"
@@ -54,6 +55,7 @@ def read_json(path: Path, findings: list[str], label: str) -> dict[str, Any]:
 
 
 def file_inventory(root: Path) -> dict[str, dict[str, Any]]:
+    root = assert_unlinked(root)
     return {
         path.relative_to(root).as_posix(): {
             "bytes": path.stat().st_size,
@@ -113,6 +115,7 @@ def inspect_zip(
     try:
         with zipfile.ZipFile(io.BytesIO(data)) as archive:
             infos = archive.infolist()
+            check_members([(i.filename, b"" if i.is_dir() else archive.read(i)) for i in infos])
             names = [info.filename for info in infos if not info.is_dir()]
             if len({name.casefold() for name in names}) != len(names):
                 findings.append(f"{label}: duplicate or case-colliding members")
@@ -137,7 +140,7 @@ def inspect_zip(
                     actual[relative] = {"bytes": len(payload), "sha256": sha256_bytes(payload)}
                 if actual != expected_files:
                     findings.append(f"{label}: archive bytes differ from source tree")
-    except zipfile.BadZipFile as error:
+    except (zipfile.BadZipFile, ValueError) as error:
         findings.append(f"{label}: invalid ZIP: {error}")
     return members
 
@@ -175,7 +178,7 @@ def verify_markdown_links(root: Path, docs: list[str], findings: list[str]) -> i
 
 
 def verify(root: Path, *, require_complete: bool = True) -> dict[str, Any]:
-    root = root.resolve()
+    root = assert_unlinked(root)
     findings: list[str] = []
     counts = {
         "manifest_files_checked": 0,
@@ -249,6 +252,14 @@ def verify(root: Path, *, require_complete: bool = True) -> dict[str, Any]:
         skill_root, manifest.get("skill_files"), findings, "skill"
     )
 
+    complete = manifest.get("all_files")
+    if complete is not None:
+        expected = {item["path"]: {"bytes": item["bytes"], "sha256": item["sha256"]} for item in complete}
+        actual = file_inventory(root)
+        actual.pop("manifest.json", None)
+        if expected != actual:
+            findings.append("complete kit: delivered file set or hashes differ from manifest")
+
     doc_manifest = read_json(root / "documentation-manifest.json", findings, "documentation manifest")
     docs = doc_manifest.get("customer_docs")
     if not isinstance(docs, list) or not docs or any(not isinstance(item, str) for item in docs):
@@ -260,6 +271,9 @@ def verify(root: Path, *, require_complete: bool = True) -> dict[str, Any]:
     if manifest.get("customer_docs") != docs:
         findings.append("manifest: customer document inventory differs from documentation manifest")
     counts["documentation_links_checked"] = verify_markdown_links(root, docs, findings)
+    # A separately installed skill cannot rely on legal/support links in the outer kit.
+    skill_docs = [p.relative_to(skill_root).as_posix() for p in skill_root.rglob("*.md")]
+    counts["skill_documentation_links_checked"] = verify_markdown_links(skill_root, skill_docs, findings)
 
     source_skill = file_inventory(skill_root)
     source_plugin = file_inventory(plugin_root)
@@ -374,10 +388,10 @@ def main(argv: list[str] | None = None) -> int:
             "findings": ["usage: verify_release.py [release-root] [--component-only]"],
         }
     else:
-        report = verify(
-            Path(arguments[0]) if arguments else Path.cwd(),
-            require_complete=not component_only,
-        )
+        try:
+            report = verify(Path(arguments[0]) if arguments else Path.cwd(), require_complete=not component_only)
+        except (OSError, ValueError, KeyError, TypeError, zipfile.BadZipFile) as error:
+            report = {"schema": SCHEMA, "ok": False, "counts": {}, "findings": [str(error)]}
     print(json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True))
     return 0 if report["ok"] else 1
 

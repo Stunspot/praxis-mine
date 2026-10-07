@@ -79,10 +79,18 @@ Delete or replace an old report only after deciding it is no longer needed. The 
 
 ## An evaluation returns a weaker disposition than expected
 
-Inspect the missing evidence and the highest security, privacy, license, cost-dependency, and overlap scores. Severe unresolved risk constrains the automatic result. High overlap favors `quarry` or `reject`.
+Inspect decision_gaps, the baseline/comparison and actual license conclusion, then the security, privacy, license, cost-dependency and overlap scores. Severe unresolved risk constrains the automatic result. A high-overlap pilot is held at monitor. Review the narrower mechanism before choosing quarry or adapt.
 
 Do not tune scores to obtain a preferred label. Improve the evidence, narrow the candidate, or design a safer test.
 
 ## Escalate with useful evidence
 
 Follow [Support](https://github.com/Stunspot/praxis-mine/blob/main/SUPPORT.md). Include the exact boundary, version, host, command or prompt, expected result, observed result, and validator output. Remove secrets and unrelated private data.
+
+## An old pilot now appears in triage
+
+Open the finding and read its historical evaluation. A changed material/source snapshot or older unbound assessment requires a new evaluation. Cosmetic titles and owner project tags do not invalidate the bound material. Preserve the historical result and assess the current candidate; a replay for a new revision creates a new evaluation identity.
+
+## Missing home, unsupported schema or integrity error
+
+Check the exact selected path first. Status/report never initialize a new home; use init only when you intend a new collection. Preserve an incompatible or unhealthy home unchanged and use its compatible runtime or a verified recovery copy. Do not edit schema-version metadata to make the error disappear. An ordinary failed import/evaluation is rolled back and can be retried after correcting its stated cause. Preserve the original input and error if a process or power interruption leaves state uncertain.

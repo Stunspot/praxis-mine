@@ -1,12 +1,33 @@
 {
   "accepted_heuristic_false_positives": 1,
   "blocking_findings": 0,
-  "completed_at": "2026-08-15T03:54:54.071020Z",
-  "declared_documents": 27,
+  "completed_at": "2026-09-29T06:52:12.321311Z",
+  "declared_documents": 30,
   "format": "praxis-mine-hesperos-markdown-lint/v1",
   "ok": true,
-  "passed": 26,
+  "passed": 29,
   "results": [
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "RELEASE-NOTES-v1.2.0.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "docs/MINE-ROOM.md",
+      "stderr": ""
+    },
+    {
+      "accepted_heuristic_false_positive": false,
+      "exit_code": 0,
+      "output": "PASS",
+      "path": "RELEASE-NOTES-v1.1.0.md",
+      "stderr": ""
+    },
     {
       "accepted_heuristic_false_positive": false,
       "exit_code": 0,

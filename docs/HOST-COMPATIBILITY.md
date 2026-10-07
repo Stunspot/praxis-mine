@@ -22,7 +22,7 @@ The default data home is `~/.praxis-mine/data`. `PRAXIS_MINE_DATA_HOME` and `--d
 
 ## Local visual workspace
 
-The complete kit includes a Python launcher and browser explorer. Blackglass — Crimson provides a source-grouped extraction gallery; SNAPFRAME provides a source-to-mechanism-to-judgment evidence circuit. Both use the same SQLite ledger and native evaluation gates. A local browser and Python 3.11 or newer are required. Windows launch and rendering were exercised locally; the macOS launcher was inspected but not executed on macOS. A hosted AI session cannot be assumed to see or launch your desktop workspace.
+The complete kit includes a Python launcher and browser explorer. Both environments open on the Decision field; Blackglass — Crimson also provides a source-grouped gallery, while SNAPFRAME provides a source-to-mechanism-to-judgment circuit. Both use the same SQLite ledger and native evaluation gates. A local browser and Python 3.11 or newer are required. Windows launch and rendering were exercised locally; the macOS launcher was inspected but not executed on macOS. A hosted AI session cannot be assumed to see or launch your desktop workspace.
 
 See the [mine-room guide](MINE-ROOM.md) for opening, importing records, comparing findings, and restoring an expired local session.
 

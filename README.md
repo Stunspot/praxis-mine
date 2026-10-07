@@ -30,9 +30,9 @@ The release is one customer kit containing:
 - an installable skills-only Codex/ChatGPT plugin;
 - an upload-ready Claude skill ZIP;
 - a separately named standalone Praxis Mine skill archive;
-- a self-contained Python and SQLite evidence ledger with the Blackglass — Crimson extraction gallery and SNAPFRAME evidence circuit;
-- source-grouped exploration, a focused evidence reader, dated activity trail, and persistent comparison bench for two or three findings;
-- seed examples, evaluation contracts, tests, validation tools, and checksums;
+- a self-contained Python and SQLite evidence ledger with a decision-first field in Blackglass — Crimson and SNAPFRAME;
+- source gallery or evidence circuit, a focused reader, dated activity, and a persistent comparison bench for two or three findings;
+- historical seed examples, evaluation contracts, tests and portable validation tools;
 - Hesperos-authored installation, use, recovery, privacy, support, and provenance guidance.
 
 No hosted service, account, telemetry, MCP server, private harness, or third-party Python package is required.
@@ -43,7 +43,7 @@ After installation, try:
 
 > Assess this outside skill and steal only the good bits.
 
-Bring a link, repository path, uploaded skill folder, or concise candidate description. Praxis Mine should return the disposition first, then the useful capability delta, evidence, risks and costs, overlap, and the next falsifiable test.
+Bring a link, repository path, uploaded skill folder, or concise candidate description. Praxis Mine should recommend integrate, adapt or skip first, then give the evidence that changes the decision. A clear duplicate can be declined briefly. If adaptation is authorized, it continues through the actual capability owner to the verified change; the ledger alone does not perform integration.
 
 If you want durable records, use the included ledger:
 

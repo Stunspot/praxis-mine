@@ -1,0 +1,168 @@
+{
+  "status": "PASS",
+  "product": "praxis-mine",
+  "version": "1.2.0",
+  "candidate": {
+    "path": "E:\\Github\\praxis-mine\\repair-candidates\\estate-r4\\Praxis-Mine-v1.2.0.zip",
+    "sha256": "9cfc835b29d8bf0cf15a98a1be742adaf6406fc1b965566ee587050ab1b5168a",
+    "bytes": 10252038
+  },
+  "source_freeze": {
+    "path": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\praxis-mine\\SOURCE-FREEZE.json",
+    "sha256": "3364ab4d695456a98e914ffbaab6d4617b0d79acb9105550598ec72f13e7f5ae",
+    "files": 102
+  },
+  "review": "Expert review of actual doctrine, entry/return, decision basis and implementation, independently extracted CLI probes plus exact source/archive parity. Worker actual Edge journey evidence retained separately.",
+  "independent_controls": {
+    "status": "PASS",
+    "actual_cli_controls": 25,
+    "checks": [
+      {
+        "case": "missing-status",
+        "exit": 1,
+        "status": "PASS"
+      },
+      {
+        "case": "missing-report",
+        "exit": 1,
+        "status": "PASS"
+      },
+      {
+        "case": "initialize",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "ingest",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "useful-adapt",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "idempotent",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "reject-high-benefit",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "old-assessment-replay",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "explicit-monitor",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "unresolved-rights",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "severe-risk",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "no-baseline",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "fresh-reviewed-adapt",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "decision-report",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "cosmetic-refresh",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "cosmetic-report",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "material-source-refresh",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "stale-report",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "status-after-stale",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "reject-adoption",
+        "exit": 1,
+        "status": "PASS"
+      },
+      {
+        "case": "atomic-invalid-import",
+        "exit": 1,
+        "status": "PASS"
+      },
+      {
+        "case": "status-after-rejection",
+        "exit": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "duplicate-json",
+        "exit": 1,
+        "status": "PASS"
+      },
+      {
+        "case": "nonfinite-json",
+        "exit": 1,
+        "status": "PASS"
+      },
+      {
+        "case": "no-clobber-report",
+        "exit": 1,
+        "status": "PASS"
+      }
+    ],
+    "native_archive_members": 103,
+    "native_manifest_entries": 102,
+    "canonical_runtime_files": 36,
+    "bounds": [
+      "Fictional declared evidence; no model performance claim",
+      "No real user ledger, candidate execution or live integration altered"
+    ]
+  },
+  "native_tests": 32,
+  "worker_portable_controls": 10,
+  "findings_closed": 17,
+  "installed_runtime_files": 36,
+  "preserved_local_only_files": [],
+  "edition_consumers": [],
+  "limits": [
+    "Declared evidence and rights are not authenticated by helper.",
+    "Expert doctrine cases are source-reading walkthroughs, not fresh model trials.",
+    "No external candidate execution, real corpus mutation, accessibility conformance or user-study claim.",
+    "Host-independent Python/packaging and actual Windows Edge only; no new Codex/Claude activation claim.",
+    "No race-proof claim against adversarial concurrent filesystem mutation."
+  ],
+  "receipt": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\praxis-mine\\independent-root-r4\\results.json"
+}

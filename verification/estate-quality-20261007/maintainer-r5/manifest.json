@@ -1,0 +1,8 @@
+{
+  "format": "cd-customer-documentation/v1",
+  "product": "praxis-mine",
+  "version": "1.2.0",
+  "customer_docs": [
+    "docs/MAINTAINER-GUIDE.md"
+  ]
+}

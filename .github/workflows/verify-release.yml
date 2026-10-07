@@ -17,6 +17,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -B -m unittest discover -s source/plugin/skills/praxis-mine/tests -p "test_*.py" -v
-      - run: python -B source/tools/build_release.py
-      - run: python -B release-v1.2.0/tools/verify_release.py release-v1.2.0
+      - name: Verify current accepted candidate from a fresh build
+        run: python -B source/tools/ci_verify_release.py
+      - name: Require maintained and historical files unchanged
+        run: git diff --exit-code

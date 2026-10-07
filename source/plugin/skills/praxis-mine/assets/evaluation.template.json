@@ -16,8 +16,19 @@
     "overlap": 0
   },
   "capability_delta": "State the accepted outcome that becomes possible, better, cheaper, faster, or safer.",
-  "evidence": ["Record primary evidence, behavioral comparisons, and unknowns."],
+  "evidence": [
+    "Record primary evidence, behavioral comparisons, and unknowns."
+  ],
   "preferred_disposition": "monitor",
   "next_test": "Name a bounded comparison with a baseline and acceptance oracle.",
-  "notes": ""
+  "notes": "Scores are declared judgments. Replace example text with actual evidence; unresolved rights or absent comparison holds actionable choices at monitor.",
+  "decision_context": {
+    "baseline": "",
+    "comparison": "",
+    "rights_status": "unresolved",
+    "rights_basis": "",
+    "reason": "",
+    "owner": "",
+    "action_scope": ""
+  }
 }

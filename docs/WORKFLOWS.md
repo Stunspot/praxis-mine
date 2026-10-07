@@ -46,7 +46,7 @@ Use the deterministic ledger when you have a directory of skill or software root
 python scripts\praxis_mine.py --data-home .\praxis-data scan-local C:\path\to\collection --source-key local_collection
 ```
 
-The scanner identifies roots containing `SKILL.md`, `pyproject.toml`, or `package.json`, hashes visible files, and records metadata. It skips common dependency, virtual-environment, version-control, and cache directories.
+The scanner identifies roots containing `SKILL.md`, `pyproject.toml`, or `package.json`, hashes the complete selected file set with framed paths and per-file hashes, and records metadata. Linked/reparse roots and members, unreadable files and files changing during a read fail the scan before candidate writes. It skips common dependency, virtual-environment, version-control, and cache directories.
 
 The scan does not execute code, resolve transitive dependencies, read remote history, prove licensing, or judge behavior. Review the candidate before assigning a strong disposition.
 
@@ -62,7 +62,7 @@ Manifests should contain bounded evidence, not scraped secrets or a dump of ever
 
 ## Evaluate and report
 
-Copy `assets/evaluation.template.json`, fill every score and evidence field, and run:
+Copy `assets/evaluation.template.json`, replace its example text, choose explicit scores and disposition, and fill decision_context with the baseline, comparison, rights basis/status and reason. Then run:
 
 ```powershell
 python scripts\praxis_mine.py --data-home .\praxis-data evaluate CANDIDATE_KEY C:\path\to\evaluation.json
@@ -73,6 +73,10 @@ The score prioritizes attention; it does not make the final adoption decision. T
 
 ## Resume later
 
-Use the same data home and run `status`. Stable keys make repeated manifest ingestion and local scans idempotent when the observed content has not changed. Revised evidence creates a new record version rather than erasing the prior state.
+Use the same data home and run `status`. Stable keys make repeated source/candidate ingestion idempotent when observed content has not changed; each completed acquisition still records a run. Unchanged local scans preserve owner tags, license conclusions and current assessments. Revised evidence creates a new record version rather than erasing the prior state.
 
 If the candidate, source, baseline, or evaluation changed, name what changed and why before interpreting the new disposition.
+
+## Finish authorized adaptation
+
+For “assess this,” stop with the justified decision. For “adapt the useful part into our existing parser,” locate that parser's canonical owner, preserve upstream provenance, make the bounded change and run the owner's consequential success/failure checks. Existing scope carries through its applicable delivery. A ledger handoff is useful context, not proof of that integration. If the repository is inaccessible, say what was inspected and which exact evidence remains unavailable; do not invent a successful trial.

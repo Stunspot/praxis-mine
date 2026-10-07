@@ -1,0 +1,16 @@
+{
+  "product": "Praxis Mine 1.2.0",
+  "scope": [
+    "docs/MAINTAINER-GUIDE.md"
+  ],
+  "source_truth": [
+    "Actual build_release.py --output-dir creates new candidate with flat-root ZIP and package expansion",
+    "Portable verifier --component-only inspects the extracted kit and three embedded archives",
+    "release-v1.2.0 remains historical; r4 runtime accepted and unchanged",
+    "Root owns separate CI correction"
+  ],
+  "limits": [
+    "No new runtime qualification or deployment claim",
+    "Only this maintainer guide is authored; eleven other current documents retain their prior exact authorship"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "candidate": {
+    "path": "E:\\Github\\praxis-mine\\repair-candidates\\estate-r5\\Praxis-Mine-v1.2.0.zip",
+    "sha256": "06b40dae28e7f562bf8df0d6873fff97ac335cf0e753dda6e631d65665c213fd",
+    "bytes": 10252026
+  },
+  "source_freeze": {
+    "path": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\praxis-mine\\SOURCE-FREEZE.json",
+    "sha256": "c3e1b405dff49b92ae6294ff38892ec545c4805b23bb2a89b3b002c3873d1d60",
+    "files": 100
+  },
+  "shared_changed_members": [
+    "docs/MAINTAINER-GUIDE.md",
+    "documentation-authorship.json",
+    "documentation-custody.json",
+    "manifest.json"
+  ],
+  "support_paths_removed": [
+    "verification/estate-quality-20261007/documentation-authoring-response.md",
+    "verification/estate-quality-20261007/documentation-evidence-packet.json",
+    "verification/estate-quality-20261007/documentation-execution.json",
+    "verification/estate-quality-20261007/documentation-manifest.json"
+  ],
+  "support_paths_added": [
+    "verification/estate-quality-20261007/maintainer-r5/authoring-response.md",
+    "verification/estate-quality-20261007/maintainer-r5/evidence-packet.json",
+    "verification/estate-quality-20261007/maintainer-r5/execution.json",
+    "verification/estate-quality-20261007/maintainer-r5/manifest.json"
+  ],
+  "unchanged_plugin_files": 46,
+  "unchanged_runtime_files": 36,
+  "unchanged_inner_archives": 3,
+  "acceptance": "Corrected guide now builds explicit new directory and verifies its native extraction; it explicitly forbids verifying historical release-v1.2.0 as current. Scope matches one-document authorship; no current runtime mutation. Prior root25CLI/native32 and actual worker Edge evidence remain applicable.",
+  "prior_root_evidence": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\praxis-mine\\independent-root-r4\\results.json"
+}

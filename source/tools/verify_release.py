@@ -203,8 +203,11 @@ def verify(root: Path, *, require_complete: bool = True) -> dict[str, Any]:
         findings.append("plugin: skills must equal ./skills/")
     interface = plugin.get("interface") if isinstance(plugin.get("interface"), dict) else {}
     short = interface.get("shortDescription")
-    if not isinstance(short, str) or not 1 <= len(short) <= 30:
-        findings.append("plugin: directory shortDescription must be 1-30 characters")
+    # Portable package validation permits 240 characters; directory submission
+    # separately requires at most 30. This verifier does not qualify submission.
+    if (not isinstance(short, str) or not short.strip() or len(short) > 240
+            or any(ord(char) < 32 or ord(char) == 127 or char in "\u2028\u2029" for char in short)):
+        findings.append("plugin: package shortDescription must be nonblank single-line text of at most 240 characters")
     prompts = interface.get("defaultPrompt")
     if not isinstance(prompts, list) or not 1 <= len(prompts) <= 3 or any(
         not isinstance(item, str) or not item or len(item) > 128 for item in prompts

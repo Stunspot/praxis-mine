@@ -19,7 +19,7 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Praxis Mine",
-    "shortDescription": "Mine skills. Keep useful bits.",
+    "shortDescription": "🔬 Outside tools and ideas: integrate, adapt, or skip.",
     "longDescription": "Praxis Mine examines outside AI skills, agent packages, repositories, workflows, and knowledge sources as raw material—not as competence badges. It preserves provenance, checks rights and risk, identifies the real capability delta, compares overlap with what you already have, and recommends a bounded pilot, selective quarry, native adaptation, monitoring, or rejection. Discovery never silently becomes installation or adoption.",
     "developerName": "Collaborative Dynamics",
     "category": "Productivity",

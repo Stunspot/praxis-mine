@@ -1,6 +1,6 @@
 ---
 name: praxis-mine
-description: "🔬 Assess URLs, software, and ideas for selective integration."
+description: "🔬 Outside tools and ideas: integrate, adapt, or skip."
 ---
 
 # Mine the useful difference

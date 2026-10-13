@@ -1,0 +1,11 @@
+{
+  "schema": "cd-release-decision/v1",
+  "kind": "update",
+  "effect": "authorized_reissue",
+  "baseline_version": "1.2.0",
+  "baseline_bundle_fingerprint": "sha256:4627a8da3da517447a92ea654dc0a0e9c0b6f90639e613b4749d86972f1397c9",
+  "target_version": "1.2.1",
+  "reason": "Carries accepted evidence/history, transactional ledger, recovery, compact discovery, package-boundary and decision-field repairs into a distinct updateable release. Adds explicit no-clobber Windows and portable Mac entry/icon bindings using existing product artwork; mining, SQLite and authored themes remain unchanged. Existing draft visibility and directory-submission exclusion retained.",
+  "evidence": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-completion-20261010\\praxis-mine\\FINAL-REVIEW-v1.2.1.md",
+  "reviewed_at": "2026-10-13T13:26:49.796489+00:00"
+}

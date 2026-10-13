@@ -1,0 +1,96 @@
+# Troubleshoot Praxis Mine
+
+Begin with the observed symptom. Preserve the error, version, selected path, and command before reinstalling or deleting anything.
+
+Before using the terminal examples in this guide, change to `codex/praxis-mine/skills/praxis-mine/` inside the extracted complete kit. This is the skill root containing `SKILL.md` and `scripts/`. If you are working from an installed copy, use its corresponding skill root.
+
+## The release verifier fails
+
+1. Confirm you are running `python tools/verify_release.py . --component-only` from the extracted complete-kit root.
+2. Get a fresh complete ZIP from the product’s Additional Files and run the included verifier again. Do not repair the archive by recompressing it.
+3. If verification still fails, preserve the findings and file an issue with the release version and operating system.
+
+Do not continue to installation when archive paths, manifests, hashes, or runtime files fail verification.
+
+## The plugin installs but Praxis Mine is not discoverable
+
+1. Confirm the installed plugin root contains `.codex-plugin/plugin.json`.
+2. Confirm the manifest version is `1.2.1` and `skills` points to `./skills/`.
+3. Start a fresh task or chat after the host reloads plugins.
+4. Invoke **Praxis Mine** by name once:
+
+   > Use Praxis Mine to assess this outside skill.
+
+5. If another copy exists, identify its path and version before disabling or removing it.
+
+A copied folder is not evidence that the host discovered it. Preserve the host's plugin listing or error.
+
+## Claude rejects the Skill ZIP
+
+1. Use `claude/praxis-mine-v1.2.1.zip` unchanged.
+2. Run the included complete-kit verifier to check this embedded archive against its manifest and hash.
+3. Confirm the current Claude product and workspace expose custom Skills.
+4. Upload the unchanged Claude archive from the verified complete kit.
+
+If archive verification passes and the host still rejects it, preserve the exact host message. Recompression changes the reviewed bytes and is not an evidence-preserving fix.
+
+## The visual explorer is empty or unavailable
+
+A fresh data home starts empty. Use **Ledger tools** to record a source and finding, or import a native mining manifest. The release contains no personal research ledger. If a different collection was expected, check the selected data-home path before importing or editing.
+
+If the local session expires, reopen the workspace through `Open.cmd` or `Open.command`, then use **Refresh**. If it still cannot open the ledger, preserve the launch error and follow the [mine-room recovery guidance](MINE-ROOM.md).
+
+## Python is not found
+
+Install or select Python 3.11 or newer, then reopen the terminal and run:
+
+```text
+python --version
+```
+
+If the host uses `python3` instead of `python`, substitute that command consistently. Do not install unrelated packages; Praxis Mine uses the standard library.
+
+## The ledger cannot create its data home
+
+1. Note the selected path and error.
+2. Choose an existing directory where the active process has write permission:
+
+   ```powershell
+   python scripts\praxis_mine.py --data-home C:\path\you\control\praxis-data init
+   ```
+
+3. Confirm the command reports `"healthy": true`.
+
+A host grant, operating-system permission, and actual process identity all affect file writes. Do not weaken system security or broadly grant a shell merely to satisfy the default path.
+
+## A repeated ingest creates unexpected revisions
+
+Compare the manifest bytes, normalized fields, file paths, and content hashes. The same semantic idea in different JSON or at a different path may carry different provenance. Revisions are expected when a record's normalized payload changes.
+
+## A report path already exists
+
+Praxis Mine refuses to overwrite reports. Choose a new filename:
+
+```text
+python scripts/praxis_mine.py --data-home .\praxis-data report --output .\praxis-report-2.md
+```
+
+Delete or replace an old report only after deciding it is no longer needed. The ledger remains the durable source.
+
+## An evaluation returns a weaker disposition than expected
+
+Inspect decision_gaps, the baseline/comparison and actual license conclusion, then the security, privacy, license, cost-dependency and overlap scores. Severe unresolved risk constrains the automatic result. A high-overlap pilot is held at monitor. Review the narrower mechanism before choosing quarry or adapt.
+
+Do not tune scores to obtain a preferred label. Improve the evidence, narrow the candidate, or design a safer test.
+
+## Escalate with useful evidence
+
+Follow [Support](https://github.com/Stunspot/praxis-mine/blob/main/SUPPORT.md). Include the exact boundary, version, host, command or prompt, expected result, observed result, and validator output. Remove secrets and unrelated private data.
+
+## An old pilot now appears in triage
+
+Open the finding and read its historical evaluation. A changed material/source snapshot or older unbound assessment requires a new evaluation. Cosmetic titles and owner project tags do not invalidate the bound material. Preserve the historical result and assess the current candidate; a replay for a new revision creates a new evaluation identity.
+
+## Missing home, unsupported schema or integrity error
+
+Check the exact selected path first. Status/report never initialize a new home; use init only when you intend a new collection. Preserve an incompatible or unhealthy home unchanged and use its compatible runtime or a verified recovery copy. Do not edit schema-version metadata to make the error disappear. An ordinary failed import/evaluation is rolled back and can be retried after correcting its stated cause. Preserve the original input and error if a process or power interruption leaves state uncertain.

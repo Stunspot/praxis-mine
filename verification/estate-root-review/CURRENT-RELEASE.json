@@ -1,7 +1,8 @@
 {
-  "version": "1.2.0",
-  "zip": "repair-candidates/estate-r5/Praxis-Mine-v1.2.0.zip",
-  "sha256": "06b40dae28e7f562bf8df0d6873fff97ac335cf0e753dda6e631d65665c213fd",
-  "acceptance": "verification/estate-root-review/R5-ACCEPTANCE.json",
-  "historical_release_directory": "release-v1.2.0 preserved; current archive identified above"
+  "version": "1.2.1",
+  "zip": "release-assets/v1.2.1/Praxis-Mine-v1.2.1.zip",
+  "sha256": "8b68272a0d8a8a96921d949929e05348438df1ac772a81adf74cdb788d800d60",
+  "original_qualification": "verification/estate-root-review/R5-ACCEPTANCE.json",
+  "current_scope": "New native entries/icons, current identity and guide bindings; fresh independent judgment and required delivery CI govern current acceptance. Original mining/ledger/theme proof retained.",
+  "historical_release_directory": "release-v1.2.0 preserved; current package alias release-v1.2.1"
 }

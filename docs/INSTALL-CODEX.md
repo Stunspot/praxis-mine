@@ -4,7 +4,7 @@ Use this path for the skills-only plugin. Installation controls vary by Codex or
 
 ## What you need
 
-- `praxis-mine-plugin-v1.2.0.zip` or the `codex/praxis-mine/` directory from the complete customer kit;
+- `praxis-mine-plugin-v1.2.1.zip` or the `codex/praxis-mine/` directory from the complete customer kit;
 - a Codex or ChatGPT environment that supports local, repository, or uploaded plugins;
 - permission to install a plugin in that environment.
 
@@ -48,4 +48,4 @@ From the extracted complete kit, open `Open.cmd` on Windows or run `Open.command
 
 ## Updating
 
-Install the new version through the host's supported update or reinstall flow. Start a fresh task, confirm version `1.2.0`, and rerun one representative request. Do not delete an older copy until you know which installation owns it and have preserved any data you need.
+Install the new version through the host's supported update or reinstall flow. Start a fresh task, confirm version `1.2.1`, and rerun one representative request. Do not delete an older copy until you know which installation owns it and have preserved any data you need.

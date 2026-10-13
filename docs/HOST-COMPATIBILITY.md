@@ -1,6 +1,6 @@
 # Host compatibility and evidence
 
-Praxis Mine v1.2.0 ships as one Augment with two host components.
+Praxis Mine v1.2.1 ships as one Augment with two host components.
 
 ## Codex and ChatGPT
 
@@ -10,7 +10,7 @@ The source package and official validator support the plugin's static structure.
 
 ## Claude
 
-Upload `claude/praxis-mine-v1.2.0.zip` unchanged through a Claude environment that supports custom Skills. The archive contains exactly one top-level `praxis-mine/` directory with `SKILL.md` directly inside it and the complete runtime dependency closure beneath it.
+Upload `claude/praxis-mine-v1.2.1.zip` unchanged through a Claude environment that supports custom Skills. The archive contains exactly one top-level `praxis-mine/` directory with `SKILL.md` directly inside it and the complete runtime dependency closure beneath it.
 
 Claude upload controls, plan availability, UI labels, and activation behavior may vary by product and workspace. Follow the current host interface rather than inventing a button that this package cannot observe.
 

@@ -15,7 +15,7 @@ Do not continue to installation when archive paths, manifests, hashes, or runtim
 ## The plugin installs but Praxis Mine is not discoverable
 
 1. Confirm the installed plugin root contains `.codex-plugin/plugin.json`.
-2. Confirm the manifest version is `1.2.0` and `skills` points to `./skills/`.
+2. Confirm the manifest version is `1.2.1` and `skills` points to `./skills/`.
 3. Start a fresh task or chat after the host reloads plugins.
 4. Invoke **Praxis Mine** by name once:
 
@@ -27,7 +27,7 @@ A copied folder is not evidence that the host discovered it. Preserve the host's
 
 ## Claude rejects the Skill ZIP
 
-1. Use `claude/praxis-mine-v1.2.0.zip` unchanged.
+1. Use `claude/praxis-mine-v1.2.1.zip` unchanged.
 2. Run the included complete-kit verifier to check this embedded archive against its manifest and hash.
 3. Confirm the current Claude product and workspace expose custom Skills.
 4. Upload the unchanged Claude archive from the verified complete kit.

@@ -4,7 +4,7 @@ Use this path for a Claude environment that supports custom Skills.
 
 ## What you need
 
-- `claude/praxis-mine-v1.2.0.zip` inside the supplied complete customer kit;
+- `claude/praxis-mine-v1.2.1.zip` inside the supplied complete customer kit;
 - permission to upload a custom Skill;
 - a Claude product and workspace where custom Skills are available.
 
@@ -12,7 +12,7 @@ Use this path for a Claude environment that supports custom Skills.
 
 1. Keep the Claude ZIP unchanged. Do not unpack, merge, or recompress it.
 2. Open Claude's current Skills manager or custom-Skill import control.
-3. Upload `praxis-mine-v1.2.0.zip`.
+3. Upload `praxis-mine-v1.2.1.zip`.
 4. Confirm the host reports the Skill imported or enabled.
 5. Start a fresh chat.
 6. Ask:

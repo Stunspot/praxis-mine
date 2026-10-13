@@ -32,8 +32,10 @@
     "RELEASE-NOTES-v1.0.1.md",
     "ARCHIVE-CUSTODY.md",
     "PLUGIN-DIRECTORY-SUBMISSION-v1.0.1.md",
-    "delivery-sidecars/Praxis Mine T-Free v1.2.0.md",
-    "delivery-sidecars/Praxis Mine T-Free v1.2.0 Extra.md"
+    "delivery-sidecars/Praxis Mine T-Free v1.2.1.md",
+    "delivery-sidecars/Praxis Mine T-Free v1.2.1 Extra.md",
+    "RELEASE-NOTES-v1.2.1.md",
+    "docs/APP-ENTRY.md"
   ],
   "moments": {
     "orientation": [
@@ -85,5 +87,6 @@
     "provenance": [
       "docs/PROVENANCE.md"
     ]
-  }
+  },
+  "current_version": "1.2.1"
 }

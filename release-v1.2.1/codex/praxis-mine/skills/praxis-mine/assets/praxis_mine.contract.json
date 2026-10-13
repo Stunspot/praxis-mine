@@ -1,0 +1,52 @@
+{
+  "format": "cd-data-contract/v1",
+  "schema_version": "1.0.0",
+  "system": {"name": "praxis_mine", "purpose": "Track external praxis discovery, inspection, evaluation, and disposition."},
+  "record_types": [
+    {"name": "source", "identity": ["source_key"], "fields": [
+      {"name": "source_key", "type": "text", "required": true, "source_kind": "supplied"},
+      {"name": "title", "type": "text", "required": true, "source_kind": "supplied"},
+      {"name": "kind", "type": "text", "required": true, "source_kind": "observed"},
+      {"name": "locator", "type": "text", "required": true, "source_kind": "observed"},
+      {"name": "access_posture", "type": "text", "required": true, "source_kind": "supplied"},
+      {"name": "cadence", "type": "text", "required": false, "source_kind": "supplied"},
+      {"name": "notes", "type": "text", "required": false, "source_kind": "supplied"}
+    ]},
+    {"name": "run", "identity": ["run_key"], "fields": [
+      {"name": "run_key", "type": "text", "required": true, "source_kind": "deterministic"},
+      {"name": "source_key", "type": "reference", "required": true, "source_kind": "supplied"},
+      {"name": "started_at", "type": "timestamp", "required": true, "source_kind": "deterministic"},
+      {"name": "completed_at", "type": "timestamp", "required": true, "source_kind": "deterministic"},
+      {"name": "route", "type": "text", "required": true, "source_kind": "deterministic"},
+      {"name": "counts", "type": "json", "required": true, "source_kind": "deterministic"},
+      {"name": "notes", "type": "text", "required": false, "source_kind": "supplied"}
+    ]},
+    {"name": "candidate", "identity": ["candidate_key"], "fields": [
+      {"name": "candidate_key", "type": "text", "required": true, "source_kind": "deterministic"},
+      {"name": "source_key", "type": "reference", "required": true, "source_kind": "supplied"},
+      {"name": "title", "type": "text", "required": true, "source_kind": "supplied"},
+      {"name": "locator", "type": "text", "required": true, "source_kind": "observed"},
+      {"name": "candidate_kind", "type": "text", "required": true, "source_kind": "derived"},
+      {"name": "summary", "type": "text", "required": true, "source_kind": "derived"},
+      {"name": "content_hash", "type": "text", "required": false, "source_kind": "deterministic"},
+      {"name": "license", "type": "text", "required": false, "source_kind": "observed"},
+      {"name": "candidate_status", "type": "text", "required": true, "source_kind": "derived"},
+      {"name": "evidence_state", "type": "text", "required": true, "source_kind": "derived"},
+      {"name": "tags", "type": "json", "required": false, "source_kind": "supplied"}
+    ]},
+    {"name": "evaluation", "identity": ["evaluation_key"], "fields": [
+      {"name": "evaluation_key", "type": "text", "required": true, "source_kind": "deterministic"},
+      {"name": "candidate_key", "type": "reference", "required": true, "source_kind": "supplied"},
+      {"name": "evaluated_at", "type": "timestamp", "required": true, "source_kind": "deterministic"},
+      {"name": "positive_scores", "type": "json", "required": true, "source_kind": "derived"},
+      {"name": "risk_scores", "type": "json", "required": true, "source_kind": "derived"},
+      {"name": "weighted_score", "type": "number", "required": true, "source_kind": "deterministic"},
+      {"name": "capability_delta", "type": "text", "required": true, "source_kind": "derived"},
+      {"name": "evidence", "type": "json", "required": true, "source_kind": "supplied"},
+      {"name": "disposition", "type": "text", "required": true, "source_kind": "derived"},
+      {"name": "next_test", "type": "text", "required": true, "source_kind": "derived"},
+      {"name": "notes", "type": "text", "required": false, "source_kind": "supplied"}
+    ]}
+  ],
+  "entry_protocol": {"actor_required": true, "provenance_required": true}
+}

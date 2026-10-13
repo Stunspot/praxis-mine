@@ -21,3 +21,13 @@
 
 # Immutable hash-addressed authoring evidence; preserve captured bytes exactly.
 verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md -text
+
+# Native Mac icon containers retain binary bytes.
+*.icns binary
+
+# Frozen current package launchers retain their sealed Windows-native bytes.
+/release-v1.2.1/Open.cmd -text
+/release-v1.2.1/codex/praxis-mine/skills/praxis-mine/Open.cmd -text
+
+# Frozen imported capability snapshots retain their exact recorded bytes.
+/release-v1.2.1/verification/hesperos-capabilities/** -text

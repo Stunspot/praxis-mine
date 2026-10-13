@@ -1,0 +1,40 @@
+{
+  "schema": "praxis-mine-archive-custody/v1",
+  "version": "1.2.1",
+  "archives": [
+    {
+      "file": "Praxis-Mine-v1.2.1.zip",
+      "bytes": 18892901,
+      "sha256": "8b68272a0d8a8a96921d949929e05348438df1ac772a81adf74cdb788d800d60",
+      "members": 111,
+      "kind": "complete-augment",
+      "release_asset": "Praxis-Mine-v1.2.1.zip"
+    },
+    {
+      "file": "praxis-mine-plugin-v1.2.1.zip",
+      "bytes": 3838487,
+      "sha256": "7f7cfedbbead229b606b92c64981c9ce5edef8d3f1c85cb0bace66f14a201e4b",
+      "members": 50,
+      "kind": "plugin",
+      "release_asset": "praxis-mine-plugin-v1.2.1.zip"
+    },
+    {
+      "file": "praxis-mine-skill-v1.2.1.zip",
+      "bytes": 2270363,
+      "sha256": "d16feb22ee44401c14a8ba066b4e338c38447419a59da0d39e10b9e0fee43c08",
+      "members": 40,
+      "kind": "standalone-skill",
+      "release_asset": "praxis-mine-skill-v1.2.1.zip"
+    },
+    {
+      "file": "praxis-mine-claude-v1.2.1.zip",
+      "bytes": 2270363,
+      "sha256": "d16feb22ee44401c14a8ba066b4e338c38447419a59da0d39e10b9e0fee43c08",
+      "members": 40,
+      "kind": "claude-skill",
+      "release_asset": "praxis-mine-claude-v1.2.1.zip"
+    }
+  ],
+  "boundary": "Exact current reviewed bytes for existing draft asset roles; draft visibility preserved, no directory submission or public-release approval inferred.",
+  "name": "Praxis Mine"
+}

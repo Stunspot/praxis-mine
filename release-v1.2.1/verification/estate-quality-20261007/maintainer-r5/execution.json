@@ -1,0 +1,5 @@
+{
+  "agent": "estate_quality_tools",
+  "mode": "in-process",
+  "work": "Reworked one contradictory maintenance guide into explicit current-output build and native extraction steps. Aligned document custody guidance with existing scoped receipts. Preserved historical release and publication boundaries."
+}

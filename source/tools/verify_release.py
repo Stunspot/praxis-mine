@@ -15,7 +15,7 @@ from typing import Any
 from archive_paths import assert_unlinked, check_members
 
 
-VERSION = "1.2.0"
+VERSION = "1.2.1"
 SLUG = "praxis-mine"
 SCHEMA = "praxis-mine-portable-verification/v1"
 PRIVATE_TOPOLOGY_PATTERN = re.compile(

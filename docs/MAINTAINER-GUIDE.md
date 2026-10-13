@@ -71,12 +71,12 @@ python -B source/tools/build_release.py --output-dir repair-candidates/NEW-NAME
 python -B repair-candidates/NEW-NAME/package/tools/verify_release.py repair-candidates/NEW-NAME/package --component-only
 ```
 
-The builder creates an inspectable `package/` directory, `Praxis-Mine-v1.2.0.zip`, a detached checksum and the three delivery companions beside it. It checks linked sources, portable archive paths, current documentation custody inputs and preserved artwork. It refuses to overwrite an existing candidate. Historical reviewer verdicts remain outside the new kit.
+The builder creates an inspectable `package/` directory, `Praxis-Mine-v1.2.1.zip`, a detached checksum and the three delivery companions beside it. It checks linked sources, portable archive paths, current documentation custody inputs and preserved artwork. It refuses to overwrite an existing candidate. Historical reviewer verdicts remain outside the new kit.
 
 Verify the ZIP itself after native extraction into another new directory. On Windows, from the same repository root:
 
 ```powershell
-Expand-Archive -LiteralPath 'repair-candidates/NEW-NAME/Praxis-Mine-v1.2.0.zip' -DestinationPath 'repair-candidates/NEW-NAME/native-check'
+Expand-Archive -LiteralPath 'repair-candidates/NEW-NAME/Praxis-Mine-v1.2.1.zip' -DestinationPath 'repair-candidates/NEW-NAME/native-check'
 python -B repair-candidates/NEW-NAME/native-check/tools/verify_release.py repair-candidates/NEW-NAME/native-check --component-only
 ```
 

@@ -1,0 +1,57 @@
+{
+  "authored_files": [
+    {
+      "bytes": 7480,
+      "path": "docs/MAINTAINER-GUIDE.md",
+      "sha256": "44d0b79cc4792eba2c94a011a59084ab81fb607a18511916c013e14afac4629d"
+    }
+  ],
+  "authoring": {
+    "authorship_scope": "materially-revised",
+    "capability": "hesperos-documentation",
+    "capability_entrypoint_sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+    "capability_revision": "sha256:21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+    "capability_snapshot": {
+      "bytes": 7306,
+      "path": "verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md",
+      "sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f"
+    },
+    "mode": "in-process",
+    "run_id": "praxis-maintainer-r5-20261007"
+  },
+  "authoring_response": {
+    "bytes": 475,
+    "path": "verification/estate-quality-20261007/maintainer-r5/authoring-response.md",
+    "sha256": "f7680bdf7b0fca668e13369274ceba90c12839ab1d1160edf210f5ca74986317"
+  },
+  "claim_boundary": "Binds retained evidence for one Hesperos authoring or material-revision run. It does not prove independent review, host activation, publication, accessibility conformance, or customer outcomes.",
+  "created_at": "2026-10-07T03:55:56+00:00",
+  "documentation_fingerprint": "a744fede9377f3812dd47e15b4def866497bd9b2a7cce474f29a112fc22517af",
+  "documentation_manifest": {
+    "bytes": 154,
+    "path": "verification/estate-quality-20261007/maintainer-r5/manifest.json",
+    "sha256": "b468906b007e72eeee6ff6ec0d1e8727407f84a31abc6e580725ccbd4c72f0f8"
+  },
+  "evidence_packet": {
+    "bytes": 618,
+    "path": "verification/estate-quality-20261007/maintainer-r5/evidence-packet.json",
+    "sha256": "fd5b97611088af120105b77109b98695b29c3e09b60cbd3becafb0cfc9f953b0"
+  },
+  "execution_evidence": [
+    {
+      "bytes": 306,
+      "path": "verification/estate-quality-20261007/maintainer-r5/execution.json",
+      "sha256": "2e449d30518104d868511f1f5696b8d72229383d75d494592dd9820abc32dceb"
+    },
+    {
+      "bytes": 475,
+      "path": "verification/estate-quality-20261007/maintainer-r5/authoring-response.md",
+      "sha256": "f7680bdf7b0fca668e13369274ceba90c12839ab1d1160edf210f5ca74986317"
+    }
+  ],
+  "format": "cd-hesperos-documentation-authorship/v1",
+  "product": {
+    "slug": "praxis-mine",
+    "version": "1.2.0"
+  }
+}

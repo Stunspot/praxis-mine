@@ -5,7 +5,7 @@ import argparse,hashlib,json,os,shutil,tempfile,zipfile
 from datetime import datetime,timezone
 from archive_paths import assert_unlinked,check_tree,reparse
 from verify_release import verify
-VERSION='1.2.0';SLUG='praxis-mine';ROOT=Path(__file__).resolve().parents[2]
+VERSION='1.2.1';SLUG='praxis-mine';ROOT=Path(__file__).resolve().parents[2]
 ART_SHA='7da3992d465f1263ac4249ad935378e9b93415600ce3a033176cab482a243dfc'
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def files(root):

@@ -61,3 +61,5 @@ The workspace has no cloud dependency and does not browse or execute candidates.
 ## Diagnose a held or stale assessment
 
 An explicit Reject or Monitor is never upgraded because the score is high. An actionable recommendation lacking comparison or rights evidence becomes Monitor, with its missing basis shown. A recorded LICENSE filename is insufficient; edit the candidate license conclusion and cite the actual basis. The gate records declared evidence, not independently verified facts. A changed material snapshot shows historical evaluations in the reader and triage in the decision field, circuit and report. Reassess the current material; never copy an old success label forward.
+
+For an optional product-icon Windows shortcut or portable Mac app entry, use [Add a Praxis Mine entry](APP-ENTRY.md). Creation is explicit and refuses an existing entry; it does not capture a prior --data-root choice or modify your SQLite home.

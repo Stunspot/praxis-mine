@@ -14,7 +14,7 @@ Praxis Mine inspects what it finds, keeps the mechanism that would change what y
 
 ## Start here
 
-1. Copy **Praxis Mine v1.2.0.zip** from the product’s **Additional Files** to your chosen harness or Chat project, attach or reference it, and say **“Install this Augment.”** The companion installation prompt is optional.
+1. Copy **Praxis Mine v1.2.1.zip** from the product’s **Additional Files** to your chosen harness or Chat project, attach or reference it, and say **“Install this Augment.”** The companion installation prompt is optional.
 2. For manual installation or the local visual explorer, extract that supplied complete ZIP and use the included guides. The [documentation map](docs/README.md) helps you choose the path.
 3. Follow the [Codex/ChatGPT plugin](docs/INSTALL-CODEX.md) or [Claude skill](docs/INSTALL-CLAUDE.md) installation path.
 4. Complete the [ten-minute first mine](docs/QUICK-START.md).
@@ -68,7 +68,7 @@ Static release validation, host installation, skill discovery, invocation, usefu
 - [Security](SECURITY.md)
 - [Support](SUPPORT.md)
 - [License](LICENSE.md)
-- [Release notes](RELEASE-NOTES-v1.2.0.md)
+- [Release notes](RELEASE-NOTES-v1.2.1.md)
 - [Plugin Directory submission packet](PLUGIN-DIRECTORY-SUBMISSION-v1.0.1.md)
 
 Praxis Mine is published by [Collaborative Dynamics](https://collaborative-dynamics.com). Mining is encouraged. Swallowing the quarry whole remains an unforced error. 🌐‍💠

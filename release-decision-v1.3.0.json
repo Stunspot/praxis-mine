@@ -1,0 +1,9 @@
+{
+  "product": "praxis-mine",
+  "baseline": "1.2.1",
+  "version": "1.3.0",
+  "treatment": "update",
+  "reason": "Owner explicitly requires incrementing each rebuilt product; new purpose-led working interfaces and supported input/workflows change the customer promise.",
+  "delta": "A real-task comparison bench; alternatives and costs; user-chosen comparison criteria; timed or untimed observed trials; a reasoned working decision and concrete next action.",
+  "preservation": "Existing native objects, originals and previous revisions retained; no external publication or installation from app actions."
+}

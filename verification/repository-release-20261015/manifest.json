@@ -1,0 +1,9 @@
+{
+  "format": "cd-customer-documentation/v1",
+  "customer_docs": [
+    "README.md",
+    "REBUILD-CURRENT.md"
+  ],
+  "product": "Praxis Mine",
+  "version": "1.3.0"
+}

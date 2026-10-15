@@ -1,0 +1,9 @@
+{
+  "format": "cd-customer-documentation/v1",
+  "product": "Praxis Mine",
+  "version": "1.3.0",
+  "customer_docs": [
+    "delivery-sidecars/Praxis Mine T-Free v1.3.0 Extra.md"
+  ],
+  "scope": "Current companion materially rewritten from observed primary app workflow."
+}

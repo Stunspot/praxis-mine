@@ -1,0 +1,1380 @@
+{
+  "repo": "praxis-mine",
+  "version": "1.3.0",
+  "root": "E:\\Github\\praxis-mine",
+  "parent_commit": "f65a2f982b5306c0c65c571c4ec17100158c801e",
+  "primary_branch": "main",
+  "primary_index_sha256": "ae02adb77725765b3f5fac85dff2b264581ccacff816c42b7a9101e223329515",
+  "branch": "codex/purpose-release-v1.3.0-20261015",
+  "scopes": [
+    ".github/",
+    "ARCHIVE-CUSTODY.md",
+    "CONTRIBUTING.md",
+    "DATA-AND-PRIVACY.md",
+    "LICENSE.md",
+    "NOTICE.md",
+    "Open.cmd",
+    "Open.command",
+    "PLUGIN-DIRECTORY-SUBMISSION-v1.0.0.md",
+    "PLUGIN-DIRECTORY-SUBMISSION-v1.0.1.md",
+    "README.md",
+    "REBUILD-CURRENT.md",
+    "RELEASE-NOTES-v1.0.0.md",
+    "RELEASE-NOTES-v1.0.1.md",
+    "RELEASE-NOTES-v1.1.0.md",
+    "RELEASE-NOTES-v1.2.0.md",
+    "RELEASE-NOTES-v1.2.1.md",
+    "RELEASE-NOTES-v1.3.0.md",
+    "SECURITY.md",
+    "SUPPORT.md",
+    "TERMS-OF-USE.md",
+    "TRADEMARKS.md",
+    "adversarial-verification.json",
+    "delivery-sidecars/Praxis Mine T-Free v1.3.0 Extra.md",
+    "delivery-sidecars/Praxis Mine.jpg",
+    "delivery-v1.3.0/Praxis Mine T-Free v1.3.0 Extra.md",
+    "delivery-v1.3.0/Praxis Mine T-Free v1.3.0.md",
+    "delivery-v1.3.0/Praxis Mine.jpg",
+    "docs/",
+    "docs/MAINTAINER-GUIDE.md",
+    "documentation-accessibility-review.json",
+    "documentation-authorship.json",
+    "documentation-custody.json",
+    "documentation-manifest.json",
+    "documentation-repository-authorship.json",
+    "documentation-review.json",
+    "release-decision-v1.3.0.json",
+    "source/",
+    "tools/",
+    "verification/companion-format-20261015/",
+    "verification/companion-format-20261015/authored-delta.json",
+    "verification/companion-format-20261015/authoring-response.md",
+    "verification/companion-format-20261015/evidence.md",
+    "verification/companion-format-20261015/execution.md",
+    "verification/estate-quality-20261007/maintainer-r5/authoring-response.md",
+    "verification/estate-quality-20261007/maintainer-r5/evidence-packet.json",
+    "verification/estate-quality-20261007/maintainer-r5/execution.json",
+    "verification/estate-quality-20261007/maintainer-r5/manifest.json",
+    "verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md",
+    "verification/purpose-release-20261015/",
+    "verification/repository-release-20261015/",
+    "verification/repository-release-20261015/authoring-response.md",
+    "verification/repository-release-20261015/evidence.md",
+    "verification/repository-release-20261015/execution.md",
+    "verification/repository-release-20261015/manifest.json"
+  ],
+  "files": [
+    {
+      "path": ".github/workflows/line-ending-policy.yml",
+      "bytes": 305,
+      "sha256": "e83c4eddac5481c74238432bfde5b07e1f5e0aeb74a8cbc634e505fdbfb61d3b"
+    },
+    {
+      "path": ".github/workflows/verify-release.yml",
+      "bytes": 635,
+      "sha256": "a2665ba020291742cfb8d37e304a1da24b7a2b2e4cb156fa894a712ef4666ded"
+    },
+    {
+      "path": "ARCHIVE-CUSTODY.md",
+      "bytes": 1871,
+      "sha256": "5128b7f57946d9b6eaf907213fa5b75240d94f902f16324628bdc0dc654e272a"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1088,
+      "sha256": "eda4584e4d05e3e338e5c0a7da06bc7403b356f72b58ceec0d7f4201df3d3d33"
+    },
+    {
+      "path": "DATA-AND-PRIVACY.md",
+      "bytes": 2524,
+      "sha256": "0cb0669da6eb0b4a8c383583468dfa7b37dbe9a619fec381e093cfb59570431d"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 2690,
+      "sha256": "445d93cae127b5c26f4fc8d2cc2b565de6d8fbea6bf86e43fb10f93c8903e507"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 1639,
+      "sha256": "d543f778b1f2b40eb59459abb3ec21fef1a8202c4ccadab31b00bf48a48fbb7c"
+    },
+    {
+      "path": "Open.cmd",
+      "bytes": 245,
+      "sha256": "42f2f408c331d23516f6f488e19afd8a41c8554ea367db74fe98c0b7b38558f1"
+    },
+    {
+      "path": "Open.command",
+      "bytes": 114,
+      "sha256": "96fda4ceb23e57584b966dddc879d7133b175c6bdd933eb7bdf37663082a201b"
+    },
+    {
+      "path": "PLUGIN-DIRECTORY-SUBMISSION-v1.0.0.md",
+      "bytes": 8323,
+      "sha256": "c45f5a9784bcab1320521752ce88a5200dc097e01849038311bc41d0373e5964"
+    },
+    {
+      "path": "PLUGIN-DIRECTORY-SUBMISSION-v1.0.1.md",
+      "bytes": 8345,
+      "sha256": "8fbf9b1500f56582eb1154e5681e25ad83efd0b35daf3561af804e330e72a831"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1002,
+      "sha256": "858eb0f5f5df10b6c4ba39f7cc94303e4b0f1bed6bf8a4c3cd89545171859d8b"
+    },
+    {
+      "path": "REBUILD-CURRENT.md",
+      "bytes": 1509,
+      "sha256": "6d490f7ac58a8a2ba26d9da8a45ca2b8a547f867f40c45b9cea7607098aed406"
+    },
+    {
+      "path": "RELEASE-NOTES-v1.0.0.md",
+      "bytes": 1353,
+      "sha256": "49b7e45bbb448006adb0c61c3f46ddf3f9bb4c914d7f5b7252218d88040bc9e0"
+    },
+    {
+      "path": "RELEASE-NOTES-v1.0.1.md",
+      "bytes": 1795,
+      "sha256": "5f599e8365d4ff5f6d8715b82b712b106a5925760417737555b40681b225cc72"
+    },
+    {
+      "path": "RELEASE-NOTES-v1.1.0.md",
+      "bytes": 746,
+      "sha256": "e91c988cf968e576545e541ef47da45ef250409f4083100a531d18dc4f36dbb9"
+    },
+    {
+      "path": "RELEASE-NOTES-v1.2.0.md",
+      "bytes": 3070,
+      "sha256": "2f895de79bd4d4709c8a59ea00b3dfc55788aa134f6a84b594adacfcb01f8ae2"
+    },
+    {
+      "path": "RELEASE-NOTES-v1.2.1.md",
+      "bytes": 652,
+      "sha256": "3ceeec8c8a9aa527756ee85b10ff465f8db7e2ca77ca14436fdcb6bca58b722b"
+    },
+    {
+      "path": "RELEASE-NOTES-v1.3.0.md",
+      "bytes": 598,
+      "sha256": "0021402c76f88f97df54efb9550f28452880d4becf4428959f57abb6641b9845"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1823,
+      "sha256": "6f8963ac315b1c47d0f6a8b04463f9f1ecb28d99368a6e592ef2af0fb9c566a1"
+    },
+    {
+      "path": "SUPPORT.md",
+      "bytes": 879,
+      "sha256": "f59d44e52efa57c8318b1edb5e29d2bf61c323ac224a3e380dfa59f77fbd952f"
+    },
+    {
+      "path": "TERMS-OF-USE.md",
+      "bytes": 2898,
+      "sha256": "283e7b66d4df13b91cc286543ff1a74a330078c6e0189cea2c75d1597633b25d"
+    },
+    {
+      "path": "TRADEMARKS.md",
+      "bytes": 1730,
+      "sha256": "7bdb3d57d3aa9c879e415edc3d64a19207283981b8aa1de93b3fc7d73f0f2238"
+    },
+    {
+      "path": "adversarial-verification.json",
+      "bytes": 1619,
+      "sha256": "3a3d17ab8d3aaa78c48910c482c8734fc88b1e6aa6fc0983573e9c8ad4c7ed44"
+    },
+    {
+      "path": "delivery-sidecars/Praxis Mine T-Free v1.3.0 Extra.md",
+      "bytes": 2532,
+      "sha256": "ce4bc632357ec964c0ae8dc895126a8ae0fbbf30d2a13eeb275fb89989db5361"
+    },
+    {
+      "path": "delivery-sidecars/Praxis Mine.jpg",
+      "bytes": 121984,
+      "sha256": "7da3992d465f1263ac4249ad935378e9b93415600ce3a033176cab482a243dfc"
+    },
+    {
+      "path": "delivery-v1.3.0/Praxis Mine T-Free v1.3.0 Extra.md",
+      "bytes": 2532,
+      "sha256": "ce4bc632357ec964c0ae8dc895126a8ae0fbbf30d2a13eeb275fb89989db5361"
+    },
+    {
+      "path": "delivery-v1.3.0/Praxis Mine T-Free v1.3.0.md",
+      "bytes": 3280,
+      "sha256": "2eb6c73316273fd2df8a7b7637bb9bb11f93f55ee20c57cbc1385d8250261c1c"
+    },
+    {
+      "path": "delivery-v1.3.0/Praxis Mine.jpg",
+      "bytes": 121984,
+      "sha256": "7da3992d465f1263ac4249ad935378e9b93415600ce3a033176cab482a243dfc"
+    },
+    {
+      "path": "docs/404.md",
+      "bytes": 766,
+      "sha256": "248c44101c7fcfe4d427e3af21ef62e721aa91c4fc419fc39033bad4557f410d"
+    },
+    {
+      "path": "docs/APP-ENTRY.md",
+      "bytes": 1930,
+      "sha256": "f2fd0f4396f590fda33c66592cc9df40c3e1ec496fc048ef31ae7b0606fae1ac"
+    },
+    {
+      "path": "docs/DOCUMENTATION-CUSTODY.json",
+      "bytes": 559,
+      "sha256": "9e43fea88ad37b8e0efa518cabd056339352045468f56bc42aa6c37037eaaaee"
+    },
+    {
+      "path": "docs/HOST-COMPATIBILITY.md",
+      "bytes": 3031,
+      "sha256": "44f8d218976e41e4f7e66b231aee37511a499118b61cccc3bf9d2f1e26031742"
+    },
+    {
+      "path": "docs/INSTALL-CLAUDE.md",
+      "bytes": 2203,
+      "sha256": "1f39b189822ccdd9a341d009a09c690ace713bd4f58b1bcb805d19706c4bff2f"
+    },
+    {
+      "path": "docs/INSTALL-CODEX.md",
+      "bytes": 2724,
+      "sha256": "679ae94257f94805504e1fe18880a3ff1ee0be3e57f29b66cd6c9a3b4702a4ef"
+    },
+    {
+      "path": "docs/LEDGER-REFERENCE.md",
+      "bytes": 4652,
+      "sha256": "4ee55a0bd5af2ed2e2fb3cbd6a4be1c6aa9a1a37b9cf73542c3ec1d2ad350dc0"
+    },
+    {
+      "path": "docs/LIMITATIONS.md",
+      "bytes": 2549,
+      "sha256": "685c7df648828fb942b978aaa015adea2a5cb269e84212dc1db021d5fee5ae13"
+    },
+    {
+      "path": "docs/MAINTAINER-GUIDE.md",
+      "bytes": 7480,
+      "sha256": "752e1713d404fa1be555d92db9ce1f3a7e81a1ce62aea97b73e262730c4e29ce"
+    },
+    {
+      "path": "docs/MINE-ROOM.md",
+      "bytes": 10290,
+      "sha256": "9e01fc6538c5f2a6eb726f336751bfb8e0ced41333495f2f2837936fed06751a"
+    },
+    {
+      "path": "docs/PROVENANCE.md",
+      "bytes": 3351,
+      "sha256": "c79aa8b4d9593bcf584abfc3bc363c630b8e9c7a6b9bde976559f620a77e526f"
+    },
+    {
+      "path": "docs/QUICK-START.md",
+      "bytes": 3207,
+      "sha256": "89a31a231800d3d674d07b3892cf282539b7c2db205690931875d1ec49a107ed"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 2569,
+      "sha256": "d20588bd0205c9a8ce5977c7f911fc2bd25ab2296024d4388db895a68c2004ad"
+    },
+    {
+      "path": "docs/TROUBLESHOOTING.md",
+      "bytes": 5722,
+      "sha256": "26565a96dc392afe734bef7aea70a0934ddc12fddfc01f101fb1de1cf768990b"
+    },
+    {
+      "path": "docs/UNINSTALL-AND-DATA.md",
+      "bytes": 2454,
+      "sha256": "463f9260b0a9e1f90f61f530c4d80324dc2ea327a1b08b017be829f55382a0dc"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 1932,
+      "sha256": "36d81b5b2fbc3a58af6b77ef534c4592c54be20502e315720d3dd5419f3c36ab"
+    },
+    {
+      "path": "docs/WORKFLOWS.md",
+      "bytes": 5110,
+      "sha256": "b19ce7f4ac62f16573c29d1b6c607bafac05cdfc341ed224039de739d412c21d"
+    },
+    {
+      "path": "docs/_config.yml",
+      "bytes": 264,
+      "sha256": "cd96f360ccf83e6e17f74ac771c1affc27210f829ff5cfba8c79e5ac7cb4f89f"
+    },
+    {
+      "path": "docs/_layouts/default.html",
+      "bytes": 3339,
+      "sha256": "4e76c3da20051968bb95aa7cf481f6d9d5db2571cf8124b84e4afeab2f4e4ad0"
+    },
+    {
+      "path": "docs/assets/brand/praxis-mine-pages-hero.png",
+      "bytes": 2730983,
+      "sha256": "a2d3d3d829ab9bd5f5562e4f79c85f0c51d348e972b7daf6cfe3039fd27bbb5a"
+    },
+    {
+      "path": "docs/assets/brand/praxis-mine-readme-hero.png",
+      "bytes": 2000975,
+      "sha256": "6cbaa8b5fa93380f35b775964b5056a0193b2030133c68390d357bc158bf74c3"
+    },
+    {
+      "path": "docs/assets/brand/praxis-mine-social-card.jpg",
+      "bytes": 185935,
+      "sha256": "c100fe0a9e7d975e8aaf78e20bcdc8bc9742004a95a3b6256eae4c9163b94ebd"
+    },
+    {
+      "path": "docs/assets/css/style.css",
+      "bytes": 7135,
+      "sha256": "849213177bd008daba0692e75e9dc8b93662539a456ff219f9dd65404e67f643"
+    },
+    {
+      "path": "docs/index.md",
+      "bytes": 5117,
+      "sha256": "7ab094eb1a5e1ac09b4e6597765be5ee805e266c42e6b1b2a57d02b273e5305e"
+    },
+    {
+      "path": "documentation-accessibility-review.json",
+      "bytes": 1353,
+      "sha256": "80b88916f1de14270522cc9a036e56f6dc9d02b1c037dbadf30e692fe65c805a"
+    },
+    {
+      "path": "documentation-authorship.json",
+      "bytes": 2375,
+      "sha256": "6eb51c555a28cbc0e97c5bcb8b6900a2896b6978c31e0fbb4d627dfcc7886f32"
+    },
+    {
+      "path": "documentation-custody.json",
+      "bytes": 15067,
+      "sha256": "84ad8b35fbc095d96d0a2d881841003388b72d6adb3bdf2cfd4176c804207ac4"
+    },
+    {
+      "path": "documentation-manifest.json",
+      "bytes": 2186,
+      "sha256": "3912b5434864800134ac67e5ed59606023490a0c9c4ec14599f42f1c278420db"
+    },
+    {
+      "path": "documentation-repository-authorship.json",
+      "bytes": 2490,
+      "sha256": "32cef3c39e6a8fbed6980e9581ce55aa497971e29165cc20872713a2e3d8f966"
+    },
+    {
+      "path": "documentation-review.json",
+      "bytes": 1101,
+      "sha256": "1cd1ea0658fa4e27925cb30ea229d9d9a5920222f0f597e7c44acb907b5e4997"
+    },
+    {
+      "path": "release-decision-v1.3.0.json",
+      "bytes": 616,
+      "sha256": "bac2e5893d3c08501aed3465607646235e3397ec6b70e1bfa6c8d69653bede61"
+    },
+    {
+      "path": "source/BUILD-STATE.md",
+      "bytes": 925,
+      "sha256": "2259474f96b28a384c5c8d2f3233c8881b9a4692a713bf1f6d2f7640d15c0989"
+    },
+    {
+      "path": "source/design-record/positive-product-contract.md",
+      "bytes": 1721,
+      "sha256": "60e9d1c06ff5ca5aab5504c5c6d16786d1fc3804e8dccb8f15a8f20b94aa9438"
+    },
+    {
+      "path": "source/design-record/praxis-mine-augment-map.md",
+      "bytes": 6908,
+      "sha256": "fb0010865d13f2a59485f7eb3b712c36a7c591900fc71d1a25c2f5f73c16411b"
+    },
+    {
+      "path": "source/plugin/.codex-plugin/plugin.json",
+      "bytes": 2033,
+      "sha256": "87381d8909dfe28eb8fb547beb85cc4ad851a9859696ba8af8a1a9c714277609"
+    },
+    {
+      "path": "source/plugin/DATA-AND-PRIVACY.md",
+      "bytes": 2524,
+      "sha256": "0cb0669da6eb0b4a8c383583468dfa7b37dbe9a619fec381e093cfb59570431d"
+    },
+    {
+      "path": "source/plugin/LICENSE.md",
+      "bytes": 2690,
+      "sha256": "445d93cae127b5c26f4fc8d2cc2b565de6d8fbea6bf86e43fb10f93c8903e507"
+    },
+    {
+      "path": "source/plugin/NOTICE.md",
+      "bytes": 1639,
+      "sha256": "d543f778b1f2b40eb59459abb3ec21fef1a8202c4ccadab31b00bf48a48fbb7c"
+    },
+    {
+      "path": "source/plugin/README.md",
+      "bytes": 669,
+      "sha256": "6c2805cb3ec935607be6fa041365a9e185c1d622fe4a531c12d82877960cd66a"
+    },
+    {
+      "path": "source/plugin/SECURITY.md",
+      "bytes": 1823,
+      "sha256": "6f8963ac315b1c47d0f6a8b04463f9f1ecb28d99368a6e592ef2af0fb9c566a1"
+    },
+    {
+      "path": "source/plugin/SUPPORT.md",
+      "bytes": 879,
+      "sha256": "f59d44e52efa57c8318b1edb5e29d2bf61c323ac224a3e380dfa59f77fbd952f"
+    },
+    {
+      "path": "source/plugin/TERMS-OF-USE.md",
+      "bytes": 2898,
+      "sha256": "283e7b66d4df13b91cc286543ff1a74a330078c6e0189cea2c75d1597633b25d"
+    },
+    {
+      "path": "source/plugin/TRADEMARKS.md",
+      "bytes": 1730,
+      "sha256": "7bdb3d57d3aa9c879e415edc3d64a19207283981b8aa1de93b3fc7d73f0f2238"
+    },
+    {
+      "path": "source/plugin/assets/praxis-mine-logo-v1.0.1.png",
+      "bytes": 1570802,
+      "sha256": "6008ae8cd3ecaa749a035810ad0378aed8a60c693f5c1c66e3aac58cd3838cc1"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/LICENSE.md",
+      "bytes": 2690,
+      "sha256": "445d93cae127b5c26f4fc8d2cc2b565de6d8fbea6bf86e43fb10f93c8903e507"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/Open.cmd",
+      "bytes": 171,
+      "sha256": "aa55ea1a9a003516fddf2ba47701b2ce1a8aaa7ace634b49658a97dae7eebc0e"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/Open.command",
+      "bytes": 77,
+      "sha256": "6967b4d0ff9ed5293953ecd2d0fd073943dbbe90ce5dd5e86f38e848dfa014d2"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/SECURITY.md",
+      "bytes": 1823,
+      "sha256": "6f8963ac315b1c47d0f6a8b04463f9f1ecb28d99368a6e592ef2af0fb9c566a1"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/SKILL.md",
+      "bytes": 6156,
+      "sha256": "21b874cbddaa84adf43264785401c77f1b456bd0063ed0805a09074897d89a3a"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/SUPPORT.md",
+      "bytes": 879,
+      "sha256": "f59d44e52efa57c8318b1edb5e29d2bf61c323ac224a3e380dfa59f77fbd952f"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/TRADEMARKS.md",
+      "bytes": 1730,
+      "sha256": "7bdb3d57d3aa9c879e415edc3d64a19207283981b8aa1de93b3fc7d73f0f2238"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/VERSION",
+      "bytes": 7,
+      "sha256": "3c85c66d06c31df0c6511ad18b7e8576fcf8e76a011c5c28bbd66c57f3ed851e"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/agents/openai.yaml",
+      "bytes": 242,
+      "sha256": "46623f59a149ad1930586170bb747d86e455b8276d2ecfbd9fe68c20e248d37e"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/assets/evaluation.template.json",
+      "bytes": 1007,
+      "sha256": "1b64a3c89d3570f30d6c992c80f34019af018657295af140afa4f00244d634a8"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/assets/praxis_mine.contract.json",
+      "bytes": 3919,
+      "sha256": "b9a2201d0184a98b862a403be67e3fde13078e2d622f3d4ca8d2d3852871f9d8"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/assets/seed-evaluations/anthropic_skill_creator.json",
+      "bytes": 746,
+      "sha256": "4a0d5b472b92b4a7d17bbfb330f9be500df4e3041d70925603b3501e2d662975"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/assets/seed-evaluations/firecrawl_cli.json",
+      "bytes": 755,
+      "sha256": "86483dae6e5453e4f43aa525d201eacf4a7c45fcce69e9871c9c407bcdd30d17"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/assets/seed-evaluations/hyperframes.json",
+      "bytes": 748,
+      "sha256": "d4c1d8b322c6e2f81d4ef3d571ecc35aa6c48f7f1e9ded4354fd22eb541c4e35"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/assets/seed-evaluations/impeccable.json",
+      "bytes": 800,
+      "sha256": "3abe30b7ebdce0b3c568e3a0a2a06dc61e9f41d4886a3aaed82b2109bd16526b"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/assets/seed-evaluations/marketing_skills.json",
+      "bytes": 728,
+      "sha256": "a0618b68419209d1cc0240ee33862b9100f59ec7ad65cb360c427675222705c5"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/assets/seed-evaluations/microsoft_playwright_cli.json",
+      "bytes": 652,
+      "sha256": "e8293ddbb43bb23ad22d40e00e5f38dcc0fea52e6717180787fffef1d43a506f"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/assets/seed-evaluations/microsoft_waza.json",
+      "bytes": 800,
+      "sha256": "01c8d8db03b3c97fac3cf5cd81acdd303278bb387d2063b97bd7f234ed5501ac"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/assets/seed-evaluations/microsoft_webwright.json",
+      "bytes": 752,
+      "sha256": "a012d1cbcae61cee213e653af806fd65364751f6cbed57318a6250fec997e851"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/assets/seed-evaluations/vercel_agent_browser.json",
+      "bytes": 801,
+      "sha256": "4f5a791f0acddcd43326fb18ae2ee2280711a609b09ea7c9c72b89bfe928b80e"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/assets/seed-evaluations/vercel_agent_skills.json",
+      "bytes": 733,
+      "sha256": "8ccf356edd9bdfd2fb85d20ed6a1c94709d1fe900485dc20545e66c29f07af3d"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/assets/seed-manifest.json",
+      "bytes": 5315,
+      "sha256": "c242ac7cfb3379786c83098f69649b6ee8f3c0e1a51002ce4e9f478ed344718a"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/references/evaluation-gate.md",
+      "bytes": 3972,
+      "sha256": "461529e68f6e7e8a31572170b3008615514c1b93aa2103a91bc4868d86948aed"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/references/source-adapters.md",
+      "bytes": 1860,
+      "sha256": "3afd55d1210397644fbbcd9aaaea372a8627f3774dc50e825d6f16f5bcebf0ce"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/scripts/praxis_mine.py",
+      "bytes": 32874,
+      "sha256": "52c123e605e54462e6cc2a86a7ee3495fa2bdea862e57656907b003aa8121e14"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/scripts/vendor/praxis_store/__init__.py",
+      "bytes": 68,
+      "sha256": "708a4130224a133694372dd5c685602e8b0e8b634ed5abb75da7931d7fcd8380"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/scripts/vendor/praxis_store/storage.py",
+      "bytes": 40513,
+      "sha256": "1e9619598b1c3e86394f6e80165dff46633d1bab8a840df281b1051157507844"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/tests/test_decision_custody.py",
+      "bytes": 14577,
+      "sha256": "29430b9f40cdfaa249da89e349aae350a7c81cfc214589496e8d3050bb1a6db7"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/tests/test_mine_room.py",
+      "bytes": 8074,
+      "sha256": "6c4065919e78d9b5edd78ba23b5b567d1aeea90d752ab0ff5e30291eb5275b5f"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/tests/test_praxis_mine.py",
+      "bytes": 3648,
+      "sha256": "f94ff6f65c463c7570a87a3ad18f27a116be6277f7376176e3afb0156fce62c3"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/README.md",
+      "bytes": 2551,
+      "sha256": "2ea1bf79bbc1a9915932dba2431565eed215796891e49a7473165e355b1e76fe"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/WORKING-GUIDE.md",
+      "bytes": 2387,
+      "sha256": "da47a47bc66554688645f29501366e0463bfc2357c218b4f4368af08c75c6a02"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/advanced.html",
+      "bytes": 5084,
+      "sha256": "813e14de9add99671907aa5a188693b5906654777b37433bf4d322149b9ccc52"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/app.js",
+      "bytes": 45418,
+      "sha256": "9ab22b10fba886eb05bfad0c9dfcd243d071b423af10ff4d2985af824e97aa11"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/assets/praxis-mine.icns",
+      "bytes": 2036877,
+      "sha256": "e0eb8b4133453a9baab5fe78ab4124a60d9b860cfe817bf529dadcfde552cd31"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/assets/praxis-mine.ico",
+      "bytes": 117999,
+      "sha256": "65b2a619b0176b63b1820f451c4ed5522e42a3e851a0a2f0e32acfbe4a963cd7"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/brand.png",
+      "bytes": 30392,
+      "sha256": "85725355c5c7ac1516a156d3cc37ca74e1dee314418bc300252d8436d0ce2ce6"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/common.js",
+      "bytes": 5936,
+      "sha256": "c48f15d77fd17f3c8621373985cd69e22ccdd399daca9bc59bd7f7b656e7d755"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/create_entry.py",
+      "bytes": 4749,
+      "sha256": "d974828da48c9ebc3b1a28d7cb167a41017a014a919e42a2255c84fbf38b29fc"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/index.html",
+      "bytes": 1188,
+      "sha256": "68aa16d514075cb5c6e7a6319085dd231bb2b72cb1259b029c71772e24383a2d"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/mine.py",
+      "bytes": 8595,
+      "sha256": "6978a771b5d0682ece3fb47200d33ac6466e619c32352297087216ce607cccc1"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/open.py",
+      "bytes": 377,
+      "sha256": "76a165fc44e80290df60cdbe65e128a329e5b6d965a6f2dbff3f9295d7c6c873"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/runtime.py",
+      "bytes": 8023,
+      "sha256": "67d438740735b7af3c8639b5694272978ab009ee758a27d6972bc89819d39ab5"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/style.css",
+      "bytes": 72650,
+      "sha256": "39f2f2a58efda3f5daf2f8534124c1b9cd83aeeb5b31dd4d53c877ca7881405a"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf-LICENSE",
+      "bytes": 1605,
+      "sha256": "a97ac230e5f33ef10a5367a850eb01f91f1a0b064e34742c7794d2294557f524"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/__init__.py",
+      "bytes": 1283,
+      "sha256": "612ff566b4378c13c7b1180cb2da89ac0b6cde5500a63fe530e30ae6a88b1b9c"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_cmap.py",
+      "bytes": 12572,
+      "sha256": "0b8eea205808d522a7e4bad3e222b39c6964752b58a3a3b7259904292ee09241"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_codecs/__init__.py",
+      "bytes": 1373,
+      "sha256": "035d44440b70b56ae91953b34d296b0b56b74fd1c29562c1591c067b7fcf7eed"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_codecs/_codecs.py",
+      "bytes": 10555,
+      "sha256": "e3aa11649c92c06c42269d648c87abee3b3f4d84a38f81acda2d9471edeff9e1"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_codecs/adobe_glyphs.py",
+      "bytes": 447213,
+      "sha256": "b7770314f0eac08cf5c3d07481d5738dd73c7842bd02e4639397fb95a130fdf6"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_codecs/core_font_metrics.py",
+      "bytes": 114968,
+      "sha256": "14b3d66d3678871790597820d63a397b8a972821642846397bce54d9b2c533a9"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_codecs/pdfdoc.py",
+      "bytes": 4269,
+      "sha256": "c5f4af30562cbf1b9a490d14bbdbd90ca681d16bbce61d6e0a20758bdac07145"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_codecs/std.py",
+      "bytes": 2630,
+      "sha256": "0f240cb84a40184a52f6ecb58d67f87278fe92a4a13ce0228f9b08ed0d580fc1"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_codecs/symbol.py",
+      "bytes": 3734,
+      "sha256": "9c86864089615822623cc1ebc149661871fefdf397c842af82e466b8a5dc1809"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_codecs/zapfding.py",
+      "bytes": 3742,
+      "sha256": "3d0c63c510bad7a778d711777b15713f55bc9cce10ad97e33b7966b4bc6913fb"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_crypt_providers/__init__.py",
+      "bytes": 3054,
+      "sha256": "2b767a02e5e15d579780b7adf93ba4ab682df47eba3a076ea6cbf1212d429a42"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_crypt_providers/_base.py",
+      "bytes": 1711,
+      "sha256": "fdfe77323eaf8af84464c438bcdc4de46d083a0158fa7e7f95e91ed1cfea88d5"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_crypt_providers/_cryptography.py",
+      "bytes": 4460,
+      "sha256": "f733a4933312b17e1a974454934a8cd1d29f7dc1e47b8c1f9845caf64c28450f"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_crypt_providers/_fallback.py",
+      "bytes": 3334,
+      "sha256": "bec628a30475602015feaf87add21986451cac26fa1ef44134c626d3742d094f"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_crypt_providers/_pycryptodome.py",
+      "bytes": 3280,
+      "sha256": "bb8bed2e8ecdbfa02a6513671f5a0d3425af4d86a8c1f4957febe5916def4fab"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_doc_common.py",
+      "bytes": 54398,
+      "sha256": "54a5f4cd06ba5f658a9ed175b9c6224134b3dcf9f98ab11fc4da1f36e02a262e"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_encryption.py",
+      "bytes": 49546,
+      "sha256": "319f3e012455b473ceb9c51df87f4a45f94eab902f88f14f8e5769901540a1ce"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_font.py",
+      "bytes": 14256,
+      "sha256": "50ad53071d7979e53daa4661bf38a0e1823eb6365382007eca20b414b73767bb"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_page.py",
+      "bytes": 90193,
+      "sha256": "f93c459a77c433dbd2541e94d1fdfa599e486ca5fe3e3efe9348eaf94552639c"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_page_labels.py",
+      "bytes": 8626,
+      "sha256": "bfa0a9bba3495c2f5143f05e19d866d39695f19eb3c623d1367eaa129d41b951"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_protocols.py",
+      "bytes": 2123,
+      "sha256": "eeacfdd8b55d3eb6244a97543e9029f54e065b98f13414df55ca545b052110ea"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_reader.py",
+      "bytes": 57708,
+      "sha256": "9aaa6780e62c061509f0d3b658dbdac185404fecadac01f7f9d35ac009ce2024"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_text_extraction/__init__.py",
+      "bytes": 8515,
+      "sha256": "6b7677deb4154e230a1adc2deff6df5e53e8b1b493f2bcc42e8367b74e77fd0c"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_text_extraction/_layout_mode/__init__.py",
+      "bytes": 340,
+      "sha256": "454408c22530ce778db5c9639d533a8e445a7a6ea980fee6383dbe3019ada6fc"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_text_extraction/_layout_mode/_fixed_width_page.py",
+      "bytes": 15370,
+      "sha256": "789bde0dbc8ca281bdef4a893a13394706fd668cb2243ca7cd6a55f5aec84b6d"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_text_extraction/_layout_mode/_text_state_manager.py",
+      "bytes": 8221,
+      "sha256": "5d5ac88de4dde6349d31ec41431b34b4be48e5150e8ad4663759842ce70a626e"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_text_extraction/_layout_mode/_text_state_params.py",
+      "bytes": 5481,
+      "sha256": "872c3aa670bcba9064a055542772c7f21048207acdc22a9aa9c632cc8232afa6"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_text_extraction/_text_extractor.py",
+      "bytes": 14388,
+      "sha256": "b54a9bbc2ebd305706406501b7f63caeab1535ffbcb0c171003c8a9da8b4a232"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_utils.py",
+      "bytes": 20814,
+      "sha256": "2df8188c0ad153b97d19201bb681b3bbdbd507e7243e2d657b4eb543a7072656"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_version.py",
+      "bytes": 23,
+      "sha256": "2416f2ebd53fb332339ad719e9569c95eedc0157bb9e1573ee0205d0d07716aa"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/_writer.py",
+      "bytes": 131834,
+      "sha256": "1819e02d0b0bcd9c1fa483dc5c22e2a7849be22c93474c33c235dd6dd076a4e3"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/annotations/__init__.py",
+      "bytes": 990,
+      "sha256": "7f693ffa3027dfd082076ecac50fdef771a29e7ce40076d49e749e1899758f21"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/annotations/_base.py",
+      "bytes": 961,
+      "sha256": "79ea1cf6fdb0d798c05212978f8f25d5b07ae98801815fb6bf92085091febf0b"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/annotations/_markup_annotations.py",
+      "bytes": 11862,
+      "sha256": "b162a1181086ed7f688c0bc4691304a093fe7d8e8572b94574e9ad79f219066d"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/annotations/_non_markup_annotations.py",
+      "bytes": 3649,
+      "sha256": "676214bdc08e713729261497adec7ff6b8983360fae17c4543fbda735d013515"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/constants.py",
+      "bytes": 23634,
+      "sha256": "9f672ef873a6a16e7feb14165442a8e36ad2249d0ff7484bd6cf33fa9174a1cb"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/errors.py",
+      "bytes": 1947,
+      "sha256": "070d56f61c4eb03830ab053a628436974f89894c93aba979423542afe5b81850"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/filters.py",
+      "bytes": 30420,
+      "sha256": "237c2d528bdaeccdd68233730b2a74ac634854a9899a34bcebc8d8af5c0b347f"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/generic/__init__.py",
+      "bytes": 3468,
+      "sha256": "56ba9d61fb5010278f0d4dab5d532012a45a60547ccce57f7ef260a35f71feec"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/generic/_appearance_stream.py",
+      "bytes": 26834,
+      "sha256": "31c0cbd2070a34df4d5cd53a64fc60b7b398a25dbe168356615980c20030e0f3"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/generic/_base.py",
+      "bytes": 32755,
+      "sha256": "f488de45b70b1eb73f94b1947d564c8ee83ca3eb7af17ece35295f9c32a73e64"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/generic/_data_structures.py",
+      "bytes": 65869,
+      "sha256": "35f76eb49aa9f253fb1cd3e5eb9e3875b80f9bbc2616c755e376bde054e7b782"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/generic/_files.py",
+      "bytes": 16238,
+      "sha256": "36d4a4468e890608ac8b840ecab56778ef3dd5ba15b2e636e614708a3e97f510"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/generic/_fit.py",
+      "bytes": 5515,
+      "sha256": "5ff8800c98f5618e0f512b52eeb1560b6c51d8b5154af2ad500932d001402033"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/generic/_image_inline.py",
+      "bytes": 12819,
+      "sha256": "2a5000fd91a2446ce368f1b74af6eda8619e36a6d065517e515536302f2efd28"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/generic/_image_xobject.py",
+      "bytes": 21965,
+      "sha256": "7f560334bae2f927a5faaa72ca75c0ee7c7e662493a8061433ce9338414883af"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/generic/_link.py",
+      "bytes": 5929,
+      "sha256": "b4da99d86616c6a80566c948d032d97a85e59ed6b182c1c2f1791615f496c781"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/generic/_outline.py",
+      "bytes": 1094,
+      "sha256": "a8a6cc5f8d8e59faa7a2922213a054cba12f7532c67b766d8da89637ce49a5a6"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/generic/_rectangle.py",
+      "bytes": 3785,
+      "sha256": "94ea927c58af43180137d2d4f5aa87a313c7f1a08f4c350d81166c34451de9f7"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/generic/_utils.py",
+      "bytes": 7258,
+      "sha256": "bd30c07ac7c6f9c24d0ca8a5cff91b805a1d0084f37797a3a695871a3bc2a279"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/generic/_viewerpref.py",
+      "bytes": 6774,
+      "sha256": "b6a5445a6bddfc359316848ca51393b25d528a338d9ef71267e8d74e8fdc8cea"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/pagerange.py",
+      "bytes": 7108,
+      "sha256": "d9bb76d634199bef5aab66d57f74d7b87f3fc06571edbf53e94acc1570842614"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/papersizes.py",
+      "bytes": 1413,
+      "sha256": "e93cf9b1f34dff724e51aa58f3753e95a928867a57600d2148440d98e54b14bf"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/types.py",
+      "bytes": 1915,
+      "sha256": "b09ef01f393b111fc227b90ffacf2ef5ac459e40979c5a6bf27cdc8f50314dab"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/vendor/pypdf/xmp.py",
+      "bytes": 30239,
+      "sha256": "00289e95b3fb680b03cb67e67b8a3d61de32ec7e0a7c46d4337494c4c97c8c8e"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/work.css",
+      "bytes": 5780,
+      "sha256": "a0e13345167c6a22aa0c86f8ce4128bcb4e08fc5cc3e9a01cdc288d80f02b7bf"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/work.js",
+      "bytes": 10149,
+      "sha256": "16937da9c16cb9e01e3b6c1abb8b1076da24286c81248aa402ab7047a5bb64a0"
+    },
+    {
+      "path": "source/plugin/skills/praxis-mine/workspace/work_io.py",
+      "bytes": 7074,
+      "sha256": "c2f8f7d8b26b28a2ffeea54e546674854724fd4404eabfd80787fd4e574824e5"
+    },
+    {
+      "path": "source/tools/archive_paths.py",
+      "bytes": 3508,
+      "sha256": "86c8a1f7bc75c2b3d6d7b9027e3f9ae40ac9167b399fd6fdbbb599699d320e1c"
+    },
+    {
+      "path": "source/tools/build_release.py",
+      "bytes": 5959,
+      "sha256": "27262afe77c1bdc1b6f642e883405b1dc6bc669f21b0dcaa4b9fb227021bcae3"
+    },
+    {
+      "path": "source/tools/ci_verify_release.py",
+      "bytes": 3374,
+      "sha256": "19fd111bd42c92c32f9ce8498afd27e2413615cbcac7a10817247992e4a3d398"
+    },
+    {
+      "path": "source/tools/run_documentation_review.py",
+      "bytes": 4552,
+      "sha256": "caa8d465612f14745662832a189ead52f391d2ee9e1e73f73a4096b488928e56"
+    },
+    {
+      "path": "source/tools/run_hesperos_lint.py",
+      "bytes": 3439,
+      "sha256": "f907e12ba744f22543f8c7e03963f3205b7d19f24dc9d47b2435631692172574"
+    },
+    {
+      "path": "source/tools/run_verification.py",
+      "bytes": 8242,
+      "sha256": "3a5cf8630cacdee7c7fa7800fcaa34f06b7224919376a5a3b887ed21db57e24a"
+    },
+    {
+      "path": "source/tools/run_verification_review.py",
+      "bytes": 4208,
+      "sha256": "6d2a6f07bda365a5f5fccfad0cf5bd3f164dcedc31c42eae26a26a31f5138c71"
+    },
+    {
+      "path": "source/tools/scan_public_surface.py",
+      "bytes": 3813,
+      "sha256": "0be32469414b62a2f881b4489361f09b8e2e119eabf6db6abb32cfe112013574"
+    },
+    {
+      "path": "source/tools/verify_release.py",
+      "bytes": 17814,
+      "sha256": "6b06a380db5c131641e368039406270d205a9cba18b20328c4e8f7698e439ecc"
+    },
+    {
+      "path": "source/verification/assets/documentation-authorship-response.md",
+      "bytes": 1719,
+      "sha256": "9fddd0a81fb89a810b7fd0ada460bd9863aa135bd24a3a5a977bed9c37caaf5e"
+    },
+    {
+      "path": "source/verification/deterministic-run/run.json",
+      "bytes": 6124,
+      "sha256": "444d3590b760b61da455e5cca56d6a3c46e2057a2dc6a7bde0ace2a9f2c3bef7"
+    },
+    {
+      "path": "source/verification/documentation-evidence-packet.md",
+      "bytes": 5302,
+      "sha256": "6b15ce8b2927ec6c77beb8f8397772675ddb2350a96d7f494d9fdd1eca9cbb9f"
+    },
+    {
+      "path": "source/verification/documentation-review-final-2/api-response.json",
+      "bytes": 103988,
+      "sha256": "928fbc3e4d31bffe4fbedc803b68648451cf98572936ea81cd548757cc7518f5"
+    },
+    {
+      "path": "source/verification/documentation-review-final-2/assembled-review-input.md",
+      "bytes": 75092,
+      "sha256": "a7cf228d7cd84f0a291b529c3797788c21794f44eff2ad17b34cd3862230ca24"
+    },
+    {
+      "path": "source/verification/documentation-review-final-2/review-response.md",
+      "bytes": 1424,
+      "sha256": "dae73b11782cc4665cec0835accdf49db08c9db1401c72415d4e77d1b951f478"
+    },
+    {
+      "path": "source/verification/documentation-review-final-2/run.json",
+      "bytes": 1192,
+      "sha256": "6c5f73c40ccad196bc87b56fb1efe590414c30fbc48db22d124bcbd6be2f19ac"
+    },
+    {
+      "path": "source/verification/documentation-review-final-3/api-response.json",
+      "bytes": 117642,
+      "sha256": "0f239501f85775e77783bb474f4e16f19580e27aadc25f9c3f2e81015d33eeae"
+    },
+    {
+      "path": "source/verification/documentation-review-final-3/assembled-review-input.md",
+      "bytes": 75113,
+      "sha256": "ba65b924a47c00a69f85561f948e05102795bb588fdebc6109aec292d7635dc7"
+    },
+    {
+      "path": "source/verification/documentation-review-final-3/review-input-evidence.json",
+      "bytes": 1533,
+      "sha256": "9da6bafe4294a3951cbfe4742e2237228f80dcd1e1d01eaf589d9a7ede115213"
+    },
+    {
+      "path": "source/verification/documentation-review-final-3/review-response.md",
+      "bytes": 802,
+      "sha256": "467728fd2680c1e41ec0bcb2d8132753d0be2b9110d0f8109aa0342985cdec23"
+    },
+    {
+      "path": "source/verification/documentation-review-final-3/run.json",
+      "bytes": 1192,
+      "sha256": "2d4261f837ea27de128ca94267f38cbd863eef9de7934fc0e328a2147568fe0d"
+    },
+    {
+      "path": "source/verification/documentation-review-final-4/api-response.json",
+      "bytes": 148444,
+      "sha256": "300bea94dd82593bdf526dcd625821f0c019b2c98873c00206a8151b0198e0ab"
+    },
+    {
+      "path": "source/verification/documentation-review-final-4/assembled-review-input.md",
+      "bytes": 76431,
+      "sha256": "372b01fce8d659cfb5b438742118bdc2476900395332fbdaf384a72eedcdb781"
+    },
+    {
+      "path": "source/verification/documentation-review-final-4/review-response.md",
+      "bytes": 3683,
+      "sha256": "df55c5deee4d31d3f1f7f9fe6bd47b6c9be1a1a8704628e015ac2af57f735017"
+    },
+    {
+      "path": "source/verification/documentation-review-final-4/run.json",
+      "bytes": 1192,
+      "sha256": "f92673244028d6b050a4ced2419b1f81b67ccf0d9cf3c42072ff32280c97f2e6"
+    },
+    {
+      "path": "source/verification/documentation-review-final-5/api-response.json",
+      "bytes": 92378,
+      "sha256": "bcb8570c544003e03ff2dd2d9be16235734128a6cf2746b343911e8bf5c16306"
+    },
+    {
+      "path": "source/verification/documentation-review-final-5/assembled-review-input.md",
+      "bytes": 76614,
+      "sha256": "6b502343e521d21c66f3c690ef44d45861a68ed13b9dda3e13a4af0734914b27"
+    },
+    {
+      "path": "source/verification/documentation-review-final-5/review-response.md",
+      "bytes": 11,
+      "sha256": "8722632d6e5584fcad968f06b126f7194be066f769890dadda42b4de3ed55d6b"
+    },
+    {
+      "path": "source/verification/documentation-review-final-5/run.json",
+      "bytes": 1192,
+      "sha256": "ffdd5c0b6147b9eadd655cf28aab6764c5979536f1d76b46271cbba92c7a8482"
+    },
+    {
+      "path": "source/verification/documentation-review-final-6/api-response.json",
+      "bytes": 132954,
+      "sha256": "690b8dece41f8ba6692115118f78067f552fd0337a0aeea60a890bf1abff017f"
+    },
+    {
+      "path": "source/verification/documentation-review-final-6/assembled-review-input.md",
+      "bytes": 76751,
+      "sha256": "4b699e5e96b2c1efa83b53346ecd40c952a98f8af7e16b1df550eeaa15bc28c3"
+    },
+    {
+      "path": "source/verification/documentation-review-final-6/review-response.md",
+      "bytes": 3692,
+      "sha256": "c834ebc6151b31cb19aeec536cb92100bd0d2fb9b69e6e84c8982cc8c730fc61"
+    },
+    {
+      "path": "source/verification/documentation-review-final-6/run.json",
+      "bytes": 1192,
+      "sha256": "76acac9324cc664145d02309a515015ac751750fba743b2ce1d9519995dacae0"
+    },
+    {
+      "path": "source/verification/documentation-review-final-7/api-response.json",
+      "bytes": 115604,
+      "sha256": "2dc60fff51e3865a4b8085cd59b7ad9fb787cefd40daa14034e44d63bf9fb027"
+    },
+    {
+      "path": "source/verification/documentation-review-final-7/assembled-review-input.md",
+      "bytes": 76751,
+      "sha256": "c25b91ba359ea7bcb3c29ac75013a4578c20f8ce1fff040fcdd280ea40043f2b"
+    },
+    {
+      "path": "source/verification/documentation-review-final-7/review-input-evidence.json",
+      "bytes": 1533,
+      "sha256": "b0c6c878251bb38de4d751fb604a8786e92e832dde9c8e56d95a784cdc2184d8"
+    },
+    {
+      "path": "source/verification/documentation-review-final-7/review-response.md",
+      "bytes": 2693,
+      "sha256": "dd34cc8fa41c5e2a257e40233ed697f3b0ed660e288775898ceba1a856a10656"
+    },
+    {
+      "path": "source/verification/documentation-review-final-7/run.json",
+      "bytes": 1167,
+      "sha256": "a1c34dff468015169c61a81730799f60f01b301b15e0ce556fe7b9bb24542b99"
+    },
+    {
+      "path": "source/verification/documentation-review-final-8/api-response.json",
+      "bytes": 115375,
+      "sha256": "ba2fb5cd07a317dd565b7024b5142ff8dbcacdc8774c48c009743e20ef274820"
+    },
+    {
+      "path": "source/verification/documentation-review-final-8/assembled-review-input.md",
+      "bytes": 79521,
+      "sha256": "4433d78cee0a9898a364c3af12aa3df959c1a735ad7061130c325e5d40c4a7ef"
+    },
+    {
+      "path": "source/verification/documentation-review-final-8/review-input-evidence.json",
+      "bytes": 1532,
+      "sha256": "66560014b2945b231e707de674631e57a2d889f4efcd32b54892c50bf25daeff"
+    },
+    {
+      "path": "source/verification/documentation-review-final-8/review-response.md",
+      "bytes": 2879,
+      "sha256": "ff702c6b1854f8bc8f18d73438037453f07b5f50970366c7db2e453e4fee1491"
+    },
+    {
+      "path": "source/verification/documentation-review-final-8/run.json",
+      "bytes": 1175,
+      "sha256": "06d1960197520b59b469f0a05476cff4e2333aedf4dfab1217f220e9ac7cae01"
+    },
+    {
+      "path": "source/verification/documentation-review-final/api-response.json",
+      "bytes": 106944,
+      "sha256": "0590a6b155778de316e487ac0c3fbc88600a6b19650dda66c82c3582e0a319c5"
+    },
+    {
+      "path": "source/verification/documentation-review-final/assembled-review-input.md",
+      "bytes": 74644,
+      "sha256": "8bb0964adbeb44671c62ef61617846e7227e130c6f77f8ba57568ad87a85ae6e"
+    },
+    {
+      "path": "source/verification/documentation-review-final/review-response.md",
+      "bytes": 1562,
+      "sha256": "c5cab6057d33fd46079bfaee68001c65060e222959841ae4912c1527e2c39829"
+    },
+    {
+      "path": "source/verification/documentation-review-final/run.json",
+      "bytes": 1192,
+      "sha256": "64e6331d025644e419ea429e41e6e0668523bf54e40a3566e85411b3ca6a8457"
+    },
+    {
+      "path": "source/verification/documentation-review-request.md",
+      "bytes": 3355,
+      "sha256": "195321b7c0dde98e1d42f49442c3e5284682337b41ccce1e16b6d85c7ecc9cab"
+    },
+    {
+      "path": "source/verification/documentation-review/assembled-review-input.md",
+      "bytes": 61970,
+      "sha256": "a7e5895a160d3b483e8368d577ea69ded78e5f550f7fd9b90ad4325077b2f9ed"
+    },
+    {
+      "path": "source/verification/documentation-review/review-response.md",
+      "bytes": 3193,
+      "sha256": "6333eda6ded617cbaff5e98bc3ca5157c3548ccdb62b1fb4e7b2bd13d6e7e529"
+    },
+    {
+      "path": "source/verification/documentation-review/run.json",
+      "bytes": 104835,
+      "sha256": "4e547231720692c8c014bc47a751ae8a87945662d9fe8454880007cdec5488fa"
+    },
+    {
+      "path": "source/verification/hesperos-lint.json",
+      "bytes": 5221,
+      "sha256": "a35b61b129dc9c023265ecca69552af541038222a87245e757f5c909adf2180e"
+    },
+    {
+      "path": "source/verification/public-surface-scan.json",
+      "bytes": 396,
+      "sha256": "ca2261024dcecb348387f351eb0160b5a3cec4b1a1a74a28e635bd548377518c"
+    },
+    {
+      "path": "source/verification/reviewer-attestation.json",
+      "bytes": 1066,
+      "sha256": "ec823448f4c1c65fae0b2663dfc7fcec12c31bdc369567ae9e1a83f445adda7a"
+    },
+    {
+      "path": "source/verification/verification-review-request.md",
+      "bytes": 1756,
+      "sha256": "166ddfcd34e6377e6182d664bb9b1d03cde626f80a9777db2202fa7ce08766a8"
+    },
+    {
+      "path": "source/verification/verification-review/api-response.json",
+      "bytes": 115688,
+      "sha256": "a9005e7b9f137ef7a791c34504d16cd9fa224f5d67de3a32fd8e57553484f805"
+    },
+    {
+      "path": "source/verification/verification-review/assembled-review-input.md",
+      "bytes": 86596,
+      "sha256": "e57557739c8755f329155c34ed83bca2d6737c88e6a07ffd83ce4a87c4a7d458"
+    },
+    {
+      "path": "source/verification/verification-review/http-error.json",
+      "bytes": 286,
+      "sha256": "0343a599437299601f5848c77eb6e874bb2d3503afd50ea76a3217c89b25d603"
+    },
+    {
+      "path": "source/verification/verification-review/review-response.md",
+      "bytes": 670,
+      "sha256": "97ec1b98a62828784c1c4be77caa1de66d7daeefa70e9759982ccb718a40a1a1"
+    },
+    {
+      "path": "source/verification/verification-review/run.json",
+      "bytes": 1156,
+      "sha256": "535a39212d581a37d95e31832786bf34f1393f4fee5c3838071f02309f6b7910"
+    },
+    {
+      "path": "source/verification/verification-summary.json",
+      "bytes": 2302,
+      "sha256": "22c09523fbe0bcf275dd931c16f77eb958a8d8c3f882ad6a6b0421f98447be38"
+    },
+    {
+      "path": "tools/build_purpose_release.py",
+      "bytes": 8389,
+      "sha256": "3abc9eae17ddfdf0c67920e2f674ad845f20d01533b85ce02502c452805a87a0"
+    },
+    {
+      "path": "verification/companion-format-20261015/authored-delta.json",
+      "bytes": 280,
+      "sha256": "86815037f6228577a45deb05850a20d141906b7d1497d05abc9d3102ee176681"
+    },
+    {
+      "path": "verification/companion-format-20261015/authoring-response.md",
+      "bytes": 344,
+      "sha256": "385a82e156c812e60485dbf86625635e7d51b544bd391f3bdd8125a88c9c637a"
+    },
+    {
+      "path": "verification/companion-format-20261015/evidence.md",
+      "bytes": 365,
+      "sha256": "f1a874d1fa568f1f28115e55c00ff7ab114946ba4ee6bbfe953c06fea2bf6da6"
+    },
+    {
+      "path": "verification/companion-format-20261015/execution.md",
+      "bytes": 369,
+      "sha256": "32ccb5cab32ecbd6fb6dcb82dab542af8b934f6466d7fd2c03392c2b07cdb65a"
+    },
+    {
+      "path": "verification/companion-format-20261015/previous-extra.md",
+      "bytes": 5304,
+      "sha256": "a47e0af770d4ae7c820c5346170063dce9ab2fc02027fc1969535f3409f4fb6a"
+    },
+    {
+      "path": "verification/companion-format-20261015/prior-documentation-authorship.json",
+      "bytes": 2411,
+      "sha256": "c7a07a5f8b5814cf59126938008a5afc31ff51278dcfc13b0dba8146af126e4b"
+    },
+    {
+      "path": "verification/estate-quality-20261007/maintainer-r5/authoring-response.md",
+      "bytes": 475,
+      "sha256": "f7680bdf7b0fca668e13369274ceba90c12839ab1d1160edf210f5ca74986317"
+    },
+    {
+      "path": "verification/estate-quality-20261007/maintainer-r5/evidence-packet.json",
+      "bytes": 618,
+      "sha256": "fd5b97611088af120105b77109b98695b29c3e09b60cbd3becafb0cfc9f953b0"
+    },
+    {
+      "path": "verification/estate-quality-20261007/maintainer-r5/execution.json",
+      "bytes": 306,
+      "sha256": "2e449d30518104d868511f1f5696b8d72229383d75d494592dd9820abc32dceb"
+    },
+    {
+      "path": "verification/estate-quality-20261007/maintainer-r5/manifest.json",
+      "bytes": 154,
+      "sha256": "b468906b007e72eeee6ff6ec0d1e8727407f84a31abc6e580725ccbd4c72f0f8"
+    },
+    {
+      "path": "verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md",
+      "bytes": 7306,
+      "sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f"
+    },
+    {
+      "path": "verification/purpose-release-20261015/DESIGN.md",
+      "bytes": 1000,
+      "sha256": "4e5e9276dd443264dd018039a58209fc0926f97b07a441da52273b970b5c3dc0"
+    },
+    {
+      "path": "verification/purpose-release-20261015/EVIDENCE-SCOPE.md",
+      "bytes": 391,
+      "sha256": "a7b27e484d5e41b2006eed433de0151b8fc8086f9660359081166793fd946350"
+    },
+    {
+      "path": "verification/purpose-release-20261015/browser-results.json",
+      "bytes": 632,
+      "sha256": "b05eb0a3e1fa3f65c570f75510d308f2e974eaf4d3c655fd2576ddf90b19d5b6"
+    },
+    {
+      "path": "verification/purpose-release-20261015/browser.cjs",
+      "bytes": 9653,
+      "sha256": "14a25b9cfcc8661d756aa740c7774c6f243170d05bd4f86ffcbd1f8a683f3b62"
+    },
+    {
+      "path": "verification/purpose-release-20261015/material-results.json",
+      "bytes": 252,
+      "sha256": "65bcc031d46f4567110c790e41988060cc0ed06ad0f389b5ac1fc2a6a9cb5e7a"
+    },
+    {
+      "path": "verification/purpose-release-20261015/storage-results.json",
+      "bytes": 164,
+      "sha256": "c57444ec3b97df8a9a8a7de01bec5177da82f26a7d1d0af6ac9d990bd52cc014"
+    },
+    {
+      "path": "verification/purpose-release-20261015/storage.cjs",
+      "bytes": 2335,
+      "sha256": "aa5635cf5ee04582257f1ac19158922f9a92a0ea8d25c1bf40031abd633a8fab"
+    },
+    {
+      "path": "verification/purpose-release-20261015/test_materials.py",
+      "bytes": 2994,
+      "sha256": "db6d78bb184b436c5dd224dd2a827ead28b70219fe15f46411d2832a2456c4e7"
+    },
+    {
+      "path": "verification/repository-release-20261015/authoring-response.md",
+      "bytes": 321,
+      "sha256": "927e62b5048c06e3dccc690472d888b485eac208fa81193b65710fe536b9605a"
+    },
+    {
+      "path": "verification/repository-release-20261015/evidence.md",
+      "bytes": 209,
+      "sha256": "147f7bdfd3b7baad38921daa177fb3809d200ce440bc204823d9b5763af0de71"
+    },
+    {
+      "path": "verification/repository-release-20261015/execution.md",
+      "bytes": 242,
+      "sha256": "062fd79c5ba0f7c627d9d6b0daa781f5a3ef506334ed3c9b04043beb2c68cda1"
+    },
+    {
+      "path": "verification/repository-release-20261015/manifest.json",
+      "bytes": 174,
+      "sha256": "646c4ce35e5873d982b03394d1e3a4b9ced5388d3a884f0499fe8d7b8bf103d1"
+    }
+  ],
+  "bytes": 12921193,
+  "count": 262
+}

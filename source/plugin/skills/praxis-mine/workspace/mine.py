@@ -27,12 +27,12 @@ class Mine:
     def request(self, method, path, data):
         if not isinstance(data, dict): raise ValueError('Request body must be a JSON object')
         if method not in {'GET', 'POST'}: raise ValueError('Unsupported method')
-        if path in {'/api/save', '/api/create', '/api/import', '/api/evaluate', '/api/export'} and method != 'POST':
+        if path in {'/api/save', '/api/create', '/api/import', '/api/evaluate', '/api/idea', '/api/export'} and method != 'POST':
             raise ValueError('POST required for this action')
         with self.lock:
             try:
                 native.existing_store(self.storage, self.root)
-                with self.storage.transaction(self.root, 'praxis_mine', read_only=path not in {'/api/save', '/api/create', '/api/import', '/api/evaluate'}):
+                with self.storage.transaction(self.root, 'praxis_mine', read_only=path not in {'/api/save', '/api/create', '/api/import', '/api/evaluate', '/api/idea'}):
                     return self._request(path, data)
             except self.storage.SubstrateError as error:
                 if 'conflict' in str(error): raise self.Conflict(str(error)) from error
@@ -41,6 +41,14 @@ class Mine:
                 raise ValueError(str(error)) from error
 
     def _request(self, path, data):
+        if path == '/api/idea':
+            import uuid
+            title=str(data.get('title','')).strip();summary=str(data.get('summary','')).strip()
+            if not title or not summary:raise ValueError('Name the idea and what it might help you do.')
+            key=uuid.uuid4().hex
+            locator=str(data.get('locator','')).strip() or 'User supplied idea: '+title
+            self._request('/api/create',{'kind':'source','payload':{'source_key':key,'title':title,'kind':'supplied_idea','locator':locator,'access_posture':'supplied_by_user'}})
+            return self._request('/api/create',{'kind':'candidate','payload':{'source_key':key,'candidate_key':key,'title':title,'locator':locator,'candidate_kind':'tool_or_method','summary':summary,'tags':{'work':{'baseline':str(data.get('baseline','')),'task':str(data.get('task','')),'criteria':[],'trials':[]}}}})
         if path == '/api/list': return {'records': self.records(), 'data_root': str(self.root)}
         if path == '/api/history': return {'history': self.storage.record_history(self.root, 'praxis_mine', data['record_id'])}
         if path == '/api/save':
